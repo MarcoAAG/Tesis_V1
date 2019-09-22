@@ -1,4 +1,4 @@
-Tesis UNAM
+Tesis UNAQ
 =============
 
 Plantilla de Tesis en LaTeX para las facultades de la UNAM.
