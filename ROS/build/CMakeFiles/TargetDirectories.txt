@@ -35,6 +35,14 @@
 /home/marco/Tesis/ROS/build/gtest/googlemock/gtest/CMakeFiles/list_install_components.dir
 /home/marco/Tesis/ROS/build/gtest/googlemock/gtest/CMakeFiles/gtest.dir
 /home/marco/Tesis/ROS/build/gtest/googlemock/gtest/CMakeFiles/rebuild_cache.dir
+/home/marco/Tesis/ROS/build/rosserial_python/CMakeFiles/install/strip.dir
+/home/marco/Tesis/ROS/build/rosserial_python/CMakeFiles/install/local.dir
+/home/marco/Tesis/ROS/build/rosserial_python/CMakeFiles/test.dir
+/home/marco/Tesis/ROS/build/rosserial_python/CMakeFiles/list_install_components.dir
+/home/marco/Tesis/ROS/build/rosserial_python/CMakeFiles/edit_cache.dir
+/home/marco/Tesis/ROS/build/rosserial_python/CMakeFiles/_catkin_empty_exported_target.dir
+/home/marco/Tesis/ROS/build/rosserial_python/CMakeFiles/rebuild_cache.dir
+/home/marco/Tesis/ROS/build/rosserial_python/CMakeFiles/install.dir
 /home/marco/Tesis/ROS/build/video_stream_opencv/CMakeFiles/install.dir
 /home/marco/Tesis/ROS/build/video_stream_opencv/CMakeFiles/list_install_components.dir
 /home/marco/Tesis/ROS/build/video_stream_opencv/CMakeFiles/edit_cache.dir
