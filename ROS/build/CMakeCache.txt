@@ -311,6 +311,12 @@ class_loader_DIR:PATH=/opt/ros/melodic/share/class_loader/cmake
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/opt/ros/melodic/share/cpp_common/cmake
 
+//Value Computed by CMake
+cppserial_BINARY_DIR:STATIC=/home/marco/Tesis/ROS/build/cppserial
+
+//Value Computed by CMake
+cppserial_SOURCE_DIR:STATIC=/home/marco/Tesis/ROS/src/cppserial
+
 //The directory containing a CMake configuration file for cv_bridge.
 cv_bridge_DIR:PATH=/opt/ros/melodic/share/cv_bridge/cmake
 
@@ -442,6 +448,12 @@ smclib_DIR:PATH=/opt/ros/melodic/share/smclib/cmake
 std_msgs_DIR:PATH=/opt/ros/melodic/share/std_msgs/cmake
 
 //Value Computed by CMake
+video_driver_BINARY_DIR:STATIC=/home/marco/Tesis/ROS/build/video_driver
+
+//Value Computed by CMake
+video_driver_SOURCE_DIR:STATIC=/home/marco/Tesis/ROS/src/video_driver
+
+//Value Computed by CMake
 video_stream_opencv_BINARY_DIR:STATIC=/home/marco/Tesis/ROS/build/video_stream_opencv
 
 //Dependencies for the target
@@ -563,7 +575,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

@@ -6,4 +6,6 @@
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
 subdirs("rosserial_python")
+subdirs("cppserial")
+subdirs("video_driver")
 subdirs("video_stream_opencv")

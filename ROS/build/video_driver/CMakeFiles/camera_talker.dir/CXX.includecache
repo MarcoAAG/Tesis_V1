@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/marco/Tesis/ROS/src/video_driver/src/camera_talker.cpp
+opencv2/opencv.hpp
+/home/marco/Tesis/ROS/src/video_driver/src/opencv2/opencv.hpp
+
