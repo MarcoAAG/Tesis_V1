@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1576024731 "/home/marco/Tesis/Tesis/Tesis.tex" "/home/marco/Tesis/Tesis/Tesis.pdf" "Tesis" 1576024731
+["pdflatex"] 1576025798 "/home/marco/Tesis/Tesis/Tesis.tex" "/home/marco/Tesis/Tesis/Tesis.pdf" "Tesis" 1576025799
   "/etc/texmf/web2c/texmf.cnf" 1572313085 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/marco/Tesis/Tesis/Tesis.aux" 1576024731 112 e1f9d66d8ef9afcbeb5c456c0a391ffb ""
-  "/home/marco/Tesis/Tesis/Tesis.tex" 1576024731 354 8d8cab3d5f803ff079b5acdf885475a5 ""
+  "/home/marco/Tesis/Tesis/Tesis.aux" 1576025799 112 e1f9d66d8ef9afcbeb5c456c0a391ffb ""
+  "/home/marco/Tesis/Tesis/Tesis.tex" 1576025797 364 82254edf7c8da7ba76e37d54d64f49eb ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1480098698 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1480098698 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -70,11 +70,11 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1520210507 32485 c64754543d8ac501bea6e75e209ea521 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1572313320 2700761 ac0584cc9514ab21918550a6948c4ee2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1572313342 4127266 d249e17c4a0552c26004db7f42f77893 ""
-  "Tesis.aux" 1576024731 112 e1f9d66d8ef9afcbeb5c456c0a391ffb ""
-  "Tesis.tex" 1576024731 354 8d8cab3d5f803ff079b5acdf885475a5 ""
+  "Tesis.aux" 1576025799 112 e1f9d66d8ef9afcbeb5c456c0a391ffb ""
+  "Tesis.tex" 1576025797 364 82254edf7c8da7ba76e37d54d64f49eb ""
   (generated)
-  "Tesis.pdf"
-  "Tesis.log"
   "Tesis.aux"
+  "Tesis.pdf"
   "/home/marco/Tesis/Tesis/Tesis.pdf"
   "/home/marco/Tesis/Tesis/Tesis.log"
+  "Tesis.log"
