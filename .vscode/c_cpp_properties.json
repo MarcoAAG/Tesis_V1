@@ -1,6 +1,5 @@
 {
     "configurations": [
-            
         {
             "name": "Linux",
             "includePath": [
@@ -15,7 +14,8 @@
                 "${workspaceRoot}",
                 "/home/marco/Tesis/ROS/devel/include",
                 "/opt/ros/melodic/include",
-                "${workspaceRoot}/include"
+                "${workspaceRoot}/include",
+                "${workspaceFolder}/ROS/src/video_driver/include"
             ],
             "defines": [],
             "intelliSenseMode": "clang-x64",
@@ -40,7 +40,7 @@
             "compilerPath": "/usr/bin/gcc",
             "cStandard": "c11",
             "cppStandard": "c++17"
-        }        
+        }
     ],
     "version": 4
 }
