@@ -396,6 +396,24 @@ message_runtime_DIR:PATH=/opt/ros/melodic/share/message_runtime/cmake
 //The directory containing a CMake configuration file for nodelet.
 nodelet_DIR:PATH=/opt/ros/melodic/share/nodelet/cmake
 
+//Value Computed by CMake
+ocam_BINARY_DIR:STATIC=/home/marco/Tesis/ROS/build/ocam
+
+//Dependencies for target
+ocam_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+ocam_SOURCE_DIR:STATIC=/home/marco/Tesis/ROS/src/ocam
+
+//Value Computed by CMake
+ocam_driver_BINARY_DIR:STATIC=/home/marco/Tesis/ROS/build/ocam_driver
+
+//Value Computed by CMake
+ocam_driver_SOURCE_DIR:STATIC=/home/marco/Tesis/ROS/src/ocam_driver
+
+//Dependencies for the target
+ocam_node_LIB_DEPENDS:STATIC=general;/opt/ros/melodic/lib/libcv_bridge.so;general;/usr/lib/x86_64-linux-gnu/libopencv_core.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.3.2.0;general;/opt/ros/melodic/lib/libimage_transport.so;general;/opt/ros/melodic/lib/libmessage_filters.so;general;/opt/ros/melodic/lib/libnodeletlib.so;general;/opt/ros/melodic/lib/libbondcpp.so;general;/opt/ros/melodic/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/melodic/lib/libroslib.so;general;/opt/ros/melodic/lib/librospack.so;general;/usr/lib/x86_64-linux-gnu/libpython2.7.so;general;/usr/lib/x86_64-linux-gnu/libboost_program_options.so;general;/usr/lib/x86_64-linux-gnu/libtinyxml2.so;general;/opt/ros/melodic/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;general;/opt/ros/melodic/lib/librosconsole.so;general;/opt/ros/melodic/lib/librosconsole_log4cxx.so;general;/opt/ros/melodic/lib/librosconsole_backend_interface.so;general;/usr/lib/x86_64-linux-gnu/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/melodic/lib/libxmlrpcpp.so;general;/opt/ros/melodic/lib/libroscpp_serialization.so;general;/opt/ros/melodic/lib/librostime.so;general;/opt/ros/melodic/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4;
+
 //The directory containing a CMake configuration file for pluginlib.
 pluginlib_DIR:PATH=/opt/ros/melodic/share/pluginlib/cmake
 
@@ -449,6 +467,9 @@ std_msgs_DIR:PATH=/opt/ros/melodic/share/std_msgs/cmake
 
 //Value Computed by CMake
 video_driver_BINARY_DIR:STATIC=/home/marco/Tesis/ROS/build/video_driver
+
+//Dependencies for target
+video_driver_LIB_DEPENDS:STATIC=
 
 //Value Computed by CMake
 video_driver_SOURCE_DIR:STATIC=/home/marco/Tesis/ROS/src/video_driver
@@ -575,7 +596,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=9
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

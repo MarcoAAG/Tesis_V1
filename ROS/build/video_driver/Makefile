@@ -80,6 +80,18 @@ install/local/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -122,18 +134,6 @@ list_install_components:
 list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -258,6 +258,21 @@ sensor_msgs_generate_messages_eus/fast:
 .PHONY : sensor_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
+video_driver/CMakeFiles/video_driver.dir/rule:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 video_driver/CMakeFiles/video_driver.dir/rule
+.PHONY : video_driver/CMakeFiles/video_driver.dir/rule
+
+# Convenience name for target.
+video_driver: video_driver/CMakeFiles/video_driver.dir/rule
+
+.PHONY : video_driver
+
+# fast build rule for target.
+video_driver/fast:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f video_driver/CMakeFiles/video_driver.dir/build.make video_driver/CMakeFiles/video_driver.dir/build
+.PHONY : video_driver/fast
+
+# Convenience name for target.
 video_driver/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
 	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 video_driver/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
 .PHONY : video_driver/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
@@ -367,12 +382,14 @@ help:
 	@echo "... depend"
 	@echo "... install/strip"
 	@echo "... install/local"
+	@echo "... install"
 	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... camera_talker"
 	@echo "... sensor_msgs_generate_messages_nodejs"
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_eus"
+	@echo "... video_driver"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... rebuild_cache"
 	@echo "... geometry_msgs_generate_messages_py"
@@ -382,7 +399,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... geometry_msgs_generate_messages_eus"
 	@echo "... list_install_components"
-	@echo "... install"
 	@echo "... src/camera_talker.o"
 	@echo "... src/camera_talker.i"
 	@echo "... src/camera_talker.s"

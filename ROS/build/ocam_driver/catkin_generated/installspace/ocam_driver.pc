@@ -1,0 +1,8 @@
+prefix=/home/marco/Tesis/ROS/install
+
+Name: ocam_driver
+Description: Description of ocam_driver
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/marco/Tesis/ROS/install/lib 
+Requires: 
