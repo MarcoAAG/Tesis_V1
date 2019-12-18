@@ -1,2 +1,2 @@
-cppserial:ocam:ocam_driver:rosserial_python:video_stream_opencv
+cppserial:ocam_driver:rosserial_python:video_stream_opencv
 -DCATKIN_DEVEL_PREFIX=/home/marco/Tesis/ROS/devel -DCMAKE_INSTALL_PREFIX=/home/marco/Tesis/ROS/install -G Unix Makefiles

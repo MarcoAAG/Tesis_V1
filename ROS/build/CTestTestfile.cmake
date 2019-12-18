@@ -7,6 +7,5 @@
 subdirs("gtest")
 subdirs("rosserial_python")
 subdirs("cppserial")
-subdirs("ocam")
 subdirs("ocam_driver")
 subdirs("video_stream_opencv")

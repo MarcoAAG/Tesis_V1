@@ -506,30 +506,17 @@ std_msgs_generate_messages_py/fast:
 .PHONY : std_msgs_generate_messages_py/fast
 
 #=============================================================================
-# Target rules for targets named ocam_node
+# Target rules for targets named camera_publisher
 
 # Build rule for target.
-ocam_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ocam_node
-.PHONY : ocam_node
+camera_publisher: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 camera_publisher
+.PHONY : camera_publisher
 
 # fast build rule for target.
-ocam_node/fast:
-	$(MAKE) -f ocam/CMakeFiles/ocam_node.dir/build.make ocam/CMakeFiles/ocam_node.dir/build
-.PHONY : ocam_node/fast
-
-#=============================================================================
-# Target rules for targets named ocam
-
-# Build rule for target.
-ocam: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ocam
-.PHONY : ocam
-
-# fast build rule for target.
-ocam/fast:
-	$(MAKE) -f ocam/CMakeFiles/ocam.dir/build.make ocam/CMakeFiles/ocam.dir/build
-.PHONY : ocam/fast
+camera_publisher/fast:
+	$(MAKE) -f ocam_driver/CMakeFiles/camera_publisher.dir/build.make ocam_driver/CMakeFiles/camera_publisher.dir/build
+.PHONY : camera_publisher/fast
 
 #=============================================================================
 # Target rules for targets named bond_generate_messages_lisp
@@ -541,7 +528,7 @@ bond_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 bond_generate_messages_lisp/fast:
-	$(MAKE) -f ocam/CMakeFiles/bond_generate_messages_lisp.dir/build.make ocam/CMakeFiles/bond_generate_messages_lisp.dir/build
+	$(MAKE) -f ocam_driver/CMakeFiles/bond_generate_messages_lisp.dir/build.make ocam_driver/CMakeFiles/bond_generate_messages_lisp.dir/build
 .PHONY : bond_generate_messages_lisp/fast
 
 #=============================================================================
@@ -554,7 +541,7 @@ bond_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 bond_generate_messages_eus/fast:
-	$(MAKE) -f ocam/CMakeFiles/bond_generate_messages_eus.dir/build.make ocam/CMakeFiles/bond_generate_messages_eus.dir/build
+	$(MAKE) -f ocam_driver/CMakeFiles/bond_generate_messages_eus.dir/build.make ocam_driver/CMakeFiles/bond_generate_messages_eus.dir/build
 .PHONY : bond_generate_messages_eus/fast
 
 #=============================================================================
@@ -567,7 +554,7 @@ bond_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 bond_generate_messages_py/fast:
-	$(MAKE) -f ocam/CMakeFiles/bond_generate_messages_py.dir/build.make ocam/CMakeFiles/bond_generate_messages_py.dir/build
+	$(MAKE) -f ocam_driver/CMakeFiles/bond_generate_messages_py.dir/build.make ocam_driver/CMakeFiles/bond_generate_messages_py.dir/build
 .PHONY : bond_generate_messages_py/fast
 
 #=============================================================================
@@ -580,7 +567,7 @@ sensor_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 sensor_msgs_generate_messages_py/fast:
-	$(MAKE) -f ocam/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make ocam/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+	$(MAKE) -f ocam_driver/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make ocam_driver/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
 .PHONY : sensor_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -593,7 +580,7 @@ geometry_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 geometry_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f ocam/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make ocam/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f ocam_driver/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make ocam_driver/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
 .PHONY : geometry_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -606,7 +593,7 @@ bond_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 bond_generate_messages_cpp/fast:
-	$(MAKE) -f ocam/CMakeFiles/bond_generate_messages_cpp.dir/build.make ocam/CMakeFiles/bond_generate_messages_cpp.dir/build
+	$(MAKE) -f ocam_driver/CMakeFiles/bond_generate_messages_cpp.dir/build.make ocam_driver/CMakeFiles/bond_generate_messages_cpp.dir/build
 .PHONY : bond_generate_messages_cpp/fast
 
 #=============================================================================
@@ -619,7 +606,7 @@ sensor_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 sensor_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f ocam/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make ocam/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f ocam_driver/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make ocam_driver/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
 .PHONY : sensor_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -632,7 +619,7 @@ sensor_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 sensor_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f ocam/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make ocam/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f ocam_driver/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make ocam_driver/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
 .PHONY : sensor_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -645,7 +632,7 @@ geometry_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 geometry_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f ocam/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make ocam/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f ocam_driver/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make ocam_driver/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
 .PHONY : geometry_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -658,7 +645,7 @@ geometry_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 geometry_msgs_generate_messages_eus/fast:
-	$(MAKE) -f ocam/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make ocam/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f ocam_driver/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make ocam_driver/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
 .PHONY : geometry_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -671,7 +658,7 @@ nodelet_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 nodelet_generate_messages_eus/fast:
-	$(MAKE) -f ocam/CMakeFiles/nodelet_generate_messages_eus.dir/build.make ocam/CMakeFiles/nodelet_generate_messages_eus.dir/build
+	$(MAKE) -f ocam_driver/CMakeFiles/nodelet_generate_messages_eus.dir/build.make ocam_driver/CMakeFiles/nodelet_generate_messages_eus.dir/build
 .PHONY : nodelet_generate_messages_eus/fast
 
 #=============================================================================
@@ -684,7 +671,7 @@ geometry_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 geometry_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f ocam/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make ocam/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f ocam_driver/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make ocam_driver/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
 .PHONY : geometry_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -697,7 +684,7 @@ geometry_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 geometry_msgs_generate_messages_py/fast:
-	$(MAKE) -f ocam/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make ocam/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+	$(MAKE) -f ocam_driver/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make ocam_driver/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
 .PHONY : geometry_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -710,7 +697,7 @@ nodelet_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 nodelet_generate_messages_cpp/fast:
-	$(MAKE) -f ocam/CMakeFiles/nodelet_generate_messages_cpp.dir/build.make ocam/CMakeFiles/nodelet_generate_messages_cpp.dir/build
+	$(MAKE) -f ocam_driver/CMakeFiles/nodelet_generate_messages_cpp.dir/build.make ocam_driver/CMakeFiles/nodelet_generate_messages_cpp.dir/build
 .PHONY : nodelet_generate_messages_cpp/fast
 
 #=============================================================================
@@ -723,7 +710,7 @@ nodelet_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 nodelet_generate_messages_nodejs/fast:
-	$(MAKE) -f ocam/CMakeFiles/nodelet_generate_messages_nodejs.dir/build.make ocam/CMakeFiles/nodelet_generate_messages_nodejs.dir/build
+	$(MAKE) -f ocam_driver/CMakeFiles/nodelet_generate_messages_nodejs.dir/build.make ocam_driver/CMakeFiles/nodelet_generate_messages_nodejs.dir/build
 .PHONY : nodelet_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -736,7 +723,7 @@ sensor_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 sensor_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f ocam/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make ocam/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f ocam_driver/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make ocam_driver/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
 .PHONY : sensor_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -749,7 +736,7 @@ sensor_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 sensor_msgs_generate_messages_eus/fast:
-	$(MAKE) -f ocam/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make ocam/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f ocam_driver/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make ocam_driver/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
 .PHONY : sensor_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -762,7 +749,7 @@ nodelet_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 nodelet_generate_messages_lisp/fast:
-	$(MAKE) -f ocam/CMakeFiles/nodelet_generate_messages_lisp.dir/build.make ocam/CMakeFiles/nodelet_generate_messages_lisp.dir/build
+	$(MAKE) -f ocam_driver/CMakeFiles/nodelet_generate_messages_lisp.dir/build.make ocam_driver/CMakeFiles/nodelet_generate_messages_lisp.dir/build
 .PHONY : nodelet_generate_messages_lisp/fast
 
 #=============================================================================
@@ -775,7 +762,7 @@ bond_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 bond_generate_messages_nodejs/fast:
-	$(MAKE) -f ocam/CMakeFiles/bond_generate_messages_nodejs.dir/build.make ocam/CMakeFiles/bond_generate_messages_nodejs.dir/build
+	$(MAKE) -f ocam_driver/CMakeFiles/bond_generate_messages_nodejs.dir/build.make ocam_driver/CMakeFiles/bond_generate_messages_nodejs.dir/build
 .PHONY : bond_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -788,21 +775,8 @@ nodelet_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 nodelet_generate_messages_py/fast:
-	$(MAKE) -f ocam/CMakeFiles/nodelet_generate_messages_py.dir/build.make ocam/CMakeFiles/nodelet_generate_messages_py.dir/build
+	$(MAKE) -f ocam_driver/CMakeFiles/nodelet_generate_messages_py.dir/build.make ocam_driver/CMakeFiles/nodelet_generate_messages_py.dir/build
 .PHONY : nodelet_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named camera_publisher
-
-# Build rule for target.
-camera_publisher: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 camera_publisher
-.PHONY : camera_publisher
-
-# fast build rule for target.
-camera_publisher/fast:
-	$(MAKE) -f ocam_driver/CMakeFiles/camera_publisher.dir/build.make ocam_driver/CMakeFiles/camera_publisher.dir/build
-.PHONY : camera_publisher/fast
 
 #=============================================================================
 # Target rules for targets named _run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test
@@ -1103,8 +1077,7 @@ help:
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_py"
-	@echo "... ocam_node"
-	@echo "... ocam"
+	@echo "... camera_publisher"
 	@echo "... bond_generate_messages_lisp"
 	@echo "... bond_generate_messages_eus"
 	@echo "... bond_generate_messages_py"
@@ -1125,7 +1098,6 @@ help:
 	@echo "... nodelet_generate_messages_lisp"
 	@echo "... bond_generate_messages_nodejs"
 	@echo "... nodelet_generate_messages_py"
-	@echo "... camera_publisher"
 	@echo "... _run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test"
 	@echo "... run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test"
 	@echo "... _run_tests_video_stream_opencv_rostest_test_test_mjpg_stream.test"

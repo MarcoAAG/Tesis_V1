@@ -80,6 +80,18 @@ install/local/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
@@ -90,6 +102,17 @@ test:
 test/fast: test
 
 .PHONY : test/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # Special rule for the target list_install_components
 list_install_components:
@@ -111,29 +134,6 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -182,6 +182,306 @@ camera_publisher/fast:
 	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam_driver/CMakeFiles/camera_publisher.dir/build.make ocam_driver/CMakeFiles/camera_publisher.dir/build
 .PHONY : camera_publisher/fast
 
+# Convenience name for target.
+ocam_driver/CMakeFiles/bond_generate_messages_lisp.dir/rule:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 ocam_driver/CMakeFiles/bond_generate_messages_lisp.dir/rule
+.PHONY : ocam_driver/CMakeFiles/bond_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+bond_generate_messages_lisp: ocam_driver/CMakeFiles/bond_generate_messages_lisp.dir/rule
+
+.PHONY : bond_generate_messages_lisp
+
+# fast build rule for target.
+bond_generate_messages_lisp/fast:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam_driver/CMakeFiles/bond_generate_messages_lisp.dir/build.make ocam_driver/CMakeFiles/bond_generate_messages_lisp.dir/build
+.PHONY : bond_generate_messages_lisp/fast
+
+# Convenience name for target.
+ocam_driver/CMakeFiles/bond_generate_messages_eus.dir/rule:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 ocam_driver/CMakeFiles/bond_generate_messages_eus.dir/rule
+.PHONY : ocam_driver/CMakeFiles/bond_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+bond_generate_messages_eus: ocam_driver/CMakeFiles/bond_generate_messages_eus.dir/rule
+
+.PHONY : bond_generate_messages_eus
+
+# fast build rule for target.
+bond_generate_messages_eus/fast:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam_driver/CMakeFiles/bond_generate_messages_eus.dir/build.make ocam_driver/CMakeFiles/bond_generate_messages_eus.dir/build
+.PHONY : bond_generate_messages_eus/fast
+
+# Convenience name for target.
+ocam_driver/CMakeFiles/bond_generate_messages_py.dir/rule:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 ocam_driver/CMakeFiles/bond_generate_messages_py.dir/rule
+.PHONY : ocam_driver/CMakeFiles/bond_generate_messages_py.dir/rule
+
+# Convenience name for target.
+bond_generate_messages_py: ocam_driver/CMakeFiles/bond_generate_messages_py.dir/rule
+
+.PHONY : bond_generate_messages_py
+
+# fast build rule for target.
+bond_generate_messages_py/fast:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam_driver/CMakeFiles/bond_generate_messages_py.dir/build.make ocam_driver/CMakeFiles/bond_generate_messages_py.dir/build
+.PHONY : bond_generate_messages_py/fast
+
+# Convenience name for target.
+ocam_driver/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 ocam_driver/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+.PHONY : ocam_driver/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_py: ocam_driver/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_py
+
+# fast build rule for target.
+sensor_msgs_generate_messages_py/fast:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam_driver/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make ocam_driver/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+.PHONY : sensor_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+ocam_driver/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 ocam_driver/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+.PHONY : ocam_driver/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_lisp: ocam_driver/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_lisp
+
+# fast build rule for target.
+geometry_msgs_generate_messages_lisp/fast:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam_driver/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make ocam_driver/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+.PHONY : geometry_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+ocam_driver/CMakeFiles/bond_generate_messages_cpp.dir/rule:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 ocam_driver/CMakeFiles/bond_generate_messages_cpp.dir/rule
+.PHONY : ocam_driver/CMakeFiles/bond_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+bond_generate_messages_cpp: ocam_driver/CMakeFiles/bond_generate_messages_cpp.dir/rule
+
+.PHONY : bond_generate_messages_cpp
+
+# fast build rule for target.
+bond_generate_messages_cpp/fast:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam_driver/CMakeFiles/bond_generate_messages_cpp.dir/build.make ocam_driver/CMakeFiles/bond_generate_messages_cpp.dir/build
+.PHONY : bond_generate_messages_cpp/fast
+
+# Convenience name for target.
+ocam_driver/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 ocam_driver/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+.PHONY : ocam_driver/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_nodejs: ocam_driver/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+sensor_msgs_generate_messages_nodejs/fast:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam_driver/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make ocam_driver/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
+.PHONY : sensor_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+ocam_driver/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 ocam_driver/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+.PHONY : ocam_driver/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_lisp: ocam_driver/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_lisp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_lisp/fast:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam_driver/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make ocam_driver/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+.PHONY : sensor_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+ocam_driver/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 ocam_driver/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+.PHONY : ocam_driver/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_cpp: ocam_driver/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_cpp
+
+# fast build rule for target.
+geometry_msgs_generate_messages_cpp/fast:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam_driver/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make ocam_driver/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+.PHONY : geometry_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+ocam_driver/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 ocam_driver/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+.PHONY : ocam_driver/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_eus: ocam_driver/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_eus
+
+# fast build rule for target.
+geometry_msgs_generate_messages_eus/fast:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam_driver/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make ocam_driver/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
+.PHONY : geometry_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+ocam_driver/CMakeFiles/nodelet_generate_messages_eus.dir/rule:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 ocam_driver/CMakeFiles/nodelet_generate_messages_eus.dir/rule
+.PHONY : ocam_driver/CMakeFiles/nodelet_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+nodelet_generate_messages_eus: ocam_driver/CMakeFiles/nodelet_generate_messages_eus.dir/rule
+
+.PHONY : nodelet_generate_messages_eus
+
+# fast build rule for target.
+nodelet_generate_messages_eus/fast:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam_driver/CMakeFiles/nodelet_generate_messages_eus.dir/build.make ocam_driver/CMakeFiles/nodelet_generate_messages_eus.dir/build
+.PHONY : nodelet_generate_messages_eus/fast
+
+# Convenience name for target.
+ocam_driver/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 ocam_driver/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+.PHONY : ocam_driver/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_nodejs: ocam_driver/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+geometry_msgs_generate_messages_nodejs/fast:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam_driver/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make ocam_driver/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
+.PHONY : geometry_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+ocam_driver/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 ocam_driver/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+.PHONY : ocam_driver/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_py: ocam_driver/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_py
+
+# fast build rule for target.
+geometry_msgs_generate_messages_py/fast:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam_driver/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make ocam_driver/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+.PHONY : geometry_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+ocam_driver/CMakeFiles/nodelet_generate_messages_cpp.dir/rule:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 ocam_driver/CMakeFiles/nodelet_generate_messages_cpp.dir/rule
+.PHONY : ocam_driver/CMakeFiles/nodelet_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+nodelet_generate_messages_cpp: ocam_driver/CMakeFiles/nodelet_generate_messages_cpp.dir/rule
+
+.PHONY : nodelet_generate_messages_cpp
+
+# fast build rule for target.
+nodelet_generate_messages_cpp/fast:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam_driver/CMakeFiles/nodelet_generate_messages_cpp.dir/build.make ocam_driver/CMakeFiles/nodelet_generate_messages_cpp.dir/build
+.PHONY : nodelet_generate_messages_cpp/fast
+
+# Convenience name for target.
+ocam_driver/CMakeFiles/nodelet_generate_messages_nodejs.dir/rule:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 ocam_driver/CMakeFiles/nodelet_generate_messages_nodejs.dir/rule
+.PHONY : ocam_driver/CMakeFiles/nodelet_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+nodelet_generate_messages_nodejs: ocam_driver/CMakeFiles/nodelet_generate_messages_nodejs.dir/rule
+
+.PHONY : nodelet_generate_messages_nodejs
+
+# fast build rule for target.
+nodelet_generate_messages_nodejs/fast:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam_driver/CMakeFiles/nodelet_generate_messages_nodejs.dir/build.make ocam_driver/CMakeFiles/nodelet_generate_messages_nodejs.dir/build
+.PHONY : nodelet_generate_messages_nodejs/fast
+
+# Convenience name for target.
+ocam_driver/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 ocam_driver/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+.PHONY : ocam_driver/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_cpp: ocam_driver/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_cpp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_cpp/fast:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam_driver/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make ocam_driver/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+.PHONY : sensor_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+ocam_driver/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 ocam_driver/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+.PHONY : ocam_driver/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_eus: ocam_driver/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_eus
+
+# fast build rule for target.
+sensor_msgs_generate_messages_eus/fast:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam_driver/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make ocam_driver/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
+.PHONY : sensor_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+ocam_driver/CMakeFiles/nodelet_generate_messages_lisp.dir/rule:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 ocam_driver/CMakeFiles/nodelet_generate_messages_lisp.dir/rule
+.PHONY : ocam_driver/CMakeFiles/nodelet_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+nodelet_generate_messages_lisp: ocam_driver/CMakeFiles/nodelet_generate_messages_lisp.dir/rule
+
+.PHONY : nodelet_generate_messages_lisp
+
+# fast build rule for target.
+nodelet_generate_messages_lisp/fast:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam_driver/CMakeFiles/nodelet_generate_messages_lisp.dir/build.make ocam_driver/CMakeFiles/nodelet_generate_messages_lisp.dir/build
+.PHONY : nodelet_generate_messages_lisp/fast
+
+# Convenience name for target.
+ocam_driver/CMakeFiles/bond_generate_messages_nodejs.dir/rule:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 ocam_driver/CMakeFiles/bond_generate_messages_nodejs.dir/rule
+.PHONY : ocam_driver/CMakeFiles/bond_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+bond_generate_messages_nodejs: ocam_driver/CMakeFiles/bond_generate_messages_nodejs.dir/rule
+
+.PHONY : bond_generate_messages_nodejs
+
+# fast build rule for target.
+bond_generate_messages_nodejs/fast:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam_driver/CMakeFiles/bond_generate_messages_nodejs.dir/build.make ocam_driver/CMakeFiles/bond_generate_messages_nodejs.dir/build
+.PHONY : bond_generate_messages_nodejs/fast
+
+# Convenience name for target.
+ocam_driver/CMakeFiles/nodelet_generate_messages_py.dir/rule:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 ocam_driver/CMakeFiles/nodelet_generate_messages_py.dir/rule
+.PHONY : ocam_driver/CMakeFiles/nodelet_generate_messages_py.dir/rule
+
+# Convenience name for target.
+nodelet_generate_messages_py: ocam_driver/CMakeFiles/nodelet_generate_messages_py.dir/rule
+
+.PHONY : nodelet_generate_messages_py
+
+# fast build rule for target.
+nodelet_generate_messages_py/fast:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam_driver/CMakeFiles/nodelet_generate_messages_py.dir/build.make ocam_driver/CMakeFiles/nodelet_generate_messages_py.dir/build
+.PHONY : nodelet_generate_messages_py/fast
+
 src/camera_publisher.o: src/camera_publisher.cpp.o
 
 .PHONY : src/camera_publisher.o
@@ -217,12 +517,32 @@ help:
 	@echo "... depend"
 	@echo "... install/strip"
 	@echo "... install/local"
-	@echo "... test"
-	@echo "... list_install_components"
-	@echo "... camera_publisher"
-	@echo "... edit_cache"
-	@echo "... rebuild_cache"
 	@echo "... install"
+	@echo "... camera_publisher"
+	@echo "... bond_generate_messages_lisp"
+	@echo "... bond_generate_messages_eus"
+	@echo "... bond_generate_messages_py"
+	@echo "... sensor_msgs_generate_messages_py"
+	@echo "... test"
+	@echo "... geometry_msgs_generate_messages_lisp"
+	@echo "... bond_generate_messages_cpp"
+	@echo "... sensor_msgs_generate_messages_nodejs"
+	@echo "... rebuild_cache"
+	@echo "... sensor_msgs_generate_messages_lisp"
+	@echo "... geometry_msgs_generate_messages_cpp"
+	@echo "... list_install_components"
+	@echo "... geometry_msgs_generate_messages_eus"
+	@echo "... nodelet_generate_messages_eus"
+	@echo "... edit_cache"
+	@echo "... geometry_msgs_generate_messages_nodejs"
+	@echo "... geometry_msgs_generate_messages_py"
+	@echo "... nodelet_generate_messages_cpp"
+	@echo "... nodelet_generate_messages_nodejs"
+	@echo "... sensor_msgs_generate_messages_cpp"
+	@echo "... sensor_msgs_generate_messages_eus"
+	@echo "... nodelet_generate_messages_lisp"
+	@echo "... bond_generate_messages_nodejs"
+	@echo "... nodelet_generate_messages_py"
 	@echo "... src/camera_publisher.o"
 	@echo "... src/camera_publisher.i"
 	@echo "... src/camera_publisher.s"
