@@ -219,3 +219,7 @@ include_directories(
 add_executable(camera_publisher src/camera_publisher.cpp)
 target_link_libraries(camera_publisher ${catkin_LIBRARIES})
 target_link_libraries(camera_publisher ${OpenCV_LIBRARIES})
+
+add_executable(camera_subscriber src/camera_subscriber.cpp)
+target_link_libraries(camera_subscriber ${catkin_LIBRARIES})
+target_link_libraries(camera_subscriber ${OpenCV_LIBRARIES})

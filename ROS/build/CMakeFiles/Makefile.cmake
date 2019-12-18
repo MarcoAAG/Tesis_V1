@@ -276,6 +276,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "cppserial/CMakeFiles/std_msgs_generate_messages_nodejs.dir/DependInfo.cmake"
   "cppserial/CMakeFiles/roscpp_generate_messages_nodejs.dir/DependInfo.cmake"
   "cppserial/CMakeFiles/std_msgs_generate_messages_py.dir/DependInfo.cmake"
+  "ocam_driver/CMakeFiles/camera_subscriber.dir/DependInfo.cmake"
   "ocam_driver/CMakeFiles/camera_publisher.dir/DependInfo.cmake"
   "ocam_driver/CMakeFiles/bond_generate_messages_lisp.dir/DependInfo.cmake"
   "ocam_driver/CMakeFiles/bond_generate_messages_eus.dir/DependInfo.cmake"

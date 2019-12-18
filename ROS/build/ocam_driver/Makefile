@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+ocam_driver/CMakeFiles/camera_subscriber.dir/rule:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 ocam_driver/CMakeFiles/camera_subscriber.dir/rule
+.PHONY : ocam_driver/CMakeFiles/camera_subscriber.dir/rule
+
+# Convenience name for target.
+camera_subscriber: ocam_driver/CMakeFiles/camera_subscriber.dir/rule
+
+.PHONY : camera_subscriber
+
+# fast build rule for target.
+camera_subscriber/fast:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam_driver/CMakeFiles/camera_subscriber.dir/build.make ocam_driver/CMakeFiles/camera_subscriber.dir/build
+.PHONY : camera_subscriber/fast
+
+# Convenience name for target.
 ocam_driver/CMakeFiles/camera_publisher.dir/rule:
 	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 ocam_driver/CMakeFiles/camera_publisher.dir/rule
 .PHONY : ocam_driver/CMakeFiles/camera_publisher.dir/rule
@@ -509,6 +524,33 @@ src/camera_publisher.cpp.s:
 	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam_driver/CMakeFiles/camera_publisher.dir/build.make ocam_driver/CMakeFiles/camera_publisher.dir/src/camera_publisher.cpp.s
 .PHONY : src/camera_publisher.cpp.s
 
+src/camera_subscriber.o: src/camera_subscriber.cpp.o
+
+.PHONY : src/camera_subscriber.o
+
+# target to build an object file
+src/camera_subscriber.cpp.o:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam_driver/CMakeFiles/camera_subscriber.dir/build.make ocam_driver/CMakeFiles/camera_subscriber.dir/src/camera_subscriber.cpp.o
+.PHONY : src/camera_subscriber.cpp.o
+
+src/camera_subscriber.i: src/camera_subscriber.cpp.i
+
+.PHONY : src/camera_subscriber.i
+
+# target to preprocess a source file
+src/camera_subscriber.cpp.i:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam_driver/CMakeFiles/camera_subscriber.dir/build.make ocam_driver/CMakeFiles/camera_subscriber.dir/src/camera_subscriber.cpp.i
+.PHONY : src/camera_subscriber.cpp.i
+
+src/camera_subscriber.s: src/camera_subscriber.cpp.s
+
+.PHONY : src/camera_subscriber.s
+
+# target to generate assembly for a file
+src/camera_subscriber.cpp.s:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam_driver/CMakeFiles/camera_subscriber.dir/build.make ocam_driver/CMakeFiles/camera_subscriber.dir/src/camera_subscriber.cpp.s
+.PHONY : src/camera_subscriber.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -518,6 +560,7 @@ help:
 	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... install"
+	@echo "... camera_subscriber"
 	@echo "... camera_publisher"
 	@echo "... bond_generate_messages_lisp"
 	@echo "... bond_generate_messages_eus"
@@ -546,6 +589,9 @@ help:
 	@echo "... src/camera_publisher.o"
 	@echo "... src/camera_publisher.i"
 	@echo "... src/camera_publisher.s"
+	@echo "... src/camera_subscriber.o"
+	@echo "... src/camera_subscriber.i"
+	@echo "... src/camera_subscriber.s"
 .PHONY : help
 
 

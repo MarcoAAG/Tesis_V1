@@ -506,6 +506,19 @@ std_msgs_generate_messages_py/fast:
 .PHONY : std_msgs_generate_messages_py/fast
 
 #=============================================================================
+# Target rules for targets named camera_subscriber
+
+# Build rule for target.
+camera_subscriber: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 camera_subscriber
+.PHONY : camera_subscriber
+
+# fast build rule for target.
+camera_subscriber/fast:
+	$(MAKE) -f ocam_driver/CMakeFiles/camera_subscriber.dir/build.make ocam_driver/CMakeFiles/camera_subscriber.dir/build
+.PHONY : camera_subscriber/fast
+
+#=============================================================================
 # Target rules for targets named camera_publisher
 
 # Build rule for target.
@@ -1077,6 +1090,7 @@ help:
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_py"
+	@echo "... camera_subscriber"
 	@echo "... camera_publisher"
 	@echo "... bond_generate_messages_lisp"
 	@echo "... bond_generate_messages_eus"

@@ -27,7 +27,7 @@ int main(int argc, char **argv)
         cap >> frame;
         // Check if grabbed frame is actually full with some content
 
-        imshow("video_capture", frame);
+        //imshow("video_capture", frame);
         if (!frame.empty())
         {
             msg = cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame).toImageMsg();

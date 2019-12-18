@@ -69,6 +69,7 @@
 /home/marco/Tesis/ROS/build/ocam_driver/CMakeFiles/install/strip.dir
 /home/marco/Tesis/ROS/build/ocam_driver/CMakeFiles/install/local.dir
 /home/marco/Tesis/ROS/build/ocam_driver/CMakeFiles/install.dir
+/home/marco/Tesis/ROS/build/ocam_driver/CMakeFiles/camera_subscriber.dir
 /home/marco/Tesis/ROS/build/ocam_driver/CMakeFiles/camera_publisher.dir
 /home/marco/Tesis/ROS/build/ocam_driver/CMakeFiles/bond_generate_messages_lisp.dir
 /home/marco/Tesis/ROS/build/ocam_driver/CMakeFiles/bond_generate_messages_eus.dir

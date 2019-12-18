@@ -264,7 +264,7 @@ gtest/googlemock/preinstall: gtest/googlemock/gtest/preinstall
 gtest/googlemock/CMakeFiles/gmock_main.dir/all:
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=6,7,8,9 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=8,9,10,11 "Built target gmock_main"
 .PHONY : gtest/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -296,7 +296,7 @@ clean: gtest/googlemock/CMakeFiles/gmock_main.dir/clean
 gtest/googlemock/CMakeFiles/gmock.dir/all:
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=3,4,5 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=5,6,7 "Built target gmock"
 .PHONY : gtest/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -347,7 +347,7 @@ gtest/googlemock/gtest/preinstall:
 gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/all: gtest/googlemock/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=12,13 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=14,15 "Built target gtest_main"
 .PHONY : gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -379,7 +379,7 @@ clean: gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/clean
 gtest/googlemock/gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=10,11 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=12,13 "Built target gtest"
 .PHONY : gtest/googlemock/gtest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -750,7 +750,7 @@ clean: cppserial/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
 cppserial/CMakeFiles/serial.dir/all:
 	$(MAKE) -f cppserial/CMakeFiles/serial.dir/build.make cppserial/CMakeFiles/serial.dir/depend
 	$(MAKE) -f cppserial/CMakeFiles/serial.dir/build.make cppserial/CMakeFiles/serial.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=14,15 "Built target serial"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=16,17 "Built target serial"
 .PHONY : cppserial/CMakeFiles/serial.dir/all
 
 # Include target in all.
@@ -1008,11 +1008,13 @@ clean: cppserial/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 # Directory level rules for directory ocam_driver
 
 # Convenience name for "all" pass in the directory.
+ocam_driver/all: ocam_driver/CMakeFiles/camera_subscriber.dir/all
 ocam_driver/all: ocam_driver/CMakeFiles/camera_publisher.dir/all
 
 .PHONY : ocam_driver/all
 
 # Convenience name for "clean" pass in the directory.
+ocam_driver/clean: ocam_driver/CMakeFiles/camera_subscriber.dir/clean
 ocam_driver/clean: ocam_driver/CMakeFiles/camera_publisher.dir/clean
 ocam_driver/clean: ocam_driver/CMakeFiles/bond_generate_messages_lisp.dir/clean
 ocam_driver/clean: ocam_driver/CMakeFiles/bond_generate_messages_eus.dir/clean
@@ -1041,6 +1043,43 @@ ocam_driver/clean: ocam_driver/CMakeFiles/nodelet_generate_messages_py.dir/clean
 ocam_driver/preinstall:
 
 .PHONY : ocam_driver/preinstall
+
+#=============================================================================
+# Target rules for target ocam_driver/CMakeFiles/camera_subscriber.dir
+
+# All Build rule for target.
+ocam_driver/CMakeFiles/camera_subscriber.dir/all:
+	$(MAKE) -f ocam_driver/CMakeFiles/camera_subscriber.dir/build.make ocam_driver/CMakeFiles/camera_subscriber.dir/depend
+	$(MAKE) -f ocam_driver/CMakeFiles/camera_subscriber.dir/build.make ocam_driver/CMakeFiles/camera_subscriber.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=3,4 "Built target camera_subscriber"
+.PHONY : ocam_driver/CMakeFiles/camera_subscriber.dir/all
+
+# Include target in all.
+all: ocam_driver/CMakeFiles/camera_subscriber.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+ocam_driver/CMakeFiles/camera_subscriber.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 ocam_driver/CMakeFiles/camera_subscriber.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
+.PHONY : ocam_driver/CMakeFiles/camera_subscriber.dir/rule
+
+# Convenience name for target.
+camera_subscriber: ocam_driver/CMakeFiles/camera_subscriber.dir/rule
+
+.PHONY : camera_subscriber
+
+# clean rule for target.
+ocam_driver/CMakeFiles/camera_subscriber.dir/clean:
+	$(MAKE) -f ocam_driver/CMakeFiles/camera_subscriber.dir/build.make ocam_driver/CMakeFiles/camera_subscriber.dir/clean
+.PHONY : ocam_driver/CMakeFiles/camera_subscriber.dir/clean
+
+# clean rule for target.
+clean: ocam_driver/CMakeFiles/camera_subscriber.dir/clean
+
+.PHONY : clean
 
 #=============================================================================
 # Target rules for target ocam_driver/CMakeFiles/camera_publisher.dir
@@ -2023,7 +2062,7 @@ clean: video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_eus.
 video_stream_opencv/CMakeFiles/video_stream_opencv_gencfg.dir/all:
 	$(MAKE) -f video_stream_opencv/CMakeFiles/video_stream_opencv_gencfg.dir/build.make video_stream_opencv/CMakeFiles/video_stream_opencv_gencfg.dir/depend
 	$(MAKE) -f video_stream_opencv/CMakeFiles/video_stream_opencv_gencfg.dir/build.make video_stream_opencv/CMakeFiles/video_stream_opencv_gencfg.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=20 "Built target video_stream_opencv_gencfg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=22 "Built target video_stream_opencv_gencfg"
 .PHONY : video_stream_opencv/CMakeFiles/video_stream_opencv_gencfg.dir/all
 
 # Include target in all.
@@ -2060,7 +2099,7 @@ clean: video_stream_opencv/CMakeFiles/video_stream_opencv_gencfg.dir/clean
 video_stream_opencv/CMakeFiles/video_stream_opencv.dir/all: video_stream_opencv/CMakeFiles/video_stream_opencv_gencfg.dir/all
 	$(MAKE) -f video_stream_opencv/CMakeFiles/video_stream_opencv.dir/build.make video_stream_opencv/CMakeFiles/video_stream_opencv.dir/depend
 	$(MAKE) -f video_stream_opencv/CMakeFiles/video_stream_opencv.dir/build.make video_stream_opencv/CMakeFiles/video_stream_opencv.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=18,19 "Built target video_stream_opencv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=20,21 "Built target video_stream_opencv"
 .PHONY : video_stream_opencv/CMakeFiles/video_stream_opencv.dir/all
 
 # Include target in all.
@@ -2294,7 +2333,7 @@ clean: video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv_rostest.dir
 video_stream_opencv/CMakeFiles/video_stream_node.dir/all:
 	$(MAKE) -f video_stream_opencv/CMakeFiles/video_stream_node.dir/build.make video_stream_opencv/CMakeFiles/video_stream_node.dir/depend
 	$(MAKE) -f video_stream_opencv/CMakeFiles/video_stream_node.dir/build.make video_stream_opencv/CMakeFiles/video_stream_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=16,17 "Built target video_stream_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=18,19 "Built target video_stream_node"
 .PHONY : video_stream_opencv/CMakeFiles/video_stream_node.dir/all
 
 # Include target in all.
