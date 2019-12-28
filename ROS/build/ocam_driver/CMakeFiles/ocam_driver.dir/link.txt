@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC   -shared -Wl,-soname,libocam_driver.so -o /home/marco/Tesis/ROS/devel/lib/libocam_driver.so CMakeFiles/ocam_driver.dir/src/tracking_color/tracking_color.cpp.o 

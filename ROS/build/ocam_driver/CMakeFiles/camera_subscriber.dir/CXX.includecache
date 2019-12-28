@@ -6,6 +6,8 @@
 
 #IncludeRegexTransform: 
 
+/home/marco/Tesis/ROS/src/ocam_driver/include/tracking_color/tracking_color.h
+
 /home/marco/Tesis/ROS/src/ocam_driver/src/camera_subscriber.cpp
 ros/ros.h
 -
@@ -15,6 +17,8 @@ opencv2/opencv.hpp
 /home/marco/Tesis/ROS/src/ocam_driver/src/opencv2/opencv.hpp
 cv_bridge/cv_bridge.h
 -
+tracking_color/tracking_color.h
+/home/marco/Tesis/ROS/src/ocam_driver/src/tracking_color/tracking_color.h
 
 /opt/ros/melodic/include/cv_bridge/cv_bridge.h
 sensor_msgs/Image.h

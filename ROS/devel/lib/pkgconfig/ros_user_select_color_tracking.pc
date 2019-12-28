@@ -1,0 +1,8 @@
+prefix=/home/marco/Tesis/ROS/devel
+
+Name: ros_user_select_color_tracking
+Description: Description of ros_user_select_color_tracking
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/marco/Tesis/ROS/devel/lib 
+Requires: 
