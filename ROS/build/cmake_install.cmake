@@ -132,9 +132,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/marco/Tesis/ROS/build/gtest/cmake_install.cmake")
   include("/home/marco/Tesis/ROS/build/rosserial_python/cmake_install.cmake")
-  include("/home/marco/Tesis/ROS/build/cppserial/cmake_install.cmake")
   include("/home/marco/Tesis/ROS/build/ocam/cmake_install.cmake")
-  include("/home/marco/Tesis/ROS/build/ros_user_select_color_tracking/cmake_install.cmake")
   include("/home/marco/Tesis/ROS/build/video_stream_opencv/cmake_install.cmake")
 
 endif()
