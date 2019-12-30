@@ -1,18 +1,84 @@
 \documentclass[12pt,a4paper,openany]{book}
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage[left=3.0cm,right=3.0cm,top=3.0cm,bottom=3.0cm]{geometry}
 \usepackage{mathptmx}
+\usepackage{blindtext} 
 
+\usepackage[Glenn]{fncychap} %Estilo para los capitulos, otros pueden ser: Sonny, Lenny, Glenn, Conny, Rejne, Bjarne, Bjornstrup
+
+\usepackage{amssymb, amsmath, amsbsy, amsfonts}    % ECUACIONES Y SÍMBOLOS MATEMÁTICOS
+\usepackage{listings} % PERMITE AGREGAR CÓDIGO DE LENGUAJES  DE PROGRAMACIÓN (DOCUMENTACIÓN EN GOOGLE)
+\usepackage{emptypage}                   % QUITA LOS ENCABEZADOS Y PIES DE PÁGINA EN LAS HOJAS VACÍAS PRODUCIDAS POR LA IMPRESIÓN A DOS CARAS
+\usepackage{wrapfig}                    % to include figure with text wrapping around it
+\usepackage[bf,SL,BF]{subfigure}         % Permite crear figuras múltiples
+\usepackage{makeidx}                     % Contiene los macros para indexar en un glosario
+\usepackage{mathdots}                    % para el comando \iddots
+\usepackage{mathrsfs}                    % para formato de letra en ecuaciones
+\raggedbottom                            %Evita que LaTeX distribuya los espacios en blanco sobre la página, en lugar de eso los envía al fondo
+\usepackage{eucal}
+\usepackage{float}
+\usepackage{color}
+\usepackage[perpage]{footmisc}
+\usepackage{ifthen}
+\usepackage{multicol} % for pages with multiple text columns, e.g. References
+\setlength{\columnsep}{20pt} % space between columns; default 10pt quite narrow
+\usepackage[nottoc]{tocbibind} % correct page numbers for bib in TOC, nottoc suppresses an entry for TOC itself
+%\usepackage{nextpage}
+\usepackage{titlesec}
+%\usepackage[siunitx]{circuitikz} %para circuitos
+%\usepackage[makeroom]{cancel}%Para cancelar términos en modo matemático
+%\usepackage{cleveref}           %COMO UNA FORMA DE REFERENCIAR TABLAS, ECUACIONES, ETC. -->http://mirror.utexas.edu/ctan/macros/latex/contrib/cleveref/cleveref.pdf
+\pagenumbering{roman}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                   DATOS                                      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \author{Marco Antonio Aguilar Gallardo}
 \title{Tesis UNAQ}
 
-\pagenumbering{roman}
+
 
 \begin{document}
+\frontmatter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                   PORTADA                         %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \include{Portada/Portada}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                  PRÓLOGO                          %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{Agradecimientos/Dedicatoria}
+\include{Agradecimientos/Agradecimientos}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                   ÍNDICES                         %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Esta sección genera el índice
+\setcounter{secnumdepth}{3} % organisational level that receives a numbers
+\setcounter{tocdepth}{3}    % print table of contents for level 3
+% \tableofcontents            % Genera el índice 
+%: ----------------------- list of figures/tables ------------------------
+\listoffigures              % Genera el ínidce de figuras, comentar línea si no se usa
+\listoftables               % Genera índice de tablas, comentar línea si no se usa
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                   CONTENIDO                       %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\mainmatter
+\include{Capitulo1/Introduccion}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                   REFERENCIAS                     %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\backmatter
+
+% existen varios estilos de bilbiografía, pueden cambiarlos a placer
+\bibliographystyle{apalike} % otros estilos pueden ser abbrv, acm, alpha, apalike, ieeetr, plain, siam, unsrt
+
 \end{document}
