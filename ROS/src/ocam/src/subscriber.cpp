@@ -27,7 +27,7 @@
 using namespace cv;
 using namespace std;
 
-#define HSV_valores 1
+#define HSV_valores 0
 
 //Capture a temporary image from the camera
 cv::Mat imgOriginal;
@@ -60,27 +60,20 @@ int high_V = 255;
 
 /*----------------------------------------      Morphological operation     ----------------------------------------*/
 /// Global variables
-cv::Mat src, dst;
+cv::Mat dst_opening;
 
 int morph_elem = 0;
 int morph_size = 0;
-int morph_operator = 0;
+int morph_operator_opening = 0;
+int morph_operator_closing = 1;
 int const max_operator = 4;
 int const max_elem = 2;
 int const max_kernel_size = 21;
 
-const String window_name = "Morphology Transformations Demo";
+const String window_opening = "Morphology Transformations Opening";
 
 /** Function Headers */
-void Morphology_Operations(int, void *);
-// int erosion_elem = 0;
-// int erosion_size = 0;
-// int dilation_elem = 0;
-// int dilation_size = 0;
-// int const max_elem = 2;
-// int const max_kernel_size = 21;
-// void Erosion(int, void *);
-// void Dilation(int, void *);
+void Morphology_Operations_Opening(int, void *);
 
 #if HSV_valores
 static void on_low_H_thresh_trackbar(int, void *)
@@ -115,48 +108,6 @@ static void on_high_V_thresh_trackbar(int, void *)
 }
 #endif
 
-// void Dilation(int, void *)
-// {
-//     int dilation_type = 0;
-//     if (dilation_elem == 0)
-//     {
-//         dilation_type = MORPH_RECT;
-//     }
-//     else if (dilation_elem == 1)
-//     {
-//         dilation_type = MORPH_CROSS;
-//     }
-//     else if (dilation_elem == 2)
-//     {
-//         dilation_type = MORPH_ELLIPSE;
-//     }
-//     Mat element = getStructuringElement(dilation_type,
-//                                         Size(2 * dilation_size + 1, 2 * dilation_size + 1),
-//                                         Point(dilation_size, dilation_size));
-//     dilate(imgthreshold, imgDilation, element);
-//     imshow("Dilation Demo", imgDilation);
-// }
-// void Erosion(int, void *)
-// {
-//     int erosion_type = 0;
-//     if (erosion_elem == 0)
-//     {
-//         erosion_type = MORPH_RECT;
-//     }
-//     else if (erosion_elem == 1)
-//     {
-//         erosion_type = MORPH_CROSS;
-//     }
-//     else if (erosion_elem == 2)
-//     {
-//         erosion_type = MORPH_ELLIPSE;
-//     }
-//     Mat element = getStructuringElement(erosion_type,
-//                                         Size(2 * erosion_size + 1, 2 * erosion_size + 1),
-//                                         Point(erosion_size, erosion_size));
-//     erode(imgDilation, imgErosion, element);
-//     imshow("Erosion Demo", imgErosion);
-// }
 
 void imageCallback(const sensor_msgs::ImageConstPtr &msg_)
 {
@@ -186,42 +137,21 @@ void imageCallback(const sensor_msgs::ImageConstPtr &msg_)
         imshow(window_capture_name, imgOriginal);
         imshow(window_detection_name, imgthreshold);
 
-        // namedWindow("Erosion Demo", WINDOW_AUTOSIZE);
-        // namedWindow("Dilation Demo", WINDOW_AUTOSIZE);
-        // moveWindow("Dilation Demo", imgOriginal.cols, 0);
-        // createTrackbar("Element:\n 0: Rect \n 1: Cross \n 2: Ellipse", "Erosion Demo",
-        //                &erosion_elem, max_elem,
-        //                Erosion);
-        // createTrackbar("Kernel size:\n 2n +1", "Erosion Demo",
-        //                &erosion_size, max_kernel_size,
-        //                Erosion);
-        // createTrackbar("Element:\n 0: Rect \n 1: Cross \n 2: Ellipse", "Dilation Demo",
-        //                &dilation_elem, max_elem,
-        //                Dilation);
-        // createTrackbar("Kernel size:\n 2n +1", "Dilation Demo",
-        //                &dilation_size, max_kernel_size,
-        //                Dilation);
-        // Dilation(0, 0);
-        // Erosion(0, 0);
-
         /// Create window
-        namedWindow(window_name, CV_WINDOW_AUTOSIZE);
-
-        /// Create Trackbar to select Morphology operation
-        createTrackbar("Operator:\n 0: Opening - 1: Closing \n 2: Gradient - 3: Top Hat \n 4: Black Hat", window_name, &morph_operator, max_operator, Morphology_Operations);
+        namedWindow(window_opening, CV_WINDOW_AUTOSIZE);
 
         /// Create Trackbar to select kernel type
-        createTrackbar("Element:\n 0: Rect - 1: Cross - 2: Ellipse", window_name,
+        createTrackbar("Element:\n 0: Rect - 1: Cross - 2: Ellipse", window_opening,
                        &morph_elem, max_elem,
-                       Morphology_Operations);
+                       Morphology_Operations_Opening);
 
         /// Create Trackbar to choose kernel size
-        createTrackbar("Kernel size:\n 2n +1", window_name,
+        createTrackbar("Kernel size:\n 2n +1", window_opening,
                        &morph_size, max_kernel_size,
-                       Morphology_Operations);
+                       Morphology_Operations_Opening);
 
         /// Default start
-        Morphology_Operations(0, 0);
+        Morphology_Operations_Opening(0, 0);
 
         cv::waitKey(10);
     }
@@ -241,14 +171,14 @@ int main(int argc, char **argv)
     return 0;
 }
 
-void Morphology_Operations(int, void *)
+void Morphology_Operations_Opening(int, void *)
 {
     // Since MORPH_X : 2,3,4,5 and 6
-    int operation = morph_operator + 2;
+    int operation = morph_operator_opening + 2;
 
     Mat element = getStructuringElement(morph_elem, Size(2 * morph_size + 1, 2 * morph_size + 1), Point(morph_size, morph_size));
 
     /// Apply the specified morphology operation
-    morphologyEx(imgthreshold, dst, operation, element);
-    imshow(window_name, dst);
+    morphologyEx(imgthreshold, dst_opening, operation, element);
+    imshow(window_opening, dst_opening);
 }
