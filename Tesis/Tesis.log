@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.10.28)  30 DEC 2019 14:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.10.28)  30 DEC 2019 14:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -675,17 +675,6 @@ Package tocbibind Info: The document has chapter divisions on input line 50.
 
 Package tocbibind Note: Using chapter style headings, unless overridden.
 
-) (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
-Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
-\ttl@box=\box60
-\beforetitleunit=\skip62
-\aftertitleunit=\skip63
-\ttl@plus=\dimen142
-\ttl@minus=\dimen143
-\ttl@toksa=\toks30
-\titlewidth=\dimen144
-\titlewidthlast=\dimen145
-\titlewidthfirst=\dimen146
 ) (/home/marco/Tesis/Tesis/Tesis.aux (/home/marco/Tesis/Tesis/Portada/Portada.aux)
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
@@ -713,16 +702,16 @@ LaTeX Info: Redefining \% on input line 43.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count149
-\scratchdimen=\dimen147
-\scratchbox=\box61
+\scratchdimen=\dimen142
+\scratchbox=\box60
 \nofMPsegments=\count150
 \nofMParguments=\count151
-\everyMPshowfont=\toks31
+\everyMPshowfont=\toks30
 \MPscratchCnt=\count152
-\MPscratchDim=\dimen148
+\MPscratchDim=\dimen143
 \MPnumerator=\count153
 \makeMPintoPDFobject=\count154
-\everyMPtoPDFconversion=\toks32
+\everyMPtoPDFconversion=\toks31
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
  (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
@@ -870,23 +859,26 @@ Cap\'{\i }tulo 1.
 ) [1
 
 
-] (/home/marco/Tesis/Tesis/Tesis.aux (/home/marco/Tesis/Tesis/Portada/Portada.aux)
+]
+LaTeX Info: Redefining \. on input line 72.
+LaTeX Info: Redefining \% on input line 72.
+ [2] (/home/marco/Tesis/Tesis/Tesis.aux (/home/marco/Tesis/Tesis/Portada/Portada.aux)
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
  (/home/marco/Tesis/Tesis/Agradecimientos/Dedicatoria.aux) (/home/marco/Tesis/Tesis/Agradecimientos/Agradecimientos.aux) (/home/marco/Tesis/Tesis/Capitulo1/Introduccion.aux)) ) 
 Here is how much of TeX's memory you used:
- 6725 strings out of 492982
- 91636 string characters out of 6134895
- 181068 words of memory out of 5000000
- 10104 multiletter control sequences out of 15000+600000
- 15347 words of font info for 32 fonts, out of 8000000 for 9000
+ 6481 strings out of 492982
+ 88443 string characters out of 6134895
+ 178862 words of memory out of 5000000
+ 9862 multiletter control sequences out of 15000+600000
+ 16989 words of font info for 34 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,8n,32p,330b,359s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on /home/marco/Tesis/Tesis/Tesis.pdf (7 pages, 152938 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on /home/marco/Tesis/Tesis/Tesis.pdf (8 pages, 170409 bytes).
 PDF statistics:
- 45 PDF objects out of 1000 (max. 8388607)
- 30 compressed objects within 1 object stream
+ 52 PDF objects out of 1000 (max. 8388607)
+ 35 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
