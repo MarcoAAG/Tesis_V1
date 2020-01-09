@@ -50,7 +50,7 @@ const int max_value = 255;
 int low_H = 0, low_S = 0, low_V = 0;
 int high_H = max_value_H, high_S = max_value, high_V = max_value;
 #else
-int low_H = 110;
+int low_H = 75;
 int low_S = 55;
 int low_V = 55;
 int high_H = 130;
@@ -61,9 +61,13 @@ int high_V = 255;
 /*----------------------------------------      Morphological operation     ----------------------------------------*/
 /// Global variables
 cv::Mat dst_opening;
+cv::Mat dst_closing;
 
-int morph_elem = 0;
-int morph_size = 0;
+int morph_elem_opening = 0;
+int morph_size_opening = 0;
+int morph_elem_closing = 0;
+int morph_size_closing = 0;
+
 int morph_operator_opening = 0;
 int morph_operator_closing = 1;
 int const max_operator = 4;
@@ -71,9 +75,11 @@ int const max_elem = 2;
 int const max_kernel_size = 21;
 
 const String window_opening = "Morphology Transformations Opening";
+const String window_closing = "Morphology Transformations Closing";
 
 /** Function Headers */
 void Morphology_Operations_Opening(int, void *);
+void Morphology_Operations_Closing(int, void *);
 
 #if HSV_valores
 static void on_low_H_thresh_trackbar(int, void *)
@@ -108,10 +114,20 @@ static void on_high_V_thresh_trackbar(int, void *)
 }
 #endif
 
-
 void imageCallback(const sensor_msgs::ImageConstPtr &msg_)
 {
     cv_bridge::CvImagePtr cvimg = cv_bridge::toCvCopy(msg_, "bgr8");
+    int iLastX = 0;
+    int iLastY = 0;
+    int posX;
+    int posY;
+
+    //Capture a temporary image from the camera
+    Mat imgTmp;
+    imgTmp = cvimg->image;
+
+    //Create a black image with the size as the camera output
+    Mat imgLines = Mat::zeros(imgTmp.size(), CV_8UC3);
 
     try
     {
@@ -142,16 +158,63 @@ void imageCallback(const sensor_msgs::ImageConstPtr &msg_)
 
         /// Create Trackbar to select kernel type
         createTrackbar("Element:\n 0: Rect - 1: Cross - 2: Ellipse", window_opening,
-                       &morph_elem, max_elem,
+                       &morph_elem_opening, max_elem,
                        Morphology_Operations_Opening);
 
         /// Create Trackbar to choose kernel size
         createTrackbar("Kernel size:\n 2n +1", window_opening,
-                       &morph_size, max_kernel_size,
+                       &morph_size_opening, max_kernel_size,
                        Morphology_Operations_Opening);
+
+        /// Create window
+        namedWindow(window_closing, CV_WINDOW_AUTOSIZE);
+
+        /// Create Trackbar to select kernel type
+        createTrackbar("Element:\n 0: Rect - 1: Cross - 2: Ellipse", window_closing,
+                       &morph_elem_closing, max_elem,
+                       Morphology_Operations_Closing);
+
+        /// Create Trackbar to choose kernel size
+        createTrackbar("Kernel size:\n 2n +1", window_closing,
+                       &morph_size_closing, max_kernel_size,
+                       Morphology_Operations_Closing);
 
         /// Default start
         Morphology_Operations_Opening(0, 0);
+
+        /// Default start
+        Morphology_Operations_Closing(0, 0);
+
+        Moments oMoments = moments(dst_closing);
+        double dM01 = oMoments.m01;
+        double dM10 = oMoments.m10;
+        double dArea = oMoments.m00;
+
+        // if the area <= 10000, I consider that the there are no object in the image and it's because of the noise, the area is not zero
+        // if (dArea > 100)
+        // {
+            //calculate the position of the ball
+            posX = dM10 / dArea;
+            posY = dM01 / dArea;
+
+            // if (iLastX >= 0 && iLastY >= 0 && posX >= 0 && posY >= 0)
+            // {
+                //Draw a red line from the previous point to the current point
+                // line(imgLines, Point(posX, posY), Point(iLastX, iLastY), Scalar(0, 0, 255), 2);
+                //640 x 480
+                line(imgLines,Point2d(320,240),Point2d(posX,posY),Scalar(0,0,255),2,LINE_8);
+                circle(imgLines,Point2d(320,240),3,Scalar(0,0,255),2,LINE_8,0);
+                circle(imgLines,Point2d(posX,posY),3,Scalar(0,255,0),2,LINE_8,0);
+                cout << "X = " << posX << "\t Y = " << posY <<endl;
+                            
+            // }
+
+            iLastX = posX;
+            iLastY = posY;
+        // }
+        imshow("Thresholded Image", dst_closing); //show the thresholded image
+        imgOriginal = imgOriginal + imgLines;
+        imshow("Original", imgOriginal); //show the original image
 
         cv::waitKey(10);
     }
@@ -176,9 +239,21 @@ void Morphology_Operations_Opening(int, void *)
     // Since MORPH_X : 2,3,4,5 and 6
     int operation = morph_operator_opening + 2;
 
-    Mat element = getStructuringElement(morph_elem, Size(2 * morph_size + 1, 2 * morph_size + 1), Point(morph_size, morph_size));
+    Mat element = getStructuringElement(morph_elem_opening, Size(2 * morph_size_opening + 1, 2 * morph_size_opening + 1), Point(morph_size_opening, morph_size_opening));
 
     /// Apply the specified morphology operation
     morphologyEx(imgthreshold, dst_opening, operation, element);
     imshow(window_opening, dst_opening);
+}
+
+void Morphology_Operations_Closing(int, void *)
+{
+    // Since MORPH_X : 2,3,4,5 and 6
+    int operation = morph_operator_closing + 2;
+
+    Mat element = getStructuringElement(morph_elem_closing, Size(2 * morph_size_closing + 1, 2 * morph_size_closing + 1), Point(morph_size_closing, morph_size_closing));
+
+    /// Apply the specified morphology operation
+    morphologyEx(dst_opening, dst_closing, operation, element);
+    imshow(window_closing, dst_closing);
 }
