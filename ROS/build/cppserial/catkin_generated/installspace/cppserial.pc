@@ -1,8 +1,0 @@
-prefix=/home/marco/Tesis/ROS/install
-
-Name: cppserial
-Description: Description of cppserial
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/marco/Tesis/ROS/install/lib 
-Requires: 

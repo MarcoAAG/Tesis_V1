@@ -131,17 +131,8 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/marco/Tesis/ROS/build/gtest/cmake_install.cmake")
-  include("/home/marco/Tesis/ROS/build/image_pipeline/image_pipeline/cmake_install.cmake")
   include("/home/marco/Tesis/ROS/build/rosserial_python/cmake_install.cmake")
-  include("/home/marco/Tesis/ROS/build/image_pipeline/camera_calibration/cmake_install.cmake")
-  include("/home/marco/Tesis/ROS/build/image_pipeline/image_proc/cmake_install.cmake")
-  include("/home/marco/Tesis/ROS/build/image_pipeline/image_publisher/cmake_install.cmake")
   include("/home/marco/Tesis/ROS/build/ocam/cmake_install.cmake")
-  include("/home/marco/Tesis/ROS/build/image_pipeline/image_view/cmake_install.cmake")
-  include("/home/marco/Tesis/ROS/build/image_pipeline/stereo_image_proc/cmake_install.cmake")
-  include("/home/marco/Tesis/ROS/build/image_pipeline/depth_image_proc/cmake_install.cmake")
-  include("/home/marco/Tesis/ROS/build/image_pipeline/image_rotate/cmake_install.cmake")
-  include("/home/marco/Tesis/ROS/build/video_stream_opencv/cmake_install.cmake")
 
 endif()
 

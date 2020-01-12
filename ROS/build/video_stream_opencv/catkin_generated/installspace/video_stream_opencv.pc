@@ -1,8 +1,0 @@
-prefix=/home/marco/Tesis/ROS/install
-
-Name: video_stream_opencv
-Description: Description of video_stream_opencv
-Version: 1.1.5
-Cflags: -I/home/marco/Tesis/ROS/install/include
-Libs: -L/home/marco/Tesis/ROS/install/lib 
-Requires: 

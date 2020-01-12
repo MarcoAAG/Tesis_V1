@@ -1,8 +1,0 @@
-prefix=/home/marco/Tesis/ROS/devel
-
-Name: video_driver
-Description: Description of video_driver
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/marco/Tesis/ROS/devel/lib 
-Requires: 
