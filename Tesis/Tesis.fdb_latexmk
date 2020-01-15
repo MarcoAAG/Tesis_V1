@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1578973163 "/home/marco/Tesis/Tesis/Tesis.tex" "/home/marco/Tesis/Tesis/Tesis.pdf" "Tesis" 1578973164
+["pdflatex"] 1578973163 "/home/marco/Tesis/Tesis/Tesis.tex" "/home/marco/Tesis/Tesis/Tesis.pdf" "Tesis" 1578977826
   "/etc/texmf/web2c/texmf.cnf" 1572313085 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/marco/Tesis/Tesis/Tesis.aux" 1578973164 781 ae62f396fcd08c0d0e22020ab3b7019b ""
   "/home/marco/Tesis/Tesis/Tesis.tex" 1578972475 4105 5f11032542e2e7ec0b43724b14ab4590 ""
@@ -95,7 +95,7 @@
   "Agradecimientos/Dedicatoria.aux" 1578973164 1335 a9af8de638d9b6bfd81d38c9854558d5 ""
   "Agradecimientos/Dedicatoria.tex" 1577735749 21 7fe2367d774dfd0d84c18af47598bb6b ""
   "Capitulo1/Introduccion.aux" 1578973164 1983 32f139da81dda43bedfce7fc3ae28ecb ""
-  "Capitulo1/Introduccion.tex" 1578973163 3411 8ac2212e6cd0278d30c82b57af26c131 ""
+  "Capitulo1/Introduccion.tex" 1578977811 3411 8ac2212e6cd0278d30c82b57af26c131 ""
   "Capitulo2/Marco_Teorico.aux" 1578973164 1607 2117d90950cf0604c9f46c353d2cd451 ""
   "Capitulo2/Marco_Teorico.tex" 1578972492 4027 45ec7ea9e8cde95e751e0015d46d1141 ""
   "Portada/Logo.eps" 1576557609 129323 db45fa80a978cdf7d2e59f00a24ea25c ""
@@ -106,15 +106,15 @@
   "Tesis.lot" 1578973164 103 80a40cc35970cde869be90484cda77cd ""
   "Tesis.tex" 1578972475 4105 5f11032542e2e7ec0b43724b14ab4590 ""
   (generated)
+  "Capitulo1/Introduccion.aux"
   "Capitulo2/Marco_Teorico.aux"
+  "Agradecimientos/Dedicatoria.aux"
+  "Tesis.lof"
   "Tesis.aux"
   "Tesis.log"
-  "Tesis.pdf"
-  "Agradecimientos/Dedicatoria.aux"
   "Portada/Portada.aux"
-  "Agradecimientos/Agradecimientos.aux"
-  "Capitulo1/Introduccion.aux"
-  "/home/marco/Tesis/Tesis/Tesis.pdf"
-  "Tesis.lot"
-  "Tesis.lof"
   "/home/marco/Tesis/Tesis/Tesis.log"
+  "Tesis.lot"
+  "/home/marco/Tesis/Tesis/Tesis.pdf"
+  "Tesis.pdf"
+  "Agradecimientos/Agradecimientos.aux"
