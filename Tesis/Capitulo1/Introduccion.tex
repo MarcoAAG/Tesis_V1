@@ -52,6 +52,55 @@ Desde entonces y hasta la fecha múltiples científicos han desarrollado investi
 de dicho artefacto, algunos teniendo más éxito que otros; los cuales serán brevemente expuestos
 con la finalidad de obtener el estado actual en el que se encuentra la gimbal y su avance
 tecnológico.
+\begin{itemize}
+    \item \textbf{Navegación inercial}\\
+    En la navegación inercial, como se aplica a los barcos y submarinos, se necesita 
+    un mínimo de tres gimbals para permitir que un sistema de navegación inercial 
+    (masa estable) permanezca fijo en el espacio inercial, compensando los cambios 
+    en el guiñada, inclinación y balanceo del barco.
+    \begin{center}
+        \includegraphics[width=0.6\textwidth]{Capitulo1/Fig1.eps}       
+        \captionof{figure}{Uso de una gimbal para una IMU ~\cite{InertialNavigation} }\label{Fig1}
+    \end{center}
+    En esta aplicación, la Unidad de medición inercial (IMU) está equipada con tres 
+    giroscopios montados ortogonalmente para detectar la rotación alrededor de todos 
+    los ejes en el espacio tridimensional. Las salidas giroscópicas accionan motores 
+    que controlan la orientación de los tres gimbal según sea necesario para mantener 
+    la orientación de la IMU.
+
+    \item \textbf{Motores de cohete}\\
+    En la propulsión de naves espaciales, los motores de cohetes generalmente se 
+    montan en un par de gimbals para permitir que un solo motor logre el empuje 
+    sobre los ejes de inclinación y guiñada; o, a veces, solo se proporciona un eje 
+    por motor. Para controlar el giro, se utilizan motores gemelos con señales de 
+    control de inclinación diferencial o guiñada para proporcionar torque sobre el 
+    eje de balanceo del vehículo.\\
+    Uno de los motores más famosos es el J-2X.Es un motor de cohete avanzado altamente 
+    eficiente y versátil con las características ideales de empuje y rendimiento para 
+    impulsar la etapa superior del espacio de la NASA.~\cite{NASA}
+    \begin{center}
+        \includegraphics[width=0.6\textwidth]{Capitulo1/Fig2.eps}       
+        \captionof{figure}{Uso de una gimbal en un motor de propulsión ~\cite{NASA2JX} }\label{Fig2}
+    \end{center}
+
+    \item \textbf{Entrenamiento para astronautas}\\
+    Sistema de simulación de maniobras de tipo caída que se pueden encontrar en el vuelo espacial
+    fue creado por la NASA y era conocido como "the gimbal rig,".
+    Tres jaulas tubulares de aluminio podrían girar por separado o en combinación para 
+    dar movimientos de balanceo, cabeceo y guiñada a velocidades de hasta 30 
+    revoluciones por minuto, mayores que las esperadas en vuelos espaciales reales. 
+    Los chorros de gas nitrógeno, unidos a las tres jaulas, controlaron el movimiento.
+    Desde el 15 de febrero hasta el 4 de marzo de 1960, la plataforma de cardán 
+    proporcionó una capacitación valiosa para los siete astronautas del Proyecto 
+    Mercurio. Cada uno experimentó unas cinco horas de tiempo de vuelo simulado.
+    ~\cite{MERCURY}
+    \begin{center}
+        \includegraphics[width=0.6\textwidth]{Capitulo1/Fig3.eps}       
+        \captionof{figure}{Jerrie Cobb, uno de los Mercury 13, da un giro en la plataforma gimbal.
+        Créditos: NASA }\label{Fig3}
+    \end{center}
+
+\end{itemize}
 
 \section{Contribuciones}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

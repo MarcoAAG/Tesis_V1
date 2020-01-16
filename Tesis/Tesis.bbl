@@ -5,4 +5,27 @@ Gimbal.
 \newblock https://playlists.net/artists/gimbal.
 \newblock Accessed: 2020-01-10.
 
+\bibitem[NAS, ]{NASA}
+Nasa's j-2x rocket engine development.
+\newblock https://www.nasa.gov/exploration/systems/sls/j2x.
+\newblock Accessed: 2020-01-10.
+
+\bibitem[NAS, 2013]{NASA2JX}
+ (2013).
+\newblock gimbal bearing – liquid rocket engines (j-2x, rs-25, general).
+\newblock https://blogs.nasa.gov/J2X/tag/gimbal-bearing/.
+\newblock Accessed: 2020-01-10.
+
+\bibitem[MER, 2017]{MERCURY}
+ (2017).
+\newblock The gimbal rig mercury astronaut trainer.
+\newblock https://www.nasa.gov/centers/glenn/about/history/mastif.html.
+\newblock Accessed: 2020-01-10.
+
+\bibitem[Grewal, 2007]{InertialNavigation}
+Grewal, M.~S. (2007).
+\newblock {\em Global Positioning Systems, inertial navigation, and
+  integration}.
+\newblock Wiley.
+
 \end{thebibliography}
