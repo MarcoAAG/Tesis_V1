@@ -27,7 +27,7 @@
 using namespace cv;
 using namespace std;
 
-#define HSV_valores 0
+#define HSV_valores 1
 
 //Capture a temporary image from the camera
 cv::Mat imgOriginal;
