@@ -195,6 +195,13 @@ include_directories(
 #   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 # )
 
+#Launch Files 
+install(FILES
+   launch/Test.launch
+   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/launch/
+ )
+
+
 #############
 ## Testing ##
 #############

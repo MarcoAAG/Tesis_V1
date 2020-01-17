@@ -1,0 +1,7 @@
+<launch>
+
+    <node pkg="ocam" type="publisher" name="usb_cam" output="screen">
+        <param name="camara" type="double" value="10.0" />
+    </node>
+
+</launch>

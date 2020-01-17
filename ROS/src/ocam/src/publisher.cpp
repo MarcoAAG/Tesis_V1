@@ -29,12 +29,15 @@ publisher::~publisher()
 }
 publisher::publisher(int COM, int Sample_time)
 {
+    int COMCAM;
     ros::NodeHandle NH;
     image_transport::ImageTransport IT(NH);
     image_transport::Publisher PUB = IT.advertise("camera/Image", 1);
+    
 
     VideoCapture VC;
-    VC.open(COM); /* OCAM device  */
+    NH.param("camara", COMCAM, 0);
+    VC.open(COMCAM); /* OCAM device  */
     if (!VC.isOpened())
     {
         cout << "ERROR: Camara no conectada" << endl;
@@ -42,7 +45,7 @@ publisher::publisher(int COM, int Sample_time)
     }
     else
     {
-        cout << "Camara conectada" << endl;
+        cout << "Camara conectada en el COM " << COMCAM << endl;
         cv::Mat FRAME;
         sensor_msgs::ImagePtr MSG;
 
