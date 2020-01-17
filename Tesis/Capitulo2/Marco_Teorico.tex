@@ -1,26 +1,130 @@
 \chapter{Marco Téorico}
+En este capitulo desarrolla la teoría que fundamenta el proyecto de investigación con base
+en el problema previamente descrito.\\
+Antes de entrar a la teoría es necesario entender cuales son las fases del proyecto y
+el porque de ellas.
+La siguiente imagen muestra la similitud entre el sistema de adquisición de datos
+de un humano y la de un sistema digital.
+\begin{center}
+    \includegraphics[width=0.65\textwidth]{Capitulo2/Fig1.eps}       
+    \captionof{figure}{Similitudes entre humano y computadora}\label{Fig1}
+\end{center}
+Donde se observa un diagrama de flujo que empieza con la adquisición de datos, en este
+caso la captura de una imagen, posterior se hace un procesamiento, es decir, se le da
+sentido a los datos, y finalmente se hace una acción con base en la tarea que el procesador
+ha generado.
+
 \section{Óptica}
-La visión artificial surge de un amplio estudio probabilístico y matemático del procesamiento de imágenes digitales, pero sobre todo de análisis humanos y de la intuición ya que de estas últimas el ingeniero hace selección de entre una u otra técnica. Esta elección se basa usualmente en juicios visuales subjetivos.\\
-Entender los conceptos básicos de la percepción humana es entonces pertinente, donde la Óptica nos ayudará a entender mejor como es que el ojo humano percibe y como lo hace una cámara. \\
-La función de la óptica de una cámara es captar los rayos luminosos y concentrarlos sobre el sensor sensible de la cámara de vídeo. Después de determinar el tipo de iluminación que mejor se adecua al problema, la elección de una óptica u otra influirá en la calidad de la imagen y el tamaño de los objetos.
+La visión artificial surge de un amplio estudio probabilístico y matemático del 
+procesamiento de imágenes digitales, pero sobre todo de análisis humanos y de la 
+intuición ya que de estas últimas el ingeniero hace selección de entre una u otra 
+técnica. Esta elección se basa usualmente en juicios visuales subjetivos.\\
+Entender los conceptos básicos de la percepción humana es entonces pertinente, donde 
+la Óptica nos ayudará a entender mejor como es que el ojo humano percibe y como lo 
+hace una cámara. \\
+La función de la óptica de una cámara es captar los rayos luminosos y concentrarlos 
+sobre el sensor sensible de la cámara de vídeo. Después de determinar el tipo de 
+iluminación que mejor se adecua al problema, la elección de una óptica u otra influirá 
+en la calidad de la imagen y el tamaño de los objetos.
 \subsection{Estructura del ojo humano}
 \begin{itemize}
-\item Cornea: La córnea es una estructura del ojo que permite el paso de la luz desde el exterior al interior del ojo y protege el iris y el cristalino. Posee propiedades ópticas de refracción y para garantizar su función debe ser transparente y es necesario que mantenga una curvatura adecuada.
-\item Esclerótica: Es el recubrimiento exterior blanco del ojo. La esclerótica le da su color blanco al globo ocular.
+\item Cornea: La córnea es una estructura del ojo que permite el paso de la luz 
+desde el exterior al interior del ojo y protege el iris y el cristalino. Posee 
+propiedades ópticas de refracción y para garantizar su función debe ser transparente 
+y es necesario que mantenga una curvatura adecuada.
+\item Esclerótica: Es el recubrimiento exterior blanco del ojo. La esclerótica le da 
+su color blanco al globo ocular.
 \item Coroides: Es la capa de vasos sanguíneos y tejido conectivo entre la parte blanca del ojo y la retina (en la parte posterior del ojo). Es parte de la úvea y suministra los nutrientes a las partes internas del ojo.
-\item Cuerpo ciliar: Es una estructura circular que es una prolongación del iris, la parte de color del ojo. También contiene el músculo ciliar, el cual cambia la forma del cristalino cuando los ojos se enfocan en un objeto cercano. Este proceso se denomina acomodación.
-\item Diafragma Iris: que se expande o contrae para controlar la cantidad de luz que entra en el ojo. La apertura central del iris, llamada pupila, varía su diámetro de 2 a 8mm. El frente del iris contiene el pigmento visible del ojo, y la parte trasera contiene un pigmento negro.
-\item Cristalino: El cristalino es “la lente” del ojo y sirve para enfocar, ayudado por los músculos ciliares. El cristalino es una lente que actúa como una lente biconvexa, lenticular, flexible y avascular, cuya principal función es la de enfocar los objetos en las distintas distancias correctamente.
-\item Retina: Es la capa de tejido sensible a la luz que se encuentra en la parte posterior globo ocular. Las imágenes que pasan a través del cristalino del ojo se enfocan en la retina. La retina convierte entonces estas imágenes en señales eléctricas y las envía por el nervio óptico al cerebro.
+\item Cuerpo ciliar: Es una estructura circular que es una prolongación del iris, la 
+parte de color del ojo. También contiene el músculo ciliar, el cual cambia la forma 
+del cristalino cuando los ojos se enfocan en un objeto cercano. Este proceso se 
+denomina acomodación.
+\item Diafragma Iris: que se expande o contrae para controlar la cantidad de luz que 
+entra en el ojo. La apertura central del iris, llamada pupila, varía su diámetro de 2 
+a 8mm. El frente del iris contiene el pigmento visible del ojo, y la parte trasera 
+contiene un pigmento negro.
+\item Cristalino: El cristalino es “la lente” del ojo y sirve para enfocar, ayudado 
+por los músculos ciliares. El cristalino es una lente que actúa como una lente 
+biconvexa, lenticular, flexible y avascular, cuya principal función es la de enfocar 
+los objetos en las distintas distancias correctamente.
+\item Retina: Es la capa de tejido sensible a la luz que se encuentra en la parte 
+posterior globo ocular. Las imágenes que pasan a través del cristalino del ojo se 
+enfocan en la retina. La retina convierte entonces estas imágenes en señales eléctricas
+y las envía por el nervio óptico al cerebro.
 \end{itemize}
 \subsection{Formación de imágenes en el ojo}
-En una cámara fotográfica se recibe la luz que traspasa el diafragma, pasa por los cristales de la cámara hasta llegar al CCD(Charge Coupled Device o, en español, Dispositivo de Carga Acoplada) o sensor, que es donde se forma la imagen correcta y se envía al procesador.\\
-Algo similar pasa en el ojo, la pupila es el diagrama natural que filtra la luz que entra en el ojo, pasa por la lente (el cristalino)  que converge los rayos hasta llegar a la retina, que es la estructura que tiene las células fotosensibles y dónde se produce la imagen, y a través del nervio óptico se transporta la información al cuerpo geniculado, que es la parte del cerebro donde se produce la visión.\\
+En una cámara fotográfica se recibe la luz que traspasa el diafragma, pasa por los 
+cristales de la cámara hasta llegar al CCD(Charge Coupled Device o, en español, 
+Dispositivo de Carga Acoplada) o sensor, que es donde se forma la imagen correcta y se 
+envía al procesador.\\
+Algo similar pasa en el ojo, la pupila es el diagrama natural que filtra la luz que 
+entra en el ojo, pasa por la lente (el cristalino)  que converge los rayos hasta 
+llegar a la retina, que es la estructura que tiene las células fotosensibles y dónde 
+se produce la imagen, y a través del nervio óptico se transporta la información al 
+cuerpo geniculado, que es la parte del cerebro donde se produce la visión.\\
 El ojo esta formado de dos componentes principales:
 \begin{itemize}
-\item Componentes ópticos: permiten la formación de la imagen en la retina y son los siguientes: la córnea, el cristalino, la pupila, el humor acuoso y el humor vítreo que permiten la formación de una imagen en la retina.
-\item Componentes neurológicos: son los que transforman la información óptica en eléctrica y transmiten la información al cuerpo geniculado lateral. Estos componentes son la retina y el nervio óptico.
+\item Componentes ópticos: permiten la formación de la imagen en la retina y son los 
+siguientes: la córnea, el cristalino, la pupila, el humor acuoso y el humor vítreo que 
+permiten la formación de una imagen en la retina.
+\item Componentes neurológicos: son los que transforman la información óptica en 
+eléctrica y transmiten la información al cuerpo geniculado lateral. Estos componentes 
+son la retina y el nervio óptico.
 \end{itemize}
 
-
-
+\section{Procesamiento de datos}
+Este trabajo de investigación se basa en el procesamiento de datos usando un framework
+llamado ROS (del inglés Robot Operating System).
+\subsection{ROS}
+Un sistema de comunicación es a menudo una de las primeras necesidades que surgen al 
+implementar una nueva aplicación de robot. El sistema de mensajería integrado y 
+probado de ROS ahorra tiempo al administrar los detalles de la comunicación entre 
+los nodos distribuidos a través del mecanismo anónimo de publicación / suscripción. 
+Otro beneficio de usar un sistema de paso de mensajes es que te obliga a implementar 
+interfaces claras entre los nodos en tu sistema, mejorando así la encapsulación y 
+promoviendo la reutilización de código. La estructura de estas interfaces de mensajes 
+se define en el mensaje IDL (Lenguaje de descripción de interfaz).\\
+Decidí usar ROS porque crear un software de robot verdaderamente robusto y de uso 
+general es difícil. Desde la perspectiva del robot, los problemas que parecen triviales
+para los humanos a menudo varían enormemente entre instancias de tareas y entornos. 
+Hacer frente a estas variaciones es tan difícil que se necesita apoyo de un sistema
+de comunicación.\\
+ROS tiene tres niveles de conceptos: el nivel del sistema de archivos, el nivel del gráfico 
+de cómputo y el nivel de la comunidad. ~\cite{ROS}
+\subsubsection{Nivel de sistemas de archivos de ROS}
+Los conceptos de nivel de sistema de archivos cubren principalmente los recursos de ROS que 
+encuentra en el sistema, tales como:
+\begin{itemize}
+    \item \textbf{Paquetes}\\
+    Los paquetes son la unidad principal para organizar el software 
+    en ROS. Un paquete puede contener procesos (nodos) de tiempo de ejecución de ROS, 
+    una biblioteca dependiente de ROS, conjuntos de datos, archivos de configuración o 
+    cualquier otra cosa que se organice conjuntamente de manera útil. Los paquetes son 
+    el elemento de construcción más atómico y el elemento de lanzamiento en ROS. Lo 
+    que significa que lo más granular que puede construir y lanzar es un paquete.
+\end{itemize}
+\subsubsection{Nivel de gráfico de cómputo ROS}
+En términos generales, ROS sigue la filosofía de desarrollo de software de Unix 
+en varios aspectos clave. Esto tiende a hacer que ROS se sienta "natural" para los 
+desarrolladores que vienen de un entorno Unix, pero algo "críptico" al principio 
+para aquellos que han usado principalmente entornos de desarrollo gráfico en 
+Windows o Mac OS X.~\cite{ROSMIKE}\\
+Los sistemas ROS consisten en numerosos programas pequeños informáticos que se 
+conectan entre sí e intercambian mensajes continuamente. Estos mensajes viajan 
+directamente de un programa a otro.\\
+Los conceptos básicos del gráfico de cómputo de ROS son nodos, mastaer, 
+servidor de parámetros, mensajes, servicios, topics y bags, los cuales 
+proporcionan datos al gráfico de diferentes maneras siguiendo la filosofia
+antes descrita.
+\begin{itemize}
+    \item \textbf{Nodo}\\
+    los nodos son procesos que realizan cálculos. ROS está diseñado para ser modular 
+    a nivel de nodo; un sistema de control de robot generalmente comprende muchos nodos.
+    \item \textbf{Master}\\
+    Un programa intermedio que conecta nodos.
+    \begin{center}
+        \includegraphics[width=0.5\textwidth]{Capitulo2/Fig2.eps}       
+        \captionof{figure}{Nodos conectados al Master}\label{Fig2}
+    \end{center}
+    
+\end{itemize}

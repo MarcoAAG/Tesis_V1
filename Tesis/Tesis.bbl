@@ -10,6 +10,11 @@ Nasa's j-2x rocket engine development.
 \newblock https://www.nasa.gov/exploration/systems/sls/j2x.
 \newblock Accessed: 2020-01-10.
 
+\bibitem[ROS, ]{ROS}
+Ros/concepts - ros wiki.
+\newblock http://wiki.ros.org/ROS/Concepts.
+\newblock Accessed: 2020-01-10.
+
 \bibitem[NAS, 2013]{NASA2JX}
  (2013).
 \newblock gimbal bearing – liquid rocket engines (j-2x, rs-25, general).
@@ -27,5 +32,10 @@ Grewal, M.~S. (2007).
 \newblock {\em Global Positioning Systems, inertial navigation, and
   integration}.
 \newblock Wiley.
+
+\bibitem[Quigley, 2015]{ROSMIKE}
+Quigley, M. (2015).
+\newblock {\em Programming Robots with ROS}.
+\newblock O’Reilly.
 
 \end{thebibliography}
