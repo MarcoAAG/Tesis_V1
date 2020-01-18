@@ -36,8 +36,8 @@ publisher::publisher(int COM, int Sample_time)
     
 
     VideoCapture VC;
-    NH.param("camara", COMCAM, 0);
-    VC.open(COMCAM); /* OCAM device  */
+    // NH.param("camara", COMCAM, 2);
+    VC.open(COM); /* OCAM device  */
     if (!VC.isOpened())
     {
         cout << "ERROR: Camara no conectada" << endl;
