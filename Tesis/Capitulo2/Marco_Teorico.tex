@@ -126,5 +126,84 @@ antes descrita.
         \includegraphics[width=0.5\textwidth]{Capitulo2/Fig2.eps}       
         \captionof{figure}{Nodos conectados al Master}\label{Fig2}
     \end{center}
-    
+    \item \textbf{Topics}\\
+    Los mensajes se enrutan a través de un sistema de transporte con semántica de 
+    publicación / suscripción. Un nodo envía un mensaje al publicarlo en un topic 
+    determinado. El topic es un nombre que se utiliza para identificar el contenido del 
+    mensaje.
+    \begin{center}
+        \includegraphics[width=0.75\textwidth]{Capitulo2/Fig3.eps}       
+        \captionof{figure}{Representación grafica de Topics}\label{Fig3}
+    \end{center}
+    \item \textbf{Mensajes}\\
+    Los mensajes básicamente están pasando por el topic. Hay mensajes existentes 
+    basados en tipos de datos predefinidos, y los usuarios pueden escribir sus 
+    propios mensajes.
+    \item \textbf{Parámetros}\\
+    El servidor de parámetros permite que los datos se almacenen por clave en una 
+    ubicación central. Actualmente es parte del Máster.
+    \item \textbf{Servicios}\\
+    Ya hemos visto ROS Topics, que tiene un mecanismo de publicación y suscripción. 
+    El servicio ROS tiene un mecanismo de solicitud / respuesta. Una llamada de 
+    servicio es una función, que puede llamar siempre que un nodo cliente envíe una 
+    solicitud. El nodo que crea una llamada de servicio se llama nodo Servidor y el 
+    que llama al servicio se llama nodo cliente.~\cite{ROSLENTIN}
+    \begin{center}
+        \includegraphics[width=0.75\textwidth]{Capitulo2/Fig4.eps}       
+        \captionof{figure}{Comunicación de mensajes}\label{Fig4}
+    \end{center}
+ 
 \end{itemize}
+\subsection{Tarjeta procesadora}
+Como se abordó anteriormente, ROS es el framework en el cual el proyecto esta corriendo,
+dicho framework tiene ciertas especificaciones que un sistema operativo debe de cumplir
+para poder ser instalado. Debido a que el sistema debe estar embebido en un prototipo
+relativamente pequeño, es decir que no podrá soportar ni la carga ni las dimensiones
+de un laptop, se definió conveniente la implementación de una tarjeta procesadora, y que
+dentro de las múltiples opciones del mercado la ODROID fue la seleccionada.\\
+Las placas de la serie Odroid son similares a Raspberry Pi, pero tiene una mejor 
+configuración y rendimiento. Se basa en la arquitectura ARM.~\cite{ROSLENTIN}\\
+ODROID significa Open + Android. Es una plataforma de desarrollo tanto de 
+hardware como de software. 
+\begin{center}
+    \includegraphics[width=0.55\textwidth]{Capitulo2/Fig5.eps}       
+    \captionof{figure}{Odroid XU-4}\label{Fig5}
+\end{center}
+
+El modelo XU-4 cuenta con las siguientes especificaciones:
+\begin{itemize}
+    \item \textbf{Procesador}\\
+    Samsung Exynos5422 Cortex™-A15 2Ghz and Cortex™-A7 Octa
+    core CPUs con Mali Mali-T628 MP6 GPU.\\
+    Es un procesador mobil que fue lanzado en 2014 por Samsung para su celular S5.
+    \item \textbf{Almacenamiento}\\
+    Hay dos tipos de almacenamiento de el sistema operativo. El primero es usando
+    una microSD y el segundo es utilizando un modulo eMMC.
+    \item \textbf{Alimentación}\\
+    Es necesario alimentar con 5V y con un minimo de 4A para su optimo funcionamiento.
+    \item \textbf{Perifericos}
+    \begin{itemize}
+        \item USB hosts
+        \item HDMI
+        \item Ethernet RJ-45
+        \item GPIO (Entradas y salidas de SPI,ADC e IRQ)
+        \item Comunicación serial
+        \item USB 3.0
+    \end{itemize}
+\end{itemize}
+Con base en pruebas hechas por el proveedor, el modelo XU-4 resulta ser superior
+a otras tarjetas de desarrollo del mercado.\\
+Ejecutaron varios puntos de referencia para medir la potencia informática en el XU4. 
+Las mismas pruebas se realizaron en el Raspberry Pi 3 Modelo B, ODROID-C1 +, ODROID-C2 
+y ODROID-XU4.
+Los valores de los resultados de la prueba se escalaron uniformemente para fines de 
+comparación. Se midió que la potencia informática del XU4 era ~ 7 veces más rápida que 
+la última Raspberry Pi 3 gracias a los núcleos 2Ghz Cortex-A15 y un ancho de banda de 
+memoria de 64 bits mucho mayor.\\ 
+Compilar código en el XU4 es súper rápido. La memoria RAM DDR3 de 2 GB de 
+alto rendimiento es una ventaja adicional que permite compilar la mayoría de los 
+programas directamente en el XU4.~\cite{hardkernel2020}
+\begin{center}
+    \includegraphics[width=0.65\textwidth]{Capitulo2/Fig6.eps}       
+    \captionof{figure}{Pruebas de performance}\label{Fig6}
+\end{center}

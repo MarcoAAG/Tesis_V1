@@ -33,6 +33,16 @@ Grewal, M.~S. (2007).
   integration}.
 \newblock Wiley.
 
+\bibitem[HardKernel, 2020]{hardkernel2020}
+HardKernel (2020).
+\newblock Odroid xu-4.
+
+\bibitem[Joseph, 2018]{ROSLENTIN}
+Joseph, L. (2018).
+\newblock {\em Robot Operating System for Absolute Beginners: Robotics
+  Programming Made Easy}.
+\newblock apress.
+
 \bibitem[Quigley, 2015]{ROSMIKE}
 Quigley, M. (2015).
 \newblock {\em Programming Robots with ROS}.
