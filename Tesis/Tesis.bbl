@@ -27,6 +27,11 @@ Ros/concepts - ros wiki.
 \newblock https://www.nasa.gov/centers/glenn/about/history/mastif.html.
 \newblock Accessed: 2020-01-10.
 
+\bibitem[Bharath, 2008]{anilbharath2008}
+Bharath, A. (2008).
+\newblock {\em Next Generation Artificial Vision System}.
+\newblock Artech House.
+
 \bibitem[Grewal, 2007]{InertialNavigation}
 Grewal, M.~S. (2007).
 \newblock {\em Global Positioning Systems, inertial navigation, and
@@ -52,5 +57,14 @@ Joseph, L. (2018).
 Quigley, M. (2015).
 \newblock {\em Programming Robots with ROS}.
 \newblock O’Reilly.
+
+\bibitem[Ubuntu, 2014]{ubuntu2014}
+Ubuntu (2014).
+\newblock What is ubuntu mate?
+
+\bibitem[Vilet, 2005]{joseramon2005}
+Vilet, J. R.~M. (2005).
+\newblock {\em Apuntes de Procesamiento Digital de Imágenes}.
+\newblock Facultad de Ingeniería UASLP, first edition.
 
 \end{thebibliography}

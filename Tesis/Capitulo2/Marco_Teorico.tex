@@ -26,7 +26,25 @@ La función de la óptica de una cámara es captar los rayos luminosos y concent
 sobre el sensor sensible de la cámara de vídeo. Después de determinar el tipo de 
 iluminación que mejor se adecua al problema, la elección de una óptica u otra influirá 
 en la calidad de la imagen y el tamaño de los objetos.
+\subsection{Descripción general del sistema visual humano}
+La luz entra al ojo y estimula los sensores en la parte posterior. 
+La señal que se crea luego viaja a través del nervio óptico, cruzando el 
+nervio que proviene del otro ojo y llega a un órgano, en el interior del 
+cerebro en el área del tálamo, llamado núcleo geniculado lateral (LGN). 
+Las salidas de la LGN se envían a la corteza visual en la parte posterior del cerebro. 
+La corteza visual es quizás la parte más compleja del cuerpo humano. Es el lugar en el 
+cerebro donde tiene lugar la mayor parte del procesamiento visual.~\cite{anilbharath2008}
+\begin{center}
+    \includegraphics[width=0.55\textwidth]{Capitulo2/Fig1_1.eps}       
+    \captionof{figure}{El camino que sigue la señal óptica dentro de la cabeza humana.}\label{Fig1_1}
+\end{center}
+En términos generales, cuanto más nos alejamos del camino visual del ojo, menos 
+entendemos lo que está sucediendo.
 \subsection{Estructura del ojo humano}
+Es necesario abordar algunos conceptos basicos para entendernos en un 
+futuro, pero sobre todo comprender las similitudes del ojo humano y 
+la cámara, además de analizar limitaciones físicas de la vista humana 
+en los mismos términos que usaremos para nuestras imágenes digitales.
 \begin{itemize}
 \item Cornea: La córnea es una estructura del ojo que permite el paso de la luz 
 desde el exterior al interior del ojo y protege el iris y el cristalino. Posee 
@@ -52,6 +70,12 @@ posterior globo ocular. Las imágenes que pasan a través del cristalino del ojo
 enfocan en la retina. La retina convierte entonces estas imágenes en señales eléctricas
 y las envía por el nervio óptico al cerebro.
 \end{itemize}
+~\cite{joseramon2005}
+\begin{center}
+    \includegraphics[width=0.55\textwidth]{Capitulo2/Fig1_2.eps}       
+    \captionof{figure}{Componentes generales del ojo humano}\label{Fig1_2}
+\end{center}
+
 \subsection{Formación de imágenes en el ojo}
 En una cámara fotográfica se recibe la luz que traspasa el diafragma, pasa por los 
 cristales de la cámara hasta llegar al CCD(Charge Coupled Device o, en español, 
@@ -208,3 +232,21 @@ programas directamente en el XU4.~\cite{hardkernel2020}
     \includegraphics[width=0.65\textwidth]{Capitulo2/Fig6.eps}       
     \captionof{figure}{Pruebas de performance}\label{Fig6}
 \end{center}
+
+\subsection{Sistema operativo}
+Una vez elegida la tarjeta de desarrollo con la cual se estará trabajando para este
+proyecto, el siguiente paso es escoger el sistema operativo que dará soporte a nuestro
+sistema. Por defecto ODROID nos sugiere utilizar Ubuntu en su versión MATE.
+\subsubsection{Ubuntu MATE}
+Ubuntu MATE es una distribución de Linux gratuita y de código abierto y un derivado
+oficial de Ubuntu.\\
+Ubuntu es uno, si no es que el más grande, empleador de Linux en el mundo.Linux está en el
+corazón de Ubuntu y hace posible crear sistemas operativos seguros, potentes y versátiles.\\
+Ubuntu MATE toma el sistema operativo basado en Ubuntu y agrega el MATE Desktop.\\
+Donde podemos definir MATE Desktop como una implementación de la metáfora del Desktop 
+hecha de un conjunto de programas que se ejecutan en la parte superior de un sistema 
+operativo de computadora, que comparten una interfaz gráfica de usuario (GUI) común. 
+Las GUI de escritorio ayudan al usuario a acceder y editar archivos fácilmente.
+~\cite{ubuntu2014}\\
+Ubuntu soporta arquitecturas armhf, tipo de arquitectura de la odroid, además de optimizar
+el sistema operativo sin sacrificar las ventajas que provee para una Computadora Portátil.
