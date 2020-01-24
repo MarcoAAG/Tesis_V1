@@ -4,60 +4,39 @@
 #include <cv_bridge/cv_bridge.h>
 #include <sstream>
 #include <iostream>
-//#include <vector>
-#include <stdio.h>
 
 using namespace std;
 using namespace cv;
 
-class publisher
-{
-private:
-    /* data */
-public:
-    publisher(/* args */);
-    publisher(int COM, int Sample_Time);
-    ~publisher();
-};
+image_transport::Publisher pub;
+VideoCapture VC;
 
-publisher::publisher(/* args */)
+void publisher(int COM, int Sample_Time)
 {
-}
-
-publisher::~publisher()
-{
-}
-publisher::publisher(int COM, int Sample_time)
-{
-    int COMCAM;
-    ros::NodeHandle NH;
-    image_transport::ImageTransport IT(NH);
-    image_transport::Publisher PUB = IT.advertise("camera/Image", 1);
-    
-
-    VideoCapture VC;
-    // NH.param("camara", COMCAM, 2);
-    VC.open(COM); /* OCAM device  */
+    ros::NodeHandle nh;
+    image_transport::ImageTransport imgt(nh);
+    pub = imgt.advertise("camera/Image", 1);
+    VC.open(COM); 
     if (!VC.isOpened())
     {
-        cout << "ERROR: Camara no conectada" << endl;
+        ROS_INFO("Camara no conectada");
         //return 1;
     }
     else
     {
-        cout << "Camara conectada en el COM " << COMCAM << endl;
+        ROS_INFO("Camara conectada en el COM %d",COM);
         cv::Mat FRAME;
         sensor_msgs::ImagePtr MSG;
 
-        ros::Rate loop_rate(Sample_time); /*HZ*/
+        ros::Rate loop_rate(Sample_Time); /*HZ*/
 
-        while (NH.ok())
+        while (nh.ok())
         {
             VC >> FRAME;
             if (!FRAME.empty())
             {
                 MSG = cv_bridge::CvImage(std_msgs::Header(), "bgr8", FRAME).toImageMsg();
-                PUB.publish(MSG);
+                pub.publish(MSG);
                 cv::waitKey(30);
             }
             ros::spinOnce();
@@ -69,7 +48,7 @@ publisher::publisher(int COM, int Sample_time)
 int main(int argc, char **argv)
 {
     ros::init(argc, argv, "image_publish");
-    publisher PUBCAM(2, 1000);
+    publisher(2, 1000);
 
     return 0;
 }

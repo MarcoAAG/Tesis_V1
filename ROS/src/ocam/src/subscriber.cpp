@@ -41,6 +41,11 @@ const String window_capture_name = "Video Capture";
 const String window_detection_name = "Object Detection";
 
 image_transport::Subscriber sub;
+ros::Publisher coordinates_pub;
+
+int posX;
+int posY;
+void publisher(int x_, int y_);
 /*----------------------------------------      HSV     ----------------------------------------*/
 
 #if HSV_valores
@@ -119,8 +124,6 @@ void imageCallback(const sensor_msgs::ImageConstPtr &msg_)
     cv_bridge::CvImagePtr cvimg = cv_bridge::toCvCopy(msg_, "bgr8");
     int iLastX = 0;
     int iLastY = 0;
-    int posX;
-    int posY;
 
     //Capture a temporary image from the camera
     Mat imgTmp;
@@ -193,24 +196,25 @@ void imageCallback(const sensor_msgs::ImageConstPtr &msg_)
         // if the area <= 10000, I consider that the there are no object in the image and it's because of the noise, the area is not zero
         // if (dArea > 100)
         // {
-            //calculate the position of the ball
-            posX = dM10 / dArea;
-            posY = dM01 / dArea;
+        //calculate the position of the ball
+        posX = dM10 / dArea;
+        posY = dM01 / dArea;
 
-            // if (iLastX >= 0 && iLastY >= 0 && posX >= 0 && posY >= 0)
-            // {
-                //Draw a red line from the previous point to the current point
-                // line(imgLines, Point(posX, posY), Point(iLastX, iLastY), Scalar(0, 0, 255), 2);
-                //640 x 480
-                line(imgLines,Point2d(320,240),Point2d(posX,posY),Scalar(0,0,255),2,LINE_8);
-                circle(imgLines,Point2d(320,240),3,Scalar(0,0,255),2,LINE_8,0);
-                circle(imgLines,Point2d(posX,posY),3,Scalar(0,255,0),2,LINE_8,0);
-                cout << "X = " << posX << "\t Y = " << posY <<endl;
-                            
-            // }
+        // if (iLastX >= 0 && iLastY >= 0 && posX >= 0 && posY >= 0)
+        // {
+        //Draw a red line from the previous point to the current point
+        // line(imgLines, Point(posX, posY), Point(iLastX, iLastY), Scalar(0, 0, 255), 2);
+        //640 x 480
+        line(imgLines, Point2d(320, 240), Point2d(posX, posY), Scalar(0, 0, 255), 2, LINE_8);
+        circle(imgLines, Point2d(320, 240), 3, Scalar(0, 0, 255), 2, LINE_8, 0);
+        circle(imgLines, Point2d(posX, posY), 3, Scalar(0, 255, 0), 2, LINE_8, 0);
+        // cout << "X = " << posX << "\t Y = " << posY << endl;
+        publisher(posX,posY);
 
-            iLastX = posX;
-            iLastY = posY;
+        // }
+
+        iLastX = posX;
+        iLastY = posY;
         // }
         imshow("Thresholded Image", dst_closing); //show the thresholded image
         imgOriginal = imgOriginal + imgLines;
@@ -224,12 +228,25 @@ void imageCallback(const sensor_msgs::ImageConstPtr &msg_)
     }
 }
 
+void publisher(int x_, int y_)
+{
+    
+    std_msgs::Int32MultiArray array;
+    //Clear array
+    array.data.clear();
+    array.data.push_back(posX);
+    array.data.push_back(posY);
+    coordinates_pub.publish(array);
+    ROS_INFO("Publicando Coordenadas");
+}
+
 int main(int argc, char **argv)
 {
     ros::init(argc, argv, "image_listener");
     ros::NodeHandle nh;
     image_transport::ImageTransport it(nh);
     sub = it.subscribe("camera/Image", 1, imageCallback);
+    coordinates_pub = nh.advertise<std_msgs::Int32MultiArray>("coordinates", 100);
     ros::spin();
     return 0;
 }

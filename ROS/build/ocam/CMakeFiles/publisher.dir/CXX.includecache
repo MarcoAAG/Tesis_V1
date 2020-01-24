@@ -19,8 +19,6 @@ sstream
 -
 iostream
 -
-stdio.h
--
 
 /opt/ros/melodic/include/cv_bridge/cv_bridge.h
 sensor_msgs/Image.h
