@@ -48,7 +48,7 @@ void publisher(int COM, int Sample_Time)
 int main(int argc, char **argv)
 {
     ros::init(argc, argv, "image_publish");
-    publisher(2, 1000);
+    publisher(2, 60);
 
     return 0;
 }
