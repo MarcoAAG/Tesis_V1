@@ -10,13 +10,27 @@ using namespace cv;
 
 image_transport::Publisher pub;
 VideoCapture VC;
+int CAMCOM;
+int SAMPLETIME;
+void publisher();
 
-void publisher(int COM, int Sample_Time)
+
+int main(int argc, char **argv)
+{
+    ros::init(argc, argv, "image_publish");
+    publisher();
+
+    return 0;
+}
+
+void publisher()
 {
     ros::NodeHandle nh;
     image_transport::ImageTransport imgt(nh);
+    nh.getParam("/com",CAMCOM);
+    nh.getParam("/sampletime",SAMPLETIME);
     pub = imgt.advertise("camera/Image", 1);
-    VC.open(COM); 
+    VC.open(CAMCOM); 
     if (!VC.isOpened())
     {
         ROS_INFO("Camara no conectada");
@@ -24,11 +38,11 @@ void publisher(int COM, int Sample_Time)
     }
     else
     {
-        ROS_INFO("Camara conectada en el COM %d",COM);
+        ROS_INFO("Camara conectada en el COM %d",CAMCOM);
         cv::Mat FRAME;
         sensor_msgs::ImagePtr MSG;
 
-        ros::Rate loop_rate(Sample_Time); /*HZ*/
+        ros::Rate loop_rate(SAMPLETIME); /*HZ*/
 
         while (nh.ok())
         {
@@ -43,12 +57,4 @@ void publisher(int COM, int Sample_Time)
             loop_rate.sleep();
         }
     }
-}
-
-int main(int argc, char **argv)
-{
-    ros::init(argc, argv, "image_publish");
-    publisher(2, 60);
-
-    return 0;
 }

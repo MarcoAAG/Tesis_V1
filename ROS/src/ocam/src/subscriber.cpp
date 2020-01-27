@@ -29,31 +29,37 @@ using namespace std;
 
 #define HSV_valores 1
 
-//Capture a temporary image from the camera
+/*
+Inicializar imagenes en opencv
+*/
 cv::Mat imgOriginal;
 cv::Mat imgHSV;
 cv::Mat imgthreshold;
-
 cv::Mat imgErosion;
 cv::Mat imgDilation;
 
 const String window_capture_name = "Video Capture";
 const String window_detection_name = "Object Detection";
 
-image_transport::Subscriber sub;
-ros::Publisher coordinates_pub;
+image_transport::Subscriber sub; //Crear el suscriptor
+ros::Publisher coordinates_pub;  //Crear el publicador
 
 int posX;
 int posY;
-void publisher(int x_, int y_);
-/*----------------------------------------      HSV     ----------------------------------------*/
 
+void publisher(int x_, int y_); // Funcion que publica coordenadas
+
+/*----------------------------------------      HSV     ----------------------------------------*/
 #if HSV_valores
 /* code */
-const int max_value_H = 360 / 2;
-const int max_value = 255;
-int low_H = 0, low_S = 0, low_V = 0;
-int high_H = max_value_H, high_S = max_value, high_V = max_value;
+const int max_value_H = 180; //en opencv el valor max es 180, aunque en realidad va a 360
+const int max_value = 255;   //El valor real va en %, del 0 al 100. pero en opencv va de 0 a 255
+int low_H = 0;
+int low_S = 0;
+int low_V = 0;
+int high_H = max_value_H;
+int high_S = max_value;
+int high_V = max_value;
 #else
 int low_H = 75;
 int low_S = 55;
@@ -209,7 +215,7 @@ void imageCallback(const sensor_msgs::ImageConstPtr &msg_)
         circle(imgLines, Point2d(320, 240), 3, Scalar(0, 0, 255), 2, LINE_8, 0);
         circle(imgLines, Point2d(posX, posY), 3, Scalar(0, 255, 0), 2, LINE_8, 0);
         // cout << "X = " << posX << "\t Y = " << posY << endl;
-        publisher(posX,posY);
+        publisher(posX, posY);
 
         // }
 
@@ -230,7 +236,7 @@ void imageCallback(const sensor_msgs::ImageConstPtr &msg_)
 
 void publisher(int x_, int y_)
 {
-    
+
     std_msgs::Int32MultiArray array;
     //Clear array
     array.data.clear();

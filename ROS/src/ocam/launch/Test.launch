@@ -1,7 +1,11 @@
 <launch>
+    <param name="com" type = "int" value= "2" />
+    <param name="sampletime" type = "int" value= "60" />
 
-    <node pkg="ocam" type="publisher" name="cam_video" output="screen">
-        <param name="camara" type="int" value="2" />
+    <node pkg="ocam" type="publisher" name="publisher" output="screen">   
+    </node>
+
+    <node pkg="ocam" type="subscriber" name="subscriber" output="screen">
     </node>
 
 </launch>
