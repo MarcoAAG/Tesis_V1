@@ -223,9 +223,14 @@ install(FILES
  target_link_libraries(subscriber ${catkin_LIBRARIES})
  add_dependencies(subscriber ocam)
 
+ add_executable(HSV_Test src/HSV_Test.cpp)
+ target_link_libraries(HSV_Test ${catkin_LIBRARIES})
+ add_dependencies(HSV_Test ocam)
+
 
 #stuff for OpenCV2
 find_package(OpenCV 3 REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})
 target_link_libraries(publisher ${OpenCV_LIBRARIES})
 target_link_libraries(subscriber ${OpenCV_LIBRARIES})
+target_link_libraries(HSV_Test ${OpenCV_LIBRARIES})

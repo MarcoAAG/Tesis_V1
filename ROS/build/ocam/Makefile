@@ -80,6 +80,16 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -102,16 +112,6 @@ test:
 test/fast: test
 
 .PHONY : test/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -197,6 +197,48 @@ publisher/fast:
 	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam/CMakeFiles/publisher.dir/build.make ocam/CMakeFiles/publisher.dir/build
 .PHONY : publisher/fast
 
+# Convenience name for target.
+ocam/CMakeFiles/HSV_Test.dir/rule:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 ocam/CMakeFiles/HSV_Test.dir/rule
+.PHONY : ocam/CMakeFiles/HSV_Test.dir/rule
+
+# Convenience name for target.
+HSV_Test: ocam/CMakeFiles/HSV_Test.dir/rule
+
+.PHONY : HSV_Test
+
+# fast build rule for target.
+HSV_Test/fast:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam/CMakeFiles/HSV_Test.dir/build.make ocam/CMakeFiles/HSV_Test.dir/build
+.PHONY : HSV_Test/fast
+
+src/HSV_Test.o: src/HSV_Test.cpp.o
+
+.PHONY : src/HSV_Test.o
+
+# target to build an object file
+src/HSV_Test.cpp.o:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam/CMakeFiles/HSV_Test.dir/build.make ocam/CMakeFiles/HSV_Test.dir/src/HSV_Test.cpp.o
+.PHONY : src/HSV_Test.cpp.o
+
+src/HSV_Test.i: src/HSV_Test.cpp.i
+
+.PHONY : src/HSV_Test.i
+
+# target to preprocess a source file
+src/HSV_Test.cpp.i:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam/CMakeFiles/HSV_Test.dir/build.make ocam/CMakeFiles/HSV_Test.dir/src/HSV_Test.cpp.i
+.PHONY : src/HSV_Test.cpp.i
+
+src/HSV_Test.s: src/HSV_Test.cpp.s
+
+.PHONY : src/HSV_Test.s
+
+# target to generate assembly for a file
+src/HSV_Test.cpp.s:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam/CMakeFiles/HSV_Test.dir/build.make ocam/CMakeFiles/HSV_Test.dir/src/HSV_Test.cpp.s
+.PHONY : src/HSV_Test.cpp.s
+
 src/publisher.o: src/publisher.cpp.o
 
 .PHONY : src/publisher.o
@@ -259,13 +301,17 @@ help:
 	@echo "... depend"
 	@echo "... install/strip"
 	@echo "... install"
+	@echo "... list_install_components"
 	@echo "... subscriber"
 	@echo "... publisher"
+	@echo "... HSV_Test"
 	@echo "... install/local"
 	@echo "... test"
-	@echo "... list_install_components"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... src/HSV_Test.o"
+	@echo "... src/HSV_Test.i"
+	@echo "... src/HSV_Test.s"
 	@echo "... src/publisher.o"
 	@echo "... src/publisher.i"
 	@echo "... src/publisher.s"

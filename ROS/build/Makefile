@@ -1195,6 +1195,19 @@ publisher/fast:
 .PHONY : publisher/fast
 
 #=============================================================================
+# Target rules for targets named HSV_Test
+
+# Build rule for target.
+HSV_Test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 HSV_Test
+.PHONY : HSV_Test
+
+# fast build rule for target.
+HSV_Test/fast:
+	$(MAKE) -f ocam/CMakeFiles/HSV_Test.dir/build.make ocam/CMakeFiles/HSV_Test.dir/build
+.PHONY : HSV_Test/fast
+
+#=============================================================================
 # Target rules for targets named disparity_view
 
 # Build rule for target.
@@ -2781,6 +2794,7 @@ help:
 	@echo "... image_publisher_exe"
 	@echo "... subscriber"
 	@echo "... publisher"
+	@echo "... HSV_Test"
 	@echo "... disparity_view"
 	@echo "... stereo_view"
 	@echo "... std_srvs_generate_messages_nodejs"
