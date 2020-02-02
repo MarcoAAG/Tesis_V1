@@ -16,10 +16,19 @@ int main(int argc, char **argv)
         cout << "Could not open or find the image" << std::endl;
         return -1;
     }
-    int low_H = 25;
-    int low_S = 50;
-    int low_V = 50;
-    int high_H = 32;
+
+    // PRUEBAS AMARILLO
+    // int low_H = 25;
+    // int low_S = 50;
+    // int low_V = 50;
+    // int high_H = 32;
+    // int high_S = 255;
+    // int high_V = 255;
+
+    int low_H = 0;
+    int low_S = 100;
+    int low_V = 100;
+    int high_H = 10;
     int high_S = 255;
     int high_V = 255;
 

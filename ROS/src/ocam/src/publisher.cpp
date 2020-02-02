@@ -34,7 +34,6 @@ void publisher()
     if (!VC.isOpened())
     {
         ROS_INFO("Camara no conectada");
-        //return 1;
     }
     else
     {
