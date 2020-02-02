@@ -8,6 +8,7 @@ A level-1 auxiliary file: Capitulo1/Introduccion.aux
 A level-1 auxiliary file: Capitulo2/Marco_Teorico.aux
 A level-1 auxiliary file: Capitulo3/Modelo_Matematico.aux
 A level-1 auxiliary file: Capitulo4/Vision_Artificial.aux
+A level-1 auxiliary file: ApendiceA/ApendiceA.aux
 The style file: apalike.bst
 Database file #1: Bibliografia/Referencias.bib
 Warning--I'm ignoring ROSMIKE's extra "author" field
@@ -31,7 +32,7 @@ Warning--empty year in ROS
 Warning--empty year in easybasicphotography
 You've used 15 entries,
             1935 wiz_defined-function locations,
-            546 strings with 5148 characters,
+            547 strings with 5171 characters,
 and the built_in function-call counts, 3647 in all, are:
 = -- 367
 > -- 70

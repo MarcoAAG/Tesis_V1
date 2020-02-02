@@ -2,10 +2,11 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Uso de una gimbal para una IMU ~\cite {InertialNavigation} \relax }}{2}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Uso de una gimbal en un motor de propulsi\IeC {\'o}n ~\cite {NASA2JX} \relax }}{3}
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Jerrie Cobb, uno de los Mercury 13, da un giro en la plataforma gimbal. Cr\IeC {\'e}ditos: NASA \relax }}{4}
-\contentsline {figure}{\numberline {1.4}{\ignorespaces Primer uso de la steadicam\relax }}{4}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Objetivo\relax }}{2}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Uso de una gimbal para una IMU ~\cite {InertialNavigation} \relax }}{3}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Uso de una gimbal en un motor de propulsi\IeC {\'o}n ~\cite {NASA2JX} \relax }}{3}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Jerrie Cobb, uno de los Mercury 13, da un giro en la plataforma gimbal. Cr\IeC {\'e}ditos: NASA \relax }}{4}
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Primer uso de la steadicam\relax }}{5}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Similitudes entre humano y computadora\relax }}{6}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces El camino que sigue la se\IeC {\~n}al \IeC {\'o}ptica dentro de la cabeza humana.\relax }}{7}
@@ -20,4 +21,10 @@
 \contentsline {figure}{\numberline {2.11}{\ignorespaces Odroid XU-4\relax }}{14}
 \contentsline {figure}{\numberline {2.12}{\ignorespaces Pruebas de performance\relax }}{15}
 \addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Camara 'Ocam'\relax }}{18}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Nodos y topic\relax }}{19}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Comunicaci\IeC {\'o}n entre opencv y ROS\relax }}{20}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Diagrama de flujo del programa publisher\relax }}{21}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Pruebas para color amarillo\relax }}{22}
 \addvspace {10\p@ }

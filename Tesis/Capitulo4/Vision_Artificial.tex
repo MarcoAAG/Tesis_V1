@@ -1,1 +1,140 @@
 \chapter{Vision Artificial}
+
+\section{Camara}
+Como se abordo al inicio de este proyecto, la cámara es la parte fundamental en
+la captura de datos, suple la función de un ojo y depende de diversos
+parámetros el que tengamos una captura de calidad. Para este trabajo profesional
+la cámara que se utilizo fue la del fabricante HardKernel y que lleva de nombre
+Ocam
+\begin{center}
+    \includegraphics[width=0.3\textwidth]{Capitulo4/Fig0_1.eps}       
+    \captionof{figure}{Camara 'Ocam'}\label{Fig1}
+\end{center}
+Que tiene las siguientes especificaciones.
+\begin{itemize}
+    \item \textbf{Sensor:} CMOS image sensor.
+    \item \textbf{Lente: } Lente estandar M12 distancia focal de 3.6mm.
+    \item \textbf{Field of view: } 65 grados.
+    \item \textbf{Tamaño del sensor: }0.25inch (3673.6 $\mu$m x 2738.4 $\mu$m)
+    \item \textbf{Tamaño del pixel: } 1.4 $\mu$m x 1.4 $\mu$m.
+    \item \textbf{Interfaz: }USB 3.0 Super-Speed.
+    \item \textbf{Frame rate: }\\
+    1920 x 1080 a 30fps, 1280 x 720 a45fps, 640 x 480 a30fps
+\end{itemize}
+El acceso directo a la memoria a través de USB 3.0 permite que los datos se 
+escriban en la memoria principal sin pasar por la CPU. Reduce significativamente 
+la carga de trabajo de la CPU.
+
+\section{Algoritmo general}
+\begin{algorithm}
+    \caption{Algoritmo general del sistema de vision}
+    \begin{algorithmic}[1]
+        \State{Calibrar camara}
+        \State{Capturar frame a 60fps}
+        \State{Publicar frame en ROS}
+        \State{Suscribirse al nodo publicador}
+        \State{Convertir RGB a HSV}
+        \State{Acotar el modelo HSV al color de elección}
+        \State{Agregar filtro morfologico}
+        \State{Obtener centroide de la figura obtenida en 6}
+        \State{Publicar coordenadas del centroide}
+    \end{algorithmic}
+\end{algorithm}
+
+% ---------------------------------------------------------------------------------------------------------
+% *********************************************************************************************************
+% *********************************************************************************************************
+% ---------------------------------------------------------------------------------------------------------
+
+\section{Calibración de camara}
+
+
+% ---------------------------------------------------------------------------------------------------------
+% *********************************************************************************************************
+% *********************************************************************************************************
+% ---------------------------------------------------------------------------------------------------------
+
+
+\section{Comunicación con ROS}
+En la sección de vision artificial se lanzan dos nodos, uno encargado de capturar y
+publicar frames a 60hz y el otro que se suscribe a dicho nodo y realiza un procesamiento
+con la información obtenida para posterior publicar coordenadas.
+\begin{center}
+    \includegraphics[width=0.6\textwidth]{Capitulo4/Fig0.eps}       
+    \captionof{figure}{Nodos y topic}\label{Fig1}
+\end{center}
+En la figura 4.1 se puede observar dos nodos conectados por un topic llamado /Image
+encargado de comunicar la imagen de un nodo a otro.
+\subsection{Publisher}
+Como vimos anteriormente opencv es una libreria open-source que se encarga del procesamiento
+de imagenes, también abordamos un poco acerca de como ROS comunica nodos y los 
+tipos de datos que puden ser publicados. Al hablar de que se va a publicar una imagen
+estamos refiriendonos a una matriz que en este caso sera de 640 x 480.\\
+ROS pasa las imágenes en su propio formato sensor\_msgs/Image , pero
+en este caso usaremos ROS junto con las librerias de  OpenCV. CvBridge es una 
+biblioteca ROS que proporciona una interfaz entre ROS y OpenCV.
+\begin{center}
+    \includegraphics[width=0.5\textwidth]{Capitulo4/Fig1.eps}       
+    \captionof{figure}{Comunicación entre opencv y ROS}\label{Fig1}
+\end{center}
+Al convertir un mensaje sensor\_msgs/Image en una imagen Cv, CvBridge 
+reconoce dos casos de uso distintos:
+\begin{itemize}
+    \item Queremos modificar los datos en el lugar.\\
+    \textbf{Tenemos que hacer una copia de los datos del mensaje ROS.}
+    \item No modificaremos los datos.\\
+    \textbf{Podemos compartir con seguridad los datos que posee el mensaje ROS en lugar de copiarlos.}
+\end{itemize}
+ 
+La entrada es el puntero del mensaje de imagen, así como un argumento de 
+codificación opcional. La codificación se refiere al destino CvImage.\\
+Para codificaciones de imágenes populares, CvBridge opcionalmente realizará 
+conversiones de color o profundidad de píxeles según sea necesario. Para este proyecto
+se utiliza bgr8: CV\_8UC3, es decir, que el orden del color es Azul, Verde y Rojo.\\
+Con el fin de entender este nodo se hizo el siguiente diagrama de flujo:
+\begin{center}
+    \includegraphics[width=0.35\textwidth]{Capitulo4/publisher.eps}       
+    \captionof{figure}{Diagrama de flujo del programa publisher}\label{Fig5}
+\end{center}
+El codigo se encuentra en la parte del Apendice A, 'codigo1'
+
+\subsection{Subscriber}
+Este nodo tiene dos funciones principales, Suscribirse al nodo publisher y publicar
+un array de tamaño 2 tipo entero que guardara las coordenadas en X y Y del centroide
+del target.\\
+El proceso que se ejecuta se vera más a detalle en las siguientes secciones de este
+capitulo.
+
+% ---------------------------------------------------------------------------------------------------------
+% *********************************************************************************************************
+% *********************************************************************************************************
+% ---------------------------------------------------------------------------------------------------------
+
+\section{Espacio de color}
+Como se puede apreciar en el algoritmo general, el paso 5 es el cambio de espacio de color
+de RGB a HSV, además ya sabemos el porque es mejor generar colores partiendo del
+modelo HSV. Así que lo que ahora sigue es la implementación en código y las pruebas
+que se hicieron para tener un rango de colores y así tener una base de datos a la
+cual recurriremos después.\\
+Debido a que no hay un solo color azul o rojo, etc, si no más bien un rango que cubre
+la gama de azules, amarillo, naranja, etc. Por esa razón se hicieron pruebas para
+determinar los valores HSV que corresponden a los siguientes colores: Amarillo, Azul,
+Rojo, Verde y Naranja y de esta manera a la hora de seguir un objetivo de dado color
+el sistema no tenga problemas en reconocer esa gama de color.
+\subsection{Prueba de amarillo}
+\begin{center}
+    \includegraphics[width=1.0\textwidth]{Capitulo4/HSV_amarillo.eps}       
+    \captionof{figure}{Pruebas para color amarillo}\label{Fig6}
+\end{center}
+Los valores para el rango que considere amarillo son:\\
+H minimo  = 25\\
+S minimo = 50 \\
+V minimo = 50 \\
+H maximo = 32 \\
+S maximo = 255 \\
+V maximo = 255 
+
+\subsection{Pruebas de color Rojo}
+El color rojo, en OpenCV, tiene los valores de tono aproximadamente en 
+el rango de 0 a 10 y 160 a 180.\\
+prueba
