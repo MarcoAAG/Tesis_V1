@@ -20,16 +20,20 @@
 \contentsline {figure}{\numberline {2.10}{\ignorespaces Regla 3\relax }}{12}
 \contentsline {figure}{\numberline {2.11}{\ignorespaces Obtenci\IeC {\'o}n geom\IeC {\'e}trica de la imagen\relax }}{13}
 \contentsline {figure}{\numberline {2.12}{\ignorespaces Modelo de lente fina\relax }}{13}
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Nodos conectados al Master\relax }}{15}
-\contentsline {figure}{\numberline {2.14}{\ignorespaces Representaci\IeC {\'o}n grafica de Topics\relax }}{15}
-\contentsline {figure}{\numberline {2.15}{\ignorespaces Comunicaci\IeC {\'o}n de mensajes\relax }}{16}
-\contentsline {figure}{\numberline {2.16}{\ignorespaces Odroid XU-4\relax }}{16}
-\contentsline {figure}{\numberline {2.17}{\ignorespaces Pruebas de performance\relax }}{17}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Tarjetas procesadoras de datos\relax }}{14}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Pruebas de performance\relax }}{15}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Nodos conectados al Master\relax }}{17}
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Representaci\IeC {\'o}n grafica de Topics\relax }}{17}
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Comunicaci\IeC {\'o}n de mensajes\relax }}{18}
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Representaci\IeC {\'o}n 2D de im\IeC {\'a}genes digitales mediante conjuntos de puntos discretos en una matriz rectangular\relax }}{19}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Camara 'Ocam'\relax }}{20}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Nodos y topic\relax }}{21}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Comunicaci\IeC {\'o}n entre opencv y ROS\relax }}{22}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Diagrama de flujo del programa publisher\relax }}{23}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Pruebas para color amarillo\relax }}{24}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Camara 'Ocam'\relax }}{21}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Nodos y topic\relax }}{22}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Comunicaci\IeC {\'o}n entre opencv y ROS\relax }}{23}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Diagrama de flujo del programa publisher\relax }}{24}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Pruebas para color amarillo\relax }}{25}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Pruebas para color rojo\relax }}{25}
 \addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Odroid XU-4\relax }}{29}

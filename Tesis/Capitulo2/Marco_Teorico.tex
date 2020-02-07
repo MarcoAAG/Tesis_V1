@@ -5,10 +5,12 @@ Antes de entrar a la teoría es necesario entender cuales son las fases del proy
 el porque de ellas.
 La siguiente imagen muestra la similitud entre el sistema de adquisición de datos
 de un humano y la de un sistema digital.
+
 \begin{center}
     \includegraphics[width=0.65\textwidth]{Capitulo2/Fig1.eps}
     \captionof{figure}{Similitudes entre humano y computadora}\label{Fig1}
 \end{center}
+
 Donde se observa un diagrama de flujo que empieza con la adquisición de datos, en este
 caso la captura de una imagen, posterior se hace un procesamiento, es decir, se le da
 sentido a los datos, y finalmente se hace una acción con base en la tarea que el procesador
@@ -22,6 +24,7 @@ ha generado.
 % **************************************************************************************************************************
 % **************************************************************************************************************************
 \section{Óptica}
+
 La visión artificial surge de un amplio estudio probabilístico y matemático del
 procesamiento de imágenes digitales, pero sobre todo de análisis humanos y de la
 intuición ya que de estas últimas el ingeniero hace selección de entre una u otra
@@ -283,8 +286,67 @@ eje óptico.
 
 
 \section{Procesamiento de datos}
-Este trabajo de investigación se basa en el procesamiento de datos usando un framework
-llamado ROS (del inglés Robot Operating System).
+En los seres humanos, el sistema visual recopila hasta el 80 por ciento de todos los datos sensoriales recibidos del entorno. 
+Para dar sentido a este diluvio de información óptica, las entradas visuales que son captadas y convertidas en señales 
+electroquímicas por los aproximadamente 130 millones de células sensibles a la luz en la retina se alimentan y procesan mediante 
+una compleja red de células nerviosas en el cerebro.~\cite{mundiario}\\
+Es por lo anterior que la elección de un hardware que procese tanta información como lo hace el cerebro se vuele una tarea
+prioritaria.
+% ----------------------------------------------------------------------------------------------------------------------------
+    % NUEVA SUBSECCION
+% ----------------------------------------------------------------------------------------------------------------------------
+\subsection{Tarjeta procesadora}
+La elección del hardware que será el cerebro de nuestro sistema es una tarea importante ya que de ello depende el éxito de
+nuestro proyecto, y en estos tiempos el mercado ofrece una gran variedad de tarjetas procesadoras.
+\begin{center}
+    \includegraphics[width=0.35\textwidth]{Capitulo2/Fig7.eps}
+    \captionof{figure}{Tarjetas procesadoras de datos}\label{Fig7}
+\end{center}
+Pasando desde un FPGA hasta un sistema totalmente completo como las NUC de Intel, pero para fines de este proyecto nos enfocaremos
+solo en la hecha por HardKernel, la ODROID. Esto porque nos ofrece una capacidad de porcesamiento de datos apta para la visión
+artificial y a un bajo costo.\\
+Las placas de la serie Odroid son similares a Raspberry Pi, pero tiene una mejor
+configuración y rendimiento. Se basa en la arquitectura ARM.~\cite{ROSLENTIN}\\
+ODROID significa Open + Android. Es una plataforma de desarrollo tanto de
+hardware como de software.\\
+Especificaciones técnicas en apéndice B.\\
+Con base en pruebas hechas por el proveedor, el modelo XU-4 resulta ser superior
+a otras tarjetas de desarrollo del mercado.\\
+Ejecutaron varios puntos de referencia para medir la potencia informática en el XU4.
+Las mismas pruebas se realizaron en el Raspberry Pi 3 Modelo B, ODROID-C1 +, ODROID-C2
+y ODROID-XU4.
+Los valores de los resultados de la prueba se escalaron uniformemente para fines de
+comparación. Se midió que la potencia informática del XU4 era ~ 7 veces más rápida que
+la última Raspberry Pi 3 gracias a los núcleos 2Ghz Cortex-A15 y un ancho de banda de
+memoria de 64 bits mucho mayor.\\
+Compilar código en el XU4 es súper rápido. La memoria RAM DDR3 de 2 GB de
+alto rendimiento es una ventaja adicional que permite compilar la mayoría de los
+programas directamente en el XU4.~\cite{hardkernel2020}
+\begin{center}
+    \includegraphics[width=0.65\textwidth]{Capitulo2/Fig6.eps}
+    \captionof{figure}{Pruebas de performance}\label{Fig6}
+\end{center}
+% ----------------------------------------------------------------------------------------------------------------------------
+    % NUEVA SUBSECCION
+% ----------------------------------------------------------------------------------------------------------------------------
+
+\subsection{Sistema operativo}
+Una vez elegida la tarjeta de desarrollo con la cual se estará trabajando para este
+proyecto, el siguiente paso es escoger el sistema operativo que dará soporte a nuestro
+sistema. Por defecto ODROID nos sugiere utilizar Ubuntu en su versión MATE.
+\subsubsection{Ubuntu MATE}
+Ubuntu MATE es una distribución de Linux gratuita y de código abierto y un derivado
+oficial de Ubuntu.\\
+Ubuntu es uno, si no es que el más grande, empleador de Linux en el mundo.Linux está en el
+corazón de Ubuntu y hace posible crear sistemas operativos seguros, potentes y versátiles.\\
+Ubuntu MATE toma el sistema operativo basado en Ubuntu y agrega el MATE Desktop.\\
+Donde podemos definir MATE Desktop como una implementación de la metáfora del Desktop
+hecha de un conjunto de programas que se ejecutan en la parte superior de un sistema
+operativo de computadora, que comparten una interfaz gráfica de usuario (GUI) común.
+Las GUI de escritorio ayudan al usuario a acceder y editar archivos fácilmente.
+~\cite{ubuntu2014}\\
+Ubuntu soporta arquitecturas armhf, tipo de arquitectura de la odroid, además de optimizar
+el sistema operativo sin sacrificar las ventajas que provee para una Computadora Portátil.
 \subsection{ROS}
 Un sistema de comunicación es a menudo una de las primeras necesidades que surgen al
 implementar una nueva aplicación de robot. El sistema de mensajería integrado y
@@ -364,75 +426,54 @@ antes descrita.
     \end{center}
 
 \end{itemize}
-\subsection{Tarjeta procesadora}
-Como se abordó anteriormente, ROS es el framework en el cual el proyecto esta corriendo,
-dicho framework tiene ciertas especificaciones que un sistema operativo debe de cumplir
-para poder ser instalado. Debido a que el sistema debe estar embebido en un prototipo
-relativamente pequeño, es decir que no podrá soportar ni la carga ni las dimensiones
-de un laptop, se definió conveniente la implementación de una tarjeta procesadora, y que
-dentro de las múltiples opciones del mercado la ODROID fue la seleccionada.\\
-Las placas de la serie Odroid son similares a Raspberry Pi, pero tiene una mejor
-configuración y rendimiento. Se basa en la arquitectura ARM.~\cite{ROSLENTIN}\\
-ODROID significa Open + Android. Es una plataforma de desarrollo tanto de
-hardware como de software.
-\begin{center}
-    \includegraphics[width=0.55\textwidth]{Capitulo2/Fig5.eps}
-    \captionof{figure}{Odroid XU-4}\label{Fig5}
-\end{center}
 
-El modelo XU-4 cuenta con las siguientes especificaciones:
+\subsection{Procesamiento de datos}
+Una vez definido el sistema que dará soporte a nuestro proyecto el siguiente paso es detallar el
+proceso por el cual una imagen es procesada en un ordenador.\\
+Primero, la información contenida en las imágenes se puede representar de maneras completamente diferentes. 
+Los más importantes son la representación espacial y la representación del número de onda. Estas representaciones solo 
+miran datos espaciales desde diferentes puntos de vista.La conversión entre la representación espacial y el número de 
+onda es la conocida transformada de Fourier.\cite{Bernd1997}\\
+Empezaremos por definir que es una imagen digital; donde el concepto de imagen está asociado a una función 
+bidimensional f(x,y), cuya amplitud o valor será el grado de iluminación (intensidad de la luz) en el espacio de
+coordenadas (x,y) de la imagen para cada punto.\cite{arturodelaescalera2011}.
+El valor de esta función depende de la
+cantidad de luz que incide sobre la escena vista, así como de la parte que sea reflejada
+por los objetos que componen dicha escena.\\
+Como consecuencia, f(x,y) debe ser diferente de cero y finita. Esto es:
+\begin{equation}
+    0 < f(x,y) < \infty
+\end{equation}
+La función f(x,y) se caracteriza por dos componentes: \cite{joseramon2005} Estos componentes son llamados
+iluminación y reflexión.
 \begin{itemize}
-    \item \textbf{Procesador}\\
-    Samsung Exynos5422 Cortex™-A15 2Ghz and Cortex™-A7 Octa
-    core CPUs con Mali Mali-T628 MP6 GPU.\\
-    Es un procesador mobil que fue lanzado en 2014 por Samsung para su celular S5.
-    \item \textbf{Almacenamiento}\\
-    Hay dos tipos de almacenamiento de el sistema operativo. El primero es usando
-    una microSD y el segundo es utilizando un modulo eMMC.
-    \item \textbf{Alimentación}\\
-    Es necesario alimentar con 5V y con un minimo de 4A para su optimo funcionamiento.
-    \item \textbf{Perifericos}
-    \begin{itemize}
-        \item USB hosts
-        \item HDMI
-        \item Ethernet RJ-45
-        \item GPIO (Entradas y salidas de SPI,ADC e IRQ)
-        \item Comunicación serial
-        \item USB 3.0
-    \end{itemize}
-    ~\cite{hardkernel2017}
+    \item \textbf{Iluminación}: la cantidad de luz incidente procedente de la fuente sobre la
+    escena.
+    \item \textbf{Reflexión}: La cantidad de luz reflejada por los objetos de la escena.
 \end{itemize}
-Con base en pruebas hechas por el proveedor, el modelo XU-4 resulta ser superior
-a otras tarjetas de desarrollo del mercado.\\
-Ejecutaron varios puntos de referencia para medir la potencia informática en el XU4.
-Las mismas pruebas se realizaron en el Raspberry Pi 3 Modelo B, ODROID-C1 +, ODROID-C2
-y ODROID-XU4.
-Los valores de los resultados de la prueba se escalaron uniformemente para fines de
-comparación. Se midió que la potencia informática del XU4 era ~ 7 veces más rápida que
-la última Raspberry Pi 3 gracias a los núcleos 2Ghz Cortex-A15 y un ancho de banda de
-memoria de 64 bits mucho mayor.\\
-Compilar código en el XU4 es súper rápido. La memoria RAM DDR3 de 2 GB de
-alto rendimiento es una ventaja adicional que permite compilar la mayoría de los
-programas directamente en el XU4.~\cite{hardkernel2020}
+siendo descritos por $i(x,y)$ para la iluminación y $r(x,y)$ para la reflexión. El producto de ambas funciones
+proporciona la función $f(x,y)$
+\begin{equation}
+    f(x,y) = i(x,y)r(x,y)
+\end{equation}
+donde 
+\begin{equation}
+    0 < i(x,y) < \infty
+\end{equation}
+y 
+\begin{equation}
+    0 < r(x,y) < 1
+\end{equation}
+La ecuación 2.5 indica que la reflectancia está acotada entre 0 (absorción total) y
+1 (reflexión total).La naturaleza de $i(x,y)$ está determinada por la fuente de iluminación, y la de $r(x,y)$, por
+las características de los objetos.\\
+Las computadoras no pueden manejar imágenes continuas sino solo matrices de números digitales. Por lo tanto, se 
+requiere representar imágenes como conjuntos de puntos bidimensionales. Un punto en la cuadrícula 2D se llama píxel o pel.\\
+Un píxel representa la irradiancia en la posición de cuadrícula correspondiente. En el caso más simple, los píxeles se encuentran 
+en una cuadrícula rectangular. La posición del píxel se da en la notación común para matrices.
+El primer índice, m, denota la posición de la fila, el segundo, n, la posición de la columna.
 \begin{center}
-    \includegraphics[width=0.65\textwidth]{Capitulo2/Fig6.eps}
-    \captionof{figure}{Pruebas de performance}\label{Fig6}
+    \includegraphics[width=0.5\textwidth]{Capitulo2/Fig8.eps}
+    \captionof{figure}{Representación 2D de imágenes digitales mediante conjuntos de puntos discretos en una matriz rectangular}\label{Fig8}
 \end{center}
-
-\subsection{Sistema operativo}
-Una vez elegida la tarjeta de desarrollo con la cual se estará trabajando para este
-proyecto, el siguiente paso es escoger el sistema operativo que dará soporte a nuestro
-sistema. Por defecto ODROID nos sugiere utilizar Ubuntu en su versión MATE.
-\subsubsection{Ubuntu MATE}
-Ubuntu MATE es una distribución de Linux gratuita y de código abierto y un derivado
-oficial de Ubuntu.\\
-Ubuntu es uno, si no es que el más grande, empleador de Linux en el mundo.Linux está en el
-corazón de Ubuntu y hace posible crear sistemas operativos seguros, potentes y versátiles.\\
-Ubuntu MATE toma el sistema operativo basado en Ubuntu y agrega el MATE Desktop.\\
-Donde podemos definir MATE Desktop como una implementación de la metáfora del Desktop
-hecha de un conjunto de programas que se ejecutan en la parte superior de un sistema
-operativo de computadora, que comparten una interfaz gráfica de usuario (GUI) común.
-Las GUI de escritorio ayudan al usuario a acceder y editar archivos fácilmente.
-~\cite{ubuntu2014}\\
-Ubuntu soporta arquitecturas armhf, tipo de arquitectura de la odroid, además de optimizar
-el sistema operativo sin sacrificar las ventajas que provee para una Computadora Portátil.
+Los puntos 2D (coordenadas de píxeles en una imagen) se pueden denotar usando un par de valores, $x = (x,y) \in$ ${\rm I\!R}^2$

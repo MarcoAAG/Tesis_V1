@@ -1,78 +1,75 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{10}
 
-\bibitem[Gim, ]{Gimbal}
-Gimbal.
-\newblock https://playlists.net/artists/gimbal.
-\newblock Accessed: 2020-01-10.
-
-\bibitem[NAS, ]{NASA}
-Nasa's j-2x rocket engine development.
-\newblock https://www.nasa.gov/exploration/systems/sls/j2x.
-\newblock Accessed: 2020-01-10.
-
-\bibitem[ROS, ]{ROS}
-Ros/concepts - ros wiki.
-\newblock http://wiki.ros.org/ROS/Concepts.
-\newblock Accessed: 2020-01-10.
-
-\bibitem[NAS, 2013]{NASA2JX}
- (2013).
-\newblock gimbal bearing – liquid rocket engines (j-2x, rs-25, general).
-\newblock https://blogs.nasa.gov/J2X/tag/gimbal-bearing/.
-\newblock Accessed: 2020-01-10.
-
-\bibitem[MER, 2017]{MERCURY}
- (2017).
-\newblock The gimbal rig mercury astronaut trainer.
-\newblock https://www.nasa.gov/centers/glenn/about/history/mastif.html.
-\newblock Accessed: 2020-01-10.
-
-\bibitem[Bharath, 2008]{anilbharath2008}
-Bharath, A. (2008).
-\newblock {\em Next Generation Artificial Vision System}.
-\newblock Artech House.
-
-\bibitem[Grewal, 2007]{InertialNavigation}
-Grewal, M.~S. (2007).
-\newblock {\em Global Positioning Systems, inertial navigation, and
+\bibitem{InertialNavigation}
+M.~S. Grewal, {\em Global Positioning Systems, inertial navigation, and
   integration}.
-\newblock Wiley.
+\newblock Wiley, 2007.
 
-\bibitem[HardKernel, 2017]{hardkernel2017}
-HardKernel (2017).
-\newblock {\em ODROID-XU4}.
-\newblock HardKernel.
+\bibitem{NASA2JX}
+``gimbal bearing – liquid rocket engines (j-2x, rs-25, general).''
+  https://blogs.nasa.gov/J2X/tag/gimbal-bearing/, 2013.
+\newblock Accessed: 2020-01-10.
 
-\bibitem[HardKernel, 2020]{hardkernel2020}
-HardKernel (2020).
-\newblock Odroid xu-4.
+\bibitem{Gimbal}
+``Gimbal.'' https://playlists.net/artists/gimbal.
+\newblock Accessed: 2020-01-10.
 
-\bibitem[Joseph, 2018]{ROSLENTIN}
-Joseph, L. (2018).
-\newblock {\em Robot Operating System for Absolute Beginners: Robotics
+\bibitem{NASA}
+``Nasa's j-2x rocket engine development.''
+  https://www.nasa.gov/exploration/systems/sls/j2x.
+\newblock Accessed: 2020-01-10.
+
+\bibitem{MERCURY}
+``The gimbal rig mercury astronaut trainer.''
+  https://www.nasa.gov/centers/glenn/about/history/mastif.html, 2017.
+\newblock Accessed: 2020-01-10.
+
+\bibitem{anilbharath2008}
+A.~Bharath, {\em Next Generation Artificial Vision System}.
+\newblock Artech House, 2008.
+
+\bibitem{joseramon2005}
+J.~R.~M. Vilet, {\em Apuntes de Procesamiento Digital de Imágenes}.
+\newblock Facultad de Ingeniería UASLP, first~ed., jan 2005.
+
+\bibitem{americanacademyofophthalmology2017}
+A.~A. of~Ophthalmology, ``Fotorreceptores,'' nov 2017.
+
+\bibitem{easybasicphotography}
+E.~B. PHOTOGRAPHY, ``How cameras work-the parts of a camera.''
+
+\bibitem{mundiario}
+MUNDIARIO, ``Cómo el cerebro procesa las imágenes.''
+
+\bibitem{ROSLENTIN}
+L.~Joseph, {\em Robot Operating System for Absolute Beginners: Robotics
   Programming Made Easy}.
-\newblock apress.
+\newblock apress, 2018.
 
-\bibitem[of~Ophthalmology, 2017]{americanacademyofophthalmology2017}
-of~Ophthalmology, A.~A. (2017).
-\newblock Fotorreceptores.
+\bibitem{hardkernel2020}
+HardKernel, ``Odroid xu-4,'' jan 2020.
 
-\bibitem[PHOTOGRAPHY, ]{easybasicphotography}
-PHOTOGRAPHY, E.~B.
-\newblock How cameras work-the parts of a camera.
+\bibitem{ubuntu2014}
+Ubuntu, ``What is ubuntu mate?,'' aug 2014.
 
-\bibitem[Quigley, 2015]{ROSMIKE}
-Quigley, M. (2015).
-\newblock {\em Programming Robots with ROS}.
-\newblock O’Reilly.
+\bibitem{ROS}
+``Ros/concepts - ros wiki.'' http://wiki.ros.org/ROS/Concepts.
+\newblock Accessed: 2020-01-10.
 
-\bibitem[Ubuntu, 2014]{ubuntu2014}
-Ubuntu (2014).
-\newblock What is ubuntu mate?
+\bibitem{ROSMIKE}
+M.~Quigley, {\em Programming Robots with ROS}.
+\newblock O’Reilly, 2015.
 
-\bibitem[Vilet, 2005]{joseramon2005}
-Vilet, J. R.~M. (2005).
-\newblock {\em Apuntes de Procesamiento Digital de Imágenes}.
-\newblock Facultad de Ingeniería UASLP, first edition.
+\bibitem{Bernd1997}
+B.~Jähne, {\em Digital Image processing}.
+\newblock Springer, 6th revised and extended ed.~ed., 1997.
+
+\bibitem{arturodelaescalera2011}
+A.~de~la Escalera, {\em Visión por Computador. Fundamentos y métodos}.
+\newblock Prentice Hall, 2011.
+
+\bibitem{hardkernel2017}
+HardKernel, {\em ODROID-XU4}.
+\newblock HardKernel, 2017.
 
 \end{thebibliography}
