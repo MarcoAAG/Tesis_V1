@@ -1,0 +1,9 @@
+/.metadata/
+/.jxbrowser-data/
+/dvt/
+/RemoteSystemsTempFiles/
+*.launches
+*.settings
+*.ccsproject
+*.cproject
+*.project
