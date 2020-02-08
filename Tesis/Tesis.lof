@@ -26,14 +26,15 @@
 \contentsline {figure}{\numberline {2.16}{\ignorespaces Representaci\IeC {\'o}n grafica de Topics\relax }}{17}
 \contentsline {figure}{\numberline {2.17}{\ignorespaces Comunicaci\IeC {\'o}n de mensajes\relax }}{18}
 \contentsline {figure}{\numberline {2.18}{\ignorespaces Representaci\IeC {\'o}n 2D de im\IeC {\'a}genes digitales mediante conjuntos de puntos discretos en una matriz rectangular\relax }}{19}
+\contentsline {figure}{\numberline {2.19}{\ignorespaces Ilustraci\IeC {\'o}n de cuantizaci\IeC {\'o}n\cite {Bernd1997}.La misma imagen se muestra con diferentes niveles de cuantizaci\IeC {\'o}n: a 16, b 8, c 4, d 2. Muy pocos niveles de cuantificaci\IeC {\'o}n producen bordes falsos y hacen que las caracter\IeC {\'\i }sticas con bajo contraste desaparezcan parcial o totalmente.\relax }}{20}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Camara 'Ocam'\relax }}{21}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Nodos y topic\relax }}{22}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Comunicaci\IeC {\'o}n entre opencv y ROS\relax }}{23}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Diagrama de flujo del programa publisher\relax }}{24}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Pruebas para color amarillo\relax }}{25}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Pruebas para color rojo\relax }}{25}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Camara 'Ocam'\relax }}{22}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Nodos y topic\relax }}{23}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Comunicaci\IeC {\'o}n entre opencv y ROS\relax }}{24}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Diagrama de flujo del programa publisher\relax }}{25}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Pruebas para color amarillo\relax }}{26}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Pruebas para color rojo\relax }}{26}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Odroid XU-4\relax }}{29}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Odroid XU-4\relax }}{30}

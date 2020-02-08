@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.10.28)  6 FEB 2020 21:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.10.28)  8 FEB 2020 00:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -870,10 +870,10 @@ Package caption Info: End \AtBeginDocument code.
 
 (/home/marco/Tesis/Tesis/Portada/Portada.tex
 Package epstopdf Info: Source file: <Portada/Logo.eps>
-(epstopdf)                    date: 2019-12-16 22:40:09
+(epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 129323 bytes
 (epstopdf)             Output file: <Portada/Logo-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-12-16 22:40:38
+(epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 122419 bytes
 (epstopdf)             Command: <repstopdf --outfile=Portada/Logo-eps-converted-to.pdf Portada/Logo.eps>
 (epstopdf)             \includegraphics on input line 7.
@@ -961,10 +961,10 @@ LaTeX Info: Redefining \% on input line 1.
  (/home/marco/Tesis/Tesis/Capitulo1/Introduccion.tex
 Cap\'{\i }tulo 1.
 Package epstopdf Info: Source file: <Capitulo1/Fig0.eps>
-(epstopdf)                    date: 2020-01-30 20:32:36
+(epstopdf)                    date: 2020-02-06 21:34:55
 (epstopdf)                    size: 44619 bytes
 (epstopdf)             Output file: <Capitulo1/Fig0-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-01-30 20:33:21
+(epstopdf)                    date: 2020-02-06 21:34:55
 (epstopdf)                    size: 15919 bytes
 (epstopdf)             Command: <repstopdf --outfile=Capitulo1/Fig0-eps-converted-to.pdf Capitulo1/Fig0.eps>
 (epstopdf)             \includegraphics on input line 38.
@@ -983,10 +983,10 @@ Package pdftex.def Info: Capitulo1/Fig0-eps-converted-to.pdf  used on input line
 
 ]
 Package epstopdf Info: Source file: <Capitulo1/Fig1.eps>
-(epstopdf)                    date: 2020-01-15 20:07:17
+(epstopdf)                    date: 2020-02-06 21:34:55
 (epstopdf)                    size: 80281 bytes
 (epstopdf)             Output file: <Capitulo1/Fig1-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-01-15 20:17:09
+(epstopdf)                    date: 2020-02-06 21:34:55
 (epstopdf)                    size: 50728 bytes
 (epstopdf)             Command: <repstopdf --outfile=Capitulo1/Fig1-eps-converted-to.pdf Capitulo1/Fig1.eps>
 (epstopdf)             \includegraphics on input line 74.
@@ -1003,10 +1003,10 @@ LaTeX Info: Redefining \. on input line 75.
 LaTeX Info: Redefining \% on input line 75.
 [2 </home/marco/Tesis/Tesis/Capitulo1/Fig0-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Capitulo1/Fig2.eps>
-(epstopdf)                    date: 2020-01-15 21:49:12
+(epstopdf)                    date: 2020-02-06 21:34:55
 (epstopdf)                    size: 423184 bytes
 (epstopdf)             Output file: <Capitulo1/Fig2-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-01-15 21:50:06
+(epstopdf)                    date: 2020-02-06 21:34:55
 (epstopdf)                    size: 71537 bytes
 (epstopdf)             Command: <repstopdf --outfile=Capitulo1/Fig2-eps-converted-to.pdf Capitulo1/Fig2.eps>
 (epstopdf)             \includegraphics on input line 94.
@@ -1023,10 +1023,10 @@ LaTeX Info: Redefining \. on input line 109.
 LaTeX Info: Redefining \% on input line 109.
 [3 </home/marco/Tesis/Tesis/Capitulo1/Fig1-eps-converted-to.pdf> </home/marco/Tesis/Tesis/Capitulo1/Fig2-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Capitulo1/Fig3.eps>
-(epstopdf)                    date: 2020-01-15 22:21:47
+(epstopdf)                    date: 2020-02-06 21:34:55
 (epstopdf)                    size: 74551 bytes
 (epstopdf)             Output file: <Capitulo1/Fig3-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-01-15 22:23:15
+(epstopdf)                    date: 2020-02-06 21:34:55
 (epstopdf)                    size: 23602 bytes
 (epstopdf)             Command: <repstopdf --outfile=Capitulo1/Fig3-eps-converted-to.pdf Capitulo1/Fig3.eps>
 (epstopdf)             \includegraphics on input line 110.
@@ -1040,10 +1040,10 @@ File: Capitulo1/Fig3-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: Capitulo1/Fig3-eps-converted-to.pdf  used on input line 110.
 (pdftex.def)             Requested size: 256.07741pt x 211.71779pt.
 Package epstopdf Info: Source file: <Capitulo1/Fig4.eps>
-(epstopdf)                    date: 2019-06-17 09:57:52
+(epstopdf)                    date: 2020-02-06 21:34:55
 (epstopdf)                    size: 1107533 bytes
 (epstopdf)             Output file: <Capitulo1/Fig4-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-01-16 19:52:58
+(epstopdf)                    date: 2020-02-06 21:34:55
 (epstopdf)                    size: 244610 bytes
 (epstopdf)             Command: <repstopdf --outfile=Capitulo1/Fig4-eps-converted-to.pdf Capitulo1/Fig4.eps>
 (epstopdf)             \includegraphics on input line 130.
@@ -1067,10 +1067,10 @@ LaTeX Info: Redefining \% on input line 127.
  (/home/marco/Tesis/Tesis/Capitulo2/Marco_Teorico.tex
 Cap\'{\i }tulo 2.
 Package epstopdf Info: Source file: <Capitulo2/Fig1.eps>
-(epstopdf)                    date: 2020-01-16 20:28:00
+(epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 1334703 bytes
 (epstopdf)             Output file: <Capitulo2/Fig1-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-01-16 20:28:47
+(epstopdf)                    date: 2020-02-07 22:38:46
 (epstopdf)                    size: 1178217 bytes
 (epstopdf)             Command: <repstopdf --outfile=Capitulo2/Fig1-eps-converted-to.pdf Capitulo2/Fig1.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -1091,10 +1091,10 @@ Package pdftex.def Info: Capitulo2/Fig1-eps-converted-to.pdf  used on input line
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 43.
 Package epstopdf Info: Source file: <Capitulo2/Fig1_1.eps>
-(epstopdf)                    date: 2020-01-21 22:58:33
+(epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 221261 bytes
 (epstopdf)             Output file: <Capitulo2/Fig1_1-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-01-21 22:59:29
+(epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 206032 bytes
 (epstopdf)             Command: <repstopdf --outfile=Capitulo2/Fig1_1-eps-converted-to.pdf Capitulo2/Fig1_1.eps>
 (epstopdf)             \includegraphics on input line 52.
@@ -1111,10 +1111,10 @@ LaTeX Info: Redefining \. on input line 74.
 LaTeX Info: Redefining \% on input line 74.
 [7 </home/marco/Tesis/Tesis/Capitulo2/Fig1_1-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Capitulo2/Fig1_2.eps>
-(epstopdf)                    date: 2020-01-21 23:38:14
+(epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 96458 bytes
 (epstopdf)             Output file: <Capitulo2/Fig1_2-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-01-21 23:38:42
+(epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 35554 bytes
 (epstopdf)             Command: <repstopdf --outfile=Capitulo2/Fig1_2-eps-converted-to.pdf Capitulo2/Fig1_2.eps>
 (epstopdf)             \includegraphics on input line 102.
@@ -1131,10 +1131,10 @@ LaTeX Info: Redefining \. on input line 115.
 LaTeX Info: Redefining \% on input line 115.
 [8 </home/marco/Tesis/Tesis/Capitulo2/Fig1_2-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Capitulo2/Fig1_3.eps>
-(epstopdf)                    date: 2020-01-25 15:15:12
+(epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 4850909 bytes
 (epstopdf)             Output file: <Capitulo2/Fig1_3-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-01-25 15:15:18
+(epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 3771775 bytes
 (epstopdf)             Command: <repstopdf --outfile=Capitulo2/Fig1_3-eps-converted-to.pdf Capitulo2/Fig1_3.eps>
 (epstopdf)             \includegraphics on input line 126.
@@ -1151,10 +1151,10 @@ LaTeX Info: Redefining \. on input line 152.
 LaTeX Info: Redefining \% on input line 152.
 [9 </home/marco/Tesis/Tesis/Capitulo2/Fig1_3-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Capitulo2/Fig1_5.eps>
-(epstopdf)                    date: 2020-01-29 19:24:15
+(epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 129154 bytes
 (epstopdf)             Output file: <Capitulo2/Fig1_5-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-01-29 19:24:47
+(epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 98080 bytes
 (epstopdf)             Command: <repstopdf --outfile=Capitulo2/Fig1_5-eps-converted-to.pdf Capitulo2/Fig1_5.eps>
 (epstopdf)             \includegraphics on input line 181.
@@ -1171,10 +1171,10 @@ LaTeX Info: Redefining \. on input line 198.
 LaTeX Info: Redefining \% on input line 198.
 [10 </home/marco/Tesis/Tesis/Capitulo2/Fig1_5-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Capitulo2/Fig1_6.eps>
-(epstopdf)                    date: 2020-01-29 20:59:57
+(epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 2920146 bytes
 (epstopdf)             Output file: <Capitulo2/Fig1_6-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-01-29 21:00:43
+(epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 442066 bytes
 (epstopdf)             Command: <repstopdf --outfile=Capitulo2/Fig1_6-eps-converted-to.pdf Capitulo2/Fig1_6.eps>
 (epstopdf)             \includegraphics on input line 199.
@@ -1188,10 +1188,10 @@ File: Capitulo2/Fig1_6-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: Capitulo2/Fig1_6-eps-converted-to.pdf  used on input line 199.
 (pdftex.def)             Requested size: 298.75264pt x 67.39713pt.
 Package epstopdf Info: Source file: <Capitulo2/Fig1_4.eps>
-(epstopdf)                    date: 2020-01-25 19:44:39
+(epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 162794 bytes
 (epstopdf)             Output file: <Capitulo2/Fig1_4-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-01-25 19:45:28
+(epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 45873 bytes
 (epstopdf)             Command: <repstopdf --outfile=Capitulo2/Fig1_4-eps-converted-to.pdf Capitulo2/Fig1_4.eps>
 (epstopdf)             \includegraphics on input line 218.
@@ -1208,10 +1208,10 @@ LaTeX Info: Redefining \. on input line 234.
 LaTeX Info: Redefining \% on input line 234.
 [11 </home/marco/Tesis/Tesis/Capitulo2/Fig1_6-eps-converted-to.pdf> </home/marco/Tesis/Tesis/Capitulo2/Fig1_4-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Capitulo2/Fig1_7.eps>
-(epstopdf)                    date: 2020-02-02 15:12:00
+(epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 10801 bytes
 (epstopdf)             Output file: <Capitulo2/Fig1_7-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-02-02 15:12:20
+(epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 6234 bytes
 (epstopdf)             Command: <repstopdf --outfile=Capitulo2/Fig1_7-eps-converted-to.pdf Capitulo2/Fig1_7.eps>
 (epstopdf)             \includegraphics on input line 237.
@@ -1225,10 +1225,10 @@ File: Capitulo2/Fig1_7-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: Capitulo2/Fig1_7-eps-converted-to.pdf  used on input line 237.
 (pdftex.def)             Requested size: 106.69783pt x 105.20883pt.
 Package epstopdf Info: Source file: <Capitulo2/Fig1_8.eps>
-(epstopdf)                    date: 2020-02-02 15:15:35
+(epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 2891 bytes
 (epstopdf)             Output file: <Capitulo2/Fig1_8-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-02-02 15:16:04
+(epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 2706 bytes
 (epstopdf)             Command: <repstopdf --outfile=Capitulo2/Fig1_8-eps-converted-to.pdf Capitulo2/Fig1_8.eps>
 (epstopdf)             \includegraphics on input line 243.
@@ -1242,10 +1242,10 @@ File: Capitulo2/Fig1_8-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: Capitulo2/Fig1_8-eps-converted-to.pdf  used on input line 243.
 (pdftex.def)             Requested size: 85.35696pt x 107.28932pt.
 Package epstopdf Info: Source file: <Capitulo2/Fig1_9.eps>
-(epstopdf)                    date: 2020-02-02 15:20:28
+(epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 10669 bytes
 (epstopdf)             Output file: <Capitulo2/Fig1_9-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-02-02 15:20:57
+(epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 6048 bytes
 (epstopdf)             Command: <repstopdf --outfile=Capitulo2/Fig1_9-eps-converted-to.pdf Capitulo2/Fig1_9.eps>
 (epstopdf)             \includegraphics on input line 250.
@@ -1262,10 +1262,10 @@ LaTeX Info: Redefining \. on input line 258.
 LaTeX Info: Redefining \% on input line 258.
 [12 </home/marco/Tesis/Tesis/Capitulo2/Fig1_7-eps-converted-to.pdf> </home/marco/Tesis/Tesis/Capitulo2/Fig1_8-eps-converted-to.pdf> </home/marco/Tesis/Tesis/Capitulo2/Fig1_9-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Capitulo2/Fig1_10.eps>
-(epstopdf)                    date: 2020-02-02 15:54:35
+(epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 44387 bytes
 (epstopdf)             Output file: <Capitulo2/Fig1_10-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-02-02 15:55:06
+(epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 48166 bytes
 (epstopdf)             Command: <repstopdf --outfile=Capitulo2/Fig1_10-eps-converted-to.pdf Capitulo2/Fig1_10.eps>
 (epstopdf)             \includegraphics on input line 259.
@@ -1279,10 +1279,10 @@ File: Capitulo2/Fig1_10-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: Capitulo2/Fig1_10-eps-converted-to.pdf  used on input line 259.
 (pdftex.def)             Requested size: 149.37958pt x 144.55904pt.
 Package epstopdf Info: Source file: <Capitulo2/Fig1_11.eps>
-(epstopdf)                    date: 2020-02-02 16:09:59
+(epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 43517 bytes
 (epstopdf)             Output file: <Capitulo2/Fig1_11-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-02-02 16:10:31
+(epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 47206 bytes
 (epstopdf)             Command: <repstopdf --outfile=Capitulo2/Fig1_11-eps-converted-to.pdf Capitulo2/Fig1_11.eps>
 (epstopdf)             \includegraphics on input line 276.
@@ -1299,10 +1299,10 @@ LaTeX Info: Redefining \. on input line 298.
 LaTeX Info: Redefining \% on input line 298.
 [13 </home/marco/Tesis/Tesis/Capitulo2/Fig1_10-eps-converted-to.pdf> </home/marco/Tesis/Tesis/Capitulo2/Fig1_11-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Capitulo2/Fig7.eps>
-(epstopdf)                    date: 2020-02-04 20:33:12
+(epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 2041524 bytes
 (epstopdf)             Output file: <Capitulo2/Fig7-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-02-04 20:34:02
+(epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 310315 bytes
 (epstopdf)             Command: <repstopdf --outfile=Capitulo2/Fig7-eps-converted-to.pdf Capitulo2/Fig7.eps>
 (epstopdf)             \includegraphics on input line 302.
@@ -1316,10 +1316,10 @@ File: Capitulo2/Fig7-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: Capitulo2/Fig7-eps-converted-to.pdf  used on input line 302.
 (pdftex.def)             Requested size: 149.37958pt x 170.75003pt.
 Package epstopdf Info: Source file: <Capitulo2/Fig6.eps>
-(epstopdf)                    date: 2020-01-18 16:55:01
+(epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 107428 bytes
 (epstopdf)             Output file: <Capitulo2/Fig6-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-01-18 16:55:36
+(epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 83773 bytes
 (epstopdf)             Command: <repstopdf --outfile=Capitulo2/Fig6-eps-converted-to.pdf Capitulo2/Fig6.eps>
 (epstopdf)             \includegraphics on input line 326.
@@ -1339,10 +1339,10 @@ LaTeX Info: Redefining \. on input line 366.
 LaTeX Info: Redefining \% on input line 366.
  [15 </home/marco/Tesis/Tesis/Capitulo2/Fig6-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Capitulo2/Fig2.eps>
-(epstopdf)                    date: 2020-01-16 23:09:54
+(epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 186178 bytes
 (epstopdf)             Output file: <Capitulo2/Fig2-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-01-16 23:09:55
+(epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 186996 bytes
 (epstopdf)             Command: <repstopdf --outfile=Capitulo2/Fig2-eps-converted-to.pdf Capitulo2/Fig2.eps>
 (epstopdf)             \includegraphics on input line 398.
@@ -1359,10 +1359,10 @@ LaTeX Info: Redefining \. on input line 399.
 LaTeX Info: Redefining \% on input line 399.
 [16]
 Package epstopdf Info: Source file: <Capitulo2/Fig3.eps>
-(epstopdf)                    date: 2020-01-18 13:02:20
+(epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 228221 bytes
 (epstopdf)             Output file: <Capitulo2/Fig3-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-01-18 13:03:18
+(epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 72140 bytes
 (epstopdf)             Command: <repstopdf --outfile=Capitulo2/Fig3-eps-converted-to.pdf Capitulo2/Fig3.eps>
 (epstopdf)             \includegraphics on input line 407.
@@ -1376,10 +1376,10 @@ File: Capitulo2/Fig3-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: Capitulo2/Fig3-eps-converted-to.pdf  used on input line 407.
 (pdftex.def)             Requested size: 320.0935pt x 126.70407pt.
 Package epstopdf Info: Source file: <Capitulo2/Fig4.eps>
-(epstopdf)                    date: 2020-01-18 13:11:46
+(epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 102533 bytes
 (epstopdf)             Output file: <Capitulo2/Fig4-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-01-18 13:12:18
+(epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 41039 bytes
 (epstopdf)             Command: <repstopdf --outfile=Capitulo2/Fig4-eps-converted-to.pdf Capitulo2/Fig4.eps>
 (epstopdf)             \includegraphics on input line 424.
@@ -1395,17 +1395,17 @@ Package pdftex.def Info: Capitulo2/Fig4-eps-converted-to.pdf  used on input line
 LaTeX Info: Redefining \. on input line 425.
 LaTeX Info: Redefining \% on input line 425.
 [17 </home/marco/Tesis/Tesis/Capitulo2/Fig2-eps-converted-to.pdf> </home/marco/Tesis/Tesis/Capitulo2/Fig3-eps-converted-to.pdf>]
-LaTeX Info: Redefining \. on input line 475.
-LaTeX Info: Redefining \% on input line 475.
+LaTeX Info: Redefining \. on input line 482.
+LaTeX Info: Redefining \% on input line 482.
  [18 </home/marco/Tesis/Tesis/Capitulo2/Fig4-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Capitulo2/Fig8.eps>
-(epstopdf)                    date: 2020-02-06 20:53:17
+(epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 14196 bytes
 (epstopdf)             Output file: <Capitulo2/Fig8-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-02-06 20:54:37
+(epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 9209 bytes
 (epstopdf)             Command: <repstopdf --outfile=Capitulo2/Fig8-eps-converted-to.pdf Capitulo2/Fig8.eps>
-(epstopdf)             \includegraphics on input line 476.
+(epstopdf)             \includegraphics on input line 483.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1413,17 +1413,42 @@ pdfTeX warning: pdflatex (file /home/marco/Tesis/Tesis/Capitulo2/Fig8-eps-conver
 <Capitulo2/Fig8-eps-converted-to.pdf, id=219, 343.2825pt x 351.3125pt>
 File: Capitulo2/Fig8-eps-converted-to.pdf Graphic file (type pdf)
 <use Capitulo2/Fig8-eps-converted-to.pdf>
-Package pdftex.def Info: Capitulo2/Fig8-eps-converted-to.pdf  used on input line 476.
+Package pdftex.def Info: Capitulo2/Fig8-eps-converted-to.pdf  used on input line 483.
 (pdftex.def)             Requested size: 213.39568pt x 218.38507pt.
+
+Overfull \hbox (0.38023pt too wide) in paragraph at lines 486--494
+\OT1/ptm/m/n/12 El mues-treo es la con-ver-si[]on que su-fren las dos di-men-sio-nes es-pa-cia-les de la se[]nal anal[]ogi-
+ []
+
+LaTeX Info: Redefining \. on input line 522.
+LaTeX Info: Redefining \% on input line 522.
+[19 </home/marco/Tesis/Tesis/Capitulo2/Fig8-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <Capitulo2/Fig9.eps>
+(epstopdf)                    date: 2020-02-07 23:19:52
+(epstopdf)                    size: 397324 bytes
+(epstopdf)             Output file: <Capitulo2/Fig9-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-02-07 23:21:19
+(epstopdf)                    size: 153448 bytes
+(epstopdf)             Command: <repstopdf --outfile=Capitulo2/Fig9-eps-converted-to.pdf Capitulo2/Fig9.eps>
+(epstopdf)             \includegraphics on input line 523.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file /home/marco/Tesis/Tesis/Capitulo2/Fig9-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Capitulo2/Fig9-eps-converted-to.pdf, id=237, 599.23875pt x 492.84125pt>
+File: Capitulo2/Fig9-eps-converted-to.pdf Graphic file (type pdf)
+<use Capitulo2/Fig9-eps-converted-to.pdf>
+Package pdftex.def Info: Capitulo2/Fig9-eps-converted-to.pdf  used on input line 523.
+(pdftex.def)             Requested size: 256.07741pt x 210.60909pt.
 )
 LaTeX Info: Redefining \. on input line 128.
 LaTeX Info: Redefining \% on input line 128.
- [19 </home/marco/Tesis/Tesis/Capitulo2/Fig8-eps-converted-to.pdf>]
+ [20 </home/marco/Tesis/Tesis/Capitulo2/Fig9-eps-converted-to.pdf>]
 \openout2 = `Capitulo3/Modelo_Matematico.aux'.
 
  (/home/marco/Tesis/Tesis/Capitulo3/Modelo_Matematico.tex
 Cap\'{\i }tulo 3.
-) [20
+) [21
 
 
 
@@ -1433,10 +1458,10 @@ Cap\'{\i }tulo 3.
  (/home/marco/Tesis/Tesis/Capitulo4/Vision_Artificial.tex
 Cap\'{\i }tulo 4.
 Package epstopdf Info: Source file: <Capitulo4/Fig0_1.eps>
-(epstopdf)                    date: 2020-01-30 21:30:26
+(epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 433705 bytes
 (epstopdf)             Output file: <Capitulo4/Fig0_1-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-01-30 21:30:52
+(epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 56797 bytes
 (epstopdf)             Command: <repstopdf --outfile=Capitulo4/Fig0_1-eps-converted-to.pdf Capitulo4/Fig0_1.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -1444,21 +1469,21 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Tesis/Capitulo4/Fig0_1-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Capitulo4/Fig0_1-eps-converted-to.pdf, id=239, 301.125pt x 341.275pt>
+<Capitulo4/Fig0_1-eps-converted-to.pdf, id=247, 301.125pt x 341.275pt>
 File: Capitulo4/Fig0_1-eps-converted-to.pdf Graphic file (type pdf)
 <use Capitulo4/Fig0_1-eps-converted-to.pdf>
 Package pdftex.def Info: Capitulo4/Fig0_1-eps-converted-to.pdf  used on input line 10.
 (pdftex.def)             Requested size: 128.0387pt x 145.11545pt.
-[21
+[22
 
 
 
  </home/marco/Tesis/Tesis/Capitulo4/Fig0_1-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Capitulo4/Fig0.eps>
-(epstopdf)                    date: 2020-01-30 20:46:31
+(epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 22813 bytes
 (epstopdf)             Output file: <Capitulo4/Fig0-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-01-30 20:47:08
+(epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 20645 bytes
 (epstopdf)             Command: <repstopdf --outfile=Capitulo4/Fig0-eps-converted-to.pdf Capitulo4/Fig0.eps>
 (epstopdf)             \includegraphics on input line 63.
@@ -1466,19 +1491,19 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Tesis/Capitulo4/Fig0-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Capitulo4/Fig0-eps-converted-to.pdf, id=247, 483.8075pt x 114.4275pt>
+<Capitulo4/Fig0-eps-converted-to.pdf, id=255, 483.8075pt x 114.4275pt>
 File: Capitulo4/Fig0-eps-converted-to.pdf Graphic file (type pdf)
 <use Capitulo4/Fig0-eps-converted-to.pdf>
 Package pdftex.def Info: Capitulo4/Fig0-eps-converted-to.pdf  used on input line 63.
 (pdftex.def)             Requested size: 256.07741pt x 60.5677pt.
 LaTeX Info: Redefining \. on input line 76.
 LaTeX Info: Redefining \% on input line 76.
-[22 </home/marco/Tesis/Tesis/Capitulo4/Fig0-eps-converted-to.pdf>]
+[23 </home/marco/Tesis/Tesis/Capitulo4/Fig0-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Capitulo4/Fig1.eps>
-(epstopdf)                    date: 2020-01-30 21:50:14
+(epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 19383 bytes
 (epstopdf)             Output file: <Capitulo4/Fig1-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-01-30 21:50:33
+(epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 18280 bytes
 (epstopdf)             Command: <repstopdf --outfile=Capitulo4/Fig1-eps-converted-to.pdf Capitulo4/Fig1.eps>
 (epstopdf)             \includegraphics on input line 77.
@@ -1486,16 +1511,16 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Tesis/Capitulo4/Fig1-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Capitulo4/Fig1-eps-converted-to.pdf, id=254, 341.275pt x 298.11375pt>
+<Capitulo4/Fig1-eps-converted-to.pdf, id=262, 341.275pt x 298.11375pt>
 File: Capitulo4/Fig1-eps-converted-to.pdf Graphic file (type pdf)
 <use Capitulo4/Fig1-eps-converted-to.pdf>
 Package pdftex.def Info: Capitulo4/Fig1-eps-converted-to.pdf  used on input line 77.
 (pdftex.def)             Requested size: 213.39568pt x 186.4116pt.
 Package epstopdf Info: Source file: <Capitulo4/publisher.eps>
-(epstopdf)                    date: 2020-01-30 23:05:11
+(epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 93113 bytes
 (epstopdf)             Output file: <Capitulo4/publisher-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-01-30 23:09:19
+(epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 77777 bytes
 (epstopdf)             Command: <repstopdf --outfile=Capitulo4/publisher-eps-converted-to.pdf Capitulo4/publisher.eps>
 (epstopdf)             \includegraphics on input line 96.
@@ -1503,22 +1528,22 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Tesis/Capitulo4/publisher-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Capitulo4/publisher-eps-converted-to.pdf, id=255, 378.41376pt x 1115.16624pt>
+<Capitulo4/publisher-eps-converted-to.pdf, id=263, 378.41376pt x 1115.16624pt>
 File: Capitulo4/publisher-eps-converted-to.pdf Graphic file (type pdf)
 <use Capitulo4/publisher-eps-converted-to.pdf>
 Package pdftex.def Info: Capitulo4/publisher-eps-converted-to.pdf  used on input line 96.
 (pdftex.def)             Requested size: 149.37958pt x 440.20508pt.
 LaTeX Info: Redefining \. on input line 97.
 LaTeX Info: Redefining \% on input line 97.
-[23 </home/marco/Tesis/Tesis/Capitulo4/Fig1-eps-converted-to.pdf>]
+[24 </home/marco/Tesis/Tesis/Capitulo4/Fig1-eps-converted-to.pdf>]
 LaTeX Info: Redefining \. on input line 124.
 LaTeX Info: Redefining \% on input line 124.
- [24 </home/marco/Tesis/Tesis/Capitulo4/publisher-eps-converted-to.pdf>]
+ [25 </home/marco/Tesis/Tesis/Capitulo4/publisher-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Capitulo4/HSV_amarillo.eps>
-(epstopdf)                    date: 2020-01-30 23:43:27
+(epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 24614 bytes
 (epstopdf)             Output file: <Capitulo4/HSV_amarillo-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-01-30 23:43:50
+(epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 21205 bytes
 (epstopdf)             Command: <repstopdf --outfile=Capitulo4/HSV_amarillo-eps-converted-to.pdf Capitulo4/HSV_amarillo.eps>
 (epstopdf)             \includegraphics on input line 126.
@@ -1526,16 +1551,16 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Tesis/Capitulo4/HSV_amarillo-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Capitulo4/HSV_amarillo-eps-converted-to.pdf, id=267, 1027.84pt x 252.945pt>
+<Capitulo4/HSV_amarillo-eps-converted-to.pdf, id=276, 1027.84pt x 252.945pt>
 File: Capitulo4/HSV_amarillo-eps-converted-to.pdf Graphic file (type pdf)
 <use Capitulo4/HSV_amarillo-eps-converted-to.pdf>
 Package pdftex.def Info: Capitulo4/HSV_amarillo-eps-converted-to.pdf  used on input line 126.
 (pdftex.def)             Requested size: 426.79135pt x 105.03197pt.
 Package epstopdf Info: Source file: <Capitulo4/HSV_rojo.eps>
-(epstopdf)                    date: 2020-02-06 21:24:06
+(epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 24310 bytes
 (epstopdf)             Output file: <Capitulo4/HSV_rojo-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-02-06 21:25:21
+(epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 21202 bytes
 (epstopdf)             Command: <repstopdf --outfile=Capitulo4/HSV_rojo-eps-converted-to.pdf Capitulo4/HSV_rojo.eps>
 (epstopdf)             \includegraphics on input line 141.
@@ -1543,20 +1568,20 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Tesis/Capitulo4/HSV_rojo-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Capitulo4/HSV_rojo-eps-converted-to.pdf, id=268, 1026.83624pt x 257.96375pt>
+<Capitulo4/HSV_rojo-eps-converted-to.pdf, id=277, 1026.83624pt x 257.96375pt>
 File: Capitulo4/HSV_rojo-eps-converted-to.pdf Graphic file (type pdf)
 <use Capitulo4/HSV_rojo-eps-converted-to.pdf>
 Package pdftex.def Info: Capitulo4/HSV_rojo-eps-converted-to.pdf  used on input line 141.
 (pdftex.def)             Requested size: 426.79135pt x 107.21826pt.
 LaTeX Info: Redefining \. on input line 152.
 LaTeX Info: Redefining \% on input line 152.
-[25 </home/marco/Tesis/Tesis/Capitulo4/HSV_amarillo-eps-converted-to.pdf> </home/marco/Tesis/Tesis/Capitulo4/HSV_rojo-eps-converted-to.pdf>])
+[26 </home/marco/Tesis/Tesis/Capitulo4/HSV_amarillo-eps-converted-to.pdf> </home/marco/Tesis/Tesis/Capitulo4/HSV_rojo-eps-converted-to.pdf>])
 LaTeX Info: Redefining \. on input line 130.
 LaTeX Info: Redefining \% on input line 130.
- [26]
+ [27]
 \openout2 = `ApendiceA/ApendiceA.aux'.
 
- (/home/marco/Tesis/Tesis/ApendiceA/ApendiceA.tex [27
+ (/home/marco/Tesis/Tesis/ApendiceA/ApendiceA.tex [28
 
 
 
@@ -1568,10 +1593,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 43.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 43.
-)
-LaTeX Info: Redefining \. on input line 139.
-LaTeX Info: Redefining \% on input line 139.
- [28]
+) [29]
 \openout2 = `ApendiceB/ApendiceB.aux'.
 
  (/home/marco/Tesis/Tesis/ApendiceB/ApendiceB.tex
@@ -1582,10 +1604,10 @@ File: omsptm.fd
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 16.
 Package epstopdf Info: Source file: <ApendiceB/Fig0.eps>
-(epstopdf)                    date: 2020-01-18 15:38:07
+(epstopdf)                    date: 2020-02-06 21:34:55
 (epstopdf)                    size: 2045187 bytes
 (epstopdf)             Output file: <ApendiceB/Fig0-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-02-06 18:42:51
+(epstopdf)                    date: 2020-02-06 21:34:55
 (epstopdf)                    size: 351158 bytes
 (epstopdf)             Command: <repstopdf --outfile=ApendiceB/Fig0-eps-converted-to.pdf ApendiceB/Fig0.eps>
 (epstopdf)             \includegraphics on input line 26.
@@ -1593,12 +1615,12 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Tesis/ApendiceB/Fig0-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<ApendiceB/Fig0-eps-converted-to.pdf, id=289, 963.6pt x 542.025pt>
+<ApendiceB/Fig0-eps-converted-to.pdf, id=297, 963.6pt x 542.025pt>
 File: ApendiceB/Fig0-eps-converted-to.pdf Graphic file (type pdf)
 <use ApendiceB/Fig0-eps-converted-to.pdf>
 Package pdftex.def Info: ApendiceB/Fig0-eps-converted-to.pdf  used on input line 26.
 (pdftex.def)             Requested size: 234.73654pt x 132.03224pt.
-) [29
+) [30
 
 
 
@@ -1608,27 +1630,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--12
  []
 
 
-Overfull \hbox (38.5229pt too wide) in paragraph at lines 18--21
+Overfull \hbox (38.5229pt too wide) in paragraph at lines 22--25
 []\OT1/ptm/m/n/12 ``Nasa's j-2x roc-ket en-gi-ne de-ve-lop-ment.'' https://www.nasa.gov/exploration/systems/sls/j2x.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 23--26
+Underfull \hbox (badness 10000) in paragraph at lines 27--30
 []\OT1/ptm/m/n/12 ``The gim-bal rig mer-cury as-tro-naut trai-ner.''
  []
 
 
-Underfull \hbox (badness 1565) in paragraph at lines 23--26
+Underfull \hbox (badness 1565) in paragraph at lines 27--30
 \OT1/ptm/m/n/12 https://www.nasa.gov/centers/glenn/about/history/mastif.html, 2017.  Ac-ces-sed:
  []
 
-[30
+[31
 
 
 ])
 LaTeX Info: Redefining \. on input line 143.
 LaTeX Info: Redefining \% on input line 143.
- [31] (/home/marco/Tesis/Tesis/Tesis.aux (/home/marco/Tesis/Tesis/Portada/Portada.aux)
+ [32] (/home/marco/Tesis/Tesis/Tesis.aux (/home/marco/Tesis/Tesis/Portada/Portada.aux)
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
  (/home/marco/Tesis/Tesis/Agradecimientos/Dedicatoria.aux) (/home/marco/Tesis/Tesis/Agradecimientos/Agradecimientos.aux) (/home/marco/Tesis/Tesis/Capitulo1/Introduccion.aux) (/home/marco/Tesis/Tesis/Capitulo2/Marco_Teorico.aux) (/home/marco/Tesis/Tesis/Capitulo3/Modelo_Matematico.aux) (/home/marco/Tesis/Tesis/Capitulo4/Vision_Artificial.aux) (/home/marco/Tesis/Tesis/ApendiceA/ApendiceA.aux) (/home/marco/Tesis/Tesis/ApendiceB/ApendiceB.aux))
@@ -1637,18 +1659,18 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 8818 strings out of 492982
- 129304 string characters out of 6134895
- 377975 words of memory out of 5000000
- 12065 multiletter control sequences out of 15000+600000
- 47712 words of font info for 106 fonts, out of 8000000 for 9000
+ 8832 strings out of 492982
+ 129587 string characters out of 6134895
+ 377995 words of memory out of 5000000
+ 12075 multiletter control sequences out of 15000+600000
+ 48490 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,8n,41p,307b,1626s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /home/marco/Tesis/Tesis/Tesis.pdf (37 pages, 7788093 bytes).
+ 41i,8n,41p,509b,1628s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on /home/marco/Tesis/Tesis/Tesis.pdf (38 pages, 7950572 bytes).
 PDF statistics:
- 343 PDF objects out of 1000 (max. 8388607)
- 208 compressed objects within 3 object streams
+ 354 PDF objects out of 1000 (max. 8388607)
+ 215 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 156 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 161 words of extra memory for PDF output out of 10000 (max. 10000000)
 

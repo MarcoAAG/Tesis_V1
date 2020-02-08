@@ -427,7 +427,10 @@ antes descrita.
 
 \end{itemize}
 
-\subsection{Procesamiento de datos}
+% ----------------------------------------------------------------------------------------------------------------------------
+    % NUEVA SUBSECCION
+% ----------------------------------------------------------------------------------------------------------------------------
+\subsection{Procesamiento de imagenes}
 Una vez definido el sistema que dará soporte a nuestro proyecto el siguiente paso es detallar el
 proceso por el cual una imagen es procesada en un ordenador.\\
 Primero, la información contenida en las imágenes se puede representar de maneras completamente diferentes. 
@@ -467,6 +470,10 @@ y
 La ecuación 2.5 indica que la reflectancia está acotada entre 0 (absorción total) y
 1 (reflexión total).La naturaleza de $i(x,y)$ está determinada por la fuente de iluminación, y la de $r(x,y)$, por
 las características de los objetos.\\
+Las funciones tienen un
+dominio y un rango. Si el dominio y rango son continuos, la señal es continua o
+analógica; si el dominio es discreto pero el rango no, la señal también será discreta; y si
+el dominio y el rango son discretos, como en el caso de las imágenes, la señal es digital.\\
 Las computadoras no pueden manejar imágenes continuas sino solo matrices de números digitales. Por lo tanto, se 
 requiere representar imágenes como conjuntos de puntos bidimensionales. Un punto en la cuadrícula 2D se llama píxel o pel.\\
 Un píxel representa la irradiancia en la posición de cuadrícula correspondiente. En el caso más simple, los píxeles se encuentran 
@@ -476,4 +483,57 @@ El primer índice, m, denota la posición de la fila, el segundo, n, la posició
     \includegraphics[width=0.5\textwidth]{Capitulo2/Fig8.eps}
     \captionof{figure}{Representación 2D de imágenes digitales mediante conjuntos de puntos discretos en una matriz rectangular}\label{Fig8}
 \end{center}
+La función de imagen f(x,y) es digitalizada en la memoria del computador, tanto
+espacialmente como en amplitud. La digitalización de las coordenadas espaciales (x,y)
+está asociada al concepto de muestreo, mientras que la digitalización de la amplitud al
+de cuantificación de los niveles de gris.\cite{joseramon2005}
+\\El muestreo es la conversión que sufren las dos dimensiones espaciales de la
+señal analógica, y que genera la noción de píxel.\\
 Los puntos 2D (coordenadas de píxeles en una imagen) se pueden denotar usando un par de valores, $x = (x,y) \in$ ${\rm I\!R}^2$
+\cite{Richard2011}
+\begin{equation}
+    x = \left[ 
+        \begin{array}{c} 
+            x \\ 
+            y 
+        \end{array} 
+        \right]   
+\end{equation}
+Los puntos 2D también se pueden representar utilizando coordenadas homogéneas, $\tilde{x} = 
+(\tilde{x},\tilde{y}, \tilde{w}) \in \rm I\!P^2$ donde los vectores que difieren solo por escala 
+se consideran equivalentes. $\rm I\!P^2 = {\rm I\!R}^3 - (0,0,0) $ se llama el espacio proyectivo 2D.
+
+% ----------------------------------------------------------------------------------------------------------------------------
+    % NUEVA SUBSECCION
+% ----------------------------------------------------------------------------------------------------------------------------
+
+\subsection{Cuantización}
+Para usar con una computadora, la energía medida en el plano de la imagen debe 
+asignarse a un número limitado Q de valores discretos de gris. Este proceso se llama 
+cuantización. El número de niveles de cuantificación requeridos en el procesamiento de 
+imágenes se puede discutir con respecto a dos criterios.\cite{Richard2011}\\
+La cuantificación es la conversión
+que sufre la amplitud de la señal analógica; así se genera el concepto de nivel de gris o
+intensidad.En general, los datos de imagen se cuantifican en 256 valores de gris. 
+Luego, cada píxel ocupa 8 bits o un byte. Para el caso de tener 256 niveles de gris (0-255), el 0 corresponde a un
+objeto no iluminado o que absorbe todos los rayos luminosos que inciden sobre él
+(negro), y el nivel 255 a un objeto muy iluminado o que refleja todos los rayos que
+inciden sobre él (blanco).
+\begin{center}
+    \includegraphics[width=0.6\textwidth]{Capitulo2/Fig9.eps}
+    \captionof{figure}{Ilustración de cuantización\cite{Bernd1997}.La misma imagen se muestra con diferentes niveles de cuantización: a 16, b 8, c 4, d 2. Muy pocos niveles de cuantificación producen bordes falsos y hacen que las características con bajo contraste desaparezcan parcial o totalmente.}\label{Fig9}
+\end{center}
+Al efecto de disminuir la resolución y mantener las
+dimensiones físicas se le conoce como efecto tablero de ajedrez.
+
+% ----------------------------------------------------------------------------------------------------------------------------
+    % NUEVA SUBSECCION
+% ----------------------------------------------------------------------------------------------------------------------------
+\subsubsection{Espacio de color}
+El uso del color en el procesamiento de imágenes está motivado por dos factores principales. 
+Primero, el color es un poderoso descriptor que a menudo simplifica la identificación y 
+extracción de objetos de una escena. En segundo lugar, los humanos pueden discernir miles 
+de tonos e intensidades de color, en comparación con solo los tonos de gris de una cámara.
+\cite{Rafael2002}\\
+Los parámetros síquicos de la percepción del color son la luminosidad, el tono, y
+la saturación.

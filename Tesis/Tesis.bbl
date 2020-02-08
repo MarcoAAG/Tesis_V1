@@ -10,6 +10,10 @@ M.~S. Grewal, {\em Global Positioning Systems, inertial navigation, and
   https://blogs.nasa.gov/J2X/tag/gimbal-bearing/, 2013.
 \newblock Accessed: 2020-01-10.
 
+\bibitem{Bernd1997}
+B.~Jähne, {\em Digital Image processing}.
+\newblock Springer, 6th revised and extended ed.~ed., 1997.
+
 \bibitem{Gimbal}
 ``Gimbal.'' https://playlists.net/artists/gimbal.
 \newblock Accessed: 2020-01-10.
@@ -60,13 +64,17 @@ Ubuntu, ``What is ubuntu mate?,'' aug 2014.
 M.~Quigley, {\em Programming Robots with ROS}.
 \newblock O’Reilly, 2015.
 
-\bibitem{Bernd1997}
-B.~Jähne, {\em Digital Image processing}.
-\newblock Springer, 6th revised and extended ed.~ed., 1997.
-
 \bibitem{arturodelaescalera2011}
 A.~de~la Escalera, {\em Visión por Computador. Fundamentos y métodos}.
 \newblock Prentice Hall, 2011.
+
+\bibitem{Richard2011}
+R.~Szeliski, {\em Computer Vision: Algorithms and Applications}.
+\newblock Texts in Computer Science, Springer, 2011.
+
+\bibitem{Rafael2002}
+R.~E.~W. Rafael C.~Gonzalez, {\em Digital image processing}.
+\newblock Prentice Hall, 2nd ed~ed., 2002.
 
 \bibitem{hardkernel2017}
 HardKernel, {\em ODROID-XU4}.
