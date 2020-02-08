@@ -15,10 +15,12 @@
                 "/home/marco/Tesis/ROS/devel/include",
                 "/opt/ros/melodic/include",
                 "${workspaceRoot}/include",
-                "${workspaceFolder}/ROS/src/video_driver/include"
+                "${workspaceFolder}/ROS/src/video_driver/include",
+                "/usr/local/bin/composer",
+                "${workspaceFolder}/microcontralor/GM2804/include"
             ],
             "defines": [],
-            "intelliSenseMode": "clang-x64",
+            "intelliSenseMode": "${default}",
             "browse": {
                 "path": [
                     "/usr/include/c++/6",
@@ -32,7 +34,8 @@
                     "${workspaceRoot}",
                     "/opt/ros/melodic/include",
                     "/home/Tesis/ROS/devel/include",
-                    "${workspaceRoot}/include"
+                    "${workspaceRoot}/include",
+                    "${workspaceFolder}/microcontralor/GM2804/include"
                 ],
                 "limitSymbolsToIncludedHeaders": true,
                 "databaseFilename": ""
