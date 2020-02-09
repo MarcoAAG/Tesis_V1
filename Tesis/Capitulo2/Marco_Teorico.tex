@@ -529,11 +529,142 @@ dimensiones físicas se le conoce como efecto tablero de ajedrez.
 % ----------------------------------------------------------------------------------------------------------------------------
     % NUEVA SUBSECCION
 % ----------------------------------------------------------------------------------------------------------------------------
+\subsection{Librerias OPENCV}
+Dentro del mundo del procesamiento de imágenes digitales encontramos una amplia variedad
+de desarrolladores que han construido librería especializadas en el tratamiento de
+imágenes. Dentro de las que destacan nombres como OpenCV, HALCON, y point cloud library.
+Siendo la primera de estas de código abierto. Por esta razón he decidido utilizar
+OpenCV en este proyecto, aunado a que tiene soporte de contribuidores en todo el mundo.\\
+OpenCV es una biblioteca open-source de Visión Artificial originalmente desarrollada por 
+Intel en 1999. Desde entonces se ha utilizado en infinidad de aplicaciones, desde 
+sistemas de seguridad con detección de movimiento, hasta aplicativos de control de 
+procesos donde se requiere reconocimiento de objetos. Contiene más de 500 funciones 
+que abarcan una gran gama de áreas en el proceso de Visión, como reconocimiento de 
+objetos, reconocimiento facial, calibración de cámaras, visión estéreo y visión 
+robótica y no dejan de añadirse nuevos algoritmos continuamente. Su principal ventaja 
+es que se puede utilizar de manera gratuita, incluso para realizar aplicaciones 
+comerciales.\cite{opencv}
+\begin{center}
+    \includegraphics[width=0.6\textwidth]{Capitulo2/Fig12.eps}
+    \captionof{figure}{Símbolo característico RGB de OpenCV}\label{Fig9}
+\end{center}
+Tiene interfaces C ++, Python, Java y MATLAB y es compatible con Windows, Linux, 
+Android y Mac OS.
+
+% ----------------------------------------------------------------------------------------------------------------------------
+    % NUEVA SUBSECCION
+% ----------------------------------------------------------------------------------------------------------------------------
 \subsubsection{Espacio de color}
 El uso del color en el procesamiento de imágenes está motivado por dos factores principales. 
 Primero, el color es un poderoso descriptor que a menudo simplifica la identificación y 
 extracción de objetos de una escena. En segundo lugar, los humanos pueden discernir miles 
 de tonos e intensidades de color, en comparación con solo los tonos de gris de una cámara.
 \cite{Rafael2002}\\
+El espacio de color es un espacio geométrico tridimensional con ejes adecuadamente 
+definidos para que los símbolos de todas las percepciones de color posibles de humanos u 
+otros animales encajen en él en un orden correspondiente al orden psicológico.
 Los parámetros síquicos de la percepción del color son la luminosidad, el tono, y
-la saturación.
+la saturación. El propósito de un modelo de color (también llamado espacio de color) es 
+facilitar la especificación de colores de alguna manera estándar, generalmente aceptada. 
+En esencia, un modelo de color es una especificación de un sistema de coordenadas y un 
+subespacio dentro de ese sistema donde cada color está representado por un solo punto.\\
+Hay multiples espacios de color en la actualida, siendo el espacio RGB el mas conocido, esto
+debido a su antigua creación hecha por Helmholtz y Schrödinger, asumiendo 
+tres procesos fundamentales de visión del color R, G y B (Rojo, Verde y Azul).
+\begin{equation}
+    \frac{dR}{R} = \frac{dG}{G} = \frac{dB}{B} = constante
+\end{equation}
+donde dR es el incremento / decremento en magnitud del estímulo descrito por el proceso 
+fundamental R, y comparable para los otros dos estímulos.\cite{Rolf2003}
+\begin{center}
+    \includegraphics[width=0.35\textwidth]{Capitulo2/Fig10.eps}
+    \captionof{figure}{Representación del espacio de color RGB}\label{Fig10}
+\end{center}
+Uno de los principales problema que el modelo RGB presenta es la mezcla de la información
+del color (tono y saturación) y la intensidad. Aun así sigue siendo el modelo más utilizado y
+el que los productores de cámara utilizan para ser implementadas en estas. Estos dos inconvenientes
+se resuelven con el siguiente espacio de color.
+\subsubsection{HSI}
+"HSI" se refiere al modelo de color de Tono, Saturación, Intensidad para presentar datos 
+de color. El modelo de color de intensidad de saturación de tono (HSI) se parece mucho 
+a las propiedades de detección de color de la visión humana. El componente de intensidad 
+está relacionado con el componente de luminancia desacoplado del color. Los componentes 
+de matiz y saturación están relacionados con la forma en que un humano percibe el color. 
+Dicha relación con la visión humana hace que sea deseable utilizar el modelo de color 
+HSI para las técnicas de procesamiento de imágenes en color, como la mejora de imágenes 
+y la segmentación de imágenes.\cite{taiy2000}\\
+Las transformaciones matemáticas que permiten el paso del espacio RGB al HSI
+son realizadas normalmente mediante hardware específico. Las ecuaciones son:
+\begin{equation}
+    I=\frac{R+G+B}{3}    
+\end{equation}
+\begin{equation}
+    H = arctan \left( \frac{\sqrt{3}(G-B)}{(R-G)+(R-B)} \right)
+\end{equation}
+\begin{equation}
+    S = 1 - \frac{min(R,G,B)}{I}
+\end{equation}
+Así como el espacio RGB se representa por un cubo, el HSI lo forman dos
+pirámides unidas por su base. Dependiendo de la intensidad se tiene un corte a los
+conos.
+\begin{center}
+    \includegraphics[width=0.5\textwidth]{Capitulo2/Fig11.eps}
+    \captionof{figure}{Representación del espacio de color HSI}\label{Fig10}
+\end{center}
+Variaciones de este espacio de color son:
+\begin{itemize}
+    \item \textbf{HSL}(Hue, Saturation Lightness)
+    \item \textbf{HSV} (Hue Saturation Value)
+    \item \textbf{HCI} (Hue Chroma / Colourfulness Lightness)
+    \item \textbf{HVC} (Hue Value Chroma)
+    \item \textbf{TSD} (Hue Saturation Darkness)
+\end{itemize}
+
+\subsubsection{Características del modeldo HSV}
+Esta variación del modelo HSI es la base en librerias dedicadas a la visión artificial,
+En resumen tenemos los siguiente valores para cada característica de este modelo.\\
+\textbf{Tono(H)}\\
+El tono es la porción de color del modelo, expresada como un número de 0 a 360 grados:
+\begin{itemize}
+    \item El rojo cae entre 0 y 60 grados.
+    \item El amarillo cae entre 61 y 120 grados.
+    \item El verde cae entre 121-180 grados.
+    \item El cian cae entre 181-240 grados.
+    \item El azul cae entre 241-300 grados.
+    \item Magenta cae entre 301-360 grados.
+\end{itemize}
+\textbf{Saturación}\\
+La saturación describe la cantidad de gris en un color particular, del 0 al 100 por 
+ciento. La reducción de este componente hacia cero introduce más gris y produce un 
+efecto desvanecido. A veces, la saturación aparece como un rango de solo 0-1, donde 0 
+es gris y 1 es un color primario.\\
+\textbf{Valor(V)[brillo]}\\
+El valor funciona junto con la saturación y describe el brillo o la intensidad del 
+color, de 0 a 100 por ciento, donde 0 es completamente negro y 100 es el más brillante 
+y revela la mayor cantidad de color.
+
+\subsubsection{Espacio de color en OpenCV}
+En el caso de imágenes de 8 bits y 16 bits, R, G y B se convierten al formato 
+de punto flotante y se escalan para ajustarse al rango de 0 a 1.
+\begin{equation}
+    V \leftarrow max(R,G,B)
+\end{equation}
+\begin{equation}
+    S \leftarrow \begin{cases} \frac{V-min(R,G,B)}{V}, & \mbox{if } V\mbox{ = R} \\ 0, & \mbox{otherwise }  \end{cases}
+\end{equation}
+\begin{equation}
+    H \leftarrow \begin{cases}
+        60(G - B)/(V-min(R,G,B)), & \mbox{if } V\mbox{ = R} \\
+        {{120+60(B - R)}/{(V-min(R,G,B))}}, & \mbox{if } V\mbox{ = G} \\
+        {{240+60(R - G)}/{(V-min(R,G,B))}}, & \mbox{if } V\mbox{ = B} \\
+    \end{cases}
+\end{equation}
+Si $H < 0$ entonces $H \leftarrow H+360$. En la salida tenemos $0 \leq V \leq 1$, 
+$0 \leq S \leq 1$ , $0 \leq H \leq 360$.
+Los valores se convierten luego al tipo de datos de destino:
+\begin{itemize}
+    \item Imagen de 8 bits: $V \leftarrow 255V$, $S\leftarrow 255S$, $H \leftarrow H/2$(para ajustar de 0 a 255)
+    \item Imágenes de 16 bits: (actualmente no compatible) 
+    \item Imágenes de 32 bits: H, S y V se dejan como están
+\end{itemize}
+\cite{opencvcolor}

@@ -24,45 +24,49 @@ Warning--entry type for "easybasicphotography" isn't style-file defined
 --line 104 of file Bibliografia/Referencias.bib
 Warning--entry type for "mundiario" isn't style-file defined
 --line 110 of file Bibliografia/Referencias.bib
-You've used 20 entries,
+Warning--entry type for "opencv" isn't style-file defined
+--line 176 of file Bibliografia/Referencias.bib
+Warning--entry type for "opencvcolor" isn't style-file defined
+--line 182 of file Bibliografia/Referencias.bib
+You've used 24 entries,
             1876 wiz_defined-function locations,
-            580 strings with 5445 characters,
-and the built_in function-call counts, 2653 in all, are:
-= -- 252
-> -- 65
+            596 strings with 5721 characters,
+and the built_in function-call counts, 3158 in all, are:
+= -- 293
+> -- 81
 < -- 0
-+ -- 35
-- -- 15
-* -- 101
-:= -- 363
-add.period$ -- 33
-call.type$ -- 20
-change.case$ -- 13
++ -- 43
+- -- 19
+* -- 119
+:= -- 436
+add.period$ -- 36
+call.type$ -- 24
+change.case$ -- 16
 chr.to.int$ -- 0
-cite$ -- 20
-duplicate$ -- 128
-empty$ -- 376
-format.name$ -- 15
-if$ -- 691
+cite$ -- 24
+duplicate$ -- 154
+empty$ -- 449
+format.name$ -- 19
+if$ -- 818
 int.to.chr$ -- 0
-int.to.str$ -- 20
-missing$ -- 18
-newline$ -- 78
-num.names$ -- 15
-pop$ -- 122
+int.to.str$ -- 24
+missing$ -- 21
+newline$ -- 91
+num.names$ -- 19
+pop$ -- 142
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 53
+skip$ -- 71
 stack$ -- 0
 substring$ -- 0
-swap$ -- 11
+swap$ -- 13
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 15
-width$ -- 22
-write$ -- 171
-(There were 6 warnings)
+while$ -- 19
+width$ -- 26
+write$ -- 200
+(There were 8 warnings)

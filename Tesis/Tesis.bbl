@@ -14,6 +14,9 @@ M.~S. Grewal, {\em Global Positioning Systems, inertial navigation, and
 B.~Jähne, {\em Digital Image processing}.
 \newblock Springer, 6th revised and extended ed.~ed., 1997.
 
+\bibitem{opencvcolor}
+OpenCV, ``Color conversions.''
+
 \bibitem{Gimbal}
 ``Gimbal.'' https://playlists.net/artists/gimbal.
 \newblock Accessed: 2020-01-10.
@@ -72,9 +75,21 @@ A.~de~la Escalera, {\em Visión por Computador. Fundamentos y métodos}.
 R.~Szeliski, {\em Computer Vision: Algorithms and Applications}.
 \newblock Texts in Computer Science, Springer, 2011.
 
+\bibitem{opencv}
+OpenCV, ``About it.''
+
 \bibitem{Rafael2002}
 R.~E.~W. Rafael C.~Gonzalez, {\em Digital image processing}.
 \newblock Prentice Hall, 2nd ed~ed., 2002.
+
+\bibitem{Rolf2003}
+R.~G. Kuehni, {\em Color Space and Its Divisions Color Order from Antiquity to
+  the Present}.
+\newblock Wiley-Interscience, 2003.
+
+\bibitem{taiy2000}
+T.~C. W.~P. Kim, ``Image filtering in hs color space,'' {\em University of
+  Washington}, 2000.
 
 \bibitem{hardkernel2017}
 HardKernel, {\em ODROID-XU4}.
