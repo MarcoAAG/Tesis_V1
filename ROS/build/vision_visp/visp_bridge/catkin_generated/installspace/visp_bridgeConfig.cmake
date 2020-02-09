@@ -110,7 +110,7 @@ if(NOT "include;/usr/include;/opt/ros/melodic/include;/usr/include/opencv;/usr/i
         message(FATAL_ERROR "Project 'visp_bridge' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'visp_bridge' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/marco/Tesis/ROS/install/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'visp_bridge' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '\${prefix}/${idir}'.  ${_report}")
     endif()
     _list_append_unique(visp_bridge_INCLUDE_DIRS ${include})
   endforeach()

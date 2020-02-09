@@ -4,5 +4,5 @@ Name: camera_calibration
 Description: Description of camera_calibration
 Version: 1.13.0
 Cflags: 
-Libs: -L/home/marco/Tesis/ROS/devel/lib 
+Libs: -L${prefix}/lib 
 Requires: 

@@ -4,5 +4,5 @@ Name: ocam
 Description: Description of ocam
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/marco/Tesis/ROS/install/lib 
+Libs: -L${prefix}/lib 
 Requires: 
