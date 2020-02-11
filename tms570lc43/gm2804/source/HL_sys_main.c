@@ -41,6 +41,7 @@
 *
 */
 
+
 /* USER CODE BEGIN (0) */
 /* USER CODE END */
 
@@ -109,7 +110,7 @@ uint8 TEXT1[TSIZE_INTRO] = {'C', 'O', 'N', 'E', 'C', 'T', 'A', 'D', 'O'};
 
 int main(void)
 {
-    /* USER CODE BEGIN (3) */
+/* USER CODE BEGIN (3) */
     hetInit();
     sciInit();
 
@@ -125,6 +126,7 @@ int main(void)
 
     return 0;
 }
+
 
 /* USER CODE BEGIN (4) */
 /*
