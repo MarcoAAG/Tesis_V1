@@ -53,6 +53,7 @@
 #include "os_task.h"
 #include "HL_het.h"
 #include "HL_sci.h"
+#include "as5048.h"
 /* USER CODE END */
 
 /** @fn void main(void)
@@ -94,6 +95,16 @@ static void TaskInit(void *pvParameters);
 static void TaskControl(void *pvParameters);
 TaskHandle_t TaskInitHandle;
 
+/*
+**************************************************************************************
+FUNCTION FOR SCI COMMUNICATION
+**************************************************************************************
+*/
+void sciSendText(sciBASE_t *sci, uint8 *text, uint32 length);
+void sciSendData(sciBASE_t *sci, uint8 *text, uint32 length);
+#define TSIZE_INTRO 9
+uint8 TEXT1[TSIZE_INTRO] = {'C', 'O', 'N', 'E', 'C', 'T', 'A', 'D', 'O'};
+
 /* USER CODE END */
 
 int main(void)
@@ -107,6 +118,9 @@ int main(void)
         // TASK HAS NOT CREATED
         return 0;
     }
+    vTaskStartScheduler();
+    for (;;)
+        ;
     /* USER CODE END */
 
     return 0;
@@ -123,6 +137,8 @@ static void TaskInit(void *pvParameters)
     portTickType xLastWakeTime;
     xLastWakeTime = xTaskGetTickCount();
 
+    sciSendText(sciREG1,&TEXT1[0],TSIZE_INTRO);   /* send text 1 */
+
     //PWM0 init
     pwm0het0.period = 20000;
     pwm0het0.duty = 500;
@@ -132,7 +148,7 @@ static void TaskInit(void *pvParameters)
     pwm1het1.duty = 500;
     setpwmsignal(hetRAM1, pwm1, pwm1het1);
 
-    vTaskDelayUntil(&xLastWakeTime, (portTICK_RATE_MS * 2000)); //Sleep task for 2 seconds
+    vTaskDelayUntil(&xLastWakeTime, (4000 * portTICK_RATE_MS)); //Sleep task for 2 seconds
     if (xTaskCreate(TaskControl, "TaskControl", configMINIMAL_STACK_SIZE, NULL, 1, NULL) != pdTRUE)
     {
         // TASK HAS NOT CREATED
@@ -141,8 +157,19 @@ static void TaskInit(void *pvParameters)
 }
 static void TaskControl(void *pvParameters)
 {
+    uint16 n;
+    n = 5;
     for (;;)
-        ;
+    {
+        pwm0het0.duty = 900;
+        setpwmsignal(hetRAM1, pwm0, pwm0het0);
+
+        pwm1het1.duty = 700;
+        setpwmsignal(hetRAM1, pwm1, pwm1het1);
+
+        sciSendData(sciREG1, (uint8 *)&n, 2);
+        sciSend(sciREG1, 2, (unsigned char *)"\r\n");
+    }
 }
 
 void vApplicationIdleHook(void)
@@ -183,6 +210,79 @@ void setpwmsignal(hetRAMBASE_t *hetRAM, uint32 pwm, hetSIGNAL_t signal)
     hetRAM->Instruction[(pwm << 1U) + 41U].Control = ((hetRAM->Instruction[(pwm << 1U) + 41U].Control) & (~(uint32)(0x00000018U))) | (action << 3U);
     hetRAM->Instruction[(pwm << 1U) + 41U].Data = ((((uint32)pwmPeriod * signal.duty) / 10000) << 7U) + 128U; // el duty va de 0 a 10000, es decir de 0ms a 20ms
     hetRAM->Instruction[(pwm << 1U) + 42U].Data = ((uint32)pwmPeriod << 7U) - 128U;
+}
+
+/*
+**************************************************************************************
+FUNCTION FOR SCI COMMUNICATION
+**************************************************************************************
+*/
+void sciSendData(sciBASE_t *sci, uint8 *text, uint32 length)
+{
+    uint8 txt = 0;
+    uint8 txt1 = 0;
+
+#if ((__little_endian__ == 1) || (__LITTLE_ENDIAN__ == 1))
+    text = text + (length - 1);
+#endif
+
+    while (length--)
+    {
+#if ((__little_endian__ == 1) || (__LITTLE_ENDIAN__ == 1))
+        txt = *text--;
+#else
+        txt = *text++;
+#endif
+
+        txt1 = txt;
+
+        txt &= ~(0xF0);
+        txt1 &= ~(0x0F);
+        txt1 = txt1 >> 4;
+
+        if (txt <= 0x9)
+        {
+            txt += 0x30;
+        }
+        else if (txt > 0x9 && txt <= 0xF)
+        {
+            txt += 0x37;
+        }
+        else
+        {
+            txt = 0x30;
+        }
+
+        if (txt1 <= 0x9)
+        {
+            txt1 += 0x30;
+        }
+        else if ((txt1 > 0x9) && (txt1 <= 0xF))
+        {
+            txt1 += 0x37;
+        }
+        else
+        {
+            txt1 = 0x30;
+        }
+
+        while ((sciREG1->FLR & 0x4) == 4)
+            ;                       /* wait until busy */
+        sciSendByte(sciREG1, txt1); /* send out text   */
+        while ((sciREG1->FLR & 0x4) == 4)
+            ;                      /* wait until busy */
+        sciSendByte(sciREG1, txt); /* send out text   */
+    };
+}
+
+void sciSendText(sciBASE_t *sci, uint8 *text, uint32 length)
+{
+    while (length--)
+    {
+        while ((sciREG1->FLR & 0x4) == 4)
+            ;                          /* wait until busy */
+        sciSendByte(sciREG1, *text++); /* send out text   */
+    };
 }
 
 /* USER CODE END */

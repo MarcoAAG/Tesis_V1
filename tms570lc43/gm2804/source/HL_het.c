@@ -129,13 +129,13 @@ static const hetINSTRUCTION_t het1PROGRAM[58U] =
     *         - Next instruction             = 4
     *         - Conditional next instruction = 4
     *         - Interrupt                    = 3
-    *         - Pin                          = 10
+    *         - Pin                          = 1
     */
     {
         /* Program */
         0x000095C0U,
         /* Control */
-        (0x00008006U | (uint32)((uint32)10U << 8U) | (uint32)((uint32)3U << 3U)),
+        (0x00008006U | (uint32)((uint32)1U << 8U) | (uint32)((uint32)0U << 3U)),
         /* Data */
         0x00000000U,
         /* Reserved */
@@ -809,15 +809,15 @@ static const hetINSTRUCTION_t het1PROGRAM[58U] =
     *         - Next instruction             = 44
     *         - Conditional next instruction = 4
     *         - Interrupt                    = 3
-    *         - Pin                          = 10
+    *         - Pin                          = 1
     */
     {
         /* Program */
         0x00058203U,
         /* Control */
-        (0x00008007U | (uint32)((uint32)0U << 22U) | (uint32)((uint32)10U << 8U) | (uint32)((uint32)3U << 3U)),
+        (0x00008007U | (uint32)((uint32)1U << 22U) | (uint32)((uint32)1U << 8U) | (uint32)((uint32)0U << 3U)),
         /* Data */
-        75136U,
+        0U,
         /* Reserved */
         0x00000000U
     },
@@ -834,7 +834,7 @@ static const hetINSTRUCTION_t het1PROGRAM[58U] =
         /* Control */
         (0x00056007U),
         /* Data */
-        149888U,
+        2999936U,
         /* Reserved */
         0x00000000U
     },
@@ -1141,7 +1141,7 @@ void hetInit(void)
                  | (uint32) 0x00000000U
                  | (uint32) 0x00000000U
                  | (uint32) 0x00000000U
-                 | (uint32) 0x00000000U
+                 | (uint32) 0x00000002U
                  | (uint32) 0x00000001U;
 
     /** - Set HET pins open drain enable */
@@ -1243,7 +1243,7 @@ void hetInit(void)
                  | (uint32) 0x00000000U
                  | (uint32) 0x00000000U
                  | (uint32) 0x00000000U
-                 | (uint32) 0x00000000U
+                 | (uint32) 0x00000002U
                  | (uint32) 0x00000001U;
 
     /** - Set HET pins high resolution share */
