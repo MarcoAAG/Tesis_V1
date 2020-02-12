@@ -668,3 +668,70 @@ Los valores se convierten luego al tipo de datos de destino:
     \item Imágenes de 32 bits: H, S y V se dejan como están
 \end{itemize}
 \cite{opencvcolor}
+
+\subsection{Transformaciones morfológicas}
+Lo que conocemos como realidad proviene de las percepciones obtenidas por los sentidos, por ejemplo el sentido de la vista
+nos puede entregar un objeto casi que borroso pero nuestra memoria y capacidad de asociamiento nos permite relacionarlo con
+algún objeto guardado en nuestra base de datos.\\
+Hacer lo anterior en un sistema embebido involucra tener una base de datos amplio, lo que genera un costo razonable de recursos
+de memoria y procesamiento, debido a esto es que existen diversas maneras de "limpiar" lo que nuestros sentidos captan, que en 
+este caso es lo que capta la cámara, tengan el menor ruido posible.\\
+Es aquí donde las transformaciones morfológicas toman lugar, debido a su uso en imágenes binarias que permiten simplificar
+el uso de imágenes digitales. Estas basan su funcionamiento en una rama de las matemáticas conocidas como "Teoría de conjuntos".
+Se puede consultar más información acerca de la matemática detrás de las operaciones morfológicas y teoría de conjuntos en la
+obra de %\cite{Serra1984} \\ 
+
+\subsubsection{Conceptos elementales de teoría de conjuntos}
+Algunas definiciones básicas son descritas, tomando en cuenta que la notación para estos son mayúsculas (X, Y, Z \dots), mientras
+que para los elementos son las minúsculas (q, r, t \dots).\\
+Las siguientes definiciones fueron tomadas de \cite{10045_10053}
+\theoremstyle{definition}
+\begin{definition}{\textbf{Inclusión}}
+    X es subconjunto de Y si todos los elementos de X pertenecen a Y: 
+    \begin{equation}
+        X \subseteq Y 	\iff \{ p \in X \rightarrow p \in Y \}
+    \end{equation}
+    La inclusión es reflexiva, antisimétrica y transitiva. 
+\end{definition}
+\begin{definition}{\textbf{Complemento}}
+    El complemento de X, $X^c$, son todos los elementos que no pertenecen a X.
+\end{definition}
+\begin{definition}{\textbf{Unión}}
+    La unión de dos conjuntos se constituye por los elementos que pertenecen a uno o al otro: 
+    \begin{equation}
+        X \cup Y = \{ p|p \in X \quad o  \quad p \in Y \}  
+    \end{equation}
+    Al igual que la intersección, la unión de conjuntos es conmutativa, asociativa e idempotente
+\end{definition}
+\begin{definition}{\textbf{Intersección}}
+    La intersección de dos conjuntos X e Y es el conjunto de los elementos que pertenecen a ambos conjuntos:
+    \begin{equation}
+        X \cap Y = \{ p|p \in X \quad y \quad p \in Y \}
+    \end{equation}
+    La intersección es conmutativa, asociativa e idempotente. Esta última propiedad es importante en morfología y 
+    significa que $X \cap X = X$. 
+\end{definition}
+\begin{definition}{\textbf{Translación}}
+    Un conjunto X es trasladado por un vector $v$, cuando cada uno de los elementos de ese conjunto sufre esa translación. 
+    Se denominará al nuevo conjunto $X_v$.
+\end{definition}
+
+\subsubsection{Transformaciones morfológicas elementales}
+Las transformaciones morfológicas son algunas operaciones simples basadas en la forma de la imagen. Normalmente se realiza en 
+imágenes binarias.Necesita dos entradas, una es nuestra imagen original, la segunda se llama elemento de estructuración o 
+kernel que decide la naturaleza de la operación.Dos operadores morfológicos básicos son la erosión y la dilatación. Luego, 
+sus variantes de formas como Apertura, Cierre, Gradiente, etc. también entran en juego. \cite{ieeeucsa2019}\\
+Para el presente trabajo, todas las entradas son imágenes binarias, esto es, blanco y negro provenientes de la salida
+del proceso del cambio de espacio de color a HSV, donde el color blanco representa el segmento del objeto a seguir.Además de que
+las operaciones morfológicas serán aplicadas como filtros de ruido en la imagen, debido a eso solo serán necesarias dos operaciones:
+apertura y cierre, que están basadas en erosión y dilatación.\\
+La esencia de las transformaciones morfológicas es la obtención de estructuras geométricas en los conjuntos donde sé está procesando,
+mediante el empleo de otro conjunto de forma conocida, a este último se le denomina como elemento estructurante.
+El tamaño y la forma del elemento estructurante se selecciona de acuerdo a las formas que el usuario requiera obtener.
+\begin{center}
+    \includegraphics[width=0.4\textwidth]{Capitulo2/Fig13.eps}
+    \captionof{figure}{ Ejemplo de formas básicas de elementos estructurantes planos}\label{Fig13}
+\end{center}
+
+
+\subsubsection{Erosión}

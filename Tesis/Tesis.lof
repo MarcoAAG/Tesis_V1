@@ -30,18 +30,19 @@
 \contentsline {figure}{\numberline {2.20}{\ignorespaces S\IeC {\'\i }mbolo caracter\IeC {\'\i }stico RGB de OpenCV\relax }}{21}
 \contentsline {figure}{\numberline {2.21}{\ignorespaces Representaci\IeC {\'o}n del espacio de color RGB\relax }}{22}
 \contentsline {figure}{\numberline {2.22}{\ignorespaces Representaci\IeC {\'o}n del espacio de color HSI\relax }}{23}
+\contentsline {figure}{\numberline {2.23}{\ignorespaces Ejemplo de formas b\IeC {\'a}sicas de elementos estructurantes planos\relax }}{26}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Camara 'Ocam'\relax }}{26}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Nodos y topic\relax }}{27}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Comunicaci\IeC {\'o}n entre opencv y ROS\relax }}{28}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Diagrama de flujo del programa publisher\relax }}{29}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Diagrama de flujo para cambio de espacio de color\relax }}{30}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Funci\IeC {\'o}n Color \cite {opencvcolor}\relax }}{30}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Funci\IeC {\'o}n inRange\relax }}{31}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Espectro de colores\relax }}{31}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Separaci\IeC {\'o}n de colores\relax }}{31}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Separaci\IeC {\'o}n de colores\relax }}{32}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Camara 'Ocam'\relax }}{28}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Nodos y topic\relax }}{29}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Comunicaci\IeC {\'o}n entre opencv y ROS\relax }}{30}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Diagrama de flujo del programa publisher\relax }}{31}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Diagrama de flujo para cambio de espacio de color\relax }}{32}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Funci\IeC {\'o}n Color \cite {opencvcolor}\relax }}{32}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Funci\IeC {\'o}n inRange\relax }}{33}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Espectro de colores\relax }}{33}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Separaci\IeC {\'o}n de colores\relax }}{33}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Separaci\IeC {\'o}n de colores\relax }}{34}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Odroid XU-4\relax }}{36}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Odroid XU-4\relax }}{38}

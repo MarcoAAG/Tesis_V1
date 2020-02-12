@@ -28,36 +28,38 @@ Warning--entry type for "opencv" isn't style-file defined
 --line 176 of file Bibliografia/Referencias.bib
 Warning--entry type for "opencvcolor" isn't style-file defined
 --line 182 of file Bibliografia/Referencias.bib
-You've used 24 entries,
+Warning--entry type for "ieeeucsa2019" isn't style-file defined
+--line 196 of file Bibliografia/Referencias.bib
+You've used 26 entries,
             1876 wiz_defined-function locations,
-            596 strings with 5721 characters,
-and the built_in function-call counts, 3158 in all, are:
-= -- 293
-> -- 81
+            603 strings with 5934 characters,
+and the built_in function-call counts, 3402 in all, are:
+= -- 313
+> -- 89
 < -- 0
-+ -- 43
-- -- 19
-* -- 119
-:= -- 436
-add.period$ -- 36
-call.type$ -- 24
-change.case$ -- 16
++ -- 47
+- -- 21
+* -- 129
+:= -- 470
+add.period$ -- 38
+call.type$ -- 26
+change.case$ -- 18
 chr.to.int$ -- 0
-cite$ -- 24
-duplicate$ -- 154
-empty$ -- 449
-format.name$ -- 19
-if$ -- 818
+cite$ -- 26
+duplicate$ -- 162
+empty$ -- 485
+format.name$ -- 21
+if$ -- 880
 int.to.chr$ -- 0
-int.to.str$ -- 24
+int.to.str$ -- 26
 missing$ -- 21
-newline$ -- 91
-num.names$ -- 19
-pop$ -- 142
+newline$ -- 97
+num.names$ -- 21
+pop$ -- 156
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 71
+skip$ -- 79
 stack$ -- 0
 substring$ -- 0
 swap$ -- 13
@@ -66,7 +68,7 @@ text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 19
-width$ -- 26
-write$ -- 200
-(There were 8 warnings)
+while$ -- 21
+width$ -- 28
+write$ -- 214
+(There were 9 warnings)
