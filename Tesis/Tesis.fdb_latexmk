@@ -1,5 +1,5 @@
 # Fdb version 3
-["bibtex Tesis"] 1581485393 "Tesis.aux" "Tesis.bbl" "Tesis" 1581485395
+["bibtex Tesis"] 1581485393 "Tesis.aux" "Tesis.bbl" "Tesis" 1581556119
   "/home/marco/Tesis/Tesis/Agradecimientos/Agradecimientos.aux" 1581485394 1521 fbb542071c905cb12d835f9f7d456db1 ""
   "/home/marco/Tesis/Tesis/Agradecimientos/Dedicatoria.aux" 1581485394 1537 c7825ba29582142cc0119c3984b58ec4 ""
   "/home/marco/Tesis/Tesis/ApendiceA/ApendiceA.aux" 1581485394 1573 c6d1cdbb79e873f415e38a8bf7f8754f ""
@@ -16,7 +16,7 @@
   (generated)
   "Tesis.bbl"
   "Tesis.blg"
-["pdflatex"] 1581485393 "Tesis.tex" "/home/marco/Tesis/Tesis/Tesis.pdf" "Tesis" 1581485395
+["pdflatex"] 1581485393 "Tesis.tex" "/home/marco/Tesis/Tesis/Tesis.pdf" "Tesis" 1581556119
   "/etc/texmf/web2c/texmf.cnf" 1572313085 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/marco/Tesis/Tesis/Tesis.aux" 1581485394 1971 86ee4ac65539400ad233d08bc06f8cdc ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1480098666 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -318,19 +318,19 @@
   "Tesis.lot" 1581485394 283 c8bef1fd0f5542a81119a0c917dc173a ""
   "Tesis.tex" 1581482994 5544 f93664e8f45ada0bd40ec48414cd5989 ""
   (generated)
-  "ApendiceA/ApendiceA.aux"
-  "Capitulo3/Modelo_Matematico.aux"
-  "Capitulo1/Introduccion.aux"
-  "Agradecimientos/Agradecimientos.aux"
-  "Capitulo4/Vision_Artificial.aux"
-  "/home/marco/Tesis/Tesis/Tesis.pdf"
-  "Portada/Portada.aux"
   "Tesis.pdf"
-  "Agradecimientos/Dedicatoria.aux"
-  "Tesis.lot"
-  "Tesis.aux"
-  "/home/marco/Tesis/Tesis/Tesis.log"
   "Capitulo2/Marco_Teorico.aux"
-  "Tesis.lof"
-  "Tesis.log"
+  "/home/marco/Tesis/Tesis/Tesis.pdf"
+  "ApendiceA/ApendiceA.aux"
+  "Tesis.lot"
   "ApendiceB/ApendiceB.aux"
+  "Capitulo1/Introduccion.aux"
+  "Tesis.aux"
+  "Agradecimientos/Dedicatoria.aux"
+  "Agradecimientos/Agradecimientos.aux"
+  "Portada/Portada.aux"
+  "Capitulo4/Vision_Artificial.aux"
+  "Capitulo3/Modelo_Matematico.aux"
+  "Tesis.log"
+  "/home/marco/Tesis/Tesis/Tesis.log"
+  "Tesis.lof"

@@ -1,0 +1,93 @@
+% !TEX root = my-thesis.tex
+
+
+% **************************************************
+% Files' Character Encoding
+% **************************************************
+\PassOptionsToPackage{utf8}{inputenc}
+\usepackage{inputenc}
+
+
+
+% **************************************************
+% Information and Commands for Reuse
+% **************************************************
+\newcommand{\thesisTitle}{Tesis Nombre}
+\newcommand{\thesisName}{Marco Antonio Aguilar Gallardo}
+\newcommand{\thesisSubject}{Innovación educativa para el desarrollo de México}
+\newcommand{\thesisDate}{\today}
+\newcommand{\thesisVersion}{Versión 3.0}
+
+\newcommand{\thesisFirstReviewer}{Antonio Flores Moreno}
+\newcommand{\thesisFirstReviewerUniversity}{\protect{Asesor Tecnico}}
+\newcommand{\thesisFirstReviewerDepartment}{Maestro en ciencias}
+
+\newcommand{\thesisSecondReviewer}{Edith Hernandez Hernandez}
+\newcommand{\thesisSecondReviewerUniversity}{\protect{Asesor de estilo}}
+\newcommand{\thesisSecondReviewerDepartment}{Profesora}
+
+\newcommand{\thesisFirstSupervisor}{Antonio Flores Moreno}
+\newcommand{\thesisSecondSupervisor}{Maria del Carmen}
+
+\newcommand{\thesisUniversity}{\protect{Proyecto de titulación}}
+\newcommand{\thesisUniversityDepartment}{Departamento de Ingeniería}
+\newcommand{\thesisUniversityInstitute}{Universidad Aeronáutica en Querétaro}
+\newcommand{\thesisUniversityGroup}{Ingeniería en Electrónica y Control de Sistemas de Aeronaves}
+\newcommand{\thesisUniversityCity}{Querétaro}
+\newcommand{\thesisUniversityStreetAddress}{Carretera Estatal 200 Querétaro – Tequisquiapan No. 22154 }
+\newcommand{\thesisUniversityPostalCode}{76278}
+
+
+% **************************************************
+% Debug LaTeX Information
+% **************************************************
+%\listfiles
+
+
+% **************************************************
+% Load and Configure Packages
+% **************************************************
+\usepackage[spanish]{babel} % babel system, adjust the language of the content
+\PassOptionsToPackage{% setup clean thesis style
+    figuresep=colon,%
+    hangfigurecaption=false,%
+    hangsection=true,%
+    hangsubsection=true,%
+    sansserif=false,%
+    configurelistings=true,%
+    colorize=full,%
+    colortheme=bluemagenta,%
+    configurebiblatex=true,%
+    bibsys=biber,%
+    bibfile=Referencias,%
+    bibstyle=alphabetic,%
+    bibsorting=nty,%
+}{cleanthesis}
+\usepackage{cleanthesis}
+
+\hypersetup{% setup the hyperref-package options
+    pdftitle={\thesisTitle},    %   - title (PDF meta)
+    pdfsubject={\thesisSubject},%   - subject (PDF meta)
+    pdfauthor={\thesisName},    %   - author (PDF meta)
+    plainpages=false,           %   -
+    colorlinks=false,           %   - colorize links?
+    pdfborder={0 0 0},          %   -
+    breaklinks=true,            %   - allow line break inside links
+    bookmarksnumbered=true,     %
+    bookmarksopen=true          %
+}
+
+% **************************************************
+% Other Packages
+% **************************************************
+\usepackage{scrhack}
+\usepackage{graphicx,lipsum,afterpage,caption}
+\usepackage{biblatex}
+\usepackage[nottoc]{tocbibind}
+\usepackage{amssymb, amsmath, amsbsy, amsfonts}    % ECUACIONES Y SÍMBOLOS MATEMÁTICOS
+\usepackage{mathrsfs}                    % para formato de letra en ecuaciones
+\usepackage{amsthm}     %Libreria para agregar teoremas
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definición}[section]
+ 
