@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/marco/Tesis/ROS/src/ocam/src/HSV_Test.cpp
+/home/marco/Tesis/ROS/src/ocam/src/Test/HSV/HSV_Test.cpp
 opencv2/core.hpp
 -
 opencv2/imgcodecs.hpp

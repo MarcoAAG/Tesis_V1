@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/marco/Tesis/ROS/src/ocam/src/HSV_Test.cpp" "/home/marco/Tesis/ROS/build/ocam/CMakeFiles/HSV_Test.dir/src/HSV_Test.cpp.o"
+  "/home/marco/Tesis/ROS/src/ocam/src/Test/HSV/HSV_Test.cpp" "/home/marco/Tesis/ROS/build/ocam/CMakeFiles/HSV_Test.dir/src/Test/HSV/HSV_Test.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

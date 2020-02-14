@@ -212,32 +212,32 @@ HSV_Test/fast:
 	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam/CMakeFiles/HSV_Test.dir/build.make ocam/CMakeFiles/HSV_Test.dir/build
 .PHONY : HSV_Test/fast
 
-src/HSV_Test.o: src/HSV_Test.cpp.o
+src/Test/HSV/HSV_Test.o: src/Test/HSV/HSV_Test.cpp.o
 
-.PHONY : src/HSV_Test.o
+.PHONY : src/Test/HSV/HSV_Test.o
 
 # target to build an object file
-src/HSV_Test.cpp.o:
-	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam/CMakeFiles/HSV_Test.dir/build.make ocam/CMakeFiles/HSV_Test.dir/src/HSV_Test.cpp.o
-.PHONY : src/HSV_Test.cpp.o
+src/Test/HSV/HSV_Test.cpp.o:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam/CMakeFiles/HSV_Test.dir/build.make ocam/CMakeFiles/HSV_Test.dir/src/Test/HSV/HSV_Test.cpp.o
+.PHONY : src/Test/HSV/HSV_Test.cpp.o
 
-src/HSV_Test.i: src/HSV_Test.cpp.i
+src/Test/HSV/HSV_Test.i: src/Test/HSV/HSV_Test.cpp.i
 
-.PHONY : src/HSV_Test.i
+.PHONY : src/Test/HSV/HSV_Test.i
 
 # target to preprocess a source file
-src/HSV_Test.cpp.i:
-	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam/CMakeFiles/HSV_Test.dir/build.make ocam/CMakeFiles/HSV_Test.dir/src/HSV_Test.cpp.i
-.PHONY : src/HSV_Test.cpp.i
+src/Test/HSV/HSV_Test.cpp.i:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam/CMakeFiles/HSV_Test.dir/build.make ocam/CMakeFiles/HSV_Test.dir/src/Test/HSV/HSV_Test.cpp.i
+.PHONY : src/Test/HSV/HSV_Test.cpp.i
 
-src/HSV_Test.s: src/HSV_Test.cpp.s
+src/Test/HSV/HSV_Test.s: src/Test/HSV/HSV_Test.cpp.s
 
-.PHONY : src/HSV_Test.s
+.PHONY : src/Test/HSV/HSV_Test.s
 
 # target to generate assembly for a file
-src/HSV_Test.cpp.s:
-	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam/CMakeFiles/HSV_Test.dir/build.make ocam/CMakeFiles/HSV_Test.dir/src/HSV_Test.cpp.s
-.PHONY : src/HSV_Test.cpp.s
+src/Test/HSV/HSV_Test.cpp.s:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam/CMakeFiles/HSV_Test.dir/build.make ocam/CMakeFiles/HSV_Test.dir/src/Test/HSV/HSV_Test.cpp.s
+.PHONY : src/Test/HSV/HSV_Test.cpp.s
 
 src/publisher.o: src/publisher.cpp.o
 
@@ -309,9 +309,9 @@ help:
 	@echo "... test"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... src/HSV_Test.o"
-	@echo "... src/HSV_Test.i"
-	@echo "... src/HSV_Test.s"
+	@echo "... src/Test/HSV/HSV_Test.o"
+	@echo "... src/Test/HSV/HSV_Test.i"
+	@echo "... src/Test/HSV/HSV_Test.s"
 	@echo "... src/publisher.o"
 	@echo "... src/publisher.i"
 	@echo "... src/publisher.s"

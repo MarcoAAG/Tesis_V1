@@ -57,38 +57,38 @@ include ocam/CMakeFiles/HSV_Test.dir/progress.make
 # Include the compile flags for this target's objects.
 include ocam/CMakeFiles/HSV_Test.dir/flags.make
 
-ocam/CMakeFiles/HSV_Test.dir/src/HSV_Test.cpp.o: ocam/CMakeFiles/HSV_Test.dir/flags.make
-ocam/CMakeFiles/HSV_Test.dir/src/HSV_Test.cpp.o: /home/marco/Tesis/ROS/src/ocam/src/HSV_Test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object ocam/CMakeFiles/HSV_Test.dir/src/HSV_Test.cpp.o"
-	cd /home/marco/Tesis/ROS/build/ocam && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HSV_Test.dir/src/HSV_Test.cpp.o -c /home/marco/Tesis/ROS/src/ocam/src/HSV_Test.cpp
+ocam/CMakeFiles/HSV_Test.dir/src/Test/HSV/HSV_Test.cpp.o: ocam/CMakeFiles/HSV_Test.dir/flags.make
+ocam/CMakeFiles/HSV_Test.dir/src/Test/HSV/HSV_Test.cpp.o: /home/marco/Tesis/ROS/src/ocam/src/Test/HSV/HSV_Test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object ocam/CMakeFiles/HSV_Test.dir/src/Test/HSV/HSV_Test.cpp.o"
+	cd /home/marco/Tesis/ROS/build/ocam && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HSV_Test.dir/src/Test/HSV/HSV_Test.cpp.o -c /home/marco/Tesis/ROS/src/ocam/src/Test/HSV/HSV_Test.cpp
 
-ocam/CMakeFiles/HSV_Test.dir/src/HSV_Test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HSV_Test.dir/src/HSV_Test.cpp.i"
-	cd /home/marco/Tesis/ROS/build/ocam && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marco/Tesis/ROS/src/ocam/src/HSV_Test.cpp > CMakeFiles/HSV_Test.dir/src/HSV_Test.cpp.i
+ocam/CMakeFiles/HSV_Test.dir/src/Test/HSV/HSV_Test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HSV_Test.dir/src/Test/HSV/HSV_Test.cpp.i"
+	cd /home/marco/Tesis/ROS/build/ocam && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marco/Tesis/ROS/src/ocam/src/Test/HSV/HSV_Test.cpp > CMakeFiles/HSV_Test.dir/src/Test/HSV/HSV_Test.cpp.i
 
-ocam/CMakeFiles/HSV_Test.dir/src/HSV_Test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HSV_Test.dir/src/HSV_Test.cpp.s"
-	cd /home/marco/Tesis/ROS/build/ocam && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marco/Tesis/ROS/src/ocam/src/HSV_Test.cpp -o CMakeFiles/HSV_Test.dir/src/HSV_Test.cpp.s
+ocam/CMakeFiles/HSV_Test.dir/src/Test/HSV/HSV_Test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HSV_Test.dir/src/Test/HSV/HSV_Test.cpp.s"
+	cd /home/marco/Tesis/ROS/build/ocam && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marco/Tesis/ROS/src/ocam/src/Test/HSV/HSV_Test.cpp -o CMakeFiles/HSV_Test.dir/src/Test/HSV/HSV_Test.cpp.s
 
-ocam/CMakeFiles/HSV_Test.dir/src/HSV_Test.cpp.o.requires:
+ocam/CMakeFiles/HSV_Test.dir/src/Test/HSV/HSV_Test.cpp.o.requires:
 
-.PHONY : ocam/CMakeFiles/HSV_Test.dir/src/HSV_Test.cpp.o.requires
+.PHONY : ocam/CMakeFiles/HSV_Test.dir/src/Test/HSV/HSV_Test.cpp.o.requires
 
-ocam/CMakeFiles/HSV_Test.dir/src/HSV_Test.cpp.o.provides: ocam/CMakeFiles/HSV_Test.dir/src/HSV_Test.cpp.o.requires
-	$(MAKE) -f ocam/CMakeFiles/HSV_Test.dir/build.make ocam/CMakeFiles/HSV_Test.dir/src/HSV_Test.cpp.o.provides.build
-.PHONY : ocam/CMakeFiles/HSV_Test.dir/src/HSV_Test.cpp.o.provides
+ocam/CMakeFiles/HSV_Test.dir/src/Test/HSV/HSV_Test.cpp.o.provides: ocam/CMakeFiles/HSV_Test.dir/src/Test/HSV/HSV_Test.cpp.o.requires
+	$(MAKE) -f ocam/CMakeFiles/HSV_Test.dir/build.make ocam/CMakeFiles/HSV_Test.dir/src/Test/HSV/HSV_Test.cpp.o.provides.build
+.PHONY : ocam/CMakeFiles/HSV_Test.dir/src/Test/HSV/HSV_Test.cpp.o.provides
 
-ocam/CMakeFiles/HSV_Test.dir/src/HSV_Test.cpp.o.provides.build: ocam/CMakeFiles/HSV_Test.dir/src/HSV_Test.cpp.o
+ocam/CMakeFiles/HSV_Test.dir/src/Test/HSV/HSV_Test.cpp.o.provides.build: ocam/CMakeFiles/HSV_Test.dir/src/Test/HSV/HSV_Test.cpp.o
 
 
 # Object files for target HSV_Test
 HSV_Test_OBJECTS = \
-"CMakeFiles/HSV_Test.dir/src/HSV_Test.cpp.o"
+"CMakeFiles/HSV_Test.dir/src/Test/HSV/HSV_Test.cpp.o"
 
 # External object files for target HSV_Test
 HSV_Test_EXTERNAL_OBJECTS =
 
-/home/marco/Tesis/ROS/devel/lib/ocam/HSV_Test: ocam/CMakeFiles/HSV_Test.dir/src/HSV_Test.cpp.o
+/home/marco/Tesis/ROS/devel/lib/ocam/HSV_Test: ocam/CMakeFiles/HSV_Test.dir/src/Test/HSV/HSV_Test.cpp.o
 /home/marco/Tesis/ROS/devel/lib/ocam/HSV_Test: ocam/CMakeFiles/HSV_Test.dir/build.make
 /home/marco/Tesis/ROS/devel/lib/ocam/HSV_Test: /opt/ros/melodic/lib/libcv_bridge.so
 /home/marco/Tesis/ROS/devel/lib/ocam/HSV_Test: /usr/lib/x86_64-linux-gnu/libopencv_core.so.3.2.0
@@ -173,7 +173,7 @@ ocam/CMakeFiles/HSV_Test.dir/build: /home/marco/Tesis/ROS/devel/lib/ocam/HSV_Tes
 
 .PHONY : ocam/CMakeFiles/HSV_Test.dir/build
 
-ocam/CMakeFiles/HSV_Test.dir/requires: ocam/CMakeFiles/HSV_Test.dir/src/HSV_Test.cpp.o.requires
+ocam/CMakeFiles/HSV_Test.dir/requires: ocam/CMakeFiles/HSV_Test.dir/src/Test/HSV/HSV_Test.cpp.o.requires
 
 .PHONY : ocam/CMakeFiles/HSV_Test.dir/requires
 

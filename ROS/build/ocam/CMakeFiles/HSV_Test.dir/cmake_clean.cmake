@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/HSV_Test.dir/src/HSV_Test.cpp.o"
+  "CMakeFiles/HSV_Test.dir/src/Test/HSV/HSV_Test.cpp.o"
   "/home/marco/Tesis/ROS/devel/lib/ocam/HSV_Test.pdb"
   "/home/marco/Tesis/ROS/devel/lib/ocam/HSV_Test"
 )

@@ -19,6 +19,8 @@ sstream
 -
 iostream
 -
+sensor_msgs/CameraInfo.h
+-
 
 /opt/ros/melodic/include/cv_bridge/cv_bridge.h
 sensor_msgs/Image.h
