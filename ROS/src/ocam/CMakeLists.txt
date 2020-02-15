@@ -227,6 +227,13 @@ install(FILES
  target_link_libraries(HSV_Test ${catkin_LIBRARIES})
  add_dependencies(HSV_Test ocam)
 
+ add_executable(cameraInfo src/cameraInfo.cpp)
+ target_link_libraries(cameraInfo ${catkin_LIBRARIES})
+ add_dependencies(cameraInfo ocam)
+
+ add_executable(calibrationTest src/calibrationTest.cpp)
+ target_link_libraries(calibrationTest ${catkin_LIBRARIES})
+ add_dependencies(calibrationTest ocam)
 
 #stuff for OpenCV2
 find_package(OpenCV 3 REQUIRED)
@@ -234,3 +241,4 @@ include_directories(${OpenCV_INCLUDE_DIRS})
 target_link_libraries(publisher ${OpenCV_LIBRARIES})
 target_link_libraries(subscriber ${OpenCV_LIBRARIES})
 target_link_libraries(HSV_Test ${OpenCV_LIBRARIES})
+target_link_libraries(calibrationTest ${OpenCV_LIBRARIES})

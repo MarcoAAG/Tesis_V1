@@ -251,7 +251,7 @@ int main(int argc, char **argv)
     ros::init(argc, argv, "image_listener");
     ros::NodeHandle nh;
     image_transport::ImageTransport it(nh);
-    sub = it.subscribe("camera/Image", 1, imageCallback);
+    sub = it.subscribe("/my_camera/image_rect_color", 1, imageCallback);
     coordinates_pub = nh.advertise<std_msgs::Int32MultiArray>("coordinates", 100);
     ros::spin();
     return 0;

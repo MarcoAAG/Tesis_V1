@@ -726,6 +726,9 @@ roscpp_serialization_DIR:PATH=/opt/ros/melodic/share/roscpp_serialization/cmake
 //The directory containing a CMake configuration file for roscpp_traits.
 roscpp_traits_DIR:PATH=/opt/ros/melodic/share/roscpp_traits/cmake
 
+//The directory containing a CMake configuration file for rosflight_msgs.
+rosflight_msgs_DIR:PATH=rosflight_msgs_DIR-NOTFOUND
+
 //The directory containing a CMake configuration file for rosgraph.
 rosgraph_DIR:PATH=/opt/ros/melodic/share/rosgraph/cmake
 
@@ -737,6 +740,18 @@ roslib_DIR:PATH=/opt/ros/melodic/share/roslib/cmake
 
 //The directory containing a CMake configuration file for rospack.
 rospack_DIR:PATH=/opt/ros/melodic/share/rospack/cmake
+
+//Value Computed by CMake
+rosplane_BINARY_DIR:STATIC=/home/marco/Tesis/ROS/build/rosplane/rosplane
+
+//Value Computed by CMake
+rosplane_SOURCE_DIR:STATIC=/home/marco/Tesis/ROS/src/rosplane/rosplane
+
+//Value Computed by CMake
+rosplane_msgs_BINARY_DIR:STATIC=/home/marco/Tesis/ROS/build/rosplane/rosplane_msgs
+
+//Value Computed by CMake
+rosplane_msgs_SOURCE_DIR:STATIC=/home/marco/Tesis/ROS/src/rosplane/rosplane_msgs
 
 //The directory containing a CMake configuration file for rospy.
 rospy_DIR:PATH=/opt/ros/melodic/share/rospy/cmake

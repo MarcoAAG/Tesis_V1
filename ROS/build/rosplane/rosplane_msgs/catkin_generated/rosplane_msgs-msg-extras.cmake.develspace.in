@@ -1,0 +1,2 @@
+set(rosplane_msgs_MESSAGE_FILES "/home/marco/Tesis/ROS/src/rosplane/rosplane_msgs/msg/Controller_Commands.msg;/home/marco/Tesis/ROS/src/rosplane/rosplane_msgs/msg/Current_Path.msg;/home/marco/Tesis/ROS/src/rosplane/rosplane_msgs/msg/Waypoint.msg;/home/marco/Tesis/ROS/src/rosplane/rosplane_msgs/msg/Controller_Internals.msg;/home/marco/Tesis/ROS/src/rosplane/rosplane_msgs/msg/State.msg")
+set(rosplane_msgs_SERVICE_FILES "")

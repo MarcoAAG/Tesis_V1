@@ -1208,6 +1208,32 @@ HSV_Test/fast:
 .PHONY : HSV_Test/fast
 
 #=============================================================================
+# Target rules for targets named cameraInfo
+
+# Build rule for target.
+cameraInfo: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cameraInfo
+.PHONY : cameraInfo
+
+# fast build rule for target.
+cameraInfo/fast:
+	$(MAKE) -f ocam/CMakeFiles/cameraInfo.dir/build.make ocam/CMakeFiles/cameraInfo.dir/build
+.PHONY : cameraInfo/fast
+
+#=============================================================================
+# Target rules for targets named calibrationTest
+
+# Build rule for target.
+calibrationTest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 calibrationTest
+.PHONY : calibrationTest
+
+# fast build rule for target.
+calibrationTest/fast:
+	$(MAKE) -f ocam/CMakeFiles/calibrationTest.dir/build.make ocam/CMakeFiles/calibrationTest.dir/build
+.PHONY : calibrationTest/fast
+
+#=============================================================================
 # Target rules for targets named disparity_view
 
 # Build rule for target.
@@ -2795,6 +2821,8 @@ help:
 	@echo "... subscriber"
 	@echo "... publisher"
 	@echo "... HSV_Test"
+	@echo "... cameraInfo"
+	@echo "... calibrationTest"
 	@echo "... disparity_view"
 	@echo "... stereo_view"
 	@echo "... std_srvs_generate_messages_nodejs"

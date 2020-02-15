@@ -90,6 +90,28 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -112,28 +134,6 @@ test:
 test/fast: test
 
 .PHONY : test/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -212,6 +212,36 @@ HSV_Test/fast:
 	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam/CMakeFiles/HSV_Test.dir/build.make ocam/CMakeFiles/HSV_Test.dir/build
 .PHONY : HSV_Test/fast
 
+# Convenience name for target.
+ocam/CMakeFiles/cameraInfo.dir/rule:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 ocam/CMakeFiles/cameraInfo.dir/rule
+.PHONY : ocam/CMakeFiles/cameraInfo.dir/rule
+
+# Convenience name for target.
+cameraInfo: ocam/CMakeFiles/cameraInfo.dir/rule
+
+.PHONY : cameraInfo
+
+# fast build rule for target.
+cameraInfo/fast:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam/CMakeFiles/cameraInfo.dir/build.make ocam/CMakeFiles/cameraInfo.dir/build
+.PHONY : cameraInfo/fast
+
+# Convenience name for target.
+ocam/CMakeFiles/calibrationTest.dir/rule:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 ocam/CMakeFiles/calibrationTest.dir/rule
+.PHONY : ocam/CMakeFiles/calibrationTest.dir/rule
+
+# Convenience name for target.
+calibrationTest: ocam/CMakeFiles/calibrationTest.dir/rule
+
+.PHONY : calibrationTest
+
+# fast build rule for target.
+calibrationTest/fast:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam/CMakeFiles/calibrationTest.dir/build.make ocam/CMakeFiles/calibrationTest.dir/build
+.PHONY : calibrationTest/fast
+
 src/Test/HSV/HSV_Test.o: src/Test/HSV/HSV_Test.cpp.o
 
 .PHONY : src/Test/HSV/HSV_Test.o
@@ -238,6 +268,60 @@ src/Test/HSV/HSV_Test.s: src/Test/HSV/HSV_Test.cpp.s
 src/Test/HSV/HSV_Test.cpp.s:
 	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam/CMakeFiles/HSV_Test.dir/build.make ocam/CMakeFiles/HSV_Test.dir/src/Test/HSV/HSV_Test.cpp.s
 .PHONY : src/Test/HSV/HSV_Test.cpp.s
+
+src/calibrationTest.o: src/calibrationTest.cpp.o
+
+.PHONY : src/calibrationTest.o
+
+# target to build an object file
+src/calibrationTest.cpp.o:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam/CMakeFiles/calibrationTest.dir/build.make ocam/CMakeFiles/calibrationTest.dir/src/calibrationTest.cpp.o
+.PHONY : src/calibrationTest.cpp.o
+
+src/calibrationTest.i: src/calibrationTest.cpp.i
+
+.PHONY : src/calibrationTest.i
+
+# target to preprocess a source file
+src/calibrationTest.cpp.i:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam/CMakeFiles/calibrationTest.dir/build.make ocam/CMakeFiles/calibrationTest.dir/src/calibrationTest.cpp.i
+.PHONY : src/calibrationTest.cpp.i
+
+src/calibrationTest.s: src/calibrationTest.cpp.s
+
+.PHONY : src/calibrationTest.s
+
+# target to generate assembly for a file
+src/calibrationTest.cpp.s:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam/CMakeFiles/calibrationTest.dir/build.make ocam/CMakeFiles/calibrationTest.dir/src/calibrationTest.cpp.s
+.PHONY : src/calibrationTest.cpp.s
+
+src/cameraInfo.o: src/cameraInfo.cpp.o
+
+.PHONY : src/cameraInfo.o
+
+# target to build an object file
+src/cameraInfo.cpp.o:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam/CMakeFiles/cameraInfo.dir/build.make ocam/CMakeFiles/cameraInfo.dir/src/cameraInfo.cpp.o
+.PHONY : src/cameraInfo.cpp.o
+
+src/cameraInfo.i: src/cameraInfo.cpp.i
+
+.PHONY : src/cameraInfo.i
+
+# target to preprocess a source file
+src/cameraInfo.cpp.i:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam/CMakeFiles/cameraInfo.dir/build.make ocam/CMakeFiles/cameraInfo.dir/src/cameraInfo.cpp.i
+.PHONY : src/cameraInfo.cpp.i
+
+src/cameraInfo.s: src/cameraInfo.cpp.s
+
+.PHONY : src/cameraInfo.s
+
+# target to generate assembly for a file
+src/cameraInfo.cpp.s:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam/CMakeFiles/cameraInfo.dir/build.make ocam/CMakeFiles/cameraInfo.dir/src/cameraInfo.cpp.s
+.PHONY : src/cameraInfo.cpp.s
 
 src/publisher.o: src/publisher.cpp.o
 
@@ -302,16 +386,24 @@ help:
 	@echo "... install/strip"
 	@echo "... install"
 	@echo "... list_install_components"
+	@echo "... edit_cache"
 	@echo "... subscriber"
 	@echo "... publisher"
 	@echo "... HSV_Test"
+	@echo "... rebuild_cache"
+	@echo "... cameraInfo"
+	@echo "... calibrationTest"
 	@echo "... install/local"
 	@echo "... test"
-	@echo "... edit_cache"
-	@echo "... rebuild_cache"
 	@echo "... src/Test/HSV/HSV_Test.o"
 	@echo "... src/Test/HSV/HSV_Test.i"
 	@echo "... src/Test/HSV/HSV_Test.s"
+	@echo "... src/calibrationTest.o"
+	@echo "... src/calibrationTest.i"
+	@echo "... src/calibrationTest.s"
+	@echo "... src/cameraInfo.o"
+	@echo "... src/cameraInfo.i"
+	@echo "... src/cameraInfo.s"
 	@echo "... src/publisher.o"
 	@echo "... src/publisher.i"
 	@echo "... src/publisher.s"

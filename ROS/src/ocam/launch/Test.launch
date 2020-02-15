@@ -1,11 +1,19 @@
 <launch>
     <param name="com" type = "int" value= "2" />
     <param name="sampletime" type = "int" value= "60" />
+    <param name="topicName" type = "string" value="/my_camera/image_rect_color"/>
 
     <node pkg="ocam" type="publisher" name="publisher" output="screen">   
     </node>
 
-    <node pkg="ocam" type="subscriber" name="subscriber" output="screen">
+    <node pkg="ocam" type="cameraInfo" name="cameraInfo" >   
     </node>
+
+    <node pkg="ocam" type="calibrationTest" name="calibrationTest" output="screen">   
+    </node>
+
+
+    <!-- <node pkg="ocam" type="subscriber" name="subscriber" output="screen"> -->
+    <!-- </node> -->
 
 </launch>
