@@ -8,7 +8,7 @@ Los movimientos de la gimbal se basan en las coordenadas horizontales de azimuth
 se agrega un tercer eje cuyo movimiento se conoce como roll. El eje de azimuth y la elevación se visualizan más fácilmente al 
 pensar en la posición de un objeto en relación con el horizonte.
 \begin{center}
-	\includegraphics[width=0.65\textwidth]{Contenido/Cuerpo/Capitulo3/Fig1.eps}
+	\includegraphics[width=0.55\textwidth]{Contenido/Cuerpo/Capitulo3/Fig1.eps}
 	\captionof{figure}{Angulo de azimuth}
 	\label{fig:ModeloMat:Fig1}
 \end{center}
@@ -18,4 +18,11 @@ verdadero. Los movimientos de azimuth ocurren alrededor del eje Z (vertical).
 La elevación es la distancia del objeto por encima o por debajo del horizonte (también conocida como altitud en aplicaciones de 
 astronomía y aeroespaciales). Los movimientos de elevación ocurren alrededor del eje Y.
 
-Los movimientos de balanceo ocurren alrededor del eje X a medida que gira con los ejes Y y Z.
+Los movimientos de balanceo ocurren alrededor del eje X a medida que gira con los ejes Y y Z.\\
+El control que se hace en la gimbal está dado por un motor con control de posición y una IMU (sensor inercial).Dicha gimbal esta
+montada en la parte delantera del vehículo aéreo como se muestra en la siguiente figura.
+\begin{center}
+	\includegraphics[width=0.55\textwidth]{Contenido/Cuerpo/Capitulo3/Fig2.eps}
+	\captionof{figure}{Seguimiento de un objetivo utilizando una cámara sujeta a una gimbal embebida en un vehículo aéreo no tripulado.}
+	\label{fig:ModeloMat:Fig1}
+\end{center}
