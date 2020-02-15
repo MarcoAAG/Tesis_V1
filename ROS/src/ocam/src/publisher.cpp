@@ -14,6 +14,7 @@ ros::Publisher infocam;
 VideoCapture VC;
 int CAMCOM;
 int SAMPLETIME;
+string nodeName;
 void publisher();
 
 int main(int argc, char **argv)
@@ -31,7 +32,9 @@ void publisher()
 
     nh.getParam("/com", CAMCOM);
     nh.getParam("/sampletime", SAMPLETIME);
-    pub = imgt.advertise("/my_camera/image_raw", 1);
+    nh.getParam("/Publisher_nodeName", nodeName);
+    pub = imgt.advertise(nodeName, 1);
+    // pub = imgt.advertise("/my_camera/image_raw", 1);
 
     VC.open(CAMCOM);
     if (!VC.isOpened())

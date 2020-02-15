@@ -6,10 +6,10 @@ int main(int argc, char **argv)
     ros::init(argc, argv, "image_Info");
     ros::NodeHandle nh;
     sensor_msgs::CameraInfo camera_info_;
-    ros::Publisher pub = nh.advertise<sensor_msgs::CameraInfo>("/my_camera/camera_info", 100);
+    ros::Publisher pub = nh.advertise<sensor_msgs::CameraInfo>("/ocam/camera_info", 100);
 
-    camera_info_.height = 640;
-    camera_info_.width = 400;
+    camera_info_.height = 480;
+    camera_info_.width = 640;
     camera_info_.distortion_model = "plumb_bob";
 
     camera_info_.K[0] = 653.418544;
@@ -22,6 +22,7 @@ int main(int argc, char **argv)
     camera_info_.K[7] = 0.000000;
     camera_info_.K[8] = 1.000000;
 
+    //IDK why this doesn't work
     // camera_info_.D[0] = -0.451566;
     // camera_info_.D[1] = 0.238355;
     // camera_info_.D[2] = -0.000850;

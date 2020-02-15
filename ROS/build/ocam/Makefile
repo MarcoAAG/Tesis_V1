@@ -101,17 +101,6 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -134,6 +123,17 @@ test:
 test/fast: test
 
 .PHONY : test/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -242,6 +242,21 @@ calibrationTest/fast:
 	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam/CMakeFiles/calibrationTest.dir/build.make ocam/CMakeFiles/calibrationTest.dir/build
 .PHONY : calibrationTest/fast
 
+# Convenience name for target.
+ocam/CMakeFiles/objectTracking.dir/rule:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 ocam/CMakeFiles/objectTracking.dir/rule
+.PHONY : ocam/CMakeFiles/objectTracking.dir/rule
+
+# Convenience name for target.
+objectTracking: ocam/CMakeFiles/objectTracking.dir/rule
+
+.PHONY : objectTracking
+
+# fast build rule for target.
+objectTracking/fast:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam/CMakeFiles/objectTracking.dir/build.make ocam/CMakeFiles/objectTracking.dir/build
+.PHONY : objectTracking/fast
+
 src/Test/HSV/HSV_Test.o: src/Test/HSV/HSV_Test.cpp.o
 
 .PHONY : src/Test/HSV/HSV_Test.o
@@ -323,6 +338,33 @@ src/cameraInfo.cpp.s:
 	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam/CMakeFiles/cameraInfo.dir/build.make ocam/CMakeFiles/cameraInfo.dir/src/cameraInfo.cpp.s
 .PHONY : src/cameraInfo.cpp.s
 
+src/objectTracking.o: src/objectTracking.cpp.o
+
+.PHONY : src/objectTracking.o
+
+# target to build an object file
+src/objectTracking.cpp.o:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam/CMakeFiles/objectTracking.dir/build.make ocam/CMakeFiles/objectTracking.dir/src/objectTracking.cpp.o
+.PHONY : src/objectTracking.cpp.o
+
+src/objectTracking.i: src/objectTracking.cpp.i
+
+.PHONY : src/objectTracking.i
+
+# target to preprocess a source file
+src/objectTracking.cpp.i:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam/CMakeFiles/objectTracking.dir/build.make ocam/CMakeFiles/objectTracking.dir/src/objectTracking.cpp.i
+.PHONY : src/objectTracking.cpp.i
+
+src/objectTracking.s: src/objectTracking.cpp.s
+
+.PHONY : src/objectTracking.s
+
+# target to generate assembly for a file
+src/objectTracking.cpp.s:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam/CMakeFiles/objectTracking.dir/build.make ocam/CMakeFiles/objectTracking.dir/src/objectTracking.cpp.s
+.PHONY : src/objectTracking.cpp.s
+
 src/publisher.o: src/publisher.cpp.o
 
 .PHONY : src/publisher.o
@@ -387,14 +429,15 @@ help:
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... edit_cache"
+	@echo "... install/local"
+	@echo "... test"
 	@echo "... subscriber"
 	@echo "... publisher"
 	@echo "... HSV_Test"
 	@echo "... rebuild_cache"
 	@echo "... cameraInfo"
 	@echo "... calibrationTest"
-	@echo "... install/local"
-	@echo "... test"
+	@echo "... objectTracking"
 	@echo "... src/Test/HSV/HSV_Test.o"
 	@echo "... src/Test/HSV/HSV_Test.i"
 	@echo "... src/Test/HSV/HSV_Test.s"
@@ -404,6 +447,9 @@ help:
 	@echo "... src/cameraInfo.o"
 	@echo "... src/cameraInfo.i"
 	@echo "... src/cameraInfo.s"
+	@echo "... src/objectTracking.o"
+	@echo "... src/objectTracking.i"
+	@echo "... src/objectTracking.s"
 	@echo "... src/publisher.o"
 	@echo "... src/publisher.i"
 	@echo "... src/publisher.s"

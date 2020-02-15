@@ -137,6 +137,13 @@ include_directories(
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
 # add_executable(${PROJECT_NAME}_node src/ocam_node.cpp)
+add_executable(publisher src/publisher.cpp)
+add_executable(subscriber src/subscriber.cpp)
+add_executable(HSV_Test src/Test/HSV/HSV_Test.cpp)
+add_executable(cameraInfo src/cameraInfo.cpp)
+add_executable(calibrationTest src/calibrationTest.cpp)
+add_executable(objectTracking src/objectTracking.cpp)
+
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -147,11 +154,31 @@ include_directories(
 ## Add cmake target dependencies of the executable
 ## same as for the library above
 # add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(publisher ocam)
+add_dependencies(subscriber ocam)
+add_dependencies(HSV_Test ocam)
+add_dependencies(cameraInfo ocam)
+add_dependencies(calibrationTest ocam)
+add_dependencies(objectTracking ocam)
+
 
 ## Specify libraries to link a library or executable target against
-# target_link_libraries(${PROJECT_NAME}_node
-#   ${catkin_LIBRARIES}
-# )
+target_link_libraries(publisher ${catkin_LIBRARIES})
+target_link_libraries(subscriber ${catkin_LIBRARIES})
+target_link_libraries(HSV_Test ${catkin_LIBRARIES})
+target_link_libraries(cameraInfo ${catkin_LIBRARIES})
+target_link_libraries(calibrationTest ${catkin_LIBRARIES})
+target_link_libraries(objectTracking ${catkin_LIBRARIES})
+
+#stuff for OpenCV2
+find_package(OpenCV 3 REQUIRED)
+include_directories(${OpenCV_INCLUDE_DIRS})
+target_link_libraries(publisher ${OpenCV_LIBRARIES})
+target_link_libraries(subscriber ${OpenCV_LIBRARIES})
+target_link_libraries(HSV_Test ${OpenCV_LIBRARIES})
+target_link_libraries(calibrationTest ${OpenCV_LIBRARIES})
+target_link_libraries(objectTracking ${OpenCV_LIBRARIES})
+
 
 #############
 ## Install ##
@@ -215,30 +242,7 @@ install(FILES
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
 
- add_executable(publisher src/publisher.cpp)
- target_link_libraries(publisher ${catkin_LIBRARIES})
- add_dependencies(publisher ocam)
 
- add_executable(subscriber src/subscriber.cpp)
- target_link_libraries(subscriber ${catkin_LIBRARIES})
- add_dependencies(subscriber ocam)
 
- add_executable(HSV_Test src/Test/HSV/HSV_Test.cpp)
- target_link_libraries(HSV_Test ${catkin_LIBRARIES})
- add_dependencies(HSV_Test ocam)
 
- add_executable(cameraInfo src/cameraInfo.cpp)
- target_link_libraries(cameraInfo ${catkin_LIBRARIES})
- add_dependencies(cameraInfo ocam)
 
- add_executable(calibrationTest src/calibrationTest.cpp)
- target_link_libraries(calibrationTest ${catkin_LIBRARIES})
- add_dependencies(calibrationTest ocam)
-
-#stuff for OpenCV2
-find_package(OpenCV 3 REQUIRED)
-include_directories(${OpenCV_INCLUDE_DIRS})
-target_link_libraries(publisher ${OpenCV_LIBRARIES})
-target_link_libraries(subscriber ${OpenCV_LIBRARIES})
-target_link_libraries(HSV_Test ${OpenCV_LIBRARIES})
-target_link_libraries(calibrationTest ${OpenCV_LIBRARIES})

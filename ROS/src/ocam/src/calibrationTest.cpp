@@ -20,7 +20,6 @@ using namespace std;
 
 image_transport::Subscriber sub; //Crear el suscriptor
 image_transport::Subscriber sub2; //Crear el suscriptor
-string topicName;
 
 void imageCallback(const sensor_msgs::ImageConstPtr &msg_)
 {
@@ -32,7 +31,7 @@ void imageCallback(const sensor_msgs::ImageConstPtr &msg_)
     imshow("Original", img); //show the original image
     cv::waitKey(10);
 }
-void imageCallback2(const sensor_msgs::ImageConstPtr &msg_)
+void imageCallbackCalibrada(const sensor_msgs::ImageConstPtr &msg_)
 {
 
     /* code */
@@ -48,9 +47,8 @@ int main(int argc, char **argv)
     ros::init(argc, argv, "image_listener");
     ros::NodeHandle nh;
     image_transport::ImageTransport it(nh);
-    nh.getParam("topicName", topicName);
-    sub = it.subscribe(topicName, 1, imageCallback2);
-    sub2 = it.subscribe("/my_camera/image_raw", 1, imageCallback);
+    sub = it.subscribe("/ocam/image_rect_color", 1, imageCallbackCalibrada);
+    sub2 = it.subscribe("/ocam/image_raw", 1, imageCallback);
     ros::spin();
     return 0;
 }

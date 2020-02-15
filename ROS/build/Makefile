@@ -1234,6 +1234,19 @@ calibrationTest/fast:
 .PHONY : calibrationTest/fast
 
 #=============================================================================
+# Target rules for targets named objectTracking
+
+# Build rule for target.
+objectTracking: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 objectTracking
+.PHONY : objectTracking
+
+# fast build rule for target.
+objectTracking/fast:
+	$(MAKE) -f ocam/CMakeFiles/objectTracking.dir/build.make ocam/CMakeFiles/objectTracking.dir/build
+.PHONY : objectTracking/fast
+
+#=============================================================================
 # Target rules for targets named disparity_view
 
 # Build rule for target.
@@ -2823,6 +2836,7 @@ help:
 	@echo "... HSV_Test"
 	@echo "... cameraInfo"
 	@echo "... calibrationTest"
+	@echo "... objectTracking"
 	@echo "... disparity_view"
 	@echo "... stereo_view"
 	@echo "... std_srvs_generate_messages_nodejs"
