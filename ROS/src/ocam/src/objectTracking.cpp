@@ -27,9 +27,9 @@
 using namespace cv;
 using namespace std;
 
-#define Azul 0
+#define Azul 1
 #define Amarillo 0
-#define Rojo 1
+#define Rojo 0
 #define Verde 0
 
 #if Azul
@@ -78,7 +78,10 @@ private:
     ros::Publisher coordinates_pub;  //Crear el publicador
     string nameOriginal = "Imagen Original";
     string nameHSV = "HSV";
+    string nameFilter = "Filtro";
     Mat ImgHSV;
+    Mat ImgOpening;
+    Mat ImgClosing;
 
 public:
     Mat Img;
@@ -89,6 +92,7 @@ public:
     void callBack(const sensor_msgs::ImageConstPtr &msg_);
     void imageViewer(Mat &Image, string _windowName);
     void rgb2hsv(Mat &_Image, Mat &Image_);
+    void morphologyOperation(Mat &_Image, Mat &Image_, int oper, int size, int elemen);
     void publishCoordinates(int _x, int _y);
 };
 
@@ -120,6 +124,11 @@ void objectTracking::callBack(const sensor_msgs::ImageConstPtr &msg_)
         rgb2hsv(Img, ImgHSV);
         imageViewer(Img, nameOriginal);
         imageViewer(ImgHSV, nameHSV);
+        //opening
+        morphologyOperation(ImgHSV, ImgOpening, 0, 5, 2);
+        //closing
+        morphologyOperation(ImgOpening, ImgClosing, 1, 1, 0);
+        imageViewer(ImgClosing,nameFilter);
     }
     catch (const std::exception &e)
     {
@@ -135,4 +144,13 @@ void objectTracking::rgb2hsv(Mat &_Image, Mat &Image_)
 {
     cvtColor(_Image, Image_, COLOR_BGR2HSV);
     inRange(Image_, Scalar(low_H, low_S, low_V), Scalar(high_H, high_S, high_V), Image_);
+}
+void objectTracking::morphologyOperation(Mat &_Image, Mat &Image_, int oper, int size, int elemen)
+{
+    // int const max_operator = 4;
+    // int const max_elem = 2;
+    // int const max_kernel_size = 21;
+    int operation = oper + 2;
+    Mat element = getStructuringElement(elemen, Size(2 * size + 1, 2 * size + 1), Point(size, size));
+    morphologyEx(_Image, Image_, operation, element);
 }
