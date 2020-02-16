@@ -195,4 +195,59 @@ cada segmento de color y le asigna un color plano a cada uno.
 	\captionof{figure}{Separación de colores}\label{Fig6}
 \end{center}
 
+\subsection{Pruebas de campo}
+Una vez obtenido los valores aproximados de 4 rango de color, lo siguiente fue probar
+dichos valores en una imagen captada por la cámara.\\
+Las pruebas se hicieron con luz emitida por un foco, y con poca interacción con la
+energía solar, probando primero el rango de color azul.
+\begin{center}
+	\includegraphics[width=0.8\textwidth]{Contenido/Cuerpo/Capitulo4/Fig7.eps}
+	\captionof{figure}{Separación de color azul}\label{Fig7}
+\end{center}
+Como se puede observar en la figura anterior gran parte del color verde esta encapsulada
+en lo que deberia ser únicamente color azul, esto debido aunque en las pruebas iniciales
+no se consideró la variación de iluminación en el entorno, por lo que reajustar los
+valores se hace una tarea necesaria. Aunque los primero valores de la tabla 4.1
+no son exactos, nos sirven para tener una referencia de donde empezar a trabajar.\\
+Una vez corregido el resultado del color azul se muestra en la siguiente figura.
+\begin{center}
+	\includegraphics[width=0.5\textwidth]{Contenido/Cuerpo/Capitulo4/Fig9.eps}
+	\captionof{figure}{Separación de colore azul}\label{Fig8}
+\end{center}
+Que al final tenemos la separación de los colores primarios como se muestra en la siguiente
+figura, donde se debe mencionar uno de los principales problemas que presenta este algoritmo.
+\begin{center}
+	\includegraphics[width=0.5\textwidth]{Contenido/Cuerpo/Capitulo4/Fig8.eps}
+	\captionof{figure}{Separación de colores RGB utilizando el modelo HSV}\label{Fig9}
+\end{center}
+El problema es que debido a que no tenemos un sensor que mida la intensidad de luminosidad
+nuestro rango de los valores S y V van a cambiar dependiendo del entorno en el que este la cámara
+es decir, que si hay alguna sombra que haga pensar al algoritmo que el color es verde, cuando en
+realidad es azul.
+Para las pruebas anteriores se obtuvieron de resultado los siguiente valores.\\
+\begin{table}[ht]
+	\begin{center}
+		\caption{Valores para cada rango de color en un ambiente iluminado por energía eléctrica}
+		\begin{tabular}[t]{lcccccc}
+			\hline
+			         & H$_{min}$ & H$_{max}$ & S$_{min}$ & S$_{max}$ & V$_{min}$ & V$_{max}$ \\
+			\hline
+			Rojo     & 0         & 10        & 70        & 255       & 70        & 255       \\
+			Amarillo & 25        & 35        & 50        & 255       & 50        & 255       \\
+			Verde    & 35        & 90        & 55        & 255       & 55        & 255       \\
+			Azul     & 95        & 130       & 55        & 255       & 55        & 255       \\
+			\hline
+		\end{tabular}
+	\end{center}
+\end{table}\\
+Otro problema que es palpable de ver es la captación de ruido, en las dos figuras anteriores
+hay presencia de pequeño ruido tanto fuera como dentro de las letras. Esto se puede solucionar
+agregando un par de filtros básicos, los llamadas opening y closing.
 
+
+% ---------------------------------------------------------------------------------------------------------
+% *********************************************************************************************************
+% *********************************************************************************************************
+% ---------------------------------------------------------------------------------------------------------
+
+\section{Filtro morfologico}

@@ -41,31 +41,31 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.13}{\ignorespaces Pruebas de performance\relax }}{17}{figure.2.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.14}{\ignorespaces Nodos conectados al Master\relax }}{19}{figure.2.14}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Nodos conectados al Master\relax }}{20}{figure.2.14}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.15}{\ignorespaces Representaci\IeC {\'o}n grafica de Topics\relax }}{20}{figure.2.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.16}{\ignorespaces Comunicaci\IeC {\'o}n de mensajes\relax }}{20}{figure.2.16}
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Comunicaci\IeC {\'o}n de mensajes\relax }}{21}{figure.2.16}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.17}{\ignorespaces Representaci\IeC {\'o}n 2D de im\IeC {\'a}genes digitales mediante conjuntos de puntos discretos en una matriz rectangular\relax }}{22}{figure.2.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.18}{\ignorespaces Ilustraci\IeC {\'o}n de cuantizaci\IeC {\'o}n\cite {Book:Bernd1997}.La misma imagen se muestra con diferentes niveles de cuantizaci\IeC {\'o}n: a 16, b 8, c 4, d 2. Muy pocos niveles de cuantificaci\IeC {\'o}n producen bordes falsos y hacen que las caracter\IeC {\'\i }sticas con bajo contraste desaparezcan parcial o totalmente.\relax }}{23}{figure.2.18}
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Ilustraci\IeC {\'o}n de cuantizaci\IeC {\'o}n\cite {Book:Bernd1997}.La misma imagen se muestra con diferentes niveles de cuantizaci\IeC {\'o}n: a 16, b 8, c 4, d 2. Muy pocos niveles de cuantificaci\IeC {\'o}n producen bordes falsos y hacen que las caracter\IeC {\'\i }sticas con bajo contraste desaparezcan parcial o totalmente.\relax }}{24}{figure.2.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.19}{\ignorespaces S\IeC {\'\i }mbolo caracter\IeC {\'\i }stico RGB de OpenCV\relax }}{24}{figure.2.19}
+\contentsline {figure}{\numberline {2.19}{\ignorespaces S\IeC {\'\i }mbolo caracter\IeC {\'\i }stico RGB de OpenCV\relax }}{25}{figure.2.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.20}{\ignorespaces Representaci\IeC {\'o}n del espacio de color RGB\relax }}{25}{figure.2.20}
+\contentsline {figure}{\numberline {2.20}{\ignorespaces Representaci\IeC {\'o}n del espacio de color RGB\relax }}{26}{figure.2.20}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.21}{\ignorespaces Representaci\IeC {\'o}n del espacio de color HSI\relax }}{26}{figure.2.21}
+\contentsline {figure}{\numberline {2.21}{\ignorespaces Representaci\IeC {\'o}n del espacio de color HSI\relax }}{27}{figure.2.21}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.22}{\ignorespaces Ejemplo de formas b\IeC {\'a}sicas de elementos estructurantes planos\relax }}{30}{figure.2.22}
+\contentsline {figure}{\numberline {2.22}{\ignorespaces Ejemplo de formas b\IeC {\'a}sicas de elementos estructurantes planos\relax }}{31}{figure.2.22}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.23}{\ignorespaces (a) Erosi\IeC {\'o}n de X por el elemento estructurante Y. (b) Los elementos conectados del conjunto X m\IeC {\'a}s peque\IeC {\~n}os que Y son eliminados. \relax }}{31}{figure.2.23}
+\contentsline {figure}{\numberline {2.23}{\ignorespaces (a) Erosi\IeC {\'o}n de X por el elemento estructurante Y. (b) Los elementos conectados del conjunto X m\IeC {\'a}s peque\IeC {\~n}os que Y son eliminados. \relax }}{32}{figure.2.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.24}{\ignorespaces (a) Dilataci\IeC {\'o}n de X por el elemento estructurante Y. (b) El conjunto X aumenta su definici\IeC {\'o}n. \relax }}{32}{figure.2.24}
+\contentsline {figure}{\numberline {2.24}{\ignorespaces (a) Dilataci\IeC {\'o}n de X por el elemento estructurante Y. (b) El conjunto X aumenta su definici\IeC {\'o}n. \relax }}{33}{figure.2.24}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.25}{\ignorespaces (a) Apertura morfol\IeC {\'o}gica del conjunto X por el elemento estructurante Y. (b) Eliminaci\IeC {\'o}n de objetos menores en tama\IeC {\~n}o al elemento estructurante. La apertura redondea las convexidades importantes. \relax }}{32}{figure.2.25}
+\contentsline {figure}{\numberline {2.25}{\ignorespaces (a) Apertura morfol\IeC {\'o}gica del conjunto X por el elemento estructurante Y. (b) Eliminaci\IeC {\'o}n de objetos menores en tama\IeC {\~n}o al elemento estructurante. La apertura redondea las convexidades importantes. \relax }}{33}{figure.2.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.26}{\ignorespaces (a) Apertura morfol\IeC {\'o}gica del conjunto X por el elemento estructurante Y. (b) El cierre redondea las concavidades importantes. \relax }}{33}{figure.2.26}
+\contentsline {figure}{\numberline {2.26}{\ignorespaces (a) Apertura morfol\IeC {\'o}gica del conjunto X por el elemento estructurante Y. (b) El cierre redondea las concavidades importantes. \relax }}{34}{figure.2.26}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
@@ -94,6 +94,12 @@
 \contentsline {figure}{\numberline {4.9}{\ignorespaces Separaci\IeC {\'o}n de colores\relax }}{43}{figure.4.9}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.10}{\ignorespaces Separaci\IeC {\'o}n de colores\relax }}{43}{figure.4.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Separaci\IeC {\'o}n de color azul\relax }}{44}{figure.4.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Separaci\IeC {\'o}n de colore azul\relax }}{44}{figure.4.12}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Separaci\IeC {\'o}n de colores RGB utilizando el modelo HSV\relax }}{45}{figure.4.13}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

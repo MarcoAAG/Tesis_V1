@@ -450,6 +450,36 @@
       \verb https://docs.opencv.org/master/de/d25/imgproc_color_conversions.html
       \endverb
     \endentry
+    \entry{WEB:OpencvCalibracion}{online}{}
+      \name{author}{1}{}{%
+        {{hash=8e48393f1a311e989a80615a6c4fcb78}{%
+           family={Opencv},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{8e48393f1a311e989a80615a6c4fcb78}
+      \strng{fullhash}{8e48393f1a311e989a80615a6c4fcb78}
+      \strng{bibnamehash}{8e48393f1a311e989a80615a6c4fcb78}
+      \strng{authorbibnamehash}{8e48393f1a311e989a80615a6c4fcb78}
+      \strng{authornamehash}{8e48393f1a311e989a80615a6c4fcb78}
+      \strng{authorfullhash}{8e48393f1a311e989a80615a6c4fcb78}
+      \field{labelalpha}{Ope}
+      \field{sortinit}{O}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{extraalpha}{3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Camera calibration With OpenCV}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://docs.opencv.org/2.4/doc/tutorials/calib3d/camera_calibration/camera_calibration.html
+      \endverb
+      \verb{url}
+      \verb https://docs.opencv.org/2.4/doc/tutorials/calib3d/camera_calibration/camera_calibration.html
+      \endverb
+    \endentry
     \entry{10045_10053}{misc}{}
       \name{author}{1}{}{%
         {{hash=296212435c6b7637b90fbd2465b3e330}{%
@@ -581,6 +611,28 @@
       \field{labeltitlesource}{title}
       \field{title}{Digital image processing}
       \field{year}{2002}
+    \endentry
+    \entry{Paper::Ricolfe2008}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=c6361f832fb5cfdef9690a7a1ee25065}{%
+           family={Ricolfe\bibnamedelimb Viala\bibnamedelimb y\bibnamedelimb Sánchez\bibnamedelima Salmerón},
+           familyi={R\bibinitperiod\bibinitdelim V\bibinitperiod\bibinitdelim y\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={A.\bibnamedelimi J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{c6361f832fb5cfdef9690a7a1ee25065}
+      \strng{fullhash}{c6361f832fb5cfdef9690a7a1ee25065}
+      \strng{bibnamehash}{c6361f832fb5cfdef9690a7a1ee25065}
+      \strng{authorbibnamehash}{c6361f832fb5cfdef9690a7a1ee25065}
+      \strng{authornamehash}{c6361f832fb5cfdef9690a7a1ee25065}
+      \strng{authorfullhash}{c6361f832fb5cfdef9690a7a1ee25065}
+      \field{labelalpha}{Ric08}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Procedimiento completo para el calibrado de cámaras utilizando una plantilla plana.}
+      \field{year}{2008}
     \endentry
     \entry{WEB:ROS}{online}{}
       \name{author}{1}{}{%
@@ -1169,6 +1221,37 @@
       \verb https://docs.opencv.org/master/de/d25/imgproc_color_conversions.html
       \endverb
     \endentry
+    \entry{WEB:OpencvCalibracion}{online}{}
+      \name{author}{1}{}{%
+        {{hash=8e48393f1a311e989a80615a6c4fcb78}{%
+           family={Opencv},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{8e48393f1a311e989a80615a6c4fcb78}
+      \strng{fullhash}{8e48393f1a311e989a80615a6c4fcb78}
+      \strng{bibnamehash}{8e48393f1a311e989a80615a6c4fcb78}
+      \strng{authorbibnamehash}{8e48393f1a311e989a80615a6c4fcb78}
+      \strng{authornamehash}{8e48393f1a311e989a80615a6c4fcb78}
+      \strng{authorfullhash}{8e48393f1a311e989a80615a6c4fcb78}
+      \field{labelalpha}{Ope}
+      \field{sortinit}{O}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelprefix}{@}
+      \field{extraalpha}{3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Camera calibration With OpenCV}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://docs.opencv.org/2.4/doc/tutorials/calib3d/camera_calibration/camera_calibration.html
+      \endverb
+      \verb{url}
+      \verb https://docs.opencv.org/2.4/doc/tutorials/calib3d/camera_calibration/camera_calibration.html
+      \endverb
+    \endentry
     \entry{10045_10053}{misc}{}
       \name{author}{1}{}{%
         {{hash=296212435c6b7637b90fbd2465b3e330}{%
@@ -1305,6 +1388,29 @@
       \field{labeltitlesource}{title}
       \field{title}{Digital image processing}
       \field{year}{2002}
+    \endentry
+    \entry{Paper::Ricolfe2008}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=c6361f832fb5cfdef9690a7a1ee25065}{%
+           family={Ricolfe\bibnamedelimb Viala\bibnamedelimb y\bibnamedelimb Sánchez\bibnamedelima Salmerón},
+           familyi={R\bibinitperiod\bibinitdelim V\bibinitperiod\bibinitdelim y\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={A.\bibnamedelimi J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{c6361f832fb5cfdef9690a7a1ee25065}
+      \strng{fullhash}{c6361f832fb5cfdef9690a7a1ee25065}
+      \strng{bibnamehash}{c6361f832fb5cfdef9690a7a1ee25065}
+      \strng{authorbibnamehash}{c6361f832fb5cfdef9690a7a1ee25065}
+      \strng{authornamehash}{c6361f832fb5cfdef9690a7a1ee25065}
+      \strng{authorfullhash}{c6361f832fb5cfdef9690a7a1ee25065}
+      \field{labelalpha}{Ric08}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{labelprefix}{@}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Procedimiento completo para el calibrado de cámaras utilizando una plantilla plana.}
+      \field{year}{2008}
     \endentry
     \entry{WEB:ROS}{online}{}
       \name{author}{1}{}{%

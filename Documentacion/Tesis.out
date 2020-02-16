@@ -21,26 +21,30 @@
 \BOOKMARK [2][]{section*.23}{2.1.5 Componetes de la camara}{section*.18}% 21
 \BOOKMARK [2][]{section*.24}{2.1.6 Formaci\363n de la imagen en la camara}{section*.18}% 22
 \BOOKMARK [2][]{section*.25}{2.1.7 C\341lculo de la imagen}{section*.18}% 23
-\BOOKMARK [1][]{section*.26}{2.2 Procesamiento de datos}{chapter.2}% 24
-\BOOKMARK [2][]{section*.27}{2.2.1 Tarjeta procesadora}{section*.26}% 25
-\BOOKMARK [2][]{section*.28}{2.2.2 Sistema operativo}{section*.26}% 26
-\BOOKMARK [2][]{section*.29}{2.2.3 ROS}{section*.26}% 27
-\BOOKMARK [2][]{section*.30}{2.2.4 Procesamiento de imagenes}{section*.26}% 28
-\BOOKMARK [2][]{section*.31}{2.2.5 Cuantizaci\363n}{section*.26}% 29
-\BOOKMARK [2][]{section*.32}{2.2.6 Librerias OPENCV}{section*.26}% 30
-\BOOKMARK [2][]{section*.33}{2.2.7 Transformaciones morfol\363gicas}{section*.26}% 31
-\BOOKMARK [0][]{chapter.3}{3 Modelo matem\341tico}{}% 32
-\BOOKMARK [1][]{section*.35}{3.1 Marco de referencia}{chapter.3}% 33
-\BOOKMARK [0][]{chapter.4}{4 Vision Artificial}{}% 34
-\BOOKMARK [1][]{section*.37}{4.1 Camara}{chapter.4}% 35
-\BOOKMARK [1][]{section*.38}{4.2 Algoritmo general}{chapter.4}% 36
-\BOOKMARK [1][]{section*.39}{4.3 Calibraci\363n de camara}{chapter.4}% 37
-\BOOKMARK [1][]{section*.40}{4.4 Comunicaci\363n con ROS}{chapter.4}% 38
-\BOOKMARK [2][]{section*.41}{4.4.1 Publisher}{section*.40}% 39
-\BOOKMARK [2][]{section*.42}{4.4.2 Subscriber}{section*.40}% 40
-\BOOKMARK [1][]{section*.43}{4.5 Espacio de color}{chapter.4}% 41
-\BOOKMARK [0][]{chapter*.45}{Bibliograf\355a}{}% 42
-\BOOKMARK [0][]{section*.48}{\315ndice de figuras}{}% 43
-\BOOKMARK [0][]{section*.49}{\315ndice de cuadros}{}% 44
-\BOOKMARK [0][]{section*.51}{Lista de c\363digos}{}% 45
-\BOOKMARK [0][]{appendix.Alph1}{A Apendice A}{}% 46
+\BOOKMARK [2][]{section*.26}{2.1.8 Modelo de la c\341mara}{section*.18}% 24
+\BOOKMARK [1][]{section*.27}{2.2 Procesamiento de datos}{chapter.2}% 25
+\BOOKMARK [2][]{section*.28}{2.2.1 Tarjeta procesadora}{section*.27}% 26
+\BOOKMARK [2][]{section*.29}{2.2.2 Sistema operativo}{section*.27}% 27
+\BOOKMARK [2][]{section*.30}{2.2.3 ROS}{section*.27}% 28
+\BOOKMARK [2][]{section*.31}{2.2.4 Procesamiento de imagenes}{section*.27}% 29
+\BOOKMARK [2][]{section*.32}{2.2.5 Cuantizaci\363n}{section*.27}% 30
+\BOOKMARK [2][]{section*.33}{2.2.6 Librerias OPENCV}{section*.27}% 31
+\BOOKMARK [2][]{section*.34}{2.2.7 Calibraci\363n de camara}{section*.27}% 32
+\BOOKMARK [2][]{section*.35}{2.2.8 Transformaciones morfol\363gicas}{section*.27}% 33
+\BOOKMARK [0][]{chapter.3}{3 Modelo matem\341tico}{}% 34
+\BOOKMARK [1][]{section*.37}{3.1 Marco de referencia}{chapter.3}% 35
+\BOOKMARK [0][]{chapter.4}{4 Vision Artificial}{}% 36
+\BOOKMARK [1][]{section*.39}{4.1 Camara}{chapter.4}% 37
+\BOOKMARK [1][]{section*.40}{4.2 Algoritmo general}{chapter.4}% 38
+\BOOKMARK [1][]{section*.41}{4.3 Calibraci\363n de camara}{chapter.4}% 39
+\BOOKMARK [1][]{section*.42}{4.4 Comunicaci\363n con ROS}{chapter.4}% 40
+\BOOKMARK [2][]{section*.43}{4.4.1 Publisher}{section*.42}% 41
+\BOOKMARK [2][]{section*.44}{4.4.2 Subscriber}{section*.42}% 42
+\BOOKMARK [1][]{section*.45}{4.5 Espacio de color}{chapter.4}% 43
+\BOOKMARK [2][]{section*.47}{4.5.1 Pruebas de campo}{section*.45}% 44
+\BOOKMARK [1][]{section*.49}{4.6 Filtro morfologico}{chapter.4}% 45
+\BOOKMARK [0][]{chapter*.50}{Bibliograf\355a}{}% 46
+\BOOKMARK [0][]{section*.53}{\315ndice de figuras}{}% 47
+\BOOKMARK [0][]{section*.54}{\315ndice de cuadros}{}% 48
+\BOOKMARK [0][]{section*.56}{Lista de c\363digos}{}% 49
+\BOOKMARK [0][]{appendix.Alph1}{A Apendice A}{}% 50

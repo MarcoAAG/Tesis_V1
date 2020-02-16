@@ -285,6 +285,12 @@ eje óptico.
 	\label{fig:MarcoTeorico:Fig11}
 \end{center}
 
+\subsection{Modelo de la cámara}
+El modelo básico de la cámara también llamado
+‘pin-hole’ representa la transformación de las
+coordenadas de los puntos de la escena en las
+coordenadas de la imagen. \cite{Paper::Ricolfe2008}
+
 % **************************************************************************************************************************
 % **************************************************************************************************************************
 % NUEVA SECCION 
@@ -575,6 +581,28 @@ Android y Mac OS.
 % ----------------------------------------------------------------------------------------------------------------------------
 % NUEVA SUBSECCION
 % ----------------------------------------------------------------------------------------------------------------------------
+\subsection{Calibración de camara}
+La calibración de cámaras es un paso esencial en la obtención de buenos resultados
+el los algoritmos de visión artificial, dado su importancia es que hay múltiples
+algoritmos que satisfacen la necesidad de tener una imagen clara y calibrada.\\
+Cada uno estos algoritmos está destinado a ciertas características ópticas de nuestra
+cámara.\\
+Las cámaras han existido por mucho, mucho tiempo. Sin embargo, con la introducción de
+las cámaras baratas de modelo pinhole a fines del siglo XX, se convirtieron en una
+ocurrencia común en nuestra vida cotidiana. Desafortunadamente, este ahorro economico viene
+con su precio: distorsión significativa. Afortunadamente, estas son constantes y con
+una calibración y algunas reasignaciones podemos corregir esto. Además,
+con la calibración también puede determinar la relación entre las unidades naturales
+de la cámara (píxeles) y las unidades del mundo real (por ejemplo, milímetros).\cite{WEB:OpencvCalibracion}\\
+En este proyecto abordaremos el método de calibración hecho por Zhang (Zhang, 1998, 2000)
+que básicamente consiste en utilizar una plantilla 2D y que toma ventaja el hecho de tomar
+calibración basadas en las medidas de
+las coordenadas de la plantilla con las ventajas de la
+auto calibración en la cual no es necesaria utilizar
+plantilla.
+% ----------------------------------------------------------------------------------------------------------------------------
+% NUEVA SUBSECCION
+% ----------------------------------------------------------------------------------------------------------------------------
 \subsubsection{Espacio de color}
 El uso del color en el procesamiento de imágenes está motivado por dos factores principales.
 Primero, el color es un poderoso descriptor que a menudo simplifica la identificación y
@@ -773,9 +801,9 @@ Entonces podemos definir matemáticamente a la erosión de la siguiente manera:
 \end{equation}
 de donde
 \begin{itemize}
-    \item $\Theta$ = Resta de Minkowski
-    \item $\tilde{B}$ = Elemento estructural simetrico
-\end{itemize} 
+	\item $\Theta$ = Resta de Minkowski
+	\item $\tilde{B}$ = Elemento estructural simetrico
+\end{itemize}
 Que en palabras del autor de la obra \cite{Book:Arturo2011} la erosión es la degradación progresiva de uno de los campos (0 ó 1). Un elemento del
 campo a degradar seguirá perteneciendo al mismo si está rodeado de elementos iguales
 a él. En caso contrario, pasará al otro campo. En un proceso iterativo terminaría por
@@ -796,7 +824,7 @@ que se expansiona. En caso contrario, permanecerá igual. Los elementos pertenec
 al campo a expansionar evidentemente no se modifican.\cite{Book:Jose2005}\\
 Tomando en cuenta la dualidad antes mencionada, podemos obtener matemáticamente la dilatación de la siguiente manera:
 \begin{equation}
-    X \otimes \tilde{B} = (X^c \otimes \tilde{B})^c
+	X \otimes \tilde{B} = (X^c \otimes \tilde{B})^c
 \end{equation}
 La siguiente figura ilustra el resultado de aplicar la operación de dilatación de donde el elemnto estructurante Y tiene forma de disco.
 \begin{center}
@@ -820,25 +848,25 @@ apertura (opening en la literatura anglosajona) se definirá entonces como una
 combinación de erosiones y dilataciones en las que lo primero es un erosión y la última
 una dilatación, siempre con el mismo elemento estructural:\cite{Book:Jose2005}
 \begin{equation}
-    X \circ B = (X \Theta \tilde{B})
+	X \circ B = (X \Theta \tilde{B})
 \end{equation}
 \begin{center}
 	\includegraphics[width=0.8\textwidth]{Contenido/Cuerpo/Capitulo2/Fig16.eps}
 	\captionof{figure}{(a) Apertura morfológica del conjunto X por el elemento estructurante Y. (b) Eliminación de objetos
-    menores en tamaño al elemento estructurante. La apertura redondea las convexidades importantes.   }
+		menores en tamaño al elemento estructurante. La apertura redondea las convexidades importantes.   }
 	\label{fig:MarcoTeorico:Fig24}
 \end{center}
 
 \subsubsection{Cierre}
 La dualidad de la operación de apertura es la del cierre(closing en literatura anglosajona), asi que podemos definirlo matemáticamente asi:
 \begin{equation}
-    X  \bullet B = (X \odot \tilde{B}) \Theta B
+	X  \bullet B = (X \odot \tilde{B}) \Theta B
 \end{equation}
 
 \begin{center}
 	\includegraphics[width=0.8\textwidth]{Contenido/Cuerpo/Capitulo2/Fig16.eps}
 	\captionof{figure}{(a) Apertura morfológica del conjunto X por el elemento estructurante Y. (b) El cierre redondea las
-    concavidades importantes.    }
+		concavidades importantes.    }
 	\label{fig:MarcoTeorico:Fig25}
 \end{center}
 

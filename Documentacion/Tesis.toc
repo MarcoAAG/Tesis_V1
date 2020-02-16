@@ -39,76 +39,84 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1.7}C\IeC {\'a}lculo de la imagen}{13}{section*.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Procesamiento de datos}{15}{section*.26}
+\contentsline {subsection}{\numberline {2.1.8}Modelo de la c\IeC {\'a}mara}{16}{section*.26}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Tarjeta procesadora}{16}{section*.27}
+\contentsline {section}{\numberline {2.2}Procesamiento de datos}{16}{section*.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}Sistema operativo}{17}{section*.28}
+\contentsline {subsection}{\numberline {2.2.1}Tarjeta procesadora}{16}{section*.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Ubuntu MATE}{17}{section*.28}
+\contentsline {subsection}{\numberline {2.2.2}Sistema operativo}{17}{section*.29}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.3}ROS}{18}{section*.29}
+\contentsline {subsubsection}{Ubuntu MATE}{17}{section*.29}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Nivel de sistemas de archivos de ROS}{18}{section*.29}
+\contentsline {subsection}{\numberline {2.2.3}ROS}{18}{section*.30}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Nivel de gr\IeC {\'a}fico de c\IeC {\'o}mputo ROS}{19}{section*.29}
+\contentsline {subsubsection}{Nivel de sistemas de archivos de ROS}{18}{section*.30}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.4}Procesamiento de imagenes}{20}{section*.30}
+\contentsline {subsubsection}{Nivel de gr\IeC {\'a}fico de c\IeC {\'o}mputo ROS}{19}{section*.30}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.5}Cuantizaci\IeC {\'o}n}{23}{section*.31}
+\contentsline {subsection}{\numberline {2.2.4}Procesamiento de imagenes}{21}{section*.31}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.6}Librerias OPENCV}{24}{section*.32}
+\contentsline {subsection}{\numberline {2.2.5}Cuantizaci\IeC {\'o}n}{23}{section*.32}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Espacio de color}{24}{figure.2.19}
+\contentsline {subsection}{\numberline {2.2.6}Librerias OPENCV}{24}{section*.33}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{HSI}{25}{figure.2.20}
+\contentsline {subsection}{\numberline {2.2.7}Calibraci\IeC {\'o}n de camara}{25}{section*.34}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Caracter\IeC {\'\i }sticas del modeldo HSV}{27}{figure.2.21}
+\contentsline {subsubsection}{Espacio de color}{25}{section*.34}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Espacio de color en OpenCV}{27}{figure.2.21}
+\contentsline {subsubsection}{HSI}{27}{figure.2.20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.7}Transformaciones morfol\IeC {\'o}gicas}{28}{section*.33}
+\contentsline {subsubsection}{Caracter\IeC {\'\i }sticas del modeldo HSV}{28}{figure.2.21}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Conceptos elementales de teor\IeC {\'\i }a de conjuntos}{29}{section*.33}
+\contentsline {subsubsection}{Espacio de color en OpenCV}{29}{figure.2.21}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Transformaciones morfol\IeC {\'o}gicas elementales}{29}{definition.2.2.5}
+\contentsline {subsection}{\numberline {2.2.8}Transformaciones morfol\IeC {\'o}gicas}{29}{section*.35}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Erosi\IeC {\'o}n}{30}{figure.2.22}
+\contentsline {subsubsection}{Conceptos elementales de teor\IeC {\'\i }a de conjuntos}{30}{section*.35}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Dilataci\IeC {\'o}n}{31}{figure.2.23}
+\contentsline {subsubsection}{Transformaciones morfol\IeC {\'o}gicas elementales}{31}{definition.2.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Apertura y Cierre}{32}{figure.2.24}
+\contentsline {subsubsection}{Erosi\IeC {\'o}n}{31}{figure.2.22}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Apertura}{32}{figure.2.24}
+\contentsline {subsubsection}{Dilataci\IeC {\'o}n}{32}{figure.2.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Cierre}{33}{figure.2.25}
+\contentsline {subsubsection}{Apertura y Cierre}{33}{figure.2.24}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Apertura}{33}{figure.2.24}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Cierre}{34}{figure.2.25}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Modelo matem\IeC {\'a}tico}{35}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Marco de referencia}{35}{section*.35}
+\contentsline {section}{\numberline {3.1}Marco de referencia}{35}{section*.37}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Vision Artificial}{37}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Camara}{37}{section*.37}
+\contentsline {section}{\numberline {4.1}Camara}{37}{section*.39}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Algoritmo general}{38}{section*.38}
+\contentsline {section}{\numberline {4.2}Algoritmo general}{38}{section*.40}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Calibraci\IeC {\'o}n de camara}{38}{section*.39}
+\contentsline {section}{\numberline {4.3}Calibraci\IeC {\'o}n de camara}{38}{section*.41}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Comunicaci\IeC {\'o}n con ROS}{38}{section*.40}
+\contentsline {section}{\numberline {4.4}Comunicaci\IeC {\'o}n con ROS}{38}{section*.42}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.1}Publisher}{39}{section*.41}
+\contentsline {subsection}{\numberline {4.4.1}Publisher}{39}{section*.43}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.2}Subscriber}{40}{section*.42}
+\contentsline {subsection}{\numberline {4.4.2}Subscriber}{40}{section*.44}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Espacio de color}{41}{section*.43}
+\contentsline {section}{\numberline {4.5}Espacio de color}{41}{section*.45}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliograf\'{\i }a}{45}{chapter*.45}
+\contentsline {subsection}{\numberline {4.5.1}Pruebas de campo}{44}{section*.47}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\'{I}ndice de figuras}{47}{section*.48}
+\contentsline {section}{\numberline {4.6}Filtro morfologico}{45}{section*.49}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\'{I}ndice de cuadros}{49}{section*.49}
+\contentsline {chapter}{\nonumberline Bibliograf\'{\i }a}{47}{chapter*.50}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Lista de c\IeC {\'o}digos}{51}{section*.51}
+\contentsline {chapter}{\'{I}ndice de figuras}{51}{section*.53}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Apendice A}{53}{appendix.Alph1}
+\contentsline {chapter}{\'{I}ndice de cuadros}{53}{section*.54}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline Lista de c\IeC {\'o}digos}{55}{section*.56}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Apendice A}{57}{appendix.Alph1}

@@ -1,22 +1,22 @@
 [0] Config.pm:302> INFO - This is Biber 2.9
-[1] Config.pm:305> INFO - Logfile is 'Tesis.blg'
-[44] biber:313> INFO - === jue feb 13, 2020, 23:25:34
-[70] Biber.pm:371> INFO - Reading 'Tesis.bcf'
-[156] Biber.pm:857> INFO - Found 27 citekeys in bib section 0
-[184] Biber.pm:3981> INFO - Processing section 0
-[198] Biber.pm:4154> INFO - Looking for bibtex format file 'Referencias.bib' for section 0
-[200] bibtex.pm:1468> INFO - LaTeX decoding ...
-[226] bibtex.pm:1294> INFO - Found BibTeX data source 'Referencias.bib'
-[275] Utils.pm:169> WARN - month field 'Jan' in entry 'Book:Jose2005' is not an integer - this will probably not sort properly.
-[371] Utils.pm:169> WARN - month field 'may' in entry 'WEB:Ieeeucsa2019' is not an integer - this will probably not sort properly.
-[371] Utils.pm:169> WARN - BibTeX subsystem: /tmp/xeF4dEoEqO/Referencias.bib_26660.utf8, line 2, warning: 93 characters of junk seen at toplevel
-[371] Utils.pm:169> WARN - I didn't find a database entry for 'opencvcolor' (section 0)
-[420] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[420] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
-[420] Biber.pm:3809> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'es-ES'
-[482] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
-[483] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[483] Biber.pm:3809> INFO - Sorting list 'anyt/global/@/global/global' of type 'entry' with template 'anyt' and locale 'es-ES'
-[530] bbl.pm:617> INFO - Writing 'Tesis.bbl' with encoding 'UTF-8'
-[563] bbl.pm:720> INFO - Output to Tesis.bbl
-[563] Biber.pm:110> INFO - WARNINGS: 4
+[2] Config.pm:305> INFO - Logfile is 'Tesis.blg'
+[37] biber:313> INFO - === sáb feb 15, 2020, 20:06:00
+[66] Biber.pm:371> INFO - Reading 'Tesis.bcf'
+[145] Biber.pm:857> INFO - Found 29 citekeys in bib section 0
+[166] Biber.pm:3981> INFO - Processing section 0
+[179] Biber.pm:4154> INFO - Looking for bibtex format file 'Referencias.bib' for section 0
+[180] bibtex.pm:1468> INFO - LaTeX decoding ...
+[210] bibtex.pm:1294> INFO - Found BibTeX data source 'Referencias.bib'
+[242] Utils.pm:169> WARN - month field 'Jan' in entry 'Book:Jose2005' is not an integer - this will probably not sort properly.
+[325] Utils.pm:169> WARN - month field 'may' in entry 'WEB:Ieeeucsa2019' is not an integer - this will probably not sort properly.
+[326] Utils.pm:169> WARN - BibTeX subsystem: /tmp/kPVs_cjLxO/Referencias.bib_27438.utf8, line 2, warning: 93 characters of junk seen at toplevel
+[326] Utils.pm:169> WARN - I didn't find a database entry for 'opencvcolor' (section 0)
+[374] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[375] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
+[375] Biber.pm:3809> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'es-ES'
+[425] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
+[425] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[425] Biber.pm:3809> INFO - Sorting list 'anyt/global/@/global/global' of type 'entry' with template 'anyt' and locale 'es-ES'
+[458] bbl.pm:617> INFO - Writing 'Tesis.bbl' with encoding 'UTF-8'
+[481] bbl.pm:720> INFO - Output to Tesis.bbl
+[481] Biber.pm:110> INFO - WARNINGS: 4
