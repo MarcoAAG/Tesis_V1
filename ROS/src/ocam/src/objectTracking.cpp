@@ -33,7 +33,7 @@ using namespace std;
 #define Verde 0
 
 #if Azul
-int low_H = 85;
+int low_H = 95;
 int low_S = 55;
 int low_V = 55;
 int high_H = 130;
@@ -51,19 +51,19 @@ int high_V = 255;
 #endif
 
 #if Rojo
-int low_H = 165;
-int low_S = 100;
-int low_V = 100;
-int high_H = 185;
+int low_H = 0; //165
+int low_S = 70;
+int low_V = 70;
+int high_H = 10; //185
 int high_S = 255;
 int high_V = 255;
 #endif
 
 #if Verde
 int low_H = 35;
-int low_S = 100;
-int low_V = 100;
-int high_H = 85;
+int low_S = 50;
+int low_V = 50;
+int high_H = 90;
 int high_S = 255;
 int high_V = 255;
 #endif
