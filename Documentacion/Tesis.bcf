@@ -1963,7 +1963,8 @@
     <bcf:citekey order="37">Book:Arturo2011</bcf:citekey>
     <bcf:citekey order="38">Book:Jose2005</bcf:citekey>
     <bcf:citekey order="39">Book:Jose2005</bcf:citekey>
-    <bcf:citekey order="40">opencvcolor</bcf:citekey>
+    <bcf:citekey order="40">Book:Richard2011</bcf:citekey>
+    <bcf:citekey order="41">opencvcolor</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="anyt">

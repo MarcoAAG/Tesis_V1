@@ -31,20 +31,21 @@
 \BOOKMARK [2][]{section*.33}{2.2.6 Librerias OPENCV}{section*.27}% 31
 \BOOKMARK [2][]{section*.34}{2.2.7 Calibraci\363n de camara}{section*.27}% 32
 \BOOKMARK [2][]{section*.35}{2.2.8 Transformaciones morfol\363gicas}{section*.27}% 33
-\BOOKMARK [0][]{chapter.3}{3 Modelo matem\341tico}{}% 34
-\BOOKMARK [1][]{section*.37}{3.1 Marco de referencia}{chapter.3}% 35
-\BOOKMARK [0][]{chapter.4}{4 Vision Artificial}{}% 36
-\BOOKMARK [1][]{section*.39}{4.1 Camara}{chapter.4}% 37
-\BOOKMARK [1][]{section*.40}{4.2 Algoritmo general}{chapter.4}% 38
-\BOOKMARK [1][]{section*.41}{4.3 Calibraci\363n de camara}{chapter.4}% 39
-\BOOKMARK [1][]{section*.42}{4.4 Comunicaci\363n con ROS}{chapter.4}% 40
-\BOOKMARK [2][]{section*.43}{4.4.1 Publisher}{section*.42}% 41
-\BOOKMARK [2][]{section*.44}{4.4.2 Subscriber}{section*.42}% 42
-\BOOKMARK [1][]{section*.45}{4.5 Espacio de color}{chapter.4}% 43
-\BOOKMARK [2][]{section*.47}{4.5.1 Pruebas de campo}{section*.45}% 44
-\BOOKMARK [1][]{section*.49}{4.6 Filtro morfologico}{chapter.4}% 45
-\BOOKMARK [0][]{chapter*.50}{Bibliograf\355a}{}% 46
-\BOOKMARK [0][]{section*.53}{\315ndice de figuras}{}% 47
-\BOOKMARK [0][]{section*.54}{\315ndice de cuadros}{}% 48
-\BOOKMARK [0][]{section*.56}{Lista de c\363digos}{}% 49
-\BOOKMARK [0][]{appendix.Alph1}{A Apendice A}{}% 50
+\BOOKMARK [2][]{section*.36}{2.2.9 Contraste y brillo}{section*.27}% 34
+\BOOKMARK [0][]{chapter.3}{3 Modelo matem\341tico}{}% 35
+\BOOKMARK [1][]{section*.38}{3.1 Marco de referencia}{chapter.3}% 36
+\BOOKMARK [0][]{chapter.4}{4 Vision Artificial}{}% 37
+\BOOKMARK [1][]{section*.40}{4.1 Camara}{chapter.4}% 38
+\BOOKMARK [1][]{section*.41}{4.2 Algoritmo general}{chapter.4}% 39
+\BOOKMARK [1][]{section*.42}{4.3 Calibraci\363n de camara}{chapter.4}% 40
+\BOOKMARK [1][]{section*.43}{4.4 Comunicaci\363n con ROS}{chapter.4}% 41
+\BOOKMARK [2][]{section*.44}{4.4.1 Publisher}{section*.43}% 42
+\BOOKMARK [2][]{section*.45}{4.4.2 Subscriber}{section*.43}% 43
+\BOOKMARK [1][]{section*.46}{4.5 Espacio de color}{chapter.4}% 44
+\BOOKMARK [2][]{section*.48}{4.5.1 Pruebas de campo}{section*.46}% 45
+\BOOKMARK [1][]{section*.50}{4.6 Filtro morfologico}{chapter.4}% 46
+\BOOKMARK [0][]{chapter*.51}{Bibliograf\355a}{}% 47
+\BOOKMARK [0][]{section*.54}{\315ndice de figuras}{}% 48
+\BOOKMARK [0][]{section*.55}{\315ndice de cuadros}{}% 49
+\BOOKMARK [0][]{section*.57}{Lista de c\363digos}{}% 50
+\BOOKMARK [0][]{appendix.Alph1}{A Apendice A}{}% 51

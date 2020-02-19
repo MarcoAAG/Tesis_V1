@@ -870,3 +870,34 @@ La dualidad de la operación de apertura es la del cierre(closing en literatura 
 	\label{fig:MarcoTeorico:Fig25}
 \end{center}
 
+% ----------------------------------------------------------------------------------------------------------------------------
+% NUEVA SUBSECCION
+% ----------------------------------------------------------------------------------------------------------------------------
+
+\subsection{Contraste y brillo}
+Hablar de contraste y brillo es hablar de transformación de pixeles que a su vez hace referencia a otro termino que aún
+no se ha abordado en este proyecto, que es el de operador de procesamiento de imagen. En la obra \cite{Book:Richard2011}
+dicho operador es definido como:
+\begin{equation}
+	g(x) = h(f(x)) \quad o \quad g(x) = h(f_0(x) \dots f_n(x))
+\end{equation}
+Donde g(x) y h(x) son definidas como imagen.\\
+Es decir que un operador es una imagen de salida tomando una o varias imágenes de entrada, que para un sistema discreto
+la ecuación anterior se obtiene:
+\begin{equation}
+	g(i,j) = h(f(i,j))
+\end{equation}
+De donde i,j se acotan en las especificaciones del sensor de la cámara. \\Dos procesos puntuales de uso común
+son la multiplicación y la suma con una constante,
+\begin{equation}
+	g(x) = \alpha f(x) + \beta
+\end{equation}
+\begin{itemize}
+	\item El parámetro $\alpha$ > 0 es conocido como 'Gain' y es el encargado de controlar el nivel de contraste.
+	\item El parámetro $\beta$ es conocido como 'Bias' y se encarga de controlar el brillo.
+\end{itemize}
+Y de igual manera que en la ecuación 2.22 podemos acotar la ecuacion 2.23 de la siguiente manera:
+\begin{equation}
+	g(i,j) = \alpha * f(i,j) + \beta
+\end{equation}
+Donde i, j nos indican la ubicación de los pixeles.
