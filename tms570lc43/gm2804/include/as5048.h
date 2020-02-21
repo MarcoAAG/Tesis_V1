@@ -14,13 +14,14 @@ uint8 clk;
 uint16 position;
 uint16 transaction(uint16 data);
 
+
 void as5048(uint8 arg_cs);
 
 /*
 * Initialiser
 * Sets up the SPI interface
 */
-void as5048Init(spiBASE_t *spiREGISTRO, spiDAT1_t *SPIconfig);
+void as5048Init();
 
 /**
 	 * Closes the SPI connection
@@ -32,7 +33,7 @@ void close();
 	 * Takes the address of the register as a 16 bit word
 	 * Returns the value of the register
 	 */
-uint16 read(uint16 registerAddress, spiBASE_t *spiREGISTRO, spiDAT1_t *SPIconfig);
+uint16 read(uint16 *registerAddress, spiBASE_t *spiREGISTRO, spiDAT1_t *SPIconfig);
 
 /*
 	 * Write to a register
@@ -48,18 +49,18 @@ uint16 write(uint16 registerAddress, uint16 data, spiBASE_t *spiREGISTRO, spiDAT
 	 *
 	 * @return {int} between -2^13 and 2^13
 	 */
-int getRotation( spiBASE_t *spiREGISTRO, spiDAT1_t *SPIconfig);
+int getRotation(spiBASE_t *spiREGISTRO, spiDAT1_t *SPIconfig);
 
 /**
 	 * Returns the raw angle directly from the sensor
 	 */
-uint16 getRawRotation( spiBASE_t *spiREGISTRO, spiDAT1_t *SPIconfig);
+uint16 getRawRotation(spiBASE_t *spiREGISTRO, spiDAT1_t *SPIconfig);
 
 /**
 	 * returns the value of the state register
 	 * @return 16 bit word containing flags
 	 */
-uint16 getState( spiBASE_t *spiREGISTRO, spiDAT1_t *SPIconfig);
+uint16 getState(spiBASE_t *spiREGISTRO, spiDAT1_t *SPIconfig);
 
 /**
 	 * Print the diagnostic register of the sensor
@@ -70,12 +71,12 @@ void printState();
 	 * Returns the value used for Automatic Gain Control (Part of diagnostic
 	 * register)
 	 */
-uint8 getGain( spiBASE_t *spiREGISTRO, spiDAT1_t *SPIconfig);
+uint8 getGain(spiBASE_t *spiREGISTRO, spiDAT1_t *SPIconfig);
 
 /*
 	 * Get and clear the error register by reading it
 	 */
-uint16 getErrors( spiBASE_t *spiREGISTRO, spiDAT1_t *SPIconfig);
+uint16 getErrors(spiBASE_t *spiREGISTRO, spiDAT1_t *SPIconfig);
 
 /*
 	 * Set the zero position

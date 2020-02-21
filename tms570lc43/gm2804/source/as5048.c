@@ -1,4 +1,5 @@
 #include "as5048.h"
+#include "HL_sys_core.h"
 
 const int AS5048A_CLEAR_ERROR_FLAG = 0x0001;
 const int AS5048A_PROGRAMMING_CONTROL = 0x0003;
@@ -7,6 +8,9 @@ const int AS5048A_OTP_REGISTER_ZERO_POS_LOW = 0x0017;
 const int AS5048A_DIAG_AGC = 0x3FFD;
 const int AS5048A_MAGNITUDE = 0x3FFE;
 const int AS5048A_ANGLE = 0x3FFF;
+uint16_t value[0];
+
+// spiDAT1_t SPI1_data_configCh0;
 
 void as5048(uint8 arg_cs)
 {
@@ -61,6 +65,10 @@ void as5048(uint8 arg_cs)
 //     1000
 //     */
 // }
+void as5048Init()
+{
+    spiInit();
+}
 
 void close()
 {
@@ -141,7 +149,7 @@ uint8 getGain(spiBASE_t *spiREGISTRO, spiDAT1_t *SPIconfig)
 /*
  * Get and clear the error register by reading it
  */
-uint16 getErrors( spiBASE_t *spiREGISTRO, spiDAT1_t *SPIconfig)
+uint16 getErrors(spiBASE_t *spiREGISTRO, spiDAT1_t *SPIconfig)
 {
     return read(AS5048A_CLEAR_ERROR_FLAG, spiREGISTRO, SPIconfig);
 }
@@ -175,49 +183,54 @@ bool error()
  * Takes the address of the register as a 16 bit word
  * Returns the value of the register
  */
-uint16 read(uint16 registerAddress, spiBASE_t *spiREGISTRO, spiDAT1_t *SPIconfig)
+uint16 read(uint16 *registerAddress, spiBASE_t *spiREGISTRO, spiDAT1_t *SPIconfig)
 {
-    uint16 command = 0b0100000000000000; // PAR=0 R/W=R
-    command = command | registerAddress;
+    // uint16 command = 0b0100000000000000; // PAR=0 R/W=R
+    // command = command | registerAddress;
 
-    //Add a parity bit on the the MSB
-    command |= ((uint16)spiCalcEvenParity(command) << 15);
+    // //Add a parity bit on the the MSB
+    // // command |= ((uint16)spiCalcEvenParity(command) << 15);
 
-    //Split the command into two bytes
-    uint8 right_byte = command & 0xFF;
-    uint8 left_byte = (command >> 8) & 0xFF;
+    // //Split the command into two bytes
+    // uint8 right_byte = command & 0xFF;
+    // uint8 left_byte = (command >> 8) & 0xFF;
 
     //beginTransaction
 
     //Send the command
     //cs LOW
-    spiSendData(spiREGISTRO, SPIconfig, (uint32)1, left_byte);
-    spiSendData(spiREGISTRO, SPIconfig, (uint32)1, right_byte);
+    // spiSendData(spiREGISTRO, SPIconfig, (uint32)1, left_byte);
+    // spiSendData(spiREGISTRO, SPIconfig, (uint32)1, right_byte);
     //sc HIGH
 
     //Now read the response
     //cs LOW
-    spiSendAndGetData(spiREGISTRO, SPIconfig, (uint32)1, 0x00, left_byte);
-    spiSendAndGetData(spiREGISTRO, SPIconfig, (uint32)1, 0x00, right_byte);
+    spiSendAndGetData(spiREGISTRO, SPIconfig, (uint32)1, &registerAddress, value);
+    // delaymio(20000);
+
+    // spiSendAndGetData(spiREGISTRO, SPIconfig, (uint32)1, command, right_byte);
+    // delaymio(20000);
+
     //cs_High
 
     // endTransaction
 
     //Check if the error bit is set
-    if (left_byte & 0x40)
-    {
-#ifdef AS5048A_DEBUG
-        Serial.println("Setting error bit");
-#endif
-        errorFlag = true;
-    }
-    else
-    {
-        errorFlag = false;
-    }
+    //     if (left_byte & 0x40)
+    //     {
+    // #ifdef AS5048A_DEBUG
+    //         Serial.println("Setting error bit");
+    // #endif
+    //         errorFlag = true;
+    //     }
+    //     else
+    //     {
+    //         errorFlag = false;
+    //     }
 
     //Return the data, stripping the parity and error bits
-    return (((left_byte & 0xFF) << 8) | (right_byte & 0xFF)) & ~0xC000;
+    // return (((left_byte & 0xFF) << 8) | (right_byte & 0xFF)) & ~0xC000;
+    return value[0];
 }
 
 uint16 write(uint16 registerAddress, uint16 data, spiBASE_t *spiREGISTRO, spiDAT1_t *SPIconfig)

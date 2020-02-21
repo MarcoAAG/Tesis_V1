@@ -19,6 +19,7 @@
         "core": "c",
         "tuple": "c",
         "hl_spi.h": "c",
-        "hl_reg_spi.h": "c"
+        "hl_reg_spi.h": "c",
+        "hl_sys_core.h": "c"
     }
 }

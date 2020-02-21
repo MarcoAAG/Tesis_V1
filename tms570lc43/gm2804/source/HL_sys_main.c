@@ -41,7 +41,6 @@
 *
 */
 
-
 /* USER CODE BEGIN (0) */
 /* USER CODE END */
 
@@ -50,10 +49,12 @@
 #include "HL_sys_common.h"
 
 /* USER CODE BEGIN (1) */
+#include "HL_sys_core.h"
 #include "FreeRTOS.h"
 #include "os_task.h"
 #include "HL_het.h"
 #include "HL_sci.h"
+#include "HL_spi.h"
 #include "as5048.h"
 /* USER CODE END */
 
@@ -106,13 +107,38 @@ void sciSendData(sciBASE_t *sci, uint8 *text, uint32 length);
 #define TSIZE_INTRO 9
 uint8 TEXT1[TSIZE_INTRO] = {'C', 'O', 'N', 'E', 'C', 'T', 'A', 'D', 'O'};
 
+/*
+**************************************************************************************
+FUNCTION FOR SPI COMMUNICATION
+**************************************************************************************
+*/
+
+spiDAT1_t SPI1_data_configCh0;
+
+uint16_t ComandoSPI1[1] = {0};
+uint16_t DatoSPI1[4];
+uint16_t Dato_1_SPI1[1];
+uint16_t Dato_2_SPI1[1];
+uint16_t Dato_3_SPI1[1];
+uint16_t Dato_4_SPI1[1];
+void delaymio(uint32_t DelayMax);
+
 /* USER CODE END */
 
 int main(void)
 {
-/* USER CODE BEGIN (3) */
+    /* USER CODE BEGIN (3) */
     hetInit();
     sciInit();
+    spiInit();
+    // as5048Init();
+
+    SPI1_data_configCh0.CS_HOLD = FALSE;
+    SPI1_data_configCh0.WDEL = TRUE;
+    SPI1_data_configCh0.DFSEL = SPI_FMT_0; // antes en SPI_FMT_1: modo 2: Select the Data word format by setting DFSEL bits. Select the Number of the configured SPIFMTx register (0 to 3) to used for the communication. Note: It is highly recommended to use SPIDAT1 register, SPIDAT0 is supported for compatibility reason
+    SPI1_data_configCh0.CSNR = 0xFE;       // con este controlamos el slave chip select 1
+
+    _enable_interrupt_(); // habilitamos interrupci�n global
 
     if (xTaskCreate(TaskInit, "TaskInit", configMINIMAL_STACK_SIZE, NULL, 2, &TaskInitHandle) != pdTRUE)
     {
@@ -127,7 +153,6 @@ int main(void)
     return 0;
 }
 
-
 /* USER CODE BEGIN (4) */
 /*
 **************************************************************************************
@@ -139,7 +164,7 @@ static void TaskInit(void *pvParameters)
     portTickType xLastWakeTime;
     xLastWakeTime = xTaskGetTickCount();
 
-    sciSendText(sciREG1,&TEXT1[0],TSIZE_INTRO);   /* send text 1 */
+    sciSendText(sciREG1, &TEXT1[0], TSIZE_INTRO); /* send text 1 */
 
     //PWM0 init
     pwm0het0.period = 20000;
@@ -150,7 +175,7 @@ static void TaskInit(void *pvParameters)
     pwm1het1.duty = 500;
     setpwmsignal(hetRAM1, pwm1, pwm1het1);
 
-    vTaskDelayUntil(&xLastWakeTime, (4000 * portTICK_RATE_MS)); //Sleep task for 2 seconds
+    vTaskDelayUntil(&xLastWakeTime, (5000 * portTICK_RATE_MS)); //Sleep task for 2 seconds
     if (xTaskCreate(TaskControl, "TaskControl", configMINIMAL_STACK_SIZE, NULL, 1, NULL) != pdTRUE)
     {
         // TASK HAS NOT CREATED
@@ -161,16 +186,43 @@ static void TaskControl(void *pvParameters)
 {
     uint16 n;
     n = 5;
+    uint16_t value[1];
+    uint16_t AS5048A_ANGLE[1] = {0x3FFF};
+
+    // ComandoSPI1[0] = 0x3FFF; // config en direcci�n 0 comienza en la 00 y escribe hasta el 3; 0100 0011
+    // spiSendAndGetData(spiREG1, &SPI1_data_configCh0, 1, ComandoSPI1, Dato_1_SPI1);
+    // delaymio(5000);
+    // read(AS5048A_ANGLE, spiREG1, &SPI1_data_configCh0);
     for (;;)
     {
-        pwm0het0.duty = 900;
+
+        pwm0het0.duty = 590;
         setpwmsignal(hetRAM1, pwm0, pwm0het0);
 
-        pwm1het1.duty = 700;
+        pwm1het1.duty = 590;
         setpwmsignal(hetRAM1, pwm1, pwm1het1);
 
-        sciSendData(sciREG1, (uint8 *)&n, 2);
+        // value = getRawRotation(spiREG1, &SPI1_data_configCh0);
+        AS5048A_ANGLE[0] = 0x3FFF;
+        value[0] = read(&AS5048A_ANGLE, spiREG1, &SPI1_data_configCh0);
+        delaymio(20000);
+        sciSendData(sciREG1, (uint8 *)&value[0], 4);
         sciSend(sciREG1, 2, (unsigned char *)"\r\n");
+
+        // ComandoSPI1[0] = 0x3FFF; // config en direcci�n 0 comienza en la 00 y escribe hasta el 3; 0100 0011
+        // spiSendAndGetData(spiREG1, &SPI1_data_configCh0, 1, ComandoSPI1 , Dato_2_SPI1);
+        // delaymio(20000);
+        // ComandoSPI1[0] = 0x3FFF; // config en direcci�n 0 comienza en la 00 y escribe hasta el 3; 0100 0011
+        // spiSendAndGetData(spiREG1, &SPI1_data_configCh0, 1, ComandoSPI1[0], Dato_2_SPI1);
+        // delaymio(5000);
+
+        // delaymio(50000);
+        // delaymio(50000);
+
+        // sciSendData(sciREG1, (uint8 *)&Dato_2_SPI1[0], 4);
+        // sciSend(sciREG1, 2, (unsigned char *)"\r\n");
+        // sciSendData(sciREG1, (uint8 *)&Dato_2_SPI1[0], 4);
+        // sciSend(sciREG1, 2, (unsigned char *)"\r\n");
     }
 }
 
@@ -285,6 +337,14 @@ void sciSendText(sciBASE_t *sci, uint8 *text, uint32 length)
             ;                          /* wait until busy */
         sciSendByte(sciREG1, *text++); /* send out text   */
     };
+}
+void delaymio(uint32_t DelayMax)
+{
+    uint32_t id = 0;
+    for (id = 0; id < DelayMax; ++id)
+    {
+        asm(" nop");
+    }
 }
 
 /* USER CODE END */

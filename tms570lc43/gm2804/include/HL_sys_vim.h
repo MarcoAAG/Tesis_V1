@@ -92,6 +92,8 @@ typedef enum systemInterrupt
 extern void esmHighInterrupt(void);
 extern void phantomInterrupt(void);
 extern void vPortPreemptiveTick(void);
+extern void mibspi1HighLevelInterrupt(void);
+extern void lin1HighLevelInterrupt(void);
 extern void vPortYeildWithinAPI(void);
 
 /* USER CODE BEGIN (3) */
@@ -270,8 +272,8 @@ typedef struct vim_config_reg
                                     |(uint32)((uint32)0U << 9U)\
                                     |(uint32)((uint32)0U << 10U)\
                                     |(uint32)((uint32)0U << 11U)\
-                                    |(uint32)((uint32)0U << 12U)\
-                                    |(uint32)((uint32)0U << 13U)\
+                                    |(uint32)((uint32)1U << 12U)\
+                                    |(uint32)((uint32)1U << 13U)\
                                     |(uint32)((uint32)0U << 14U)\
                                     |(uint32)((uint32)0U << 15U)\
                                     |(uint32)((uint32)0U << 16U)\
