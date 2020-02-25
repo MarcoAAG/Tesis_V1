@@ -5,17 +5,17 @@ En el presente capitulo se aborda el modelo matemático para el seguimiento de o
 
 \section{Marco de referencia}
 Los movimientos de la gimbal se basan en las coordenadas horizontales de azimuth y elevación, para gimbal de 3 grados de libertad
-se agrega un tercer eje cuyo movimiento se conoce como roll. El eje de azimuth y la elevación se visualizan más fácilmente al 
+se agrega un tercer eje cuyo movimiento se conoce como roll. El eje de azimuth y la elevación se visualizan más fácilmente al
 pensar en la posición de un objeto en relación con el horizonte.
 \begin{center}
 	\includegraphics[width=0.55\textwidth]{Contenido/Cuerpo/Capitulo3/Fig1.eps}
 	\captionof{figure}{Angulo de azimuth}
 	\label{fig:ModeloMat:Fig1}
 \end{center}
-El angulo de azimuth es la posición alrededor del horizonte, medida desde un punto de referencia como el norte verdadero o el sur 
+El angulo de azimuth es la posición alrededor del horizonte, medida desde un punto de referencia como el norte verdadero o el sur
 verdadero. Los movimientos de azimuth ocurren alrededor del eje Z (vertical).
 
-La elevación es la distancia del objeto por encima o por debajo del horizonte (también conocida como altitud en aplicaciones de 
+La elevación es la distancia del objeto por encima o por debajo del horizonte (también conocida como altitud en aplicaciones de
 astronomía y aeroespaciales). Los movimientos de elevación ocurren alrededor del eje Y.
 
 Los movimientos de balanceo ocurren alrededor del eje X a medida que gira con los ejes Y y Z.\\
@@ -26,3 +26,47 @@ montada en la parte delantera del vehículo aéreo como se muestra en la siguien
 	\captionof{figure}{Seguimiento de un objetivo utilizando una cámara sujeta a una gimbal embebida en un vehículo aéreo no tripulado.}
 	\label{fig:ModeloMat:Fig1}
 \end{center}
+
+\subsection{Marco de referencia Inercial [I]}
+Antes de abordar el control de la gimbal, es necesario y obvio conocer el comportamiento
+de dicho sistema, empezaremos por definir el marco de referencia inercial, es decir
+el de la tierra. La siguiente imagen ilustra los ejes de este marco.
+\begin{center}
+	\includegraphics[width=0.25\textwidth]{Contenido/Cuerpo/Capitulo3/Fig4.eps}
+	\captionof{figure}{Marco de referencia inercial}
+	\label{fig:ModeloMat:Fig1}
+\end{center}
+Donde definimos a k apuntando hacia el centro de la tierra, este sistema de coordenadas
+refieren a (Norte, Este y Abajo) de ahí su nombre NED(siglas en inglés).
+
+\subsection{Marco de referencia del cuerpo [B]}
+Una aeronave tiene la libertad de rotar en 3 ejes, en la aeronáutica son conocidos como
+Yaw, Pitch y Roll. Dichas rotaciones son importantes en el control de aeronaves ya
+que sirven para conocer la dinámica del sistema, dicha rotaciones pueden ser mejor
+detalladas en una imagen, por lo que en la siguiente ilustración se grafica un plano
+y se asigna nombre a cada rotación de los ejes.
+\begin{center}
+	\includegraphics[width=0.35\textwidth]{Contenido/Cuerpo/Capitulo3/Fig6.eps}
+	\captionof{figure}{Rotación en 3 ejes.}
+	\label{fig:ModeloMat:Fig1}
+\end{center}
+Vamos a llamar marco de referencia del cuerpo a las coordenadas del UAV, es necesario establecer el centro del plano en el 
+centro de masas de la aeronave, como se ilustra en la siguiente figura.
+\begin{center}
+	\includegraphics[width=0.5\textwidth]{Contenido/Cuerpo/Capitulo3/Fig5.eps}
+	\captionof{figure}{Marco de referencia del cuerpo.}
+	\label{fig:ModeloMat:Fig1}
+\end{center}
+De donde definimos las dos rotaciones que seran controladas en este trabajo pitch y yaw($\theta$, $\psi$). El subíndice B hace referencia
+a Body y nos indica que estamos hablando de las coordenadas del UAV.
+
+\subsection{Marco de referencia de la gimbal [G]}
+Un último paso es definir un marco de referencia para la cámara, considerando que la cámara se encuentra en la parte delantera de
+la aeronave y que el centro de la gimbal es el origen.
+\begin{center}
+	\includegraphics[width=0.3\textwidth]{Contenido/Cuerpo/Capitulo3/Fig7.eps}
+	\captionof{figure}{Marco de referencia del la cámara.}
+	\label{fig:ModeloMat:Fig1}
+\end{center}
+De donde el subíndice G hace referencia a que estamos en el plano de la gimbal. El vector unitario K apunta hacia afuera,
+es decir hacia nosotros.
