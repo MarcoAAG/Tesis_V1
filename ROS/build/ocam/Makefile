@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+ocam/CMakeFiles/objectTracking.dir/rule:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 ocam/CMakeFiles/objectTracking.dir/rule
+.PHONY : ocam/CMakeFiles/objectTracking.dir/rule
+
+# Convenience name for target.
+objectTracking: ocam/CMakeFiles/objectTracking.dir/rule
+
+.PHONY : objectTracking
+
+# fast build rule for target.
+objectTracking/fast:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam/CMakeFiles/objectTracking.dir/build.make ocam/CMakeFiles/objectTracking.dir/build
+.PHONY : objectTracking/fast
+
+# Convenience name for target.
 ocam/CMakeFiles/subscriber.dir/rule:
 	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 ocam/CMakeFiles/subscriber.dir/rule
 .PHONY : ocam/CMakeFiles/subscriber.dir/rule
@@ -196,21 +211,6 @@ publisher: ocam/CMakeFiles/publisher.dir/rule
 publisher/fast:
 	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam/CMakeFiles/publisher.dir/build.make ocam/CMakeFiles/publisher.dir/build
 .PHONY : publisher/fast
-
-# Convenience name for target.
-ocam/CMakeFiles/HSV_Test.dir/rule:
-	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 ocam/CMakeFiles/HSV_Test.dir/rule
-.PHONY : ocam/CMakeFiles/HSV_Test.dir/rule
-
-# Convenience name for target.
-HSV_Test: ocam/CMakeFiles/HSV_Test.dir/rule
-
-.PHONY : HSV_Test
-
-# fast build rule for target.
-HSV_Test/fast:
-	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam/CMakeFiles/HSV_Test.dir/build.make ocam/CMakeFiles/HSV_Test.dir/build
-.PHONY : HSV_Test/fast
 
 # Convenience name for target.
 ocam/CMakeFiles/cameraInfo.dir/rule:
@@ -243,19 +243,34 @@ calibrationTest/fast:
 .PHONY : calibrationTest/fast
 
 # Convenience name for target.
-ocam/CMakeFiles/objectTracking.dir/rule:
-	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 ocam/CMakeFiles/objectTracking.dir/rule
-.PHONY : ocam/CMakeFiles/objectTracking.dir/rule
+ocam/CMakeFiles/HSV_Test.dir/rule:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 ocam/CMakeFiles/HSV_Test.dir/rule
+.PHONY : ocam/CMakeFiles/HSV_Test.dir/rule
 
 # Convenience name for target.
-objectTracking: ocam/CMakeFiles/objectTracking.dir/rule
+HSV_Test: ocam/CMakeFiles/HSV_Test.dir/rule
 
-.PHONY : objectTracking
+.PHONY : HSV_Test
 
 # fast build rule for target.
-objectTracking/fast:
-	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam/CMakeFiles/objectTracking.dir/build.make ocam/CMakeFiles/objectTracking.dir/build
-.PHONY : objectTracking/fast
+HSV_Test/fast:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam/CMakeFiles/HSV_Test.dir/build.make ocam/CMakeFiles/HSV_Test.dir/build
+.PHONY : HSV_Test/fast
+
+# Convenience name for target.
+ocam/CMakeFiles/enhanceSV.dir/rule:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 ocam/CMakeFiles/enhanceSV.dir/rule
+.PHONY : ocam/CMakeFiles/enhanceSV.dir/rule
+
+# Convenience name for target.
+enhanceSV: ocam/CMakeFiles/enhanceSV.dir/rule
+
+.PHONY : enhanceSV
+
+# fast build rule for target.
+enhanceSV/fast:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam/CMakeFiles/enhanceSV.dir/build.make ocam/CMakeFiles/enhanceSV.dir/build
+.PHONY : enhanceSV/fast
 
 src/Test/HSV/HSV_Test.o: src/Test/HSV/HSV_Test.cpp.o
 
@@ -283,6 +298,33 @@ src/Test/HSV/HSV_Test.s: src/Test/HSV/HSV_Test.cpp.s
 src/Test/HSV/HSV_Test.cpp.s:
 	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam/CMakeFiles/HSV_Test.dir/build.make ocam/CMakeFiles/HSV_Test.dir/src/Test/HSV/HSV_Test.cpp.s
 .PHONY : src/Test/HSV/HSV_Test.cpp.s
+
+src/Test/enhanceSV/enhanceSV.o: src/Test/enhanceSV/enhanceSV.cpp.o
+
+.PHONY : src/Test/enhanceSV/enhanceSV.o
+
+# target to build an object file
+src/Test/enhanceSV/enhanceSV.cpp.o:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam/CMakeFiles/enhanceSV.dir/build.make ocam/CMakeFiles/enhanceSV.dir/src/Test/enhanceSV/enhanceSV.cpp.o
+.PHONY : src/Test/enhanceSV/enhanceSV.cpp.o
+
+src/Test/enhanceSV/enhanceSV.i: src/Test/enhanceSV/enhanceSV.cpp.i
+
+.PHONY : src/Test/enhanceSV/enhanceSV.i
+
+# target to preprocess a source file
+src/Test/enhanceSV/enhanceSV.cpp.i:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam/CMakeFiles/enhanceSV.dir/build.make ocam/CMakeFiles/enhanceSV.dir/src/Test/enhanceSV/enhanceSV.cpp.i
+.PHONY : src/Test/enhanceSV/enhanceSV.cpp.i
+
+src/Test/enhanceSV/enhanceSV.s: src/Test/enhanceSV/enhanceSV.cpp.s
+
+.PHONY : src/Test/enhanceSV/enhanceSV.s
+
+# target to generate assembly for a file
+src/Test/enhanceSV/enhanceSV.cpp.s:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam/CMakeFiles/enhanceSV.dir/build.make ocam/CMakeFiles/enhanceSV.dir/src/Test/enhanceSV/enhanceSV.cpp.s
+.PHONY : src/Test/enhanceSV/enhanceSV.cpp.s
 
 src/calibrationTest.o: src/calibrationTest.cpp.o
 
@@ -431,16 +473,20 @@ help:
 	@echo "... edit_cache"
 	@echo "... install/local"
 	@echo "... test"
+	@echo "... objectTracking"
 	@echo "... subscriber"
 	@echo "... publisher"
-	@echo "... HSV_Test"
 	@echo "... rebuild_cache"
 	@echo "... cameraInfo"
 	@echo "... calibrationTest"
-	@echo "... objectTracking"
+	@echo "... HSV_Test"
+	@echo "... enhanceSV"
 	@echo "... src/Test/HSV/HSV_Test.o"
 	@echo "... src/Test/HSV/HSV_Test.i"
 	@echo "... src/Test/HSV/HSV_Test.s"
+	@echo "... src/Test/enhanceSV/enhanceSV.o"
+	@echo "... src/Test/enhanceSV/enhanceSV.i"
+	@echo "... src/Test/enhanceSV/enhanceSV.s"
 	@echo "... src/calibrationTest.o"
 	@echo "... src/calibrationTest.i"
 	@echo "... src/calibrationTest.s"

@@ -125,9 +125,9 @@ void objectTracking::callBack(const sensor_msgs::ImageConstPtr &msg_)
         imageViewer(Img, nameOriginal);
         imageViewer(ImgHSV, nameHSV);
         //opening
-        morphologyOperation(ImgHSV, ImgOpening, 0, 5, 2);
+        morphologyOperation(ImgHSV, ImgOpening, 0, 5, 0);
         //closing
-        morphologyOperation(ImgOpening, ImgClosing, 1, 1, 0);
+        morphologyOperation(ImgOpening, ImgClosing, 1, 2, 2);
         imageViewer(ImgClosing,nameFilter);
     }
     catch (const std::exception &e)

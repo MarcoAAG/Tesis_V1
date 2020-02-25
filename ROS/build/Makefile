@@ -1169,6 +1169,19 @@ image_publisher_exe/fast:
 .PHONY : image_publisher_exe/fast
 
 #=============================================================================
+# Target rules for targets named objectTracking
+
+# Build rule for target.
+objectTracking: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 objectTracking
+.PHONY : objectTracking
+
+# fast build rule for target.
+objectTracking/fast:
+	$(MAKE) -f ocam/CMakeFiles/objectTracking.dir/build.make ocam/CMakeFiles/objectTracking.dir/build
+.PHONY : objectTracking/fast
+
+#=============================================================================
 # Target rules for targets named subscriber
 
 # Build rule for target.
@@ -1193,19 +1206,6 @@ publisher: cmake_check_build_system
 publisher/fast:
 	$(MAKE) -f ocam/CMakeFiles/publisher.dir/build.make ocam/CMakeFiles/publisher.dir/build
 .PHONY : publisher/fast
-
-#=============================================================================
-# Target rules for targets named HSV_Test
-
-# Build rule for target.
-HSV_Test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 HSV_Test
-.PHONY : HSV_Test
-
-# fast build rule for target.
-HSV_Test/fast:
-	$(MAKE) -f ocam/CMakeFiles/HSV_Test.dir/build.make ocam/CMakeFiles/HSV_Test.dir/build
-.PHONY : HSV_Test/fast
 
 #=============================================================================
 # Target rules for targets named cameraInfo
@@ -1234,17 +1234,30 @@ calibrationTest/fast:
 .PHONY : calibrationTest/fast
 
 #=============================================================================
-# Target rules for targets named objectTracking
+# Target rules for targets named HSV_Test
 
 # Build rule for target.
-objectTracking: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 objectTracking
-.PHONY : objectTracking
+HSV_Test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 HSV_Test
+.PHONY : HSV_Test
 
 # fast build rule for target.
-objectTracking/fast:
-	$(MAKE) -f ocam/CMakeFiles/objectTracking.dir/build.make ocam/CMakeFiles/objectTracking.dir/build
-.PHONY : objectTracking/fast
+HSV_Test/fast:
+	$(MAKE) -f ocam/CMakeFiles/HSV_Test.dir/build.make ocam/CMakeFiles/HSV_Test.dir/build
+.PHONY : HSV_Test/fast
+
+#=============================================================================
+# Target rules for targets named enhanceSV
+
+# Build rule for target.
+enhanceSV: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 enhanceSV
+.PHONY : enhanceSV
+
+# fast build rule for target.
+enhanceSV/fast:
+	$(MAKE) -f ocam/CMakeFiles/enhanceSV.dir/build.make ocam/CMakeFiles/enhanceSV.dir/build
+.PHONY : enhanceSV/fast
 
 #=============================================================================
 # Target rules for targets named disparity_view
@@ -2831,12 +2844,13 @@ help:
 	@echo "... image_publisher"
 	@echo "... image_publisher_gencfg"
 	@echo "... image_publisher_exe"
+	@echo "... objectTracking"
 	@echo "... subscriber"
 	@echo "... publisher"
-	@echo "... HSV_Test"
 	@echo "... cameraInfo"
 	@echo "... calibrationTest"
-	@echo "... objectTracking"
+	@echo "... HSV_Test"
+	@echo "... enhanceSV"
 	@echo "... disparity_view"
 	@echo "... stereo_view"
 	@echo "... std_srvs_generate_messages_nodejs"
