@@ -41,6 +41,7 @@
 *
 */
 
+
 /* USER CODE BEGIN (0) */
 /* USER CODE END */
 
@@ -121,22 +122,22 @@ uint16_t Dato_1_SPI1[1];
 uint16_t Dato_2_SPI1[1];
 uint16_t Dato_3_SPI1[1];
 uint16_t Dato_4_SPI1[1];
-void delaymio(uint32_t DelayMax);
 
+uint8 spiCalcEvenParity1(uint16 value);
 /* USER CODE END */
 
 int main(void)
 {
-    /* USER CODE BEGIN (3) */
+/* USER CODE BEGIN (3) */
     hetInit();
     sciInit();
     spiInit();
     // as5048Init();
 
-    SPI1_data_configCh0.CS_HOLD = FALSE;
-    SPI1_data_configCh0.WDEL = TRUE;
+    SPI1_data_configCh0.CS_HOLD = FALSE;   //defines whether or not you want to hold the chip select at the end of one single SPI transfer.
+    SPI1_data_configCh0.WDEL = TRUE;       //specified the duration of delay at the end of the current transaction before starting the next one.
     SPI1_data_configCh0.DFSEL = SPI_FMT_0; // antes en SPI_FMT_1: modo 2: Select the Data word format by setting DFSEL bits. Select the Number of the configured SPIFMTx register (0 to 3) to used for the communication. Note: It is highly recommended to use SPIDAT1 register, SPIDAT0 is supported for compatibility reason
-    SPI1_data_configCh0.CSNR = 0xFE;       // con este controlamos el slave chip select 1
+    SPI1_data_configCh0.CSNR = 0xFE;       // defines which chip select you want to activate
 
     _enable_interrupt_(); // habilitamos interrupci�n global
 
@@ -152,6 +153,7 @@ int main(void)
 
     return 0;
 }
+
 
 /* USER CODE BEGIN (4) */
 /*
@@ -184,48 +186,74 @@ static void TaskInit(void *pvParameters)
 }
 static void TaskControl(void *pvParameters)
 {
-    uint16 n;
-    n = 5;
-    uint16_t value[1];
-    uint16_t AS5048A_ANGLE[1] = {0x3FFF};
+    uint16 angle[1] = {0};
+    uint16 readData[1] = {0};
 
-    // ComandoSPI1[0] = 0x3FFF; // config en direcci�n 0 comienza en la 00 y escribe hasta el 3; 0100 0011
-    // spiSendAndGetData(spiREG1, &SPI1_data_configCh0, 1, ComandoSPI1, Dato_1_SPI1);
-    // delaymio(5000);
-    // read(AS5048A_ANGLE, spiREG1, &SPI1_data_configCh0);
+    uint16 AS5048A_CLEAR_ERROR_FLAG1[1] = {0x0001};
+    uint16 AS5048A_PROGRAMMING_CONTROL1[1] = {0x0003};
+    uint16 AS5048A_OTP_REGISTER_ZERO_POS_HIGH1[1] = {0x0016};
+    uint16 AS5048A_OTP_REGISTER_ZERO_POS_LOW1[1] = {0x0017};
+    uint16 AS5048A_DIAG_AGC1[1] = {0x3FFD};
+    uint16 AS5048A_MAGNITUDE1[1] = {0x3FFE};
+    uint16 AS5048A_ANGLE1[1] = {0x3FFF};
+    uint16 AS5048A_NOP[1] = {0x0000};
+
+    uint16 data;
+    int rotation;
+    uint16 pos = 0x3FFF;
+
+    read(AS5048A_ANGLE1, readData, spiREG1, &SPI1_data_configCh0);
+
+    uint16 command[1] = {0b0100000000000000}; // PAR=0 R/W=R
+    spiSendData(spiREG1, &SPI1_data_configCh0, 1, AS5048A_ANGLE1);
+    spiSendAndGetData(spiREG1, &SPI1_data_configCh0, 1, AS5048A_NOP, readData);
+
+
+
     for (;;)
     {
 
-        pwm0het0.duty = 590;
+        pwm0het0.duty = 580;
         setpwmsignal(hetRAM1, pwm0, pwm0het0);
 
         pwm1het1.duty = 590;
         setpwmsignal(hetRAM1, pwm1, pwm1het1);
 
-        // value = getRawRotation(spiREG1, &SPI1_data_configCh0);
-        AS5048A_ANGLE[0] = 0x3FFF;
-        value[0] = read(&AS5048A_ANGLE, spiREG1, &SPI1_data_configCh0);
-        delaymio(20000);
-        sciSendData(sciREG1, (uint8 *)&value[0], 4);
+
+        // AS5048A_ANGLE1[0] = AS5048A_ANGLE1[0] | command[0];
+        // AS5048A_ANGLE1[0] |= ((uint16)spiCalcEvenParity1(AS5048A_ANGLE1)<<15);
+
+        // read(pos, readData, spiREG1, &SPI1_data_configCh0);
+        spiSendData(spiREG1, &SPI1_data_configCh0, 1, (uint16 *)AS5048A_ANGLE1);
+        // delaymio(50000);
+
+        spiGetData(spiREG1, &SPI1_data_configCh0, 1, readData);
+        // spiSendAndGetData(spiREG1, &SPI1_data_configCh0, 1, AS5048A_NOP, readData);
+
+
+        data = readData[0];
+        data = data & ~0xC000;
+        // data = data & 0b0100000000000000;
+
+        sciSendData(sciREG1, (uint8 *)&data, 2);
         sciSend(sciREG1, 2, (unsigned char *)"\r\n");
-
-        // ComandoSPI1[0] = 0x3FFF; // config en direcci�n 0 comienza en la 00 y escribe hasta el 3; 0100 0011
-        // spiSendAndGetData(spiREG1, &SPI1_data_configCh0, 1, ComandoSPI1 , Dato_2_SPI1);
-        // delaymio(20000);
-        // ComandoSPI1[0] = 0x3FFF; // config en direcci�n 0 comienza en la 00 y escribe hasta el 3; 0100 0011
-        // spiSendAndGetData(spiREG1, &SPI1_data_configCh0, 1, ComandoSPI1[0], Dato_2_SPI1);
-        // delaymio(5000);
-
-        // delaymio(50000);
-        // delaymio(50000);
-
-        // sciSendData(sciREG1, (uint8 *)&Dato_2_SPI1[0], 4);
-        // sciSend(sciREG1, 2, (unsigned char *)"\r\n");
-        // sciSendData(sciREG1, (uint8 *)&Dato_2_SPI1[0], 4);
-        // sciSend(sciREG1, 2, (unsigned char *)"\r\n");
     }
 }
+uint8 spiCalcEvenParity1(uint16 value)
+{
+    uint8 cnt = 0;
+    uint8 i;
 
+    for (i = 0; i < 16; i++)
+    {
+        if (value & 0x1)
+        {
+            cnt++;
+        }
+        value >>= 1;
+    }
+    return cnt & 0x1;
+}
 void vApplicationIdleHook(void)
 {
 }
@@ -337,14 +365,6 @@ void sciSendText(sciBASE_t *sci, uint8 *text, uint32 length)
             ;                          /* wait until busy */
         sciSendByte(sciREG1, *text++); /* send out text   */
     };
-}
-void delaymio(uint32_t DelayMax)
-{
-    uint32_t id = 0;
-    for (id = 0; id < DelayMax; ++id)
-    {
-        asm(" nop");
-    }
 }
 
 /* USER CODE END */

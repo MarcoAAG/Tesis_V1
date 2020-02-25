@@ -14,7 +14,6 @@ uint8 clk;
 uint16 position;
 uint16 transaction(uint16 data);
 
-
 void as5048(uint8 arg_cs);
 
 /*
@@ -33,7 +32,7 @@ void close();
 	 * Takes the address of the register as a 16 bit word
 	 * Returns the value of the register
 	 */
-uint16 read(uint16 *registerAddress, spiBASE_t *spiREGISTRO, spiDAT1_t *SPIconfig);
+void read(uint16 registerAddress[], uint16 out[], spiBASE_t *spiREGISTRO, spiDAT1_t *SPIconfig);
 
 /*
 	 * Write to a register
@@ -54,7 +53,7 @@ int getRotation(spiBASE_t *spiREGISTRO, spiDAT1_t *SPIconfig);
 /**
 	 * Returns the raw angle directly from the sensor
 	 */
-uint16 getRawRotation(spiBASE_t *spiREGISTRO, spiDAT1_t *SPIconfig);
+void getRawRotation(spiBASE_t *spiREGISTRO, spiDAT1_t *SPIconfig, uint16 out[]);
 
 /**
 	 * returns the value of the state register
@@ -94,5 +93,6 @@ uint16 getZeroPosition();
 bool error();
 
 uint8 spiCalcEvenParity(uint16);
+void delaymio(uint32_t DelayMax);
 
 #endif
