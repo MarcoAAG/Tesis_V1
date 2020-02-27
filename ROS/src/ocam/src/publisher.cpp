@@ -9,6 +9,7 @@
 using namespace std;
 using namespace cv;
 
+
 image_transport::Publisher pub;
 ros::Publisher infocam;
 VideoCapture VC;
