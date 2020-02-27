@@ -99,9 +99,9 @@ void spiInit(void)
                   | (uint32)((uint32)0U << 22U)  /* parity enable */
                   | (uint32)((uint32)1U << 21U)  /* wait on enable */
                   | (uint32)((uint32)0U << 20U)  /* shift direction */
-                  | (uint32)((uint32)0U << 17U)  /* clock polarity */
+                  | (uint32)((uint32)1U << 17U)  /* clock polarity */
                   | (uint32)((uint32)1U << 16U)  /* clock phase */
-                  | (uint32)((uint32)74U << 8U) /* baudrate prescale */
+                  | (uint32)((uint32)14U << 8U) /* baudrate prescale */
                   | (uint32)((uint32)16U << 0U);  /* data word length */
 
     /** - Data Format 1 */
@@ -202,7 +202,7 @@ void spiInit(void)
                     | (uint32)((uint32)0U << 9U)  /* CLK */
                     | (uint32)((uint32)1U << 10U)  /* SIMO[0] */
                     | (uint32)((uint32)1U << 11U)  /* SOMI[0] */
-                    | (uint32)((uint32)0U << 17U)  /* SIMO[1] */
+                    | (uint32)((uint32)1U << 17U)  /* SIMO[1] */
                     | (uint32)((uint32)0U << 25U); /* SOMI[1] */
 
     /** - SPI1 Port pullup / pulldown selection */

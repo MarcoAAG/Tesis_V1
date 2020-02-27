@@ -177,7 +177,7 @@ static void TaskInit(void *pvParameters)
     pwm1het1.duty = 500;
     setpwmsignal(hetRAM1, pwm1, pwm1het1);
 
-    vTaskDelayUntil(&xLastWakeTime, (5000 * portTICK_RATE_MS)); //Sleep task for 2 seconds
+   // vTaskDelayUntil(&xLastWakeTime, (5000 * portTICK_RATE_MS)); //Sleep task for 2 seconds
     if (xTaskCreate(TaskControl, "TaskControl", configMINIMAL_STACK_SIZE, NULL, 1, NULL) != pdTRUE)
     {
         // TASK HAS NOT CREATED
@@ -186,6 +186,8 @@ static void TaskInit(void *pvParameters)
 }
 static void TaskControl(void *pvParameters)
 {
+    TickType_t xLastExecutionTime;
+    //portTickType xLastExecutionTime;
     uint16 angle[1] = {0};
     uint16 readData[1] = {0};
 
@@ -201,14 +203,17 @@ static void TaskControl(void *pvParameters)
     uint16 data;
     int rotation;
     uint16 pos = 0x3FFF;
+    const TickType_t xFrequency = 5;
 
     read(AS5048A_ANGLE1, readData, spiREG1, &SPI1_data_configCh0);
 
     uint16 command[1] = {0b0100000000000000}; // PAR=0 R/W=R
-    spiSendData(spiREG1, &SPI1_data_configCh0, 1, AS5048A_ANGLE1);
-    spiSendAndGetData(spiREG1, &SPI1_data_configCh0, 1, AS5048A_NOP, readData);
+   // spiSendAndGetData(spiREG1, &SPI1_data_configCh0, 1, AS5048A_ANGLE1, readData);
+   // spiSendAndGetData(spiREG1, &SPI1_data_configCh0, 1, AS5048A_NOP, readData);
 
+    AS5048A_ANGLE1[0] = AS5048A_ANGLE1[0] | command[0];
 
+    xLastExecutionTime = xTaskGetTickCount();
 
     for (;;)
     {
@@ -219,24 +224,28 @@ static void TaskControl(void *pvParameters)
         pwm1het1.duty = 590;
         setpwmsignal(hetRAM1, pwm1, pwm1het1);
 
-
         // AS5048A_ANGLE1[0] = AS5048A_ANGLE1[0] | command[0];
         // AS5048A_ANGLE1[0] |= ((uint16)spiCalcEvenParity1(AS5048A_ANGLE1)<<15);
 
         // read(pos, readData, spiREG1, &SPI1_data_configCh0);
-        spiSendData(spiREG1, &SPI1_data_configCh0, 1, (uint16 *)AS5048A_ANGLE1);
-        // delaymio(50000);
 
-        spiGetData(spiREG1, &SPI1_data_configCh0, 1, readData);
-        // spiSendAndGetData(spiREG1, &SPI1_data_configCh0, 1, AS5048A_NOP, readData);
+        //spiSendData(spiREG1, &SPI1_data_configCh0, 1, AS5048A_ANGLE1);
+        //delaymio(50000);
 
+        //spiGetData(spiREG1, &SPI1_data_configCh0, 1, readData);
+
+
+        spiSendAndGetData(spiREG1, &SPI1_data_configCh0, 1, AS5048A_ANGLE1, readData);
+        delaymio(3000);
+        spiSendAndGetData(spiREG1, &SPI1_data_configCh0, 1, AS5048A_NOP, readData);
 
         data = readData[0];
         data = data & ~0xC000;
-        // data = data & 0b0100000000000000;
+       // data = data & 0b0100000000000000;
 
         sciSendData(sciREG1, (uint8 *)&data, 2);
         sciSend(sciREG1, 2, (unsigned char *)"\r\n");
+        vTaskDelayUntil(&xLastExecutionTime, xFrequency);
     }
 }
 uint8 spiCalcEvenParity1(uint16 value)
