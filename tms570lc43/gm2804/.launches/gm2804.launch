@@ -11,6 +11,7 @@
 <stringAttribute key="com.ti.ccstudio.debug.debugModel.ATTR_PROJECT.TMS570LC43xx.ccxml.Texas Instruments XDS110 USB Debug Probe_0/CortexR5" value="gm2804"/>
 <stringAttribute key="com.ti.ccstudio.debug.debugModel.ATTR_TARGET_CONFIG" value="${target_config_active_default:gm2804}"/>
 <stringAttribute key="com.ti.ccstudio.debug.debugModel.MRU_PROGRAM.TMS570LC43xx.ccxml.Texas Instruments XDS110 USB Debug Probe/CortexR5" value="/home/marco/Tesis/tms570lc43/gm2804/Debug/gm2804.out"/>
+<stringAttribute key="com.ti.ccstudio.debug.debugModel.MRU_PROGRAM.TMS570LC43xx.ccxml.Texas Instruments XDS110 USB Debug Probe_0/CortexR5" value="/home/marco/Tesis/tms570lc43/gm2804/Debug/gm2804.out"/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
 <listEntry value="/gm2804"/>
 </listAttribute>

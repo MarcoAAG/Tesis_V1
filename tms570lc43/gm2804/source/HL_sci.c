@@ -110,7 +110,7 @@ void sciInit(void)
 
     /** - set SCI1 pins output direction */
     sciREG1->PIO1 = (uint32)((uint32)1U << 2U)  /* tx pin */
-                 | (uint32)((uint32)1U << 1U); /* rx pin */
+                 | (uint32)((uint32)0U << 1U); /* rx pin */
 
     /** - set SCI1 pins open drain enable */
     sciREG1->PIO6 = (uint32)((uint32)0U << 2U)  /* tx pin */
