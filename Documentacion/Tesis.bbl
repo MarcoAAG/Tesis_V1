@@ -99,6 +99,31 @@
       \field{title}{Visión por Computador. Fundamentos y métodos}
       \field{year}{2011}
     \endentry
+    \entry{Book:Jan2009}{book}{}
+      \name{author}{1}{}{%
+        {{hash=c14dc8f341097fbe818bc919d748af7c}{%
+           family={Flusser},
+           familyi={F\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Sons Ltd}%
+      }
+      \strng{namehash}{c14dc8f341097fbe818bc919d748af7c}
+      \strng{fullhash}{c14dc8f341097fbe818bc919d748af7c}
+      \strng{bibnamehash}{c14dc8f341097fbe818bc919d748af7c}
+      \strng{authorbibnamehash}{c14dc8f341097fbe818bc919d748af7c}
+      \strng{authornamehash}{c14dc8f341097fbe818bc919d748af7c}
+      \strng{authorfullhash}{c14dc8f341097fbe818bc919d748af7c}
+      \field{labelalpha}{Flu09}
+      \field{sortinit}{F}
+      \field{sortinithash}{669c706c6f1fbf3b5a83d26f1d9e9e72}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Moments and Moment Invariants in Pattern Recognition}
+      \field{year}{2009}
+    \endentry
     \entry{WEB:HK2020}{online}{}
       \name{author}{1}{}{%
         {{hash=7c25f72a350912714863be6893ba12bb}{%
@@ -771,6 +796,28 @@
       \verb{url}
       \verb http://ucsa.ieeeparaguay.org/2019/05/15/transformaciones-morfologicas-con-vision-artificial/
       \endverb
+    \endentry
+    \entry{Paper::Lauren1994}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=f3ea4947755623b7180b9ff28d692124}{%
+           family={YANG},
+           familyi={Y\bibinitperiod},
+           given={LUREN},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{f3ea4947755623b7180b9ff28d692124}
+      \strng{fullhash}{f3ea4947755623b7180b9ff28d692124}
+      \strng{bibnamehash}{f3ea4947755623b7180b9ff28d692124}
+      \strng{authorbibnamehash}{f3ea4947755623b7180b9ff28d692124}
+      \strng{authornamehash}{f3ea4947755623b7180b9ff28d692124}
+      \strng{authorfullhash}{f3ea4947755623b7180b9ff28d692124}
+      \field{labelalpha}{YAN94}
+      \field{sortinit}{Y}
+      \field{sortinithash}{b8d711a035f7be9840c721c82920477e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{FAST AND EXACT COMPUTATION OF CARTESIAN GEOMETRIC MOMENTS USING DISCRETE GREEN'S THEOREM}
+      \field{year}{1994}
     \endentry
   \enddatalist
   \datalist[entry]{anyt/global/@/global/global}
@@ -857,6 +904,32 @@
       \field{title}{Visión por Computador. Fundamentos y métodos}
       \field{year}{2011}
     \endentry
+    \entry{Book:Jan2009}{book}{}
+      \name{author}{1}{}{%
+        {{hash=c14dc8f341097fbe818bc919d748af7c}{%
+           family={Flusser},
+           familyi={F\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Sons Ltd}%
+      }
+      \strng{namehash}{c14dc8f341097fbe818bc919d748af7c}
+      \strng{fullhash}{c14dc8f341097fbe818bc919d748af7c}
+      \strng{bibnamehash}{c14dc8f341097fbe818bc919d748af7c}
+      \strng{authorbibnamehash}{c14dc8f341097fbe818bc919d748af7c}
+      \strng{authornamehash}{c14dc8f341097fbe818bc919d748af7c}
+      \strng{authorfullhash}{c14dc8f341097fbe818bc919d748af7c}
+      \field{labelalpha}{Flu09}
+      \field{sortinit}{F}
+      \field{sortinithash}{669c706c6f1fbf3b5a83d26f1d9e9e72}
+      \field{labelprefix}{@}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Moments and Moment Invariants in Pattern Recognition}
+      \field{year}{2009}
+    \endentry
     \entry{WEB:HK2020}{online}{}
       \name{author}{1}{}{%
         {{hash=7c25f72a350912714863be6893ba12bb}{%
@@ -1554,6 +1627,29 @@
       \verb{url}
       \verb http://ucsa.ieeeparaguay.org/2019/05/15/transformaciones-morfologicas-con-vision-artificial/
       \endverb
+    \endentry
+    \entry{Paper::Lauren1994}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=f3ea4947755623b7180b9ff28d692124}{%
+           family={YANG},
+           familyi={Y\bibinitperiod},
+           given={LUREN},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{f3ea4947755623b7180b9ff28d692124}
+      \strng{fullhash}{f3ea4947755623b7180b9ff28d692124}
+      \strng{bibnamehash}{f3ea4947755623b7180b9ff28d692124}
+      \strng{authorbibnamehash}{f3ea4947755623b7180b9ff28d692124}
+      \strng{authornamehash}{f3ea4947755623b7180b9ff28d692124}
+      \strng{authorfullhash}{f3ea4947755623b7180b9ff28d692124}
+      \field{labelalpha}{YAN94}
+      \field{sortinit}{Y}
+      \field{sortinithash}{b8d711a035f7be9840c721c82920477e}
+      \field{labelprefix}{@}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{FAST AND EXACT COMPUTATION OF CARTESIAN GEOMETRIC MOMENTS USING DISCRETE GREEN'S THEOREM}
+      \field{year}{1994}
     \endentry
   \enddatalist
   \missing{opencvcolor}

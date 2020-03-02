@@ -901,3 +901,54 @@ Y de igual manera que en la ecuación 2.22 podemos acotar la ecuacion 2.23 de la
 	g(i,j) = \alpha * f(i,j) + \beta
 \end{equation}
 Donde i, j nos indican la ubicación de los pixeles.
+
+% ----------------------------------------------------------------------------------------------------------------------------
+% NUEVA SUBSECCION
+% ----------------------------------------------------------------------------------------------------------------------------
+\subsection{Teorema de Green}
+En el campo de las matemáticas hay un teorema que nos da la relación entre una integral
+de línea, es decir donde la función a integrar se evalúa a lo largo de una curva, C y una
+integral doble sobre una región plana D con límites C, tal como se ilustra en la siguiente
+figura.
+\begin{center}
+	\includegraphics[width=0.4\textwidth]{Contenido/Cuerpo/Capitulo2/Fig18.eps}
+	\captionof{figure}{Area de D limitada por C }
+	\label{fig:MarcoTeorico:Fig25}
+\end{center}
+Dicho teorema es ampliamente utilizado para la detección de bordes. Si lo aterrizamos
+en el campo de la visión artificial, y del trabajo de \cite{Paper::Lauren1994} podemos
+obtener que el momento de orden (p + q) de una imagen bidimensional g (x, y) se define
+como
+\begin{equation}
+	m_{pq} = \int_{y}^{} \int_{x}^{} g(x,y) x^p y^q dx dy
+\end{equation}
+Que para imagenes digitales tenemos entonces 
+\begin{equation}
+	m_{pq} = \sum_{y}^{}\sum_{x}^{} g(x,y) x^p y^q 
+\end{equation}
+Que de lo anterior y suponiendo que tenemos imagenes binarias, osea que 1 para objetos
+y 0 para el fondo la ecuación queda asi
+\begin{equation}
+	m_{pq} = \sum_{(x,y)}^{}\sum_{\in R}^{}  x^p y^q 
+\end{equation}
+De donde R es la region del objeto.
+\begin{definition}{\textbf{Momento}}
+	El momento $M_{pq}^{(f)}$ de una imagen f(x,y), donde p,q son enteros positivos y r = p+q es
+	el orden del momento.
+	\begin{equation}
+		M_{pq}^{(f)} = \int_{D}^{} \int_{}^{} p_{pq}(x,y) f(x.y) dxdy
+	\end{equation}
+	donde $p_{00}(x,y)$, $p_{10}(x,y)$, \dots, $p_{kj}(x,y)$ son funciones de base polinomiales 
+	definidas en D.
+\end{definition}
+
+\subsubsection{Momentos}
+La opción más común es una base de potencia estándar \cite{Book:Jan2009} $p_{kj}(x,y) = x^k y^j$
+eso lleva a momentos geométricos. Que para imagenes binarias obtenemos lo siguiente
+\begin{itemize}
+	\item $m_{00}$ =  Es la 'masa' de la imagen, para imagenes binarias es el area del objeto.
+	\item $m_{10}/m_{00}$ y $m_{01}/m_{00}$ = define el centro de gravedad, o en otras palabras
+	el centroide de la imagen.
+	\item $m_{20}$ y $m_{02}$ = Describen la 'distribución de masas' de la imagen con respecto a
+	los ejes x,y
+\end{itemize}
