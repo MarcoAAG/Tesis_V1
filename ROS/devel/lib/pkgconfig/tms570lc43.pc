@@ -1,0 +1,8 @@
+prefix=/home/marco/Tesis/ROS/devel
+
+Name: tms570lc43
+Description: Description of tms570lc43
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

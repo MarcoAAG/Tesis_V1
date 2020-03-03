@@ -1,8 +1,0 @@
-prefix=/home/marco/Tesis/ROS/install
-
-Name: rosplane_msgs
-Description: Description of rosplane_msgs
-Version: 0.0.0
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib 
-Requires: std_msgs

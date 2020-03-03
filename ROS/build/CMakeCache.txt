@@ -492,13 +492,13 @@ VISP_DIR:PATH=/opt/ros/melodic/lib/cmake/visp
 _file_name:FILEPATH=/home/marco/Tesis/ROS/src/image_pipeline/image_proc/test/test_rectify.xml
 
 //Path to a file.
-_gmock_INCLUDES:FILEPATH=/usr/src/googletest/googlemock/include/gmock/gmock.h
+_gmock_INCLUDES:FILEPATH=/usr/include/gmock/gmock.h
 
 //Path to a file.
 _gmock_SOURCES:FILEPATH=/usr/src/gmock/src/gmock.cc
 
 //Path to a file.
-_gtest_INCLUDES:FILEPATH=/usr/src/googletest/googletest/include/gtest/gtest.h
+_gtest_INCLUDES:FILEPATH=/usr/include/gtest/gtest.h
 
 //Path to a file.
 _gtest_SOURCES:FILEPATH=/usr/src/gtest/src/gtest.cc
@@ -726,9 +726,6 @@ roscpp_serialization_DIR:PATH=/opt/ros/melodic/share/roscpp_serialization/cmake
 //The directory containing a CMake configuration file for roscpp_traits.
 roscpp_traits_DIR:PATH=/opt/ros/melodic/share/roscpp_traits/cmake
 
-//The directory containing a CMake configuration file for rosflight_msgs.
-rosflight_msgs_DIR:PATH=rosflight_msgs_DIR-NOTFOUND
-
 //The directory containing a CMake configuration file for rosgraph.
 rosgraph_DIR:PATH=/opt/ros/melodic/share/rosgraph/cmake
 
@@ -741,26 +738,8 @@ roslib_DIR:PATH=/opt/ros/melodic/share/roslib/cmake
 //The directory containing a CMake configuration file for rospack.
 rospack_DIR:PATH=/opt/ros/melodic/share/rospack/cmake
 
-//Value Computed by CMake
-rosplane_BINARY_DIR:STATIC=/home/marco/Tesis/ROS/build/rosplane/rosplane
-
-//Value Computed by CMake
-rosplane_SOURCE_DIR:STATIC=/home/marco/Tesis/ROS/src/rosplane/rosplane
-
-//Value Computed by CMake
-rosplane_msgs_BINARY_DIR:STATIC=/home/marco/Tesis/ROS/build/rosplane/rosplane_msgs
-
-//Value Computed by CMake
-rosplane_msgs_SOURCE_DIR:STATIC=/home/marco/Tesis/ROS/src/rosplane/rosplane_msgs
-
 //The directory containing a CMake configuration file for rospy.
 rospy_DIR:PATH=/opt/ros/melodic/share/rospy/cmake
-
-//Value Computed by CMake
-rosserial_python_BINARY_DIR:STATIC=/home/marco/Tesis/ROS/build/rosserial_python
-
-//Value Computed by CMake
-rosserial_python_SOURCE_DIR:STATIC=/home/marco/Tesis/ROS/src/rosserial_python
 
 //The directory containing a CMake configuration file for rostest.
 rostest_DIR:PATH=/opt/ros/melodic/share/rostest/cmake
@@ -770,6 +749,18 @@ rostime_DIR:PATH=/opt/ros/melodic/share/rostime/cmake
 
 //The directory containing a CMake configuration file for sensor_msgs.
 sensor_msgs_DIR:PATH=/opt/ros/melodic/share/sensor_msgs/cmake
+
+//Value Computed by CMake
+serial_BINARY_DIR:STATIC=/home/marco/Tesis/ROS/build/serial
+
+//The directory containing a CMake configuration file for serial.
+serial_DIR:PATH=/home/marco/Tesis/ROS/devel/share/serial/cmake
+
+//Dependencies for the target
+serial_LIB_DEPENDS:STATIC=general;rt;general;pthread;
+
+//Value Computed by CMake
+serial_SOURCE_DIR:STATIC=/home/marco/Tesis/ROS/src/serial
 
 //The directory containing a CMake configuration file for smclib.
 smclib_DIR:PATH=/opt/ros/melodic/share/smclib/cmake
@@ -809,6 +800,12 @@ tf2_ros_DIR:PATH=/opt/ros/melodic/share/tf2_ros/cmake
 
 //The directory containing a CMake configuration file for tf.
 tf_DIR:PATH=/opt/ros/melodic/share/tf/cmake
+
+//Value Computed by CMake
+tms570lc43_BINARY_DIR:STATIC=/home/marco/Tesis/ROS/build/tms570lc43
+
+//Value Computed by CMake
+tms570lc43_SOURCE_DIR:STATIC=/home/marco/Tesis/ROS/src/tms570lc43
 
 //Dependencies for the target
 trackerNodelet_LIB_DEPENDS:STATIC=general;visp_tracker;general;/opt/ros/melodic/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;general;/opt/ros/melodic/lib/librosconsole.so;general;/opt/ros/melodic/lib/librosconsole_log4cxx.so;general;/opt/ros/melodic/lib/librosconsole_backend_interface.so;general;/usr/lib/x86_64-linux-gnu/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/melodic/lib/libroscpp_serialization.so;general;/opt/ros/melodic/lib/libxmlrpcpp.so;general;/opt/ros/melodic/lib/librostime.so;general;/opt/ros/melodic/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4;general;/opt/ros/melodic/lib/libnodeletlib.so;general;/opt/ros/melodic/lib/libbondcpp.so;general;/opt/ros/melodic/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/melodic/lib/libroslib.so;general;/opt/ros/melodic/lib/librospack.so;general;/usr/lib/x86_64-linux-gnu/libpython2.7.so;general;/usr/lib/x86_64-linux-gnu/libboost_program_options.so;general;/usr/lib/x86_64-linux-gnu/libtinyxml2.so;general;/opt/ros/melodic/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;general;/opt/ros/melodic/lib/librosconsole.so;general;/opt/ros/melodic/lib/librosconsole_log4cxx.so;general;/opt/ros/melodic/lib/librosconsole_backend_interface.so;general;/usr/lib/x86_64-linux-gnu/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/melodic/lib/libxmlrpcpp.so;general;/opt/ros/melodic/lib/libroscpp_serialization.so;general;/opt/ros/melodic/lib/librostime.so;general;/opt/ros/melodic/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4;general;visp_vs;general;visp_visual_features;general;visp_vision;general;visp_tt_mi;general;visp_tt;general;visp_me;general;visp_mbt;general;visp_klt;general;visp_blob;general;visp_sensor;general;visp_robot;general;visp_io;general;visp_imgproc;general;visp_gui;general;visp_detection;general;visp_core;general;visp_ar;
@@ -1027,7 +1024,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=21
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=23
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -1091,12 +1088,12 @@ FREETYPE_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: FREETYPE_LIBRARY_RELEASE
 FREETYPE_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 GMOCK_FROM_SOURCE_FOUND:INTERNAL=TRUE
-GMOCK_FROM_SOURCE_INCLUDE_DIRS:INTERNAL=/usr/src/googletest/googlemock/include
+GMOCK_FROM_SOURCE_INCLUDE_DIRS:INTERNAL=/usr/include
 GMOCK_FROM_SOURCE_LIBRARIES:INTERNAL=gmock
 GMOCK_FROM_SOURCE_LIBRARY_DIRS:INTERNAL=/home/marco/Tesis/ROS/build/gmock
 GMOCK_FROM_SOURCE_MAIN_LIBRARIES:INTERNAL=gmock_main
 GTEST_FROM_SOURCE_FOUND:INTERNAL=TRUE
-GTEST_FROM_SOURCE_INCLUDE_DIRS:INTERNAL=/usr/src/googletest/googletest/include
+GTEST_FROM_SOURCE_INCLUDE_DIRS:INTERNAL=/usr/include
 GTEST_FROM_SOURCE_LIBRARIES:INTERNAL=gtest
 GTEST_FROM_SOURCE_LIBRARY_DIRS:INTERNAL=/home/marco/Tesis/ROS/build/gtest
 GTEST_FROM_SOURCE_MAIN_LIBRARIES:INTERNAL=gtest_main

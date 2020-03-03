@@ -6,9 +6,10 @@
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
 subdirs("image_pipeline/image_pipeline")
-subdirs("rosserial_python")
+subdirs("serial")
 subdirs("vision_visp/vision_visp")
 subdirs("image_pipeline/camera_calibration")
+subdirs("tms570lc43")
 subdirs("image_pipeline/image_proc")
 subdirs("image_pipeline/image_publisher")
 subdirs("ocam")
