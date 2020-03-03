@@ -93,23 +93,29 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Diagrama de flujo del programa publisher\relax }}{44}{figure.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Diagrama de flujo para cambio de espacio de color\relax }}{45}{figure.4.5}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Comunicaci\IeC {\'o}n ROS con calibrador\relax }}{45}{figure.4.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Funci\IeC {\'o}n Color \cite {opencvcolor}\relax }}{45}{figure.4.6}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Proceso de calibraci\IeC {\'o}n utilizando un tablero de ajedrez\relax }}{45}{figure.4.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Funci\IeC {\'o}n inRange\relax }}{46}{figure.4.7}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Proceso de calibraci\IeC {\'o}n utilizando un tablero de ajedrez\relax }}{46}{figure.4.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Espectro de colores\relax }}{47}{figure.4.8}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Diagrama de flujo para cambio de espacio de color\relax }}{47}{figure.4.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Separaci\IeC {\'o}n de colores\relax }}{47}{figure.4.9}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Funci\IeC {\'o}n Color \cite {opencvcolor}\relax }}{47}{figure.4.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Separaci\IeC {\'o}n de colores\relax }}{47}{figure.4.10}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Funci\IeC {\'o}n inRange\relax }}{48}{figure.4.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Separaci\IeC {\'o}n de color azul\relax }}{48}{figure.4.11}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Espectro de colores\relax }}{48}{figure.4.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Separaci\IeC {\'o}n de colore azul\relax }}{48}{figure.4.12}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Separaci\IeC {\'o}n de colores\relax }}{49}{figure.4.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Separaci\IeC {\'o}n de colores RGB utilizando el modelo HSV\relax }}{49}{figure.4.13}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Separaci\IeC {\'o}n de colores\relax }}{49}{figure.4.13}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Separaci\IeC {\'o}n de color azul\relax }}{50}{figure.4.14}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Separaci\IeC {\'o}n de colore azul\relax }}{50}{figure.4.15}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Separaci\IeC {\'o}n de colores RGB utilizando el modelo HSV\relax }}{50}{figure.4.16}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

@@ -42,13 +42,6 @@ la carga de trabajo de la CPU.
 	\end{algorithmic}
 \end{algorithm}
 
-% ---------------------------------------------------------------------------------------------------------
-% *********************************************************************************************************
-% *********************************************************************************************************
-% ---------------------------------------------------------------------------------------------------------
-
-\section{Calibración de camara}
-
 
 % ---------------------------------------------------------------------------------------------------------
 % *********************************************************************************************************
@@ -105,6 +98,71 @@ un array de tamaño 2 tipo entero que guardara las coordenadas en X y Y del cent
 del target.\\
 El proceso que se ejecuta se vera más a detalle en las siguientes secciones de este
 capitulo.
+
+% ---------------------------------------------------------------------------------------------------------
+% *********************************************************************************************************
+% *********************************************************************************************************
+% ---------------------------------------------------------------------------------------------------------
+
+\section{Calibración de camara}
+Siguiendo la calibración basada en el algoritmo de Zhangs, previamente descrito en el capítulo 2,
+comenzamos por posicionar la cámara en una mesa fija y colocando un tablero de ajedrez de dimensión
+2.65 x 2.6cm cada cuadrito.\\ Lanzando los nodos de ROS y graficando en RQT
+\begin{center}
+	\includegraphics[width=0.5\textwidth]{Contenido/Cuerpo/Capitulo4/Fig11.eps}
+	\captionof{figure}{Comunicación ROS con calibrador}\label{Fig1}
+\end{center}
+
+Para obtener una buena calibración, se movió el tablero de ajedrez en el marco de la cámara de
+la siguiente manera:
+\begin{itemize}
+	\item Tablero de ajedrez a la izquierda, derecha, arriba y abajo del campo de visión de la cámara
+	      \begin{itemize}
+		      \item Barra X - izquierda / derecha en el campo de visión
+		      \item Barra Y - arriba / abajo en el campo de visión
+		      \item Barra de tamaño: hacia / lejos e inclinación de la cámara
+	      \end{itemize}
+	\item Tablero de ajedrez que llena todo el campo de visión
+	\item Tablero de ajedrez inclinado hacia la izquierda, derecha, arriba y abajo (sesgado)
+\end{itemize}
+Tal como se ilustra en la siguiente figura
+\begin{center}
+	\includegraphics[width=0.5\textwidth]{Contenido/Cuerpo/Capitulo4/Fig12.eps}
+	\captionof{figure}{Proceso de calibración utilizando un tablero de ajedrez}\label{Fig1}
+\end{center}
+Despues del proceso de calibración los resultados son los siguientes:
+Matriz de distorsión D[]
+\begin{equation}
+	D=
+	\begin{bmatrix}
+		-0.439076 & 0.215870 & 0.001905 & 0.005790 & 0.000000
+	\end{bmatrix}
+\end{equation}
+Matriz de parámetros intrínsecos de la cámara
+\begin{equation}
+	K=
+	\begin{bmatrix}
+		656.41089 & 0         & 320.06053 \\
+		0.        & 654.93593 & 222.93267 \\
+		0.        & 0         & 1
+	\end{bmatrix}
+\end{equation}
+
+Matriz de proyección de cámara P
+\begin{equation}
+	P=
+	\begin{bmatrix}
+		581.95032 & 0.        & 324.43609 & 0. \\
+		0.        & 613.90649 & 221.23437 & 0. \\
+		0.        & 0.        & 1.        & 0.
+	\end{bmatrix}
+\end{equation}
+Una vez cambiando los parametros anteriores al pubicador da como resultado la sguiente imagen
+\begin{center}
+	\includegraphics[width=0.7\textwidth]{Contenido/Cuerpo/Capitulo4/Fig10.eps}
+	\captionof{figure}{Proceso de calibración utilizando un tablero de ajedrez}\label{Fig1}
+\end{center}
+
 
 % ---------------------------------------------------------------------------------------------------------
 % *********************************************************************************************************

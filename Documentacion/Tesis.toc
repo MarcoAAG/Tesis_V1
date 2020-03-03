@@ -111,26 +111,26 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.2}Algoritmo general}{42}{section*.46}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Calibraci\IeC {\'o}n de camara}{42}{section*.47}
+\contentsline {section}{\numberline {4.3}Comunicaci\IeC {\'o}n con ROS}{42}{section*.47}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Comunicaci\IeC {\'o}n con ROS}{42}{section*.48}
+\contentsline {subsection}{\numberline {4.3.1}Publisher}{42}{section*.48}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.1}Publisher}{43}{section*.49}
+\contentsline {subsection}{\numberline {4.3.2}Subscriber}{44}{section*.49}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.2}Subscriber}{44}{section*.50}
+\contentsline {section}{\numberline {4.4}Calibraci\IeC {\'o}n de camara}{45}{section*.50}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Espacio de color}{45}{section*.51}
+\contentsline {section}{\numberline {4.5}Espacio de color}{46}{section*.51}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.1}Pruebas de campo}{48}{section*.53}
+\contentsline {subsection}{\numberline {4.5.1}Pruebas de campo}{49}{section*.53}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}Filtro morfologico}{49}{section*.55}
+\contentsline {section}{\numberline {4.6}Filtro morfologico}{51}{section*.55}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliograf\'{\i }a}{51}{chapter*.56}
+\contentsline {chapter}{\nonumberline Bibliograf\'{\i }a}{53}{chapter*.56}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\'{I}ndice de figuras}{55}{section*.59}
+\contentsline {chapter}{\'{I}ndice de figuras}{57}{section*.59}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\'{I}ndice de cuadros}{57}{section*.60}
+\contentsline {chapter}{\'{I}ndice de cuadros}{61}{section*.60}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Lista de c\IeC {\'o}digos}{59}{section*.62}
+\contentsline {chapter}{\nonumberline Lista de c\IeC {\'o}digos}{63}{section*.62}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Apendice A}{61}{appendix.Alph1}
+\contentsline {chapter}{\numberline {A}Apendice A}{65}{appendix.Alph1}

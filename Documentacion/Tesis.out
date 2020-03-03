@@ -42,10 +42,10 @@
 \BOOKMARK [0][]{chapter.4}{4 Vision Artificial}{}% 42
 \BOOKMARK [1][]{section*.45}{4.1 Camara}{chapter.4}% 43
 \BOOKMARK [1][]{section*.46}{4.2 Algoritmo general}{chapter.4}% 44
-\BOOKMARK [1][]{section*.47}{4.3 Calibraci\363n de camara}{chapter.4}% 45
-\BOOKMARK [1][]{section*.48}{4.4 Comunicaci\363n con ROS}{chapter.4}% 46
-\BOOKMARK [2][]{section*.49}{4.4.1 Publisher}{section*.48}% 47
-\BOOKMARK [2][]{section*.50}{4.4.2 Subscriber}{section*.48}% 48
+\BOOKMARK [1][]{section*.47}{4.3 Comunicaci\363n con ROS}{chapter.4}% 45
+\BOOKMARK [2][]{section*.48}{4.3.1 Publisher}{section*.47}% 46
+\BOOKMARK [2][]{section*.49}{4.3.2 Subscriber}{section*.47}% 47
+\BOOKMARK [1][]{section*.50}{4.4 Calibraci\363n de camara}{chapter.4}% 48
 \BOOKMARK [1][]{section*.51}{4.5 Espacio de color}{chapter.4}% 49
 \BOOKMARK [2][]{section*.53}{4.5.1 Pruebas de campo}{section*.51}% 50
 \BOOKMARK [1][]{section*.55}{4.6 Filtro morfologico}{chapter.4}% 51
