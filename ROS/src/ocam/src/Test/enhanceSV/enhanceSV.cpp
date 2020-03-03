@@ -72,20 +72,20 @@ int main(int argc, char **argv)
     {
         cap >> img_original;
 
-        img_corrected = Mat(img_original.rows, img_original.cols * 2, img_original.type());
-        img_gamma_corrected = Mat(img_original.rows, img_original.cols * 2, img_original.type());
+        // img_corrected = Mat(img_original.rows, img_original.cols * 2, img_original.type());
+        img_gamma_corrected = Mat(img_original.rows, img_original.cols*2, img_original.type());
 
-        hconcat(img_original, img_original, img_corrected);
+        // hconcat(img_original, img_original, img_corrected);
         hconcat(img_original, img_original, img_gamma_corrected);
 
-        namedWindow("Brightness and contrast adjustments");
+        // namedWindow("Brightness and contrast adjustments");
         namedWindow("Gamma correction");
 
-        createTrackbar("Alpha gain (contrast)", "Brightness and contrast adjustments", &alpha, 500, on_linear_transform_alpha_trackbar);
-        createTrackbar("Beta bias (brightness)", "Brightness and contrast adjustments", &beta, 200, on_linear_transform_beta_trackbar);
+        // createTrackbar("Alpha gain (contrast)", "Brightness and contrast adjustments", &alpha, 500, on_linear_transform_alpha_trackbar);
+        // createTrackbar("Beta bias (brightness)", "Brightness and contrast adjustments", &beta, 200, on_linear_transform_beta_trackbar);
         createTrackbar("Gamma correction", "Gamma correction", &gamma_cor, 200, on_gamma_correction_trackbar);
 
-        on_linear_transform_alpha_trackbar(0, 0);
+        // on_linear_transform_alpha_trackbar(0, 0);
         on_gamma_correction_trackbar(0, 0);
 
         waitKey(10);

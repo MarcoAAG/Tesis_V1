@@ -23,6 +23,7 @@
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/video.hpp>
+#include "opencv2/imgcodecs.hpp"
 
 using namespace cv;
 using namespace std;
@@ -96,6 +97,8 @@ public:
     void publishCoordinates(int _x, int _y);
 };
 
+
+
 int main(int argc, char **argv)
 {
     ros::init(argc, argv, "Object_tracking");
@@ -109,7 +112,7 @@ int main(int argc, char **argv)
 
 objectTracking::objectTracking(image_transport::ImageTransport *it)
 {
-    sub = it->subscribe("ocam/Image", 1, &objectTracking::callBack, this);
+    sub = it->subscribe("ocam/image_enhance", 1, &objectTracking::callBack, this);
 }
 
 objectTracking::~objectTracking()
@@ -128,7 +131,7 @@ void objectTracking::callBack(const sensor_msgs::ImageConstPtr &msg_)
         morphologyOperation(ImgHSV, ImgOpening, 0, 5, 0);
         //closing
         morphologyOperation(ImgOpening, ImgClosing, 1, 2, 2);
-        imageViewer(ImgClosing,nameFilter);
+        imageViewer(ImgClosing, nameFilter);
     }
     catch (const std::exception &e)
     {
@@ -154,3 +157,5 @@ void objectTracking::morphologyOperation(Mat &_Image, Mat &Image_, int oper, int
     Mat element = getStructuringElement(elemen, Size(2 * size + 1, 2 * size + 1), Point(size, size));
     morphologyEx(_Image, Image_, operation, element);
 }
+
+

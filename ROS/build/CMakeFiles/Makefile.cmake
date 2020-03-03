@@ -516,6 +516,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "image_pipeline/image_publisher/CMakeFiles/image_publisher.dir/DependInfo.cmake"
   "image_pipeline/image_publisher/CMakeFiles/image_publisher_gencfg.dir/DependInfo.cmake"
   "image_pipeline/image_publisher/CMakeFiles/image_publisher_exe.dir/DependInfo.cmake"
+  "ocam/CMakeFiles/enhanceGamma.dir/DependInfo.cmake"
   "ocam/CMakeFiles/objectTracking.dir/DependInfo.cmake"
   "ocam/CMakeFiles/subscriber.dir/DependInfo.cmake"
   "ocam/CMakeFiles/publisher.dir/DependInfo.cmake"

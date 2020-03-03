@@ -1351,6 +1351,19 @@ image_publisher_exe/fast:
 .PHONY : image_publisher_exe/fast
 
 #=============================================================================
+# Target rules for targets named enhanceGamma
+
+# Build rule for target.
+enhanceGamma: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 enhanceGamma
+.PHONY : enhanceGamma
+
+# fast build rule for target.
+enhanceGamma/fast:
+	$(MAKE) -f ocam/CMakeFiles/enhanceGamma.dir/build.make ocam/CMakeFiles/enhanceGamma.dir/build
+.PHONY : enhanceGamma/fast
+
+#=============================================================================
 # Target rules for targets named objectTracking
 
 # Build rule for target.
@@ -3040,6 +3053,7 @@ help:
 	@echo "... image_publisher"
 	@echo "... image_publisher_gencfg"
 	@echo "... image_publisher_exe"
+	@echo "... enhanceGamma"
 	@echo "... objectTracking"
 	@echo "... subscriber"
 	@echo "... publisher"

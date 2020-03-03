@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+ocam/CMakeFiles/enhanceGamma.dir/rule:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 ocam/CMakeFiles/enhanceGamma.dir/rule
+.PHONY : ocam/CMakeFiles/enhanceGamma.dir/rule
+
+# Convenience name for target.
+enhanceGamma: ocam/CMakeFiles/enhanceGamma.dir/rule
+
+.PHONY : enhanceGamma
+
+# fast build rule for target.
+enhanceGamma/fast:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam/CMakeFiles/enhanceGamma.dir/build.make ocam/CMakeFiles/enhanceGamma.dir/build
+.PHONY : enhanceGamma/fast
+
+# Convenience name for target.
 ocam/CMakeFiles/objectTracking.dir/rule:
 	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 ocam/CMakeFiles/objectTracking.dir/rule
 .PHONY : ocam/CMakeFiles/objectTracking.dir/rule
@@ -380,6 +395,33 @@ src/cameraInfo.cpp.s:
 	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam/CMakeFiles/cameraInfo.dir/build.make ocam/CMakeFiles/cameraInfo.dir/src/cameraInfo.cpp.s
 .PHONY : src/cameraInfo.cpp.s
 
+src/enhanceGamma.o: src/enhanceGamma.cpp.o
+
+.PHONY : src/enhanceGamma.o
+
+# target to build an object file
+src/enhanceGamma.cpp.o:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam/CMakeFiles/enhanceGamma.dir/build.make ocam/CMakeFiles/enhanceGamma.dir/src/enhanceGamma.cpp.o
+.PHONY : src/enhanceGamma.cpp.o
+
+src/enhanceGamma.i: src/enhanceGamma.cpp.i
+
+.PHONY : src/enhanceGamma.i
+
+# target to preprocess a source file
+src/enhanceGamma.cpp.i:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam/CMakeFiles/enhanceGamma.dir/build.make ocam/CMakeFiles/enhanceGamma.dir/src/enhanceGamma.cpp.i
+.PHONY : src/enhanceGamma.cpp.i
+
+src/enhanceGamma.s: src/enhanceGamma.cpp.s
+
+.PHONY : src/enhanceGamma.s
+
+# target to generate assembly for a file
+src/enhanceGamma.cpp.s:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam/CMakeFiles/enhanceGamma.dir/build.make ocam/CMakeFiles/enhanceGamma.dir/src/enhanceGamma.cpp.s
+.PHONY : src/enhanceGamma.cpp.s
+
 src/objectTracking.o: src/objectTracking.cpp.o
 
 .PHONY : src/objectTracking.o
@@ -473,6 +515,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... install/local"
 	@echo "... test"
+	@echo "... enhanceGamma"
 	@echo "... objectTracking"
 	@echo "... subscriber"
 	@echo "... publisher"
@@ -493,6 +536,9 @@ help:
 	@echo "... src/cameraInfo.o"
 	@echo "... src/cameraInfo.i"
 	@echo "... src/cameraInfo.s"
+	@echo "... src/enhanceGamma.o"
+	@echo "... src/enhanceGamma.i"
+	@echo "... src/enhanceGamma.s"
 	@echo "... src/objectTracking.o"
 	@echo "... src/objectTracking.i"
 	@echo "... src/objectTracking.s"

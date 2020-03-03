@@ -12,12 +12,12 @@ int main(int argc, char **argv)
     camera_info_.width = 640;
     camera_info_.distortion_model = "plumb_bob";
 
-    camera_info_.K[0] = 653.418544;
+    camera_info_.K[0] = 656.41089;
     camera_info_.K[1] = 0.000000;
-    camera_info_.K[2] = 358.857783;
+    camera_info_.K[2] = 320.06053;
     camera_info_.K[3] = 0.000000;
-    camera_info_.K[4] = 652.863595;
-    camera_info_.K[5] = 235.538805;
+    camera_info_.K[4] = 654.93593;
+    camera_info_.K[5] = 222.93267;
     camera_info_.K[6] = 0.000000;
     camera_info_.K[7] = 0.000000;
     camera_info_.K[8] = 1.000000;
@@ -39,13 +39,13 @@ int main(int argc, char **argv)
     camera_info_.R[7] = 0.000000;
     camera_info_.R[8] = 1.000000;
 
-    camera_info_.P[0] = 575.133606;
+    camera_info_.P[0] = 581.95032;
     camera_info_.P[1] = 0.000000;
-    camera_info_.P[2] = 367.129653;
+    camera_info_.P[2] = 324.43609;
     camera_info_.P[3] = 0.000000;
     camera_info_.P[4] = 0.000000;
-    camera_info_.P[5] = 610.114441;
-    camera_info_.P[6] = 234.605856;
+    camera_info_.P[5] = 613.90649;
+    camera_info_.P[6] = 221.23437;
     camera_info_.P[7] = 0.000000;
     camera_info_.P[8] = 0.000000;
     camera_info_.P[9] = 0.000000;

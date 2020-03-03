@@ -47,6 +47,8 @@ opencv2/imgproc/imgproc.hpp
 -
 opencv2/video.hpp
 -
+opencv2/imgcodecs.hpp
+/home/marco/Tesis/ROS/src/ocam/src/opencv2/imgcodecs.hpp
 
 /opt/ros/melodic/include/cv_bridge/cv_bridge.h
 sensor_msgs/Image.h
