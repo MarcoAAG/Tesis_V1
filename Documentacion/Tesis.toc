@@ -39,19 +39,19 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1.7}C\IeC {\'a}lculo de la imagen}{13}{section*.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.8}Modelo de la c\IeC {\'a}mara}{16}{section*.26}
+\contentsline {subsection}{\numberline {2.1.8}Modelo de la c\IeC {\'a}mara}{15}{section*.26}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.2}Procesamiento de datos}{16}{section*.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Tarjeta procesadora}{16}{section*.28}
+\contentsline {subsection}{\numberline {2.2.1}Tarjeta procesadora}{17}{section*.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}Sistema operativo}{17}{section*.29}
+\contentsline {subsection}{\numberline {2.2.2}Sistema operativo}{18}{section*.29}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Ubuntu MATE}{17}{section*.29}
+\contentsline {subsubsection}{Ubuntu MATE}{18}{section*.29}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.3}ROS}{18}{section*.30}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Nivel de sistemas de archivos de ROS}{18}{section*.30}
+\contentsline {subsubsection}{Nivel de sistemas de archivos de ROS}{19}{section*.30}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Nivel de gr\IeC {\'a}fico de c\IeC {\'o}mputo ROS}{19}{section*.30}
 \defcounter {refsection}{0}\relax 
@@ -63,13 +63,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.7}Calibraci\IeC {\'o}n de camara}{25}{section*.34}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Espacio de color}{25}{section*.34}
+\contentsline {subsubsection}{Espacio de color}{26}{section*.34}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{HSI}{27}{figure.2.20}
+\contentsline {subsubsection}{HSI}{27}{figure.2.21}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Caracter\IeC {\'\i }sticas del modeldo HSV}{28}{figure.2.21}
+\contentsline {subsubsection}{Caracter\IeC {\'\i }sticas del modeldo HSV}{28}{figure.2.22}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Espacio de color en OpenCV}{29}{figure.2.21}
+\contentsline {subsubsection}{Espacio de color en OpenCV}{29}{figure.2.22}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.8}Transformaciones morfol\IeC {\'o}gicas}{29}{section*.35}
 \defcounter {refsection}{0}\relax 
@@ -77,21 +77,21 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Transformaciones morfol\IeC {\'o}gicas elementales}{31}{definition.2.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Erosi\IeC {\'o}n}{31}{figure.2.22}
+\contentsline {subsubsection}{Erosi\IeC {\'o}n}{31}{figure.2.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Dilataci\IeC {\'o}n}{32}{figure.2.23}
+\contentsline {subsubsection}{Dilataci\IeC {\'o}n}{32}{figure.2.24}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Apertura y Cierre}{33}{figure.2.24}
+\contentsline {subsubsection}{Apertura y Cierre}{33}{figure.2.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Apertura}{33}{figure.2.24}
+\contentsline {subsubsection}{Apertura}{33}{figure.2.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Cierre}{34}{figure.2.25}
+\contentsline {subsubsection}{Cierre}{34}{figure.2.26}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.9}Contraste y brillo}{34}{section*.36}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.10}Teorema de Green}{35}{section*.37}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Momentos}{36}{equation.2.2.28}
+\contentsline {subsubsection}{Momentos}{36}{equation.2.2.31}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Modelo matem\IeC {\'a}tico}{37}{chapter.3}
 \defcounter {refsection}{0}\relax 

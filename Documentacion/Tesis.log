@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.10.28)  2 MAR 2020 12:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.10.28)  3 MAR 2020 20:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1726,6 +1726,9 @@ LaTeX Info: Redefining \. on input line 28.
 LaTeX Info: Redefining \% on input line 28.
 
 
+LaTeX Warning: Label `fig:MarcoTeorico:Fig11' multiply defined.
+
+
 LaTeX Warning: Label `fig:MarcoTeorico:Fig23' multiply defined.
 
 
@@ -3341,58 +3344,102 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 288.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 288.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 295.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 295.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 295.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 295.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 295.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 295.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 295.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 295.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 295.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 295.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 295.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 295.
+[15 </home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig1_10-eps-converted-to.pdf> </home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig1_11-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <Contenido/Cuerpo/Capitulo2/Fig19.eps>
+(epstopdf)                    date: 2020-03-03 20:30:31
+(epstopdf)                    size: 13799 bytes
+(epstopdf)             Output file: <Contenido/Cuerpo/Capitulo2/Fig19-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-03-03 20:30:41
+(epstopdf)                    size: 12450 bytes
+(epstopdf)             Command: <repstopdf --outfile=Contenido/Cuerpo/Capitulo2/Fig19-eps-converted-to.pdf Contenido/Cuerpo/Capitulo2/Fig19.eps>
+(epstopdf)             \includegraphics on input line 296.
+Package epstopdf Info: Output file is already uptodate.
 
-Underfull \vbox (badness 1472) has occurred while \output is active []
+
+pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig19-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Contenido/Cuerpo/Capitulo2/Fig19-eps-converted-to.pdf, id=556, 381.425pt x 254.9525pt>
+File: Contenido/Cuerpo/Capitulo2/Fig19-eps-converted-to.pdf Graphic file (type pdf)
+<use Contenido/Cuerpo/Capitulo2/Fig19-eps-converted-to.pdf>
+Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig19-eps-converted-to.pdf  used on input line 296.
+(pdftex.def)             Requested size: 138.41054pt x 92.51419pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 297.
+See the caption package documentation for explanation.
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 302.
+(babel)             in language  on input line 325.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 302.
+(babel)             in language  on input line 325.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 302.
+(babel)             in language  on input line 325.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 302.
+(babel)             in language  on input line 325.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 302.
+(babel)             in language  on input line 325.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 302.
+(babel)             in language  on input line 325.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 302.
+(babel)             in language  on input line 336.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 302.
+(babel)             in language  on input line 336.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 302.
+(babel)             in language  on input line 336.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 302.
+(babel)             in language  on input line 336.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 302.
+(babel)             in language  on input line 336.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 302.
- [15 </home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig1_10-eps-converted-to.pdf> </home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig1_11-eps-converted-to.pdf>]
+(babel)             in language  on input line 336.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 302.
+(babel)             in language  on input line 339.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 302.
+(babel)             in language  on input line 339.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 302.
+(babel)             in language  on input line 339.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 302.
+(babel)             in language  on input line 339.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 302.
+(babel)             in language  on input line 339.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 302.
+(babel)             in language  on input line 339.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 313.
+(babel)             in language  on input line 339.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 313.
+(babel)             in language  on input line 339.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 313.
+(babel)             in language  on input line 339.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 313.
+(babel)             in language  on input line 339.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 313.
+(babel)             in language  on input line 339.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 313.
+(babel)             in language  on input line 339.
+[16 </home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig19-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Contenido/Cuerpo/Capitulo2/Fig7.eps>
 (epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 2041524 bytes
@@ -3400,46 +3447,21 @@ Package epstopdf Info: Source file: <Contenido/Cuerpo/Capitulo2/Fig7.eps>
 (epstopdf)                    date: 2020-02-12 19:20:52
 (epstopdf)                    size: 310315 bytes
 (epstopdf)             Command: <repstopdf --outfile=Contenido/Cuerpo/Capitulo2/Fig7-eps-converted-to.pdf Contenido/Cuerpo/Capitulo2/Fig7.eps>
-(epstopdf)             \includegraphics on input line 317.
+(epstopdf)             \includegraphics on input line 340.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig7-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo2/Fig7-eps-converted-to.pdf, id=557, 610.28pt x 697.60625pt>
+<Contenido/Cuerpo/Capitulo2/Fig7-eps-converted-to.pdf, id=577, 610.28pt x 697.60625pt>
 File: Contenido/Cuerpo/Capitulo2/Fig7-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo2/Fig7-eps-converted-to.pdf>
-Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig7-eps-converted-to.pdf  used on input line 317.
+Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig7-eps-converted-to.pdf  used on input line 340.
 (pdftex.def)             Requested size: 138.41054pt x 158.2107pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 318.
+(caption)                particular \caption on input line 341.
 See the caption package documentation for explanation.
 
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 341.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 341.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 341.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 341.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 341.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 341.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 341.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 341.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 341.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 341.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 341.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 341.
-[16 </home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig7-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Contenido/Cuerpo/Capitulo2/Fig6.eps>
 (epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 107428 bytes
@@ -3447,95 +3469,120 @@ Package epstopdf Info: Source file: <Contenido/Cuerpo/Capitulo2/Fig6.eps>
 (epstopdf)                    date: 2020-02-12 19:30:14
 (epstopdf)                    size: 83773 bytes
 (epstopdf)             Command: <repstopdf --outfile=Contenido/Cuerpo/Capitulo2/Fig6-eps-converted-to.pdf Contenido/Cuerpo/Capitulo2/Fig6.eps>
-(epstopdf)             \includegraphics on input line 342.
+(epstopdf)             \includegraphics on input line 365.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig6-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo2/Fig6-eps-converted-to.pdf, id=579, 760.8425pt x 349.305pt>
+<Contenido/Cuerpo/Capitulo2/Fig6-eps-converted-to.pdf, id=580, 760.8425pt x 349.305pt>
 File: Contenido/Cuerpo/Capitulo2/Fig6-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo2/Fig6-eps-converted-to.pdf>
-Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig6-eps-converted-to.pdf  used on input line 342.
+Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig6-eps-converted-to.pdf  used on input line 365.
 (pdftex.def)             Requested size: 257.04126pt x 118.01059pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 343.
+(caption)                particular \caption on input line 366.
 See the caption package documentation for explanation.
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 351.
+(babel)             in language  on input line 366.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 351.
+(babel)             in language  on input line 366.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 351.
+(babel)             in language  on input line 366.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 351.
+(babel)             in language  on input line 366.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 351.
+(babel)             in language  on input line 366.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 351.
+(babel)             in language  on input line 366.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 367.
+(babel)             in language  on input line 366.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 367.
+(babel)             in language  on input line 366.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 367.
+(babel)             in language  on input line 366.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 367.
+(babel)             in language  on input line 366.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 367.
+(babel)             in language  on input line 366.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 367.
+(babel)             in language  on input line 366.
+[17 </home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig7-eps-converted-to.pdf>]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 367.
+(babel)             in language  on input line 374.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 367.
+(babel)             in language  on input line 374.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 367.
+(babel)             in language  on input line 374.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 367.
+(babel)             in language  on input line 374.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 367.
+(babel)             in language  on input line 374.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 367.
-[17 </home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig6-eps-converted-to.pdf>]
+(babel)             in language  on input line 374.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 372.
+(babel)             in language  on input line 395.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 372.
+(babel)             in language  on input line 395.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 372.
+(babel)             in language  on input line 395.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 372.
+(babel)             in language  on input line 395.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 372.
+(babel)             in language  on input line 395.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 372.
+(babel)             in language  on input line 395.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 399.
+(babel)             in language  on input line 411.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 399.
+(babel)             in language  on input line 411.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 399.
+(babel)             in language  on input line 411.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 399.
+(babel)             in language  on input line 411.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 399.
+(babel)             in language  on input line 411.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 399.
+(babel)             in language  on input line 411.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 399.
+(babel)             in language  on input line 411.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 399.
+(babel)             in language  on input line 411.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 399.
+(babel)             in language  on input line 411.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 399.
+(babel)             in language  on input line 411.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 399.
+(babel)             in language  on input line 411.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 399.
- [18]
+(babel)             in language  on input line 411.
+ [18 </home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig6-eps-converted-to.pdf>]
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 437.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 437.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 437.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 437.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 437.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 437.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 437.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 437.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 437.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 437.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 437.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 437.
+ [19]
 Package epstopdf Info: Source file: <Contenido/Cuerpo/Capitulo2/Fig2.eps>
 (epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 186178 bytes
@@ -3543,49 +3590,21 @@ Package epstopdf Info: Source file: <Contenido/Cuerpo/Capitulo2/Fig2.eps>
 (epstopdf)                    date: 2020-02-12 19:46:48
 (epstopdf)                    size: 186996 bytes
 (epstopdf)             Command: <repstopdf --outfile=Contenido/Cuerpo/Capitulo2/Fig2-eps-converted-to.pdf Contenido/Cuerpo/Capitulo2/Fig2.eps>
-(epstopdf)             \includegraphics on input line 420.
+(epstopdf)             \includegraphics on input line 443.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig2-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo2/Fig2-eps-converted-to.pdf, id=601, 392.46625pt x 312.16624pt>
+<Contenido/Cuerpo/Capitulo2/Fig2-eps-converted-to.pdf, id=619, 392.46625pt x 312.16624pt>
 File: Contenido/Cuerpo/Capitulo2/Fig2-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo2/Fig2-eps-converted-to.pdf>
-Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig2-eps-converted-to.pdf  used on input line 420.
+Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig2-eps-converted-to.pdf  used on input line 443.
 (pdftex.def)             Requested size: 197.7259pt x 157.27354pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 421.
+(caption)                particular \caption on input line 444.
 See the caption package documentation for explanation.
 
-
-Underfull \vbox (badness 5681) has occurred while \output is active []
-
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 421.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 421.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 421.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 421.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 421.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 421.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 421.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 421.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 421.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 421.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 421.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 421.
- [19]
 Package epstopdf Info: Source file: <Contenido/Cuerpo/Capitulo2/Fig3.eps>
 (epstopdf)                    date: 2020-02-06 21:34:56
 (epstopdf)                    size: 228221 bytes
@@ -3593,45 +3612,45 @@ Package epstopdf Info: Source file: <Contenido/Cuerpo/Capitulo2/Fig3.eps>
 (epstopdf)                    date: 2020-02-12 19:46:49
 (epstopdf)                    size: 72140 bytes
 (epstopdf)             Command: <repstopdf --outfile=Contenido/Cuerpo/Capitulo2/Fig3-eps-converted-to.pdf Contenido/Cuerpo/Capitulo2/Fig3.eps>
-(epstopdf)             \includegraphics on input line 430.
+(epstopdf)             \includegraphics on input line 453.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig3-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo2/Fig3-eps-converted-to.pdf, id=607, 819.06pt x 324.21124pt>
+<Contenido/Cuerpo/Capitulo2/Fig3-eps-converted-to.pdf, id=620, 819.06pt x 324.21124pt>
 File: Contenido/Cuerpo/Capitulo2/Fig3-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo2/Fig3-eps-converted-to.pdf>
-Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig3-eps-converted-to.pdf  used on input line 430.
+Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig3-eps-converted-to.pdf  used on input line 453.
 (pdftex.def)             Requested size: 296.58885pt x 117.39865pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 431.
+(caption)                particular \caption on input line 454.
 See the caption package documentation for explanation.
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 447.
+(babel)             in language  on input line 464.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 447.
+(babel)             in language  on input line 464.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 447.
+(babel)             in language  on input line 464.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 447.
+(babel)             in language  on input line 464.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 447.
+(babel)             in language  on input line 464.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 447.
+(babel)             in language  on input line 464.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 447.
+(babel)             in language  on input line 464.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 447.
+(babel)             in language  on input line 464.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 447.
+(babel)             in language  on input line 464.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 447.
+(babel)             in language  on input line 464.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 447.
+(babel)             in language  on input line 464.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 447.
+(babel)             in language  on input line 464.
 [20 </home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig2-eps-converted-to.pdf> </home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig3-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Contenido/Cuerpo/Capitulo2/Fig4.eps>
 (epstopdf)                    date: 2020-02-06 21:34:56
@@ -3640,57 +3659,57 @@ Package epstopdf Info: Source file: <Contenido/Cuerpo/Capitulo2/Fig4.eps>
 (epstopdf)                    date: 2020-02-12 19:46:50
 (epstopdf)                    size: 41039 bytes
 (epstopdf)             Command: <repstopdf --outfile=Contenido/Cuerpo/Capitulo2/Fig4-eps-converted-to.pdf Contenido/Cuerpo/Capitulo2/Fig4.eps>
-(epstopdf)             \includegraphics on input line 448.
+(epstopdf)             \includegraphics on input line 471.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig4-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo2/Fig4-eps-converted-to.pdf, id=622, 578.16pt x 245.91875pt>
+<Contenido/Cuerpo/Capitulo2/Fig4-eps-converted-to.pdf, id=634, 578.16pt x 245.91875pt>
 File: Contenido/Cuerpo/Capitulo2/Fig4-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo2/Fig4-eps-converted-to.pdf>
-Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig4-eps-converted-to.pdf  used on input line 448.
+Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig4-eps-converted-to.pdf  used on input line 471.
 (pdftex.def)             Requested size: 296.58885pt x 126.15236pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 449.
+(caption)                particular \caption on input line 472.
 See the caption package documentation for explanation.
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 458.
+(babel)             in language  on input line 481.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 458.
+(babel)             in language  on input line 481.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 458.
+(babel)             in language  on input line 481.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 458.
+(babel)             in language  on input line 481.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 458.
+(babel)             in language  on input line 481.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 458.
+(babel)             in language  on input line 481.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 486.
+(babel)             in language  on input line 497.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 486.
+(babel)             in language  on input line 497.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 486.
+(babel)             in language  on input line 497.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 486.
+(babel)             in language  on input line 497.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 486.
+(babel)             in language  on input line 497.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 486.
+(babel)             in language  on input line 497.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 486.
+(babel)             in language  on input line 497.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 486.
+(babel)             in language  on input line 497.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 486.
+(babel)             in language  on input line 497.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 486.
+(babel)             in language  on input line 497.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 486.
+(babel)             in language  on input line 497.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 486.
+(babel)             in language  on input line 497.
 [21 </home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig4-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Contenido/Cuerpo/Capitulo2/Fig8.eps>
 (epstopdf)                    date: 2020-02-06 21:34:56
@@ -3699,58 +3718,83 @@ Package epstopdf Info: Source file: <Contenido/Cuerpo/Capitulo2/Fig8.eps>
 (epstopdf)                    date: 2020-02-12 19:54:15
 (epstopdf)                    size: 9209 bytes
 (epstopdf)             Command: <repstopdf --outfile=Contenido/Cuerpo/Capitulo2/Fig8-eps-converted-to.pdf Contenido/Cuerpo/Capitulo2/Fig8.eps>
-(epstopdf)             \includegraphics on input line 508.
+(epstopdf)             \includegraphics on input line 531.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig8-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo2/Fig8-eps-converted-to.pdf, id=640, 343.2825pt x 351.3125pt>
+<Contenido/Cuerpo/Capitulo2/Fig8-eps-converted-to.pdf, id=650, 343.2825pt x 351.3125pt>
 File: Contenido/Cuerpo/Capitulo2/Fig8-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo2/Fig8-eps-converted-to.pdf>
-Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig8-eps-converted-to.pdf  used on input line 508.
+Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig8-eps-converted-to.pdf  used on input line 531.
 (pdftex.def)             Requested size: 197.7259pt x 202.34619pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 509.
+(caption)                particular \caption on input line 532.
 See the caption package documentation for explanation.
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 509.
+(babel)             in language  on input line 532.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 509.
+(babel)             in language  on input line 532.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 509.
+(babel)             in language  on input line 532.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 509.
+(babel)             in language  on input line 532.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 509.
+(babel)             in language  on input line 532.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 509.
+(babel)             in language  on input line 532.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 509.
+(babel)             in language  on input line 532.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 509.
+(babel)             in language  on input line 532.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 509.
+(babel)             in language  on input line 532.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 509.
+(babel)             in language  on input line 532.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 509.
+(babel)             in language  on input line 532.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 509.
-[22 </home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig8-eps-converted-to.pdf>]
+(babel)             in language  on input line 532.
+[22]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 534.
+(babel)             in language  on input line 557.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 534.
+(babel)             in language  on input line 557.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 534.
+(babel)             in language  on input line 557.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 534.
+(babel)             in language  on input line 557.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 534.
+(babel)             in language  on input line 557.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 534.
+(babel)             in language  on input line 557.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 569.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 569.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 569.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 569.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 569.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 569.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 569.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 569.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 569.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 569.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 569.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 569.
+ [23 </home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig8-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Contenido/Cuerpo/Capitulo2/Fig9.eps>
 (epstopdf)                    date: 2020-02-07 23:19:52
 (epstopdf)                    size: 397324 bytes
@@ -3758,61 +3802,58 @@ Package epstopdf Info: Source file: <Contenido/Cuerpo/Capitulo2/Fig9.eps>
 (epstopdf)                    date: 2020-02-12 20:12:49
 (epstopdf)                    size: 153448 bytes
 (epstopdf)             Command: <repstopdf --outfile=Contenido/Cuerpo/Capitulo2/Fig9-eps-converted-to.pdf Contenido/Cuerpo/Capitulo2/Fig9.eps>
-(epstopdf)             \includegraphics on input line 547.
+(epstopdf)             \includegraphics on input line 570.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig9-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo2/Fig9-eps-converted-to.pdf, id=662, 599.23875pt x 492.84125pt>
+<Contenido/Cuerpo/Capitulo2/Fig9-eps-converted-to.pdf, id=683, 599.23875pt x 492.84125pt>
 File: Contenido/Cuerpo/Capitulo2/Fig9-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo2/Fig9-eps-converted-to.pdf>
-Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig9-eps-converted-to.pdf  used on input line 547.
+Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig9-eps-converted-to.pdf  used on input line 570.
 (pdftex.def)             Requested size: 237.2735pt x 195.14015pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 549.
+(caption)                particular \caption on input line 572.
 See the caption package documentation for explanation.
 
-
-Underfull \vbox (badness 4995) has occurred while \output is active []
-
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 549.
+(babel)             in language  on input line 581.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 549.
+(babel)             in language  on input line 581.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 549.
+(babel)             in language  on input line 581.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 549.
+(babel)             in language  on input line 581.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 549.
+(babel)             in language  on input line 581.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 549.
+(babel)             in language  on input line 581.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 549.
+(babel)             in language  on input line 596.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 549.
+(babel)             in language  on input line 596.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 549.
+(babel)             in language  on input line 596.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 549.
+(babel)             in language  on input line 596.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 549.
+(babel)             in language  on input line 596.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 549.
- [23]
+(babel)             in language  on input line 596.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 558.
+(babel)             in language  on input line 596.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 558.
+(babel)             in language  on input line 596.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 558.
+(babel)             in language  on input line 596.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 558.
+(babel)             in language  on input line 596.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 558.
+(babel)             in language  on input line 596.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 558.
+(babel)             in language  on input line 596.
+[24 </home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig9-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Contenido/Cuerpo/Capitulo2/Fig12.eps>
 (epstopdf)                    date: 2020-02-09 12:31:00
 (epstopdf)                    size: 71596 bytes
@@ -3820,83 +3861,58 @@ Package epstopdf Info: Source file: <Contenido/Cuerpo/Capitulo2/Fig12.eps>
 (epstopdf)                    date: 2020-02-12 20:17:21
 (epstopdf)                    size: 47367 bytes
 (epstopdf)             Command: <repstopdf --outfile=Contenido/Cuerpo/Capitulo2/Fig12-eps-converted-to.pdf Contenido/Cuerpo/Capitulo2/Fig12.eps>
-(epstopdf)             \includegraphics on input line 574.
+(epstopdf)             \includegraphics on input line 597.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig12-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo2/Fig12-eps-converted-to.pdf, id=675, 1204.5pt x 393.47pt>
+<Contenido/Cuerpo/Capitulo2/Fig12-eps-converted-to.pdf, id=695, 1204.5pt x 393.47pt>
 File: Contenido/Cuerpo/Capitulo2/Fig12-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo2/Fig12-eps-converted-to.pdf>
-Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig12-eps-converted-to.pdf  used on input line 574.
+Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig12-eps-converted-to.pdf  used on input line 597.
 (pdftex.def)             Requested size: 237.2735pt x 77.50984pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 575.
+(caption)                particular \caption on input line 598.
 See the caption package documentation for explanation.
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 575.
+(babel)             in language  on input line 607.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 575.
+(babel)             in language  on input line 607.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 575.
+(babel)             in language  on input line 607.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 575.
+(babel)             in language  on input line 607.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 575.
+(babel)             in language  on input line 607.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 575.
+(babel)             in language  on input line 607.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 575.
+(babel)             in language  on input line 645.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 575.
+(babel)             in language  on input line 645.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 575.
+(babel)             in language  on input line 645.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 575.
+(babel)             in language  on input line 645.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 575.
+(babel)             in language  on input line 645.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 575.
-[24 </home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig9-eps-converted-to.pdf>]
+(babel)             in language  on input line 645.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 584.
+(babel)             in language  on input line 645.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 584.
+(babel)             in language  on input line 645.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 584.
+(babel)             in language  on input line 645.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 584.
+(babel)             in language  on input line 645.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 584.
+(babel)             in language  on input line 645.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 584.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 622.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 622.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 622.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 622.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 622.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 622.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 622.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 622.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 622.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 622.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 622.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 622.
- [25 </home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig12-eps-converted-to.pdf>]
+(babel)             in language  on input line 645.
+[25 </home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig12-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Contenido/Cuerpo/Capitulo2/Fig10.eps>
 (epstopdf)                    date: 2020-02-08 13:31:20
 (epstopdf)                    size: 228070 bytes
@@ -3904,49 +3920,46 @@ Package epstopdf Info: Source file: <Contenido/Cuerpo/Capitulo2/Fig10.eps>
 (epstopdf)                    date: 2020-02-12 20:21:25
 (epstopdf)                    size: 62950 bytes
 (epstopdf)             Command: <repstopdf --outfile=Contenido/Cuerpo/Capitulo2/Fig10-eps-converted-to.pdf Contenido/Cuerpo/Capitulo2/Fig10.eps>
-(epstopdf)             \includegraphics on input line 628.
+(epstopdf)             \includegraphics on input line 651.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig10-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo2/Fig10-eps-converted-to.pdf, id=700, 542.025pt x 542.025pt>
+<Contenido/Cuerpo/Capitulo2/Fig10-eps-converted-to.pdf, id=710, 542.025pt x 542.025pt>
 File: Contenido/Cuerpo/Capitulo2/Fig10-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo2/Fig10-eps-converted-to.pdf>
-Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig10-eps-converted-to.pdf  used on input line 628.
+Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig10-eps-converted-to.pdf  used on input line 651.
 (pdftex.def)             Requested size: 138.41054pt x 138.4089pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 629.
+(caption)                particular \caption on input line 652.
 See the caption package documentation for explanation.
 
-
-Underfull \vbox (badness 1142) has occurred while \output is active []
-
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 647.
+(babel)             in language  on input line 659.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 647.
+(babel)             in language  on input line 659.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 647.
+(babel)             in language  on input line 659.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 647.
+(babel)             in language  on input line 659.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 647.
+(babel)             in language  on input line 659.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 647.
+(babel)             in language  on input line 659.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 647.
+(babel)             in language  on input line 659.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 647.
+(babel)             in language  on input line 659.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 647.
+(babel)             in language  on input line 659.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 647.
+(babel)             in language  on input line 659.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 647.
+(babel)             in language  on input line 659.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 647.
- [26 </home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig10-eps-converted-to.pdf>]
+(babel)             in language  on input line 659.
+[26 </home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig10-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Contenido/Cuerpo/Capitulo2/Fig11.eps>
 (epstopdf)                    date: 2020-02-08 20:18:15
 (epstopdf)                    size: 29872 bytes
@@ -3954,132 +3967,132 @@ Package epstopdf Info: Source file: <Contenido/Cuerpo/Capitulo2/Fig11.eps>
 (epstopdf)                    date: 2020-02-12 20:25:38
 (epstopdf)                    size: 24813 bytes
 (epstopdf)             Command: <repstopdf --outfile=Contenido/Cuerpo/Capitulo2/Fig11-eps-converted-to.pdf Contenido/Cuerpo/Capitulo2/Fig11.eps>
-(epstopdf)             \includegraphics on input line 660.
+(epstopdf)             \includegraphics on input line 683.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig11-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo2/Fig11-eps-converted-to.pdf, id=712, 601.24625pt x 476.78125pt>
+<Contenido/Cuerpo/Capitulo2/Fig11-eps-converted-to.pdf, id=723, 601.24625pt x 476.78125pt>
 File: Contenido/Cuerpo/Capitulo2/Fig11-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo2/Fig11-eps-converted-to.pdf>
-Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig11-eps-converted-to.pdf  used on input line 660.
+Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig11-eps-converted-to.pdf  used on input line 683.
 (pdftex.def)             Requested size: 197.7259pt x 156.79266pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 661.
+(caption)                particular \caption on input line 684.
 See the caption package documentation for explanation.
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 669.
+(babel)             in language  on input line 689.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 669.
+(babel)             in language  on input line 689.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 669.
+(babel)             in language  on input line 689.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 669.
+(babel)             in language  on input line 689.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 669.
+(babel)             in language  on input line 689.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 669.
+(babel)             in language  on input line 689.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 669.
+(babel)             in language  on input line 689.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 669.
+(babel)             in language  on input line 689.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 669.
+(babel)             in language  on input line 689.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 669.
+(babel)             in language  on input line 689.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 669.
+(babel)             in language  on input line 689.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 669.
+(babel)             in language  on input line 689.
 [27 </home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig11-eps-converted-to.pdf>]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 704.
+(babel)             in language  on input line 724.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 704.
+(babel)             in language  on input line 724.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 704.
+(babel)             in language  on input line 724.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 704.
+(babel)             in language  on input line 724.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 704.
+(babel)             in language  on input line 724.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 704.
+(babel)             in language  on input line 724.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 704.
+(babel)             in language  on input line 724.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 704.
+(babel)             in language  on input line 724.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 704.
+(babel)             in language  on input line 724.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 704.
+(babel)             in language  on input line 724.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 704.
+(babel)             in language  on input line 724.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 704.
+(babel)             in language  on input line 724.
  [28]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 726.
+(babel)             in language  on input line 749.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 726.
+(babel)             in language  on input line 749.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 726.
+(babel)             in language  on input line 749.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 726.
+(babel)             in language  on input line 749.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 726.
+(babel)             in language  on input line 749.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 726.
+(babel)             in language  on input line 749.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 737.
+(babel)             in language  on input line 760.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 737.
+(babel)             in language  on input line 760.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 737.
+(babel)             in language  on input line 760.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 737.
+(babel)             in language  on input line 760.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 737.
+(babel)             in language  on input line 760.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 737.
+(babel)             in language  on input line 760.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 737.
+(babel)             in language  on input line 760.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 737.
+(babel)             in language  on input line 760.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 737.
+(babel)             in language  on input line 760.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 737.
+(babel)             in language  on input line 760.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 737.
+(babel)             in language  on input line 760.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 737.
+(babel)             in language  on input line 760.
  [29]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 784.
+(babel)             in language  on input line 807.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 784.
+(babel)             in language  on input line 807.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 784.
+(babel)             in language  on input line 807.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 784.
+(babel)             in language  on input line 807.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 784.
+(babel)             in language  on input line 807.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 784.
+(babel)             in language  on input line 807.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 784.
+(babel)             in language  on input line 807.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 784.
+(babel)             in language  on input line 807.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 784.
+(babel)             in language  on input line 807.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 784.
+(babel)             in language  on input line 807.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 784.
+(babel)             in language  on input line 807.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 784.
+(babel)             in language  on input line 807.
  [30]
 Package epstopdf Info: Source file: <Contenido/Cuerpo/Capitulo2/Fig13.eps>
 (epstopdf)                    date: 2020-02-11 23:28:35
@@ -4088,45 +4101,45 @@ Package epstopdf Info: Source file: <Contenido/Cuerpo/Capitulo2/Fig13.eps>
 (epstopdf)                    date: 2020-02-12 20:30:31
 (epstopdf)                    size: 2644 bytes
 (epstopdf)             Command: <repstopdf --outfile=Contenido/Cuerpo/Capitulo2/Fig13-eps-converted-to.pdf Contenido/Cuerpo/Capitulo2/Fig13.eps>
-(epstopdf)             \includegraphics on input line 785.
+(epstopdf)             \includegraphics on input line 808.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig13-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo2/Fig13-eps-converted-to.pdf, id=760, 738.76pt x 203.76125pt>
+<Contenido/Cuerpo/Capitulo2/Fig13-eps-converted-to.pdf, id=771, 738.76pt x 203.76125pt>
 File: Contenido/Cuerpo/Capitulo2/Fig13-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo2/Fig13-eps-converted-to.pdf>
-Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig13-eps-converted-to.pdf  used on input line 785.
+Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig13-eps-converted-to.pdf  used on input line 808.
 (pdftex.def)             Requested size: 158.1783pt x 43.62747pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 786.
+(caption)                particular \caption on input line 809.
 See the caption package documentation for explanation.
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 805.
+(babel)             in language  on input line 828.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 805.
+(babel)             in language  on input line 828.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 805.
+(babel)             in language  on input line 828.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 805.
+(babel)             in language  on input line 828.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 805.
+(babel)             in language  on input line 828.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 805.
+(babel)             in language  on input line 828.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 805.
+(babel)             in language  on input line 828.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 805.
+(babel)             in language  on input line 828.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 805.
+(babel)             in language  on input line 828.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 805.
+(babel)             in language  on input line 828.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 805.
+(babel)             in language  on input line 828.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 805.
+(babel)             in language  on input line 828.
 [31 </home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig13-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Contenido/Cuerpo/Capitulo2/Fig14.eps>
 (epstopdf)                    date: 2020-02-12 21:45:01
@@ -4135,19 +4148,19 @@ Package epstopdf Info: Source file: <Contenido/Cuerpo/Capitulo2/Fig14.eps>
 (epstopdf)                    date: 2020-02-12 21:45:28
 (epstopdf)                    size: 8052 bytes
 (epstopdf)             Command: <repstopdf --outfile=Contenido/Cuerpo/Capitulo2/Fig14-eps-converted-to.pdf Contenido/Cuerpo/Capitulo2/Fig14.eps>
-(epstopdf)             \includegraphics on input line 813.
+(epstopdf)             \includegraphics on input line 836.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig14-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo2/Fig14-eps-converted-to.pdf, id=773, 1202.4925pt x 305.14pt>
+<Contenido/Cuerpo/Capitulo2/Fig14-eps-converted-to.pdf, id=784, 1202.4925pt x 305.14pt>
 File: Contenido/Cuerpo/Capitulo2/Fig14-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo2/Fig14-eps-converted-to.pdf>
-Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig14-eps-converted-to.pdf  used on input line 813.
+Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig14-eps-converted-to.pdf  used on input line 836.
 (pdftex.def)             Requested size: 316.36266pt x 80.2797pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 814.
+(caption)                particular \caption on input line 837.
 See the caption package documentation for explanation.
 
 Package epstopdf Info: Source file: <Contenido/Cuerpo/Capitulo2/Fig15.eps>
@@ -4157,45 +4170,45 @@ Package epstopdf Info: Source file: <Contenido/Cuerpo/Capitulo2/Fig15.eps>
 (epstopdf)                    date: 2020-02-12 22:06:50
 (epstopdf)                    size: 8766 bytes
 (epstopdf)             Command: <repstopdf --outfile=Contenido/Cuerpo/Capitulo2/Fig15-eps-converted-to.pdf Contenido/Cuerpo/Capitulo2/Fig15.eps>
-(epstopdf)             \includegraphics on input line 831.
+(epstopdf)             \includegraphics on input line 854.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig15-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo2/Fig15-eps-converted-to.pdf, id=775, 1202.4925pt x 305.14pt>
+<Contenido/Cuerpo/Capitulo2/Fig15-eps-converted-to.pdf, id=786, 1202.4925pt x 305.14pt>
 File: Contenido/Cuerpo/Capitulo2/Fig15-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo2/Fig15-eps-converted-to.pdf>
-Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig15-eps-converted-to.pdf  used on input line 831.
+Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig15-eps-converted-to.pdf  used on input line 854.
 (pdftex.def)             Requested size: 316.36266pt x 80.2797pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 832.
+(caption)                particular \caption on input line 855.
 See the caption package documentation for explanation.
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 832.
+(babel)             in language  on input line 855.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 832.
+(babel)             in language  on input line 855.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 832.
+(babel)             in language  on input line 855.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 832.
+(babel)             in language  on input line 855.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 832.
+(babel)             in language  on input line 855.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 832.
+(babel)             in language  on input line 855.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 832.
+(babel)             in language  on input line 855.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 832.
+(babel)             in language  on input line 855.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 832.
+(babel)             in language  on input line 855.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 832.
+(babel)             in language  on input line 855.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 832.
+(babel)             in language  on input line 855.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 832.
+(babel)             in language  on input line 855.
 [32 </home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig14-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Contenido/Cuerpo/Capitulo2/Fig16.eps>
 (epstopdf)                    date: 2020-02-12 22:36:25
@@ -4204,45 +4217,45 @@ Package epstopdf Info: Source file: <Contenido/Cuerpo/Capitulo2/Fig16.eps>
 (epstopdf)                    date: 2020-02-12 22:37:08
 (epstopdf)                    size: 7248 bytes
 (epstopdf)             Command: <repstopdf --outfile=Contenido/Cuerpo/Capitulo2/Fig16-eps-converted-to.pdf Contenido/Cuerpo/Capitulo2/Fig16.eps>
-(epstopdf)             \includegraphics on input line 854.
+(epstopdf)             \includegraphics on input line 877.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig16-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo2/Fig16-eps-converted-to.pdf, id=789, 1180.41pt x 305.14pt>
+<Contenido/Cuerpo/Capitulo2/Fig16-eps-converted-to.pdf, id=800, 1180.41pt x 305.14pt>
 File: Contenido/Cuerpo/Capitulo2/Fig16-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo2/Fig16-eps-converted-to.pdf>
-Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig16-eps-converted-to.pdf  used on input line 854.
+Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig16-eps-converted-to.pdf  used on input line 877.
 (pdftex.def)             Requested size: 316.36266pt x 81.77895pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 856.
+(caption)                particular \caption on input line 879.
 See the caption package documentation for explanation.
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 856.
+(babel)             in language  on input line 879.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 856.
+(babel)             in language  on input line 879.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 856.
+(babel)             in language  on input line 879.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 856.
+(babel)             in language  on input line 879.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 856.
+(babel)             in language  on input line 879.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 856.
+(babel)             in language  on input line 879.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 856.
+(babel)             in language  on input line 879.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 856.
+(babel)             in language  on input line 879.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 856.
+(babel)             in language  on input line 879.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 856.
+(babel)             in language  on input line 879.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 856.
+(babel)             in language  on input line 879.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 856.
+(babel)             in language  on input line 879.
 [33 </home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig15-eps-converted-to.pdf> </home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig16-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Contenido/Cuerpo/Capitulo2/Fig16.eps>
 (epstopdf)                    date: 2020-02-12 22:36:25
@@ -4251,67 +4264,67 @@ Package epstopdf Info: Source file: <Contenido/Cuerpo/Capitulo2/Fig16.eps>
 (epstopdf)                    date: 2020-02-12 22:37:08
 (epstopdf)                    size: 7248 bytes
 (epstopdf)             Command: <repstopdf --outfile=Contenido/Cuerpo/Capitulo2/Fig16-eps-converted-to.pdf Contenido/Cuerpo/Capitulo2/Fig16.eps>
-(epstopdf)             \includegraphics on input line 867.
+(epstopdf)             \includegraphics on input line 890.
 Package epstopdf Info: Output file is already uptodate.
 File: Contenido/Cuerpo/Capitulo2/Fig16-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo2/Fig16-eps-converted-to.pdf>
-Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig16-eps-converted-to.pdf  used on input line 867.
+Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig16-eps-converted-to.pdf  used on input line 890.
 (pdftex.def)             Requested size: 316.36266pt x 81.77895pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 869.
+(caption)                particular \caption on input line 892.
 See the caption package documentation for explanation.
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 877.
+(babel)             in language  on input line 900.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 877.
+(babel)             in language  on input line 900.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 877.
+(babel)             in language  on input line 900.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 877.
+(babel)             in language  on input line 900.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 877.
+(babel)             in language  on input line 900.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 877.
+(babel)             in language  on input line 900.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 898.
+(babel)             in language  on input line 921.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 898.
+(babel)             in language  on input line 921.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 898.
+(babel)             in language  on input line 921.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 898.
+(babel)             in language  on input line 921.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 898.
+(babel)             in language  on input line 921.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 898.
+(babel)             in language  on input line 921.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 898.
+(babel)             in language  on input line 921.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 898.
+(babel)             in language  on input line 921.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 898.
+(babel)             in language  on input line 921.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 898.
+(babel)             in language  on input line 921.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 898.
+(babel)             in language  on input line 921.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 898.
+(babel)             in language  on input line 921.
 [34]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 908.
+(babel)             in language  on input line 931.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 908.
+(babel)             in language  on input line 931.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 908.
+(babel)             in language  on input line 931.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 908.
+(babel)             in language  on input line 931.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 908.
+(babel)             in language  on input line 931.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 908.
+(babel)             in language  on input line 931.
 Package epstopdf Info: Source file: <Contenido/Cuerpo/Capitulo2/Fig18.eps>
 (epstopdf)                    date: 2020-03-02 07:48:56
 (epstopdf)                    size: 15974 bytes
@@ -4319,45 +4332,45 @@ Package epstopdf Info: Source file: <Contenido/Cuerpo/Capitulo2/Fig18.eps>
 (epstopdf)                    date: 2020-03-02 07:49:38
 (epstopdf)                    size: 8129 bytes
 (epstopdf)             Command: <repstopdf --outfile=Contenido/Cuerpo/Capitulo2/Fig18-eps-converted-to.pdf Contenido/Cuerpo/Capitulo2/Fig18.eps>
-(epstopdf)             \includegraphics on input line 914.
+(epstopdf)             \includegraphics on input line 937.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig18-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo2/Fig18-eps-converted-to.pdf, id=821, 364.36125pt x 368.37625pt>
+<Contenido/Cuerpo/Capitulo2/Fig18-eps-converted-to.pdf, id=832, 364.36125pt x 368.37625pt>
 File: Contenido/Cuerpo/Capitulo2/Fig18-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo2/Fig18-eps-converted-to.pdf>
-Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig18-eps-converted-to.pdf  used on input line 914.
+Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig18-eps-converted-to.pdf  used on input line 937.
 (pdftex.def)             Requested size: 158.1783pt x 159.91635pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 915.
+(caption)                particular \caption on input line 938.
 See the caption package documentation for explanation.
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 933.
+(babel)             in language  on input line 956.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 933.
+(babel)             in language  on input line 956.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 933.
+(babel)             in language  on input line 956.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 933.
+(babel)             in language  on input line 956.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 933.
+(babel)             in language  on input line 956.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 933.
+(babel)             in language  on input line 956.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 933.
+(babel)             in language  on input line 956.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 933.
+(babel)             in language  on input line 956.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 933.
+(babel)             in language  on input line 956.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 933.
+(babel)             in language  on input line 956.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 933.
+(babel)             in language  on input line 956.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 933.
+(babel)             in language  on input line 956.
 [35 </home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig18-eps-converted-to.pdf>]) (/home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo3/ModeloMatematico.tex
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 1.
@@ -4421,7 +4434,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo3/Fig1-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo3/Fig1-eps-converted-to.pdf, id=848, 499.8675pt x 390.45876pt>
+<Contenido/Cuerpo/Capitulo3/Fig1-eps-converted-to.pdf, id=859, 499.8675pt x 390.45876pt>
 File: Contenido/Cuerpo/Capitulo3/Fig1-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo3/Fig1-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo3/Fig1-eps-converted-to.pdf  used on input line 11.
@@ -4471,7 +4484,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo3/Fig2-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo3/Fig2-eps-converted-to.pdf, id=863, 742.775pt x 517.935pt>
+<Contenido/Cuerpo/Capitulo3/Fig2-eps-converted-to.pdf, id=874, 742.775pt x 517.935pt>
 File: Contenido/Cuerpo/Capitulo3/Fig2-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo3/Fig2-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo3/Fig2-eps-converted-to.pdf  used on input line 25.
@@ -4505,7 +4518,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo3/Fig4-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo3/Fig4-eps-converted-to.pdf, id=864, 161.60374pt x 206.7725pt>
+<Contenido/Cuerpo/Capitulo3/Fig4-eps-converted-to.pdf, id=875, 161.60374pt x 206.7725pt>
 File: Contenido/Cuerpo/Capitulo3/Fig4-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo3/Fig4-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo3/Fig4-eps-converted-to.pdf  used on input line 35.
@@ -4564,7 +4577,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo3/Fig6-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo3/Fig6-eps-converted-to.pdf, id=1109, 292.09125pt x 191.71625pt>
+<Contenido/Cuerpo/Capitulo3/Fig6-eps-converted-to.pdf, id=1120, 292.09125pt x 191.71625pt>
 File: Contenido/Cuerpo/Capitulo3/Fig6-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo3/Fig6-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo3/Fig6-eps-converted-to.pdf  used on input line 49.
@@ -4586,7 +4599,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo3/Fig5-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo3/Fig5-eps-converted-to.pdf, id=1110, 499.8675pt x 245.91875pt>
+<Contenido/Cuerpo/Capitulo3/Fig5-eps-converted-to.pdf, id=1121, 499.8675pt x 245.91875pt>
 File: Contenido/Cuerpo/Capitulo3/Fig5-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo3/Fig5-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo3/Fig5-eps-converted-to.pdf  used on input line 56.
@@ -4645,7 +4658,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo3/Fig7-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo3/Fig7-eps-converted-to.pdf, id=1305, 204.765pt x 253.94875pt>
+<Contenido/Cuerpo/Capitulo3/Fig7-eps-converted-to.pdf, id=1316, 204.765pt x 253.94875pt>
 File: Contenido/Cuerpo/Capitulo3/Fig7-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo3/Fig7-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo3/Fig7-eps-converted-to.pdf  used on input line 67.
@@ -4730,7 +4743,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo4/Fig0_1-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo4/Fig0_1-eps-converted-to.pdf, id=1315, 301.125pt x 341.275pt>
+<Contenido/Cuerpo/Capitulo4/Fig0_1-eps-converted-to.pdf, id=1327, 301.125pt x 341.275pt>
 File: Contenido/Cuerpo/Capitulo4/Fig0_1-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo4/Fig0_1-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo4/Fig0_1-eps-converted-to.pdf  used on input line 11.
@@ -4805,7 +4818,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo4/Fig0-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo4/Fig0-eps-converted-to.pdf, id=1327, 483.8075pt x 114.4275pt>
+<Contenido/Cuerpo/Capitulo4/Fig0-eps-converted-to.pdf, id=1338, 483.8075pt x 114.4275pt>
 File: Contenido/Cuerpo/Capitulo4/Fig0-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo4/Fig0-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo4/Fig0-eps-converted-to.pdf  used on input line 57.
@@ -4864,7 +4877,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo4/Fig1-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo4/Fig1-eps-converted-to.pdf, id=1340, 341.275pt x 298.11375pt>
+<Contenido/Cuerpo/Capitulo4/Fig1-eps-converted-to.pdf, id=1351, 341.275pt x 298.11375pt>
 File: Contenido/Cuerpo/Capitulo4/Fig1-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo4/Fig1-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo4/Fig1-eps-converted-to.pdf  used on input line 71.
@@ -4886,7 +4899,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo4/publisher-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo4/publisher-eps-converted-to.pdf, id=1341, 378.41376pt x 1115.16624pt>
+<Contenido/Cuerpo/Capitulo4/publisher-eps-converted-to.pdf, id=1352, 378.41376pt x 1115.16624pt>
 File: Contenido/Cuerpo/Capitulo4/publisher-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo4/publisher-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo4/publisher-eps-converted-to.pdf  used on input line 90.
@@ -4985,7 +4998,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo4/Fig11-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo4/Fig11-eps-converted-to.pdf, id=1359, 580.1675pt x 114.4275pt>
+<Contenido/Cuerpo/Capitulo4/Fig11-eps-converted-to.pdf, id=1370, 580.1675pt x 114.4275pt>
 File: Contenido/Cuerpo/Capitulo4/Fig11-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo4/Fig11-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo4/Fig11-eps-converted-to.pdf  used on input line 112.
@@ -5011,7 +5024,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo4/Fig12-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo4/Fig12-eps-converted-to.pdf, id=1360, 963.6pt x 722.7pt>
+<Contenido/Cuerpo/Capitulo4/Fig12-eps-converted-to.pdf, id=1371, 963.6pt x 722.7pt>
 File: Contenido/Cuerpo/Capitulo4/Fig12-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo4/Fig12-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo4/Fig12-eps-converted-to.pdf  used on input line 130.
@@ -5058,7 +5071,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo4/Fig10-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo4/Fig10-eps-converted-to.pdf, id=1377, 1114.1625pt x 461.725pt>
+<Contenido/Cuerpo/Capitulo4/Fig10-eps-converted-to.pdf, id=1388, 1114.1625pt x 461.725pt>
 File: Contenido/Cuerpo/Capitulo4/Fig10-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo4/Fig10-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo4/Fig10-eps-converted-to.pdf  used on input line 162.
@@ -5092,7 +5105,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo4/color-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo4/color-eps-converted-to.pdf, id=1378, 357.335pt x 346.29375pt>
+<Contenido/Cuerpo/Capitulo4/color-eps-converted-to.pdf, id=1389, 357.335pt x 346.29375pt>
 File: Contenido/Cuerpo/Capitulo4/color-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo4/color-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo4/color-eps-converted-to.pdf  used on input line 181.
@@ -5139,7 +5152,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo4/Fig2-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo4/Fig2-eps-converted-to.pdf, id=1392, 942.52126pt x 168.63pt>
+<Contenido/Cuerpo/Capitulo4/Fig2-eps-converted-to.pdf, id=1403, 942.52126pt x 168.63pt>
 File: Contenido/Cuerpo/Capitulo4/Fig2-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo4/Fig2-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo4/Fig2-eps-converted-to.pdf  used on input line 187.
@@ -5161,7 +5174,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo4/Fig3-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo4/Fig3-eps-converted-to.pdf, id=1393, 927.465pt x 170.6375pt>
+<Contenido/Cuerpo/Capitulo4/Fig3-eps-converted-to.pdf, id=1404, 927.465pt x 170.6375pt>
 File: Contenido/Cuerpo/Capitulo4/Fig3-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo4/Fig3-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo4/Fig3-eps-converted-to.pdf  used on input line 206.
@@ -5208,7 +5221,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo4/Fig4-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo4/Fig4-eps-converted-to.pdf, id=1405, 1028.84375pt x 476.78125pt>
+<Contenido/Cuerpo/Capitulo4/Fig4-eps-converted-to.pdf, id=1416, 1028.84375pt x 476.78125pt>
 File: Contenido/Cuerpo/Capitulo4/Fig4-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo4/Fig4-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo4/Fig4-eps-converted-to.pdf  used on input line 224.
@@ -5230,7 +5243,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo4/Fig5-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo4/Fig5-eps-converted-to.pdf, id=1406, 1028.84375pt x 532.99126pt>
+<Contenido/Cuerpo/Capitulo4/Fig5-eps-converted-to.pdf, id=1417, 1028.84375pt x 532.99126pt>
 File: Contenido/Cuerpo/Capitulo4/Fig5-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo4/Fig5-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo4/Fig5-eps-converted-to.pdf  used on input line 229.
@@ -5277,7 +5290,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo4/Fig6-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo4/Fig6-eps-converted-to.pdf, id=1419, 464.73625pt x 170.6375pt>
+<Contenido/Cuerpo/Capitulo4/Fig6-eps-converted-to.pdf, id=1430, 464.73625pt x 170.6375pt>
 File: Contenido/Cuerpo/Capitulo4/Fig6-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo4/Fig6-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo4/Fig6-eps-converted-to.pdf  used on input line 252.
@@ -5311,7 +5324,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo4/Fig7-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo4/Fig7-eps-converted-to.pdf, id=1420, 962.59625pt x 384.43625pt>
+<Contenido/Cuerpo/Capitulo4/Fig7-eps-converted-to.pdf, id=1431, 962.59625pt x 384.43625pt>
 File: Contenido/Cuerpo/Capitulo4/Fig7-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo4/Fig7-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo4/Fig7-eps-converted-to.pdf  used on input line 262.
@@ -5358,7 +5371,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo4/Fig9-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo4/Fig9-eps-converted-to.pdf, id=1436, 481.8pt x 389.455pt>
+<Contenido/Cuerpo/Capitulo4/Fig9-eps-converted-to.pdf, id=1447, 481.8pt x 389.455pt>
 File: Contenido/Cuerpo/Capitulo4/Fig9-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo4/Fig9-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo4/Fig9-eps-converted-to.pdf  used on input line 272.
@@ -5380,7 +5393,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo4/Fig8-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo4/Fig8-eps-converted-to.pdf, id=1437, 1445.4pt x 778.91pt>
+<Contenido/Cuerpo/Capitulo4/Fig8-eps-converted-to.pdf, id=1448, 1445.4pt x 778.91pt>
 File: Contenido/Cuerpo/Capitulo4/Fig8-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo4/Fig8-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo4/Fig8-eps-converted-to.pdf  used on input line 278.
@@ -5669,35 +5682,35 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 58.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 58.
- [57])
+ [57]
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 120.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 120.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 120.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 120.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 120.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 120.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 120.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 120.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 120.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 120.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 120.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 120.
+ [58])
 \tf@lof=\write7
 \openout7 = `Tesis.lof'.
 
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 96.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 96.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 96.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 96.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 96.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 96.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 96.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 96.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 96.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 96.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 96.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 96.
- [58]
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 96.
 Package babel Info: Redefining spanish shorthand >>
@@ -6049,18 +6062,18 @@ Package logreq Info: Writing requests to 'Tesis.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 121.
  ) 
 Here is how much of TeX's memory you used:
- 35088 strings out of 492982
- 623207 string characters out of 6134895
- 1332531 words of memory out of 5000000
- 37439 multiletter control sequences out of 15000+600000
+ 35102 strings out of 492982
+ 623735 string characters out of 6134895
+ 1332646 words of memory out of 5000000
+ 37447 multiletter control sequences out of 15000+600000
  668971 words of font info for 276 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,14n,106p,10528b,3024s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec-sc.enc}{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec.enc}</usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchri8a.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qhvb.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qhvr.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qhvri.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/bookman/ubkli8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on /home/marco/Tesis/Documentacion/Tesis.pdf (78 pages, 9448492 bytes).
+Output written on /home/marco/Tesis/Documentacion/Tesis.pdf (78 pages, 9461040 bytes).
 PDF statistics:
- 1946 PDF objects out of 2073 (max. 8388607)
- 1666 compressed objects within 17 object streams
- 416 named destinations out of 1000 (max. 500000)
- 48340 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 1962 PDF objects out of 2073 (max. 8388607)
+ 1680 compressed objects within 17 object streams
+ 421 named destinations out of 1000 (max. 500000)
+ 48345 words of extra memory for PDF output out of 51595 (max. 10000000)
 

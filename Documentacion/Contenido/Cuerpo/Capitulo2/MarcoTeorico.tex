@@ -289,7 +289,30 @@ eje óptico.
 El modelo básico de la cámara también llamado
 ‘pin-hole’ representa la transformación de las
 coordenadas de los puntos de la escena en las
-coordenadas de la imagen. \cite{Paper::Ricolfe2008}
+coordenadas de la imagen. \cite{Paper::Ricolfe2008}\\
+La siguiente imagen ilustra la proyeccion del punto \textbf{X} de ${\textbf{I\!R}^3}$ al punto \text{x}
+de ${\textbf{I\!R}^2}$ 
+\begin{center}
+	\includegraphics[width=0.35\textwidth]{Contenido/Cuerpo/Capitulo2/Fig19.eps}
+	\captionof{figure}{Modelo pinhole tomado de \cite{Book:Geoffrey2006}}
+	\label{fig:MarcoTeorico:Fig11}
+\end{center}
+Por triangulo semejantes podemos obtener las ecuaciones que relacionan un punto en el espacio con 
+su proyección en la imagen.
+\begin{equation}
+	\textbf{x} = \frac{f}{Z}\textbf{X}
+\end{equation}
+\begin{equation}
+	\textbf{y} = \frac{f}{Z}\textbf{Y}
+\end{equation}
+Queda aquí clara la perdida de una dimensión que se explicó en la introducción,
+ya que todos los puntos cuya relación entre la coordenadas X y Z sea constante darán la
+misma coordenada x en la imagen (igual con Y, Z e y).\cite{Book:Jose2005}\\
+DEspejando de las ecuaciones anteriores obtenemos la distancia focal como
+\begin{equation}
+	f = Z \frac{\textbf{x}}{\textbf{X}}=ZM
+\end{equation}
+De donde M es el factor de magnificación.
 
 % **************************************************************************************************************************
 % **************************************************************************************************************************
