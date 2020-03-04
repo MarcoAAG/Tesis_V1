@@ -302,6 +302,36 @@ Otro problema que es palpable de ver es la captación de ruido, en las dos figur
 hay presencia de pequeño ruido tanto fuera como dentro de las letras. Esto se puede solucionar
 agregando un par de filtros básicos, los llamadas opening y closing.
 
+% ---------------------------------------------------------------------------------------------------------
+% *********************************************************************************************************
+% *********************************************************************************************************
+% ---------------------------------------------------------------------------------------------------------
+\section{Corrección de brillo}
+Como se pudo observar en pruebas anteriores el rango que se asigna a cada color en el modelo HSV está
+completamente ligado con la cantidad de iluminación de nuestra imagen, es por eso que predefinir
+un conjunto de valores se hace una tarea complicada, una solución seria poner 3 barras de interfaz
+para acomodar los valores de H S y V, lo cual seria una solución sencilla pero un poco tardada ya que
+el sistema tendrá que responder en tiempo real a los cambios de los valores antes descritos.\\
+Indagando en internet otra solución es corregir el brillo por medio de las librería de OpenCV,
+y de la misma manera poner una barra en la interfaz que ajuste el brillo de modo manual. Dicha solución
+parece ser la mejor para este proyecto debido a que solo necesitamos mover un rango de valor y dejar
+fijos los parámetros del espacio de color, esto, claro se tiene que hacer antes de transformar de RGB
+a HSV. Que visto desde los nodos de ROS quedaría así:
+\begin{center}
+	\includegraphics[width=0.65\textwidth]{Contenido/Cuerpo/Capitulo4/Fig14.eps}
+	\captionof{figure}{Comunicación de nodos}\label{Fig9}
+\end{center}
+El nodo en rojo es el correspondiente a la etapa de correción, que se agrega a los nodos
+publicador y calibrador.\\
+Como pruba se utilizo un conjunto de letras de diferentes colores, impresas en papel blanco
+\begin{center}
+	\includegraphics[width=0.65\textwidth]{Contenido/Cuerpo/Capitulo4/Fig13.eps}
+	\captionof{figure}{correción de gamma, la imagen de la derecha es la corregida}\label{Fig9}
+\end{center}
+De la imagen anterior podemos observar dos cosas importantes, la primera es la barra de valores
+que interactúan con el usuario, que va de 0 a 200 y es la correspondiente al valor de gamma. Y en
+segundo claramente se percibe un realce de colores y como es que el fondo se ve más claro, que esto
+ayuda de alguna manera a limpiar la imagen al no agregar ruido innecesario.
 
 % ---------------------------------------------------------------------------------------------------------
 % *********************************************************************************************************
@@ -309,7 +339,47 @@ agregando un par de filtros básicos, los llamadas opening y closing.
 % ---------------------------------------------------------------------------------------------------------
 
 \section{Filtro morfologico}
-Como vimos en la sección anterior el entorno puede llegar a introducir a nuestra
+Como vimos en la sección de HSV el entorno puede llegar a introducir a nuestra
 imagen un poco de ruido por lo que es necesario aplicar técnicas de filtrado.\\
 Las librerías de opencv proveen operadores morfológicos que nos ayudan a limpiar
 nuestra imagen.
+Dicho filtros son los que abordamos en el capitulo 1, opening y closing que nos ayudaran
+a limpiar el objetivo por dentro y por fuera.
+\begin{example}[label={ex:serie}]{Operación Morfologica}
+	\textcolor{Mulberry}{void} \textcolor{RoyalBlue}{morphologyOperation(}\textcolor{BurntOrange}{Mat}  
+	\textcolor{Mulberry}{\&}\textcolor{Bittersweet}{\_Image}, \textcolor{BurntOrange}{Mat} \textcolor{Mulberry}{\&}\textcolor{Bittersweet}{Image\_}
+	,\textcolor{Mulberry}{int} \textcolor{Bittersweet}{oper}, \textcolor{Mulberry}{int} \textcolor{Bittersweet}{size},
+	\textcolor{Mulberry}{int} \textcolor{Bittersweet}{elemen}\textcolor{RoyalBlue}{)}
+\end{example}
+De la función anterior tenemos que:
+\begin{itemize}
+	\item \textbf{\_Image} es la imagen de entrada.
+	\item \textbf{Image\_} es la imagen de salida
+	\item \textbf{Oper} indica la operación Morfologica, 0 para opening y 1 para closing.
+	\item \textbf{size} El tamaño del kernel.
+	\item \textbf{elemn} La forma del kernel; 0 $\rightarrow$ Rectangular; 1 $\rightarrow$ Elipse y 
+	2 $\rightarrow$ Cruz.
+\end{itemize}
+Los últimos dos parámetros son lo que se modificaron en las siguientes pruebas.
+\begin{center}
+	\includegraphics[width=0.6\textwidth]{Contenido/Cuerpo/Capitulo4/Fig16.eps}
+	\captionof{figure}{A) Imagen original, B)Aplicación de flitros}\label{Fig9}
+\end{center}
+En la imagen anterior la aplicación del filtro se hizo con un kernel para el opening cuadrado y con un tamaño de 1.
+Se puede observar que no hay un cambio significativo por lo que se decidió cambiar a un kernel cuadrado
+de tamaño 3, la elección del kernel cuadrado es porque el objetivo tiene bordes de aproximadamente 90
+grados.
+\begin{center}
+	\includegraphics[width=0.6\textwidth]{Contenido/Cuerpo/Capitulo4/Fig17.eps}
+	\captionof{figure}{A) Imagen original, B)Aplicación de flitros. Con size de 3}\label{Fig9}
+\end{center}
+Hubo ligeros cambios, solo desaparecieron algunos puntos que son ruido por lo que es conveniente aumentar
+el parámetro \textbf{size}.
+\begin{center}
+	\includegraphics[width=0.6\textwidth]{Contenido/Cuerpo/Capitulo4/Fig15.eps}
+	\captionof{figure}{A) Imagen original,B) Espacio de color HSV C)Aplicación de flitros}\label{Fig9}
+\end{center}
+Con un size de 5 para el kernel del filtro opening se obtuvo un resultado que considero aceptable porque
+limpió el ruido externo, es decir, desapareció los puntos que no están asociados con nuestro objeto deseado.
+
+

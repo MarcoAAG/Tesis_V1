@@ -92,6 +92,15 @@
 \usepackage{listings}
 \usepackage{color}
 
+% generar los cuadros de color---------------------------------------------------
+\usepackage{tcolorbox}
+\tcbuselibrary{listingsutf8} % o listings o minted
+% Cuadro numerado para ejemplos
+\newtcolorbox[auto counter, number within=section]{example}[2][]
+{colback=green!5!white,colframe=green!75!black,
+fonttitle=\bfseries, title=Función~\thetcbcounter: #2,#1}
+% generar los cuadros de color---------------------------------------------------
+
 
 \theoremstyle{definition}
 \newtheorem{definition}{Definición}[section]
