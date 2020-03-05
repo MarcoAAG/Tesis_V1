@@ -1351,6 +1351,19 @@ image_publisher_exe/fast:
 .PHONY : image_publisher_exe/fast
 
 #=============================================================================
+# Target rules for targets named pointsCamera
+
+# Build rule for target.
+pointsCamera: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pointsCamera
+.PHONY : pointsCamera
+
+# fast build rule for target.
+pointsCamera/fast:
+	$(MAKE) -f ocam/CMakeFiles/pointsCamera.dir/build.make ocam/CMakeFiles/pointsCamera.dir/build
+.PHONY : pointsCamera/fast
+
+#=============================================================================
 # Target rules for targets named enhanceGamma
 
 # Build rule for target.
@@ -3053,6 +3066,7 @@ help:
 	@echo "... image_publisher"
 	@echo "... image_publisher_gencfg"
 	@echo "... image_publisher_exe"
+	@echo "... pointsCamera"
 	@echo "... enhanceGamma"
 	@echo "... objectTracking"
 	@echo "... subscriber"

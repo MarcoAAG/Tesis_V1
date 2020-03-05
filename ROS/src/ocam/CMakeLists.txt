@@ -145,6 +145,7 @@ add_executable(calibrationTest src/calibrationTest.cpp)
 add_executable(enhanceSV src/Test/enhanceSV/enhanceSV.cpp)
 add_executable(objectTracking src/objectTracking.cpp)
 add_executable(enhanceGamma src/enhanceGamma.cpp)
+add_executable(pointsCamera src/pointsCamera.cpp)
 
 
 ## Rename C++ executable without prefix
@@ -164,6 +165,7 @@ add_dependencies(calibrationTest ocam)
 add_dependencies(objectTracking ocam)
 add_dependencies(enhanceSV ocam)
 add_dependencies(enhanceGamma ocam)
+add_dependencies(pointsCamera ocam)
 
 
 ## Specify libraries to link a library or executable target against
@@ -175,6 +177,7 @@ target_link_libraries(calibrationTest ${catkin_LIBRARIES})
 target_link_libraries(objectTracking ${catkin_LIBRARIES})
 target_link_libraries(enhanceSV ${catkin_LIBRARIES})
 target_link_libraries(enhanceGamma ${catkin_LIBRARIES})
+target_link_libraries(pointsCamera ${catkin_LIBRARIES})
 
 #stuff for OpenCV2
 find_package(OpenCV 3 REQUIRED)

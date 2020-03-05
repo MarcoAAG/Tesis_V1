@@ -226,7 +226,6 @@ void imageCallback(const sensor_msgs::ImageConstPtr &msg_)
         imgOriginal = imgOriginal + imgLines;
         imshow("Original", imgOriginal); //show the original image
 
-        cv::waitKey(10);
     }
     catch (cv_bridge::Exception &e)
     {

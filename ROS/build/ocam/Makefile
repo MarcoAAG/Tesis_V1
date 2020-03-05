@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+ocam/CMakeFiles/pointsCamera.dir/rule:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 ocam/CMakeFiles/pointsCamera.dir/rule
+.PHONY : ocam/CMakeFiles/pointsCamera.dir/rule
+
+# Convenience name for target.
+pointsCamera: ocam/CMakeFiles/pointsCamera.dir/rule
+
+.PHONY : pointsCamera
+
+# fast build rule for target.
+pointsCamera/fast:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam/CMakeFiles/pointsCamera.dir/build.make ocam/CMakeFiles/pointsCamera.dir/build
+.PHONY : pointsCamera/fast
+
+# Convenience name for target.
 ocam/CMakeFiles/enhanceGamma.dir/rule:
 	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 ocam/CMakeFiles/enhanceGamma.dir/rule
 .PHONY : ocam/CMakeFiles/enhanceGamma.dir/rule
@@ -449,6 +464,33 @@ src/objectTracking.cpp.s:
 	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam/CMakeFiles/objectTracking.dir/build.make ocam/CMakeFiles/objectTracking.dir/src/objectTracking.cpp.s
 .PHONY : src/objectTracking.cpp.s
 
+src/pointsCamera.o: src/pointsCamera.cpp.o
+
+.PHONY : src/pointsCamera.o
+
+# target to build an object file
+src/pointsCamera.cpp.o:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam/CMakeFiles/pointsCamera.dir/build.make ocam/CMakeFiles/pointsCamera.dir/src/pointsCamera.cpp.o
+.PHONY : src/pointsCamera.cpp.o
+
+src/pointsCamera.i: src/pointsCamera.cpp.i
+
+.PHONY : src/pointsCamera.i
+
+# target to preprocess a source file
+src/pointsCamera.cpp.i:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam/CMakeFiles/pointsCamera.dir/build.make ocam/CMakeFiles/pointsCamera.dir/src/pointsCamera.cpp.i
+.PHONY : src/pointsCamera.cpp.i
+
+src/pointsCamera.s: src/pointsCamera.cpp.s
+
+.PHONY : src/pointsCamera.s
+
+# target to generate assembly for a file
+src/pointsCamera.cpp.s:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f ocam/CMakeFiles/pointsCamera.dir/build.make ocam/CMakeFiles/pointsCamera.dir/src/pointsCamera.cpp.s
+.PHONY : src/pointsCamera.cpp.s
+
 src/publisher.o: src/publisher.cpp.o
 
 .PHONY : src/publisher.o
@@ -515,6 +557,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... install/local"
 	@echo "... test"
+	@echo "... pointsCamera"
 	@echo "... enhanceGamma"
 	@echo "... objectTracking"
 	@echo "... subscriber"
@@ -542,6 +585,9 @@ help:
 	@echo "... src/objectTracking.o"
 	@echo "... src/objectTracking.i"
 	@echo "... src/objectTracking.s"
+	@echo "... src/pointsCamera.o"
+	@echo "... src/pointsCamera.i"
+	@echo "... src/pointsCamera.s"
 	@echo "... src/publisher.o"
 	@echo "... src/publisher.i"
 	@echo "... src/publisher.s"

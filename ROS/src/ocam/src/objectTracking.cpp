@@ -72,32 +72,40 @@ int high_V = 255;
 #define width 640
 #define height 480
 
+ros::Publisher coordinates_pub; //Crear el publicador
+
 class objectTracking
 {
 private:
     image_transport::Subscriber sub; //Crear el suscriptor
-    ros::Publisher coordinates_pub;  //Crear el publicador
     string nameOriginal = "Imagen Original";
     string nameHSV = "HSV";
     string nameFilter = "Filtro";
+    string nameCentroid = "Centroide";
     Mat ImgHSV;
     Mat ImgOpening;
     Mat ImgClosing;
+    Mat ImgCentroid;
 
 public:
     Mat Img;
     int imageX = width / 2;
     int imageY = height / 2;
+    uint16_t posX = 320;
+    uint16_t posY = 240;
+    uint16_t lastX = 0;
+    uint16_t lastY = 0;
+
     objectTracking(image_transport::ImageTransport *it);
     ~objectTracking();
     void callBack(const sensor_msgs::ImageConstPtr &msg_);
     void imageViewer(Mat &Image, string _windowName);
     void rgb2hsv(Mat &_Image, Mat &Image_);
     void morphologyOperation(Mat &_Image, Mat &Image_, int oper, int size, int elemen);
+    void centroid(Mat &_Image, uint16_t &x, uint16_t &y);
+    void drawCentroid(Mat &_Image, Mat &Image_, uint16_t posx, uint16_t posy, uint16_t lastx, uint16_t lasty);
     void publishCoordinates(int _x, int _y);
 };
-
-
 
 int main(int argc, char **argv)
 {
@@ -105,6 +113,7 @@ int main(int argc, char **argv)
     ros::NodeHandle nh;
     image_transport::ImageTransport it(nh);
     objectTracking ot = objectTracking(&it);
+    coordinates_pub = nh.advertise<std_msgs::Int32MultiArray>("coordinates", 100);
     ros::spin();
 
     return 0;
@@ -124,14 +133,22 @@ void objectTracking::callBack(const sensor_msgs::ImageConstPtr &msg_)
     {
         cv_bridge::CvImagePtr cvImg = cv_bridge::toCvCopy(msg_, "bgr8");
         Img = cvImg->image;
+        Mat ImgLines = Mat::zeros(Img.size(), CV_8UC3);
+
         rgb2hsv(Img, ImgHSV);
-        imageViewer(Img, nameOriginal);
+        // imageViewer(Img, nameOriginal);
         imageViewer(ImgHSV, nameHSV);
         //opening
         morphologyOperation(ImgHSV, ImgOpening, 0, 5, 0);
+        // morphologyOperation(ImgHSV, ImgOpening, 0, 3, 0);
         //closing
         morphologyOperation(ImgOpening, ImgClosing, 1, 2, 2);
+        // morphologyOperation(ImgOpening, ImgClosing, 1, 0, 0);
         imageViewer(ImgClosing, nameFilter);
+        centroid(ImgClosing, posX, posY);
+        drawCentroid(ImgLines, Img, posX, posY, lastX, lastY);
+        imageViewer(Img, nameCentroid);
+        publishCoordinates(posX, posY);
     }
     catch (const std::exception &e)
     {
@@ -157,5 +174,38 @@ void objectTracking::morphologyOperation(Mat &_Image, Mat &Image_, int oper, int
     Mat element = getStructuringElement(elemen, Size(2 * size + 1, 2 * size + 1), Point(size, size));
     morphologyEx(_Image, Image_, operation, element);
 }
+void objectTracking::centroid(Mat &_Image, uint16_t &x, uint16_t &y)
+{
+    Moments oMoments = moments(_Image);
+    double dM01 = oMoments.m01;
+    double dM10 = oMoments.m10;
+    double dArea = oMoments.m00;
 
+    x = dM10 / dArea;
+    y = dM01 / dArea;
 
+    if (x > 640 || x <= 0)
+    {
+        x = 320;
+    }
+    if (y > 480 || y <= 0)
+    {
+        y = 240;
+    }
+}
+void objectTracking::drawCentroid(Mat &_Image, Mat &Image_, uint16_t posx, uint16_t posy, uint16_t lastx, uint16_t lasty)
+{
+    line(_Image, Point2d(320, 240), Point2d(posx, posy), Scalar(0, 0, 255), 2, LINE_8);
+    circle(_Image, Point2d(320, 240), 3, Scalar(0, 0, 255), 2, LINE_8, 0);
+    circle(_Image, Point2d(posx, posy), 3, Scalar(0, 255, 0), 2, LINE_8, 0);
+    Image_ = Image_ + _Image;
+}
+void objectTracking::publishCoordinates(int _x, int _y)
+{
+    std_msgs::Int32MultiArray array;
+    array.data.clear();
+    array.data.push_back(_x);
+    array.data.push_back(_y);
+    coordinates_pub.publish(array);
+    ROS_INFO("Publicando Coordenadas");
+}
