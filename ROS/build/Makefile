@@ -1988,6 +1988,19 @@ image_rotate_exe/fast:
 .PHONY : image_rotate_exe/fast
 
 #=============================================================================
+# Target rules for targets named ocam_centroid
+
+# Build rule for target.
+ocam_centroid: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ocam_centroid
+.PHONY : ocam_centroid
+
+# fast build rule for target.
+ocam_centroid/fast:
+	$(MAKE) -f tf2_system/CMakeFiles/ocam_centroid.dir/build.make tf2_system/CMakeFiles/ocam_centroid.dir/build
+.PHONY : ocam_centroid/fast
+
+#=============================================================================
 # Target rules for targets named visp_bridge
 
 # Build rule for target.
@@ -3115,6 +3128,7 @@ help:
 	@echo "... image_rotate"
 	@echo "... image_rotate_gencfg"
 	@echo "... image_rotate_exe"
+	@echo "... ocam_centroid"
 	@echo "... visp_bridge"
 	@echo "... visp_bridge_convert_camera_parameters"
 	@echo "... visp_camera_calibration_camera"

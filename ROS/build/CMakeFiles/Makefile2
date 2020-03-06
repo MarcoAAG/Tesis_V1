@@ -77,7 +77,7 @@ CMakeFiles/tests.dir/all: vision_visp/visp_auto_tracker/CMakeFiles/visp_auto_tra
 
 # Build rule for subdir invocation for target.
 CMakeFiles/tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : CMakeFiles/tests.dir/rule
@@ -146,7 +146,7 @@ CMakeFiles/run_tests.dir/all: image_pipeline/image_proc/test/CMakeFiles/_run_tes
 
 # Build rule for subdir invocation for target.
 CMakeFiles/run_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/run_tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : CMakeFiles/run_tests.dir/rule
@@ -358,7 +358,7 @@ gtest/googlemock/gtest/preinstall:
 gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/all: gtest/googlemock/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num= "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=15 "Built target gtest_main"
 .PHONY : gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -390,12 +390,12 @@ clean: gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/clean
 gtest/googlemock/gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=15 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num= "Built target gtest"
 .PHONY : gtest/googlemock/gtest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
 gtest/googlemock/gtest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 gtest/googlemock/gtest/CMakeFiles/gtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : gtest/googlemock/gtest/CMakeFiles/gtest.dir/rule
@@ -494,7 +494,7 @@ serial/preinstall: serial/tests/preinstall
 serial/CMakeFiles/serial.dir/all:
 	$(MAKE) -f serial/CMakeFiles/serial.dir/build.make serial/CMakeFiles/serial.dir/depend
 	$(MAKE) -f serial/CMakeFiles/serial.dir/build.make serial/CMakeFiles/serial.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=33,34 "Built target serial"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=34 "Built target serial"
 .PHONY : serial/CMakeFiles/serial.dir/all
 
 # Include target in all.
@@ -504,7 +504,7 @@ all: serial/CMakeFiles/serial.dir/all
 
 # Build rule for subdir invocation for target.
 serial/CMakeFiles/serial.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 serial/CMakeFiles/serial.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : serial/CMakeFiles/serial.dir/rule
@@ -531,7 +531,7 @@ clean: serial/CMakeFiles/serial.dir/clean
 serial/CMakeFiles/serial_example.dir/all: serial/CMakeFiles/serial.dir/all
 	$(MAKE) -f serial/CMakeFiles/serial_example.dir/build.make serial/CMakeFiles/serial_example.dir/depend
 	$(MAKE) -f serial/CMakeFiles/serial_example.dir/build.make serial/CMakeFiles/serial_example.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=36 "Built target serial_example"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=37 "Built target serial_example"
 .PHONY : serial/CMakeFiles/serial_example.dir/all
 
 # Include target in all.
@@ -541,7 +541,7 @@ all: serial/CMakeFiles/serial_example.dir/all
 
 # Build rule for subdir invocation for target.
 serial/CMakeFiles/serial_example.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 serial/CMakeFiles/serial_example.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : serial/CMakeFiles/serial_example.dir/rule
@@ -602,7 +602,7 @@ serial/tests/CMakeFiles/_run_tests_serial_gtest.dir/all: serial/tests/CMakeFiles
 
 # Build rule for subdir invocation for target.
 serial/tests/CMakeFiles/_run_tests_serial_gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 serial/tests/CMakeFiles/_run_tests_serial_gtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : serial/tests/CMakeFiles/_run_tests_serial_gtest.dir/rule
@@ -635,7 +635,7 @@ serial/tests/CMakeFiles/run_tests_serial_gtest.dir/all: serial/tests/CMakeFiles/
 
 # Build rule for subdir invocation for target.
 serial/tests/CMakeFiles/run_tests_serial_gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 serial/tests/CMakeFiles/run_tests_serial_gtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : serial/tests/CMakeFiles/run_tests_serial_gtest.dir/rule
@@ -669,7 +669,7 @@ serial/tests/CMakeFiles/_run_tests_serial_gtest_serial-test-timer.dir/all: seria
 
 # Build rule for subdir invocation for target.
 serial/tests/CMakeFiles/_run_tests_serial_gtest_serial-test-timer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 serial/tests/CMakeFiles/_run_tests_serial_gtest_serial-test-timer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : serial/tests/CMakeFiles/_run_tests_serial_gtest_serial-test-timer.dir/rule
@@ -697,12 +697,12 @@ serial/tests/CMakeFiles/serial-test.dir/all: gtest/googlemock/gtest/CMakeFiles/g
 serial/tests/CMakeFiles/serial-test.dir/all: serial/CMakeFiles/serial.dir/all
 	$(MAKE) -f serial/tests/CMakeFiles/serial-test.dir/build.make serial/tests/CMakeFiles/serial-test.dir/depend
 	$(MAKE) -f serial/tests/CMakeFiles/serial-test.dir/build.make serial/tests/CMakeFiles/serial-test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num= "Built target serial-test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=35 "Built target serial-test"
 .PHONY : serial/tests/CMakeFiles/serial-test.dir/all
 
 # Build rule for subdir invocation for target.
 serial/tests/CMakeFiles/serial-test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 serial/tests/CMakeFiles/serial-test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : serial/tests/CMakeFiles/serial-test.dir/rule
@@ -734,7 +734,7 @@ serial/tests/CMakeFiles/run_tests_serial_gtest_serial-test.dir/all: serial/tests
 
 # Build rule for subdir invocation for target.
 serial/tests/CMakeFiles/run_tests_serial_gtest_serial-test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 serial/tests/CMakeFiles/run_tests_serial_gtest_serial-test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : serial/tests/CMakeFiles/run_tests_serial_gtest_serial-test.dir/rule
@@ -766,7 +766,7 @@ serial/tests/CMakeFiles/run_tests_serial.dir/all: serial/tests/CMakeFiles/run_te
 
 # Build rule for subdir invocation for target.
 serial/tests/CMakeFiles/run_tests_serial.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 serial/tests/CMakeFiles/run_tests_serial.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : serial/tests/CMakeFiles/run_tests_serial.dir/rule
@@ -800,7 +800,7 @@ serial/tests/CMakeFiles/_run_tests_serial_gtest_serial-test.dir/all: serial/test
 
 # Build rule for subdir invocation for target.
 serial/tests/CMakeFiles/_run_tests_serial_gtest_serial-test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 serial/tests/CMakeFiles/_run_tests_serial_gtest_serial-test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : serial/tests/CMakeFiles/_run_tests_serial_gtest_serial-test.dir/rule
@@ -860,12 +860,12 @@ serial/tests/CMakeFiles/serial-test-timer.dir/all: gtest/googlemock/gtest/CMakeF
 serial/tests/CMakeFiles/serial-test-timer.dir/all: serial/CMakeFiles/serial.dir/all
 	$(MAKE) -f serial/tests/CMakeFiles/serial-test-timer.dir/build.make serial/tests/CMakeFiles/serial-test-timer.dir/depend
 	$(MAKE) -f serial/tests/CMakeFiles/serial-test-timer.dir/build.make serial/tests/CMakeFiles/serial-test-timer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=35 "Built target serial-test-timer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=36 "Built target serial-test-timer"
 .PHONY : serial/tests/CMakeFiles/serial-test-timer.dir/all
 
 # Build rule for subdir invocation for target.
 serial/tests/CMakeFiles/serial-test-timer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 serial/tests/CMakeFiles/serial-test-timer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : serial/tests/CMakeFiles/serial-test-timer.dir/rule
@@ -897,7 +897,7 @@ serial/tests/CMakeFiles/run_tests_serial_gtest_serial-test-timer.dir/all: serial
 
 # Build rule for subdir invocation for target.
 serial/tests/CMakeFiles/run_tests_serial_gtest_serial-test-timer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 serial/tests/CMakeFiles/run_tests_serial_gtest_serial-test-timer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : serial/tests/CMakeFiles/run_tests_serial_gtest_serial-test-timer.dir/rule
@@ -929,7 +929,7 @@ serial/tests/CMakeFiles/_run_tests_serial.dir/all: serial/tests/CMakeFiles/_run_
 
 # Build rule for subdir invocation for target.
 serial/tests/CMakeFiles/_run_tests_serial.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 serial/tests/CMakeFiles/_run_tests_serial.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : serial/tests/CMakeFiles/_run_tests_serial.dir/rule
@@ -1008,7 +1008,7 @@ image_pipeline/camera_calibration/CMakeFiles/_run_tests_camera_calibration_noset
 
 # Build rule for subdir invocation for target.
 image_pipeline/camera_calibration/CMakeFiles/_run_tests_camera_calibration_nosetests_test.directed.py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 image_pipeline/camera_calibration/CMakeFiles/_run_tests_camera_calibration_nosetests_test.directed.py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : image_pipeline/camera_calibration/CMakeFiles/_run_tests_camera_calibration_nosetests_test.directed.py.dir/rule
@@ -1105,7 +1105,7 @@ image_pipeline/camera_calibration/CMakeFiles/_run_tests_camera_calibration_noset
 
 # Build rule for subdir invocation for target.
 image_pipeline/camera_calibration/CMakeFiles/_run_tests_camera_calibration_nosetests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 image_pipeline/camera_calibration/CMakeFiles/_run_tests_camera_calibration_nosetests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : image_pipeline/camera_calibration/CMakeFiles/_run_tests_camera_calibration_nosetests.dir/rule
@@ -1202,7 +1202,7 @@ image_pipeline/camera_calibration/CMakeFiles/_run_tests_camera_calibration.dir/a
 
 # Build rule for subdir invocation for target.
 image_pipeline/camera_calibration/CMakeFiles/_run_tests_camera_calibration.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 image_pipeline/camera_calibration/CMakeFiles/_run_tests_camera_calibration.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : image_pipeline/camera_calibration/CMakeFiles/_run_tests_camera_calibration.dir/rule
@@ -1299,7 +1299,7 @@ image_pipeline/camera_calibration/CMakeFiles/_run_tests_camera_calibration_noset
 
 # Build rule for subdir invocation for target.
 image_pipeline/camera_calibration/CMakeFiles/_run_tests_camera_calibration_nosetests_test.multiple_boards.py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 image_pipeline/camera_calibration/CMakeFiles/_run_tests_camera_calibration_nosetests_test.multiple_boards.py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : image_pipeline/camera_calibration/CMakeFiles/_run_tests_camera_calibration_nosetests_test.multiple_boards.py.dir/rule
@@ -1881,7 +1881,7 @@ all: tms570lc43/CMakeFiles/data_acquisition.dir/all
 
 # Build rule for subdir invocation for target.
 tms570lc43/CMakeFiles/data_acquisition.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 tms570lc43/CMakeFiles/data_acquisition.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : tms570lc43/CMakeFiles/data_acquisition.dir/rule
@@ -2998,7 +2998,7 @@ image_pipeline/image_proc/test/CMakeFiles/_run_tests_image_proc_rostest_test_tes
 
 # Build rule for subdir invocation for target.
 image_pipeline/image_proc/test/CMakeFiles/_run_tests_image_proc_rostest_test_test_rectify.xml.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 image_pipeline/image_proc/test/CMakeFiles/_run_tests_image_proc_rostest_test_test_rectify.xml.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : image_pipeline/image_proc/test/CMakeFiles/_run_tests_image_proc_rostest_test_test_rectify.xml.dir/rule
@@ -3030,7 +3030,7 @@ image_pipeline/image_proc/test/CMakeFiles/run_tests_image_proc.dir/all: image_pi
 
 # Build rule for subdir invocation for target.
 image_pipeline/image_proc/test/CMakeFiles/run_tests_image_proc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 image_pipeline/image_proc/test/CMakeFiles/run_tests_image_proc.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : image_pipeline/image_proc/test/CMakeFiles/run_tests_image_proc.dir/rule
@@ -3062,7 +3062,7 @@ image_pipeline/image_proc/test/CMakeFiles/image_proc_test_rectify.dir/all: gtest
 
 # Build rule for subdir invocation for target.
 image_pipeline/image_proc/test/CMakeFiles/image_proc_test_rectify.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 image_pipeline/image_proc/test/CMakeFiles/image_proc_test_rectify.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : image_pipeline/image_proc/test/CMakeFiles/image_proc_test_rectify.dir/rule
@@ -3094,7 +3094,7 @@ image_pipeline/image_proc/test/CMakeFiles/_run_tests_image_proc.dir/all: image_p
 
 # Build rule for subdir invocation for target.
 image_pipeline/image_proc/test/CMakeFiles/_run_tests_image_proc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 image_pipeline/image_proc/test/CMakeFiles/_run_tests_image_proc.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : image_pipeline/image_proc/test/CMakeFiles/_run_tests_image_proc.dir/rule
@@ -3126,7 +3126,7 @@ image_pipeline/image_proc/test/CMakeFiles/run_tests_image_proc_rostest.dir/all: 
 
 # Build rule for subdir invocation for target.
 image_pipeline/image_proc/test/CMakeFiles/run_tests_image_proc_rostest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 image_pipeline/image_proc/test/CMakeFiles/run_tests_image_proc_rostest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : image_pipeline/image_proc/test/CMakeFiles/run_tests_image_proc_rostest.dir/rule
@@ -3158,7 +3158,7 @@ image_pipeline/image_proc/test/CMakeFiles/_run_tests_image_proc_rostest.dir/all:
 
 # Build rule for subdir invocation for target.
 image_pipeline/image_proc/test/CMakeFiles/_run_tests_image_proc_rostest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 image_pipeline/image_proc/test/CMakeFiles/_run_tests_image_proc_rostest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : image_pipeline/image_proc/test/CMakeFiles/_run_tests_image_proc_rostest.dir/rule
@@ -3190,7 +3190,7 @@ image_pipeline/image_proc/test/CMakeFiles/run_tests_image_proc_rostest_test_test
 
 # Build rule for subdir invocation for target.
 image_pipeline/image_proc/test/CMakeFiles/run_tests_image_proc_rostest_test_test_rectify.xml.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 image_pipeline/image_proc/test/CMakeFiles/run_tests_image_proc_rostest_test_test_rectify.xml.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : image_pipeline/image_proc/test/CMakeFiles/run_tests_image_proc_rostest_test_test_rectify.xml.dir/rule
@@ -3384,7 +3384,7 @@ ocam/preinstall:
 ocam/CMakeFiles/pointsCamera.dir/all:
 	$(MAKE) -f ocam/CMakeFiles/pointsCamera.dir/build.make ocam/CMakeFiles/pointsCamera.dir/depend
 	$(MAKE) -f ocam/CMakeFiles/pointsCamera.dir/build.make ocam/CMakeFiles/pointsCamera.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=31 "Built target pointsCamera"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=32 "Built target pointsCamera"
 .PHONY : ocam/CMakeFiles/pointsCamera.dir/all
 
 # Include target in all.
@@ -3458,7 +3458,7 @@ clean: ocam/CMakeFiles/enhanceGamma.dir/clean
 ocam/CMakeFiles/objectTracking.dir/all:
 	$(MAKE) -f ocam/CMakeFiles/objectTracking.dir/build.make ocam/CMakeFiles/objectTracking.dir/depend
 	$(MAKE) -f ocam/CMakeFiles/objectTracking.dir/build.make ocam/CMakeFiles/objectTracking.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num= "Built target objectTracking"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=30 "Built target objectTracking"
 .PHONY : ocam/CMakeFiles/objectTracking.dir/all
 
 # Include target in all.
@@ -3468,7 +3468,7 @@ all: ocam/CMakeFiles/objectTracking.dir/all
 
 # Build rule for subdir invocation for target.
 ocam/CMakeFiles/objectTracking.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 ocam/CMakeFiles/objectTracking.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : ocam/CMakeFiles/objectTracking.dir/rule
@@ -3495,7 +3495,7 @@ clean: ocam/CMakeFiles/objectTracking.dir/clean
 ocam/CMakeFiles/subscriber.dir/all:
 	$(MAKE) -f ocam/CMakeFiles/subscriber.dir/build.make ocam/CMakeFiles/subscriber.dir/depend
 	$(MAKE) -f ocam/CMakeFiles/subscriber.dir/build.make ocam/CMakeFiles/subscriber.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num= "Built target subscriber"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=41 "Built target subscriber"
 .PHONY : ocam/CMakeFiles/subscriber.dir/all
 
 # Include target in all.
@@ -3505,7 +3505,7 @@ all: ocam/CMakeFiles/subscriber.dir/all
 
 # Build rule for subdir invocation for target.
 ocam/CMakeFiles/subscriber.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 ocam/CMakeFiles/subscriber.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : ocam/CMakeFiles/subscriber.dir/rule
@@ -3532,7 +3532,7 @@ clean: ocam/CMakeFiles/subscriber.dir/clean
 ocam/CMakeFiles/publisher.dir/all:
 	$(MAKE) -f ocam/CMakeFiles/publisher.dir/build.make ocam/CMakeFiles/publisher.dir/depend
 	$(MAKE) -f ocam/CMakeFiles/publisher.dir/build.make ocam/CMakeFiles/publisher.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=32 "Built target publisher"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=33 "Built target publisher"
 .PHONY : ocam/CMakeFiles/publisher.dir/all
 
 # Include target in all.
@@ -4301,7 +4301,7 @@ clean: image_pipeline/image_view/CMakeFiles/image_saver.dir/clean
 image_pipeline/image_view/CMakeFiles/image_view_gencfg.dir/all:
 	$(MAKE) -f image_pipeline/image_view/CMakeFiles/image_view_gencfg.dir/build.make image_pipeline/image_view/CMakeFiles/image_view_gencfg.dir/depend
 	$(MAKE) -f image_pipeline/image_view/CMakeFiles/image_view_gencfg.dir/build.make image_pipeline/image_view/CMakeFiles/image_view_gencfg.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=30 "Built target image_view_gencfg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num= "Built target image_view_gencfg"
 .PHONY : image_pipeline/image_view/CMakeFiles/image_view_gencfg.dir/all
 
 # Include target in all.
@@ -4311,7 +4311,7 @@ all: image_pipeline/image_view/CMakeFiles/image_view_gencfg.dir/all
 
 # Build rule for subdir invocation for target.
 image_pipeline/image_view/CMakeFiles/image_view_gencfg.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 image_pipeline/image_view/CMakeFiles/image_view_gencfg.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : image_pipeline/image_view/CMakeFiles/image_view_gencfg.dir/rule
@@ -4348,7 +4348,7 @@ all: image_pipeline/image_view/CMakeFiles/image_view_exe.dir/all
 
 # Build rule for subdir invocation for target.
 image_pipeline/image_view/CMakeFiles/image_view_exe.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 image_pipeline/image_view/CMakeFiles/image_view_exe.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : image_pipeline/image_view/CMakeFiles/image_view_exe.dir/rule
@@ -4398,7 +4398,7 @@ image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc.dir/all: image_pip
 image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc.dir/all: image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc_gencfg.dir/all
 	$(MAKE) -f image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc.dir/build.make image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc.dir/depend
 	$(MAKE) -f image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc.dir/build.make image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=37,38 "Built target stereo_image_proc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=38 "Built target stereo_image_proc"
 .PHONY : image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc.dir/all
 
 # Include target in all.
@@ -4408,7 +4408,7 @@ all: image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc.dir/all
 
 # Build rule for subdir invocation for target.
 image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc.dir/rule
@@ -4483,7 +4483,7 @@ all: image_pipeline/stereo_image_proc/CMakeFiles/stereoimageproc_exe.dir/all
 
 # Build rule for subdir invocation for target.
 image_pipeline/stereo_image_proc/CMakeFiles/stereoimageproc_exe.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 image_pipeline/stereo_image_proc/CMakeFiles/stereoimageproc_exe.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : image_pipeline/stereo_image_proc/CMakeFiles/stereoimageproc_exe.dir/rule
@@ -5092,7 +5092,7 @@ all: image_pipeline/image_rotate/CMakeFiles/image_rotate.dir/all
 
 # Build rule for subdir invocation for target.
 image_pipeline/image_rotate/CMakeFiles/image_rotate.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 image_pipeline/image_rotate/CMakeFiles/image_rotate.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : image_pipeline/image_rotate/CMakeFiles/image_rotate.dir/rule
@@ -5119,7 +5119,7 @@ clean: image_pipeline/image_rotate/CMakeFiles/image_rotate.dir/clean
 image_pipeline/image_rotate/CMakeFiles/image_rotate_gencfg.dir/all:
 	$(MAKE) -f image_pipeline/image_rotate/CMakeFiles/image_rotate_gencfg.dir/build.make image_pipeline/image_rotate/CMakeFiles/image_rotate_gencfg.dir/depend
 	$(MAKE) -f image_pipeline/image_rotate/CMakeFiles/image_rotate_gencfg.dir/build.make image_pipeline/image_rotate/CMakeFiles/image_rotate_gencfg.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num= "Built target image_rotate_gencfg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=26 "Built target image_rotate_gencfg"
 .PHONY : image_pipeline/image_rotate/CMakeFiles/image_rotate_gencfg.dir/all
 
 # Include target in all.
@@ -5129,7 +5129,7 @@ all: image_pipeline/image_rotate/CMakeFiles/image_rotate_gencfg.dir/all
 
 # Build rule for subdir invocation for target.
 image_pipeline/image_rotate/CMakeFiles/image_rotate_gencfg.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 image_pipeline/image_rotate/CMakeFiles/image_rotate_gencfg.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : image_pipeline/image_rotate/CMakeFiles/image_rotate_gencfg.dir/rule
@@ -5156,7 +5156,7 @@ clean: image_pipeline/image_rotate/CMakeFiles/image_rotate_gencfg.dir/clean
 image_pipeline/image_rotate/CMakeFiles/image_rotate_exe.dir/all:
 	$(MAKE) -f image_pipeline/image_rotate/CMakeFiles/image_rotate_exe.dir/build.make image_pipeline/image_rotate/CMakeFiles/image_rotate_exe.dir/depend
 	$(MAKE) -f image_pipeline/image_rotate/CMakeFiles/image_rotate_exe.dir/build.make image_pipeline/image_rotate/CMakeFiles/image_rotate_exe.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=26 "Built target image_rotate_exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num= "Built target image_rotate_exe"
 .PHONY : image_pipeline/image_rotate/CMakeFiles/image_rotate_exe.dir/all
 
 # Include target in all.
@@ -5166,7 +5166,7 @@ all: image_pipeline/image_rotate/CMakeFiles/image_rotate_exe.dir/all
 
 # Build rule for subdir invocation for target.
 image_pipeline/image_rotate/CMakeFiles/image_rotate_exe.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 image_pipeline/image_rotate/CMakeFiles/image_rotate_exe.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : image_pipeline/image_rotate/CMakeFiles/image_rotate_exe.dir/rule
@@ -5190,12 +5190,12 @@ clean: image_pipeline/image_rotate/CMakeFiles/image_rotate_exe.dir/clean
 # Directory level rules for directory tf2_system
 
 # Convenience name for "all" pass in the directory.
-tf2_system/all:
+tf2_system/all: tf2_system/CMakeFiles/ocam_centroid.dir/all
 
 .PHONY : tf2_system/all
 
 # Convenience name for "clean" pass in the directory.
-tf2_system/clean:
+tf2_system/clean: tf2_system/CMakeFiles/ocam_centroid.dir/clean
 
 .PHONY : tf2_system/clean
 
@@ -5203,6 +5203,43 @@ tf2_system/clean:
 tf2_system/preinstall:
 
 .PHONY : tf2_system/preinstall
+
+#=============================================================================
+# Target rules for target tf2_system/CMakeFiles/ocam_centroid.dir
+
+# All Build rule for target.
+tf2_system/CMakeFiles/ocam_centroid.dir/all:
+	$(MAKE) -f tf2_system/CMakeFiles/ocam_centroid.dir/build.make tf2_system/CMakeFiles/ocam_centroid.dir/depend
+	$(MAKE) -f tf2_system/CMakeFiles/ocam_centroid.dir/build.make tf2_system/CMakeFiles/ocam_centroid.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=31 "Built target ocam_centroid"
+.PHONY : tf2_system/CMakeFiles/ocam_centroid.dir/all
+
+# Include target in all.
+all: tf2_system/CMakeFiles/ocam_centroid.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+tf2_system/CMakeFiles/ocam_centroid.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 tf2_system/CMakeFiles/ocam_centroid.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
+.PHONY : tf2_system/CMakeFiles/ocam_centroid.dir/rule
+
+# Convenience name for target.
+ocam_centroid: tf2_system/CMakeFiles/ocam_centroid.dir/rule
+
+.PHONY : ocam_centroid
+
+# clean rule for target.
+tf2_system/CMakeFiles/ocam_centroid.dir/clean:
+	$(MAKE) -f tf2_system/CMakeFiles/ocam_centroid.dir/build.make tf2_system/CMakeFiles/ocam_centroid.dir/clean
+.PHONY : tf2_system/CMakeFiles/ocam_centroid.dir/clean
+
+# clean rule for target.
+clean: tf2_system/CMakeFiles/ocam_centroid.dir/clean
+
+.PHONY : clean
 
 #=============================================================================
 # Directory level rules for directory vision_visp/visp_bridge
@@ -5646,12 +5683,12 @@ vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_generate_
 vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_generate_messages_eus.dir/all: vision_visp/visp_camera_calibration/CMakeFiles/_visp_camera_calibration_generate_messages_check_deps_CalibPoint.dir/all
 	$(MAKE) -f vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_generate_messages_eus.dir/build.make vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_generate_messages_eus.dir/depend
 	$(MAKE) -f vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_generate_messages_eus.dir/build.make vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=55,56 "Built target visp_camera_calibration_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=55,56,57 "Built target visp_camera_calibration_generate_messages_eus"
 .PHONY : vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_generate_messages_eus.dir/rule
@@ -5850,7 +5887,7 @@ vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_geneus.di
 
 # Build rule for subdir invocation for target.
 vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_geneus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_geneus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_geneus.dir/rule
@@ -5884,7 +5921,7 @@ vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_generate_
 vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_generate_messages_lisp.dir/all: vision_visp/visp_camera_calibration/CMakeFiles/_visp_camera_calibration_generate_messages_check_deps_CalibPoint.dir/all
 	$(MAKE) -f vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_generate_messages_lisp.dir/build.make vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_generate_messages_lisp.dir/depend
 	$(MAKE) -f vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_generate_messages_lisp.dir/build.make vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=57,58 "Built target visp_camera_calibration_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=58,59 "Built target visp_camera_calibration_generate_messages_lisp"
 .PHONY : vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -5996,7 +6033,7 @@ vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_generate_
 vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_generate_messages_nodejs.dir/all: vision_visp/visp_camera_calibration/CMakeFiles/_visp_camera_calibration_generate_messages_check_deps_CalibPoint.dir/all
 	$(MAKE) -f vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_generate_messages_nodejs.dir/build.make vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_generate_messages_nodejs.dir/depend
 	$(MAKE) -f vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_generate_messages_nodejs.dir/build.make vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=59,60 "Built target visp_camera_calibration_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=60,61 "Built target visp_camera_calibration_generate_messages_nodejs"
 .PHONY : vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
@@ -6067,12 +6104,12 @@ vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_generate_
 vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_generate_messages_py.dir/all: vision_visp/visp_camera_calibration/CMakeFiles/_visp_camera_calibration_generate_messages_check_deps_CalibPoint.dir/all
 	$(MAKE) -f vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_generate_messages_py.dir/build.make vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_generate_messages_py.dir/depend
 	$(MAKE) -f vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_generate_messages_py.dir/build.make vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=61,62,63 "Built target visp_camera_calibration_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=62,63 "Built target visp_camera_calibration_generate_messages_py"
 .PHONY : vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_generate_messages_py.dir/rule
@@ -6104,7 +6141,7 @@ vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_genpy.dir
 
 # Build rule for subdir invocation for target.
 vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_genpy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_genpy.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : vision_visp/visp_camera_calibration/CMakeFiles/visp_camera_calibration_genpy.dir/rule
@@ -6198,7 +6235,7 @@ vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_clien
 vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_client.dir/all: vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_gencpp.dir/all
 	$(MAKE) -f vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_client.dir/build.make vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_client.dir/depend
 	$(MAKE) -f vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_client.dir/build.make vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=66,67 "Built target visp_hand2eye_calibration_client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=67 "Built target visp_hand2eye_calibration_client"
 .PHONY : vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_client.dir/all
 
 # Include target in all.
@@ -6208,7 +6245,7 @@ all: vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_
 
 # Build rule for subdir invocation for target.
 vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_client.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_client.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_client.dir/rule
@@ -6264,7 +6301,7 @@ vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_calib
 vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_calibrator.dir/all: vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_gencpp.dir/all
 	$(MAKE) -f vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_calibrator.dir/build.make vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_calibrator.dir/depend
 	$(MAKE) -f vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_calibrator.dir/build.make vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_calibrator.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=65 "Built target visp_hand2eye_calibration_calibrator"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=65,66 "Built target visp_hand2eye_calibration_calibrator"
 .PHONY : vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_calibrator.dir/all
 
 # Include target in all.
@@ -6274,7 +6311,7 @@ all: vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_
 
 # Build rule for subdir invocation for target.
 vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_calibrator.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 11
 	$(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_calibrator.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_calibrator.dir/rule
@@ -6339,12 +6376,12 @@ vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_gener
 vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_generate_messages_py.dir/all: vision_visp/visp_hand2eye_calibration/CMakeFiles/_visp_hand2eye_calibration_generate_messages_check_deps_compute_effector_camera_quick.dir/all
 	$(MAKE) -f vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_generate_messages_py.dir/build.make vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_generate_messages_py.dir/depend
 	$(MAKE) -f vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_generate_messages_py.dir/build.make vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=75,76 "Built target visp_hand2eye_calibration_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=75,76,77 "Built target visp_hand2eye_calibration_generate_messages_py"
 .PHONY : vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_generate_messages_py.dir/rule
@@ -6404,7 +6441,7 @@ vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_commo
 vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_common.dir/all: vision_visp/visp_bridge/CMakeFiles/visp_bridge.dir/all
 	$(MAKE) -f vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_common.dir/build.make vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_common.dir/depend
 	$(MAKE) -f vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_common.dir/build.make vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_common.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num= "Built target visp_hand2eye_calibration_common"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=68 "Built target visp_hand2eye_calibration_common"
 .PHONY : vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_common.dir/all
 
 # Include target in all.
@@ -6414,7 +6451,7 @@ all: vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_
 
 # Build rule for subdir invocation for target.
 vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_common.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_common.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_common.dir/rule
@@ -6519,7 +6556,7 @@ vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_gencp
 
 # Build rule for subdir invocation for target.
 vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_gencpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_gencpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_gencpp.dir/rule
@@ -6552,12 +6589,12 @@ vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_gener
 vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_generate_messages_cpp.dir/all: vision_visp/visp_hand2eye_calibration/CMakeFiles/_visp_hand2eye_calibration_generate_messages_check_deps_compute_effector_camera_quick.dir/all
 	$(MAKE) -f vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_generate_messages_cpp.dir/build.make vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_generate_messages_cpp.dir/depend
 	$(MAKE) -f vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_generate_messages_cpp.dir/build.make vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=68,69 "Built target visp_hand2eye_calibration_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=69 "Built target visp_hand2eye_calibration_generate_messages_cpp"
 .PHONY : vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_generate_messages_cpp.dir/rule
@@ -6659,7 +6696,7 @@ vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_genpy
 
 # Build rule for subdir invocation for target.
 vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_genpy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_genpy.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : vision_visp/visp_hand2eye_calibration/CMakeFiles/visp_hand2eye_calibration_genpy.dir/rule
@@ -7274,7 +7311,7 @@ clean: vision_visp/visp_tracker/CMakeFiles/tf_generate_messages_cpp.dir/clean
 vision_visp/visp_tracker/CMakeFiles/visp_tracker_gencfg.dir/all:
 	$(MAKE) -f vision_visp/visp_tracker/CMakeFiles/visp_tracker_gencfg.dir/build.make vision_visp/visp_tracker/CMakeFiles/visp_tracker_gencfg.dir/depend
 	$(MAKE) -f vision_visp/visp_tracker/CMakeFiles/visp_tracker_gencfg.dir/build.make vision_visp/visp_tracker/CMakeFiles/visp_tracker_gencfg.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=81,82 "Built target visp_tracker_gencfg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=82 "Built target visp_tracker_gencfg"
 .PHONY : vision_visp/visp_tracker/CMakeFiles/visp_tracker_gencfg.dir/all
 
 # Include target in all.
@@ -7284,7 +7321,7 @@ all: vision_visp/visp_tracker/CMakeFiles/visp_tracker_gencfg.dir/all
 
 # Build rule for subdir invocation for target.
 vision_visp/visp_tracker/CMakeFiles/visp_tracker_gencfg.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_tracker/CMakeFiles/visp_tracker_gencfg.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : vision_visp/visp_tracker/CMakeFiles/visp_tracker_gencfg.dir/rule
@@ -7710,7 +7747,7 @@ vision_visp/visp_tracker/CMakeFiles/visp_tracker.dir/all: vision_visp/visp_track
 vision_visp/visp_tracker/CMakeFiles/visp_tracker.dir/all: vision_visp/visp_tracker/CMakeFiles/visp_tracker_bag.dir/all
 	$(MAKE) -f vision_visp/visp_tracker/CMakeFiles/visp_tracker.dir/build.make vision_visp/visp_tracker/CMakeFiles/visp_tracker.dir/depend
 	$(MAKE) -f vision_visp/visp_tracker/CMakeFiles/visp_tracker.dir/build.make vision_visp/visp_tracker/CMakeFiles/visp_tracker.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=77,78,79,80 "Built target visp_tracker"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=78,79,80 "Built target visp_tracker"
 .PHONY : vision_visp/visp_tracker/CMakeFiles/visp_tracker.dir/all
 
 # Include target in all.
@@ -7720,7 +7757,7 @@ all: vision_visp/visp_tracker/CMakeFiles/visp_tracker.dir/all
 
 # Build rule for subdir invocation for target.
 vision_visp/visp_tracker/CMakeFiles/visp_tracker.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 26
 	$(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_tracker/CMakeFiles/visp_tracker.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : vision_visp/visp_tracker/CMakeFiles/visp_tracker.dir/rule
@@ -7790,7 +7827,7 @@ vision_visp/visp_tracker/CMakeFiles/trackerNodelet.dir/all: image_pipeline/image
 vision_visp/visp_tracker/CMakeFiles/trackerNodelet.dir/all: vision_visp/visp_tracker/CMakeFiles/visp_tracker.dir/all
 	$(MAKE) -f vision_visp/visp_tracker/CMakeFiles/trackerNodelet.dir/build.make vision_visp/visp_tracker/CMakeFiles/trackerNodelet.dir/depend
 	$(MAKE) -f vision_visp/visp_tracker/CMakeFiles/trackerNodelet.dir/build.make vision_visp/visp_tracker/CMakeFiles/trackerNodelet.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=42,43 "Built target trackerNodelet"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=43 "Built target trackerNodelet"
 .PHONY : vision_visp/visp_tracker/CMakeFiles/trackerNodelet.dir/all
 
 # Include target in all.
@@ -7800,7 +7837,7 @@ all: vision_visp/visp_tracker/CMakeFiles/trackerNodelet.dir/all
 
 # Build rule for subdir invocation for target.
 vision_visp/visp_tracker/CMakeFiles/trackerNodelet.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 30
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_tracker/CMakeFiles/trackerNodelet.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : vision_visp/visp_tracker/CMakeFiles/trackerNodelet.dir/rule
@@ -7832,7 +7869,7 @@ vision_visp/visp_tracker/CMakeFiles/tracker.dir/all: vision_visp/visp_tracker/CM
 vision_visp/visp_tracker/CMakeFiles/tracker.dir/all: vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages_py.dir/all
 	$(MAKE) -f vision_visp/visp_tracker/CMakeFiles/tracker.dir/build.make vision_visp/visp_tracker/CMakeFiles/tracker.dir/depend
 	$(MAKE) -f vision_visp/visp_tracker/CMakeFiles/tracker.dir/build.make vision_visp/visp_tracker/CMakeFiles/tracker.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=41 "Built target tracker"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=42 "Built target tracker"
 .PHONY : vision_visp/visp_tracker/CMakeFiles/tracker.dir/all
 
 # Include target in all.
@@ -7842,7 +7879,7 @@ all: vision_visp/visp_tracker/CMakeFiles/tracker.dir/all
 
 # Build rule for subdir invocation for target.
 vision_visp/visp_tracker/CMakeFiles/tracker.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 20
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 19
 	$(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_tracker/CMakeFiles/tracker.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : vision_visp/visp_tracker/CMakeFiles/tracker.dir/rule
@@ -7906,7 +7943,7 @@ vision_visp/visp_tracker/CMakeFiles/visp_tracker_client.dir/all: vision_visp/vis
 vision_visp/visp_tracker/CMakeFiles/visp_tracker_client.dir/all: vision_visp/visp_tracker/CMakeFiles/visp_tracker_generate_messages_py.dir/all
 	$(MAKE) -f vision_visp/visp_tracker/CMakeFiles/visp_tracker_client.dir/build.make vision_visp/visp_tracker/CMakeFiles/visp_tracker_client.dir/depend
 	$(MAKE) -f vision_visp/visp_tracker/CMakeFiles/visp_tracker_client.dir/build.make vision_visp/visp_tracker/CMakeFiles/visp_tracker_client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num= "Built target visp_tracker_client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=81 "Built target visp_tracker_client"
 .PHONY : vision_visp/visp_tracker/CMakeFiles/visp_tracker_client.dir/all
 
 # Include target in all.
@@ -8049,7 +8086,7 @@ all: vision_visp/visp_auto_tracker/CMakeFiles/auto_tracker.dir/all
 
 # Build rule for subdir invocation for target.
 vision_visp/visp_auto_tracker/CMakeFiles/auto_tracker.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 34
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 30
 	$(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_auto_tracker/CMakeFiles/auto_tracker.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : vision_visp/visp_auto_tracker/CMakeFiles/auto_tracker.dir/rule
@@ -8079,7 +8116,7 @@ vision_visp/visp_auto_tracker/CMakeFiles/visp_auto_tracker_cmd_line.dir/all: vis
 vision_visp/visp_auto_tracker/CMakeFiles/visp_auto_tracker_cmd_line.dir/all: vision_visp/visp_tracker/CMakeFiles/trackerNodelet.dir/all
 	$(MAKE) -f vision_visp/visp_auto_tracker/CMakeFiles/visp_auto_tracker_cmd_line.dir/build.make vision_visp/visp_auto_tracker/CMakeFiles/visp_auto_tracker_cmd_line.dir/depend
 	$(MAKE) -f vision_visp/visp_auto_tracker/CMakeFiles/visp_auto_tracker_cmd_line.dir/build.make vision_visp/visp_auto_tracker/CMakeFiles/visp_auto_tracker_cmd_line.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=46 "Built target visp_auto_tracker_cmd_line"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num= "Built target visp_auto_tracker_cmd_line"
 .PHONY : vision_visp/visp_auto_tracker/CMakeFiles/visp_auto_tracker_cmd_line.dir/all
 
 # Include target in all.
@@ -8089,7 +8126,7 @@ all: vision_visp/visp_auto_tracker/CMakeFiles/visp_auto_tracker_cmd_line.dir/all
 
 # Build rule for subdir invocation for target.
 vision_visp/visp_auto_tracker/CMakeFiles/visp_auto_tracker_cmd_line.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 33
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 29
 	$(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_auto_tracker/CMakeFiles/visp_auto_tracker_cmd_line.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : vision_visp/visp_auto_tracker/CMakeFiles/visp_auto_tracker_cmd_line.dir/rule
@@ -8154,7 +8191,7 @@ vision_visp/visp_auto_tracker/CMakeFiles/visp_auto_tracker.dir/all: vision_visp/
 vision_visp/visp_auto_tracker/CMakeFiles/visp_auto_tracker.dir/all: vision_visp/visp_auto_tracker/CMakeFiles/visp_auto_tracker_bag.dir/all
 	$(MAKE) -f vision_visp/visp_auto_tracker/CMakeFiles/visp_auto_tracker.dir/build.make vision_visp/visp_auto_tracker/CMakeFiles/visp_auto_tracker.dir/depend
 	$(MAKE) -f vision_visp/visp_auto_tracker/CMakeFiles/visp_auto_tracker.dir/build.make vision_visp/visp_auto_tracker/CMakeFiles/visp_auto_tracker.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=45 "Built target visp_auto_tracker"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Tesis/ROS/build/CMakeFiles --progress-num=45,46 "Built target visp_auto_tracker"
 .PHONY : vision_visp/visp_auto_tracker/CMakeFiles/visp_auto_tracker.dir/all
 
 # Include target in all.
@@ -8164,7 +8201,7 @@ all: vision_visp/visp_auto_tracker/CMakeFiles/visp_auto_tracker.dir/all
 
 # Build rule for subdir invocation for target.
 vision_visp/visp_auto_tracker/CMakeFiles/visp_auto_tracker.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 35
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 32
 	$(MAKE) -f CMakeFiles/Makefile2 vision_visp/visp_auto_tracker/CMakeFiles/visp_auto_tracker.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Tesis/ROS/build/CMakeFiles 0
 .PHONY : vision_visp/visp_auto_tracker/CMakeFiles/visp_auto_tracker.dir/rule
