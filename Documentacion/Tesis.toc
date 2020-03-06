@@ -136,3 +136,7 @@
 \contentsline {chapter}{\nonumberline Lista de c\IeC {\'o}digos}{65}{section*.63}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {A}Apendice A}{67}{appendix.Alph1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {B}Apendice B}{71}{appendix.Alph2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.1}ODROID}{71}{section*.66}
