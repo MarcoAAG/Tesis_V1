@@ -464,6 +464,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "image_pipeline/camera_calibration/CMakeFiles/camera_calibration.tar.gz.dir/DependInfo.cmake"
   "image_pipeline/camera_calibration/CMakeFiles/_run_tests_camera_calibration_nosetests_test.multiple_boards.py.dir/DependInfo.cmake"
   "image_pipeline/camera_calibration/CMakeFiles/run_tests_camera_calibration_nosetests_test.multiple_boards.py.dir/DependInfo.cmake"
+  "tms570lc43/CMakeFiles/data_acquisitionMG996.dir/DependInfo.cmake"
   "tms570lc43/CMakeFiles/roscpp_generate_messages_py.dir/DependInfo.cmake"
   "tms570lc43/CMakeFiles/roscpp_generate_messages_eus.dir/DependInfo.cmake"
   "tms570lc43/CMakeFiles/roscpp_generate_messages_lisp.dir/DependInfo.cmake"

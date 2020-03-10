@@ -207,5 +207,5 @@ void objectTracking::publishCoordinates(int _x, int _y)
     array.data.push_back(_x);
     array.data.push_back(_y);
     coordinates_pub.publish(array);
-    ROS_INFO("Publicando Coordenadas");
+    // ROS_INFO("Publicando Coordenadas");
 }

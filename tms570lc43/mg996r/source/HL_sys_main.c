@@ -92,6 +92,7 @@ FUNCTION FOR FREERTOS SYSTEM
 */
 static void TaskInit(void *pvParameters);
 static void TaskControl(void *pvParameters);
+static void TaskDataAcquisition(void *pvParameters);
 TaskHandle_t TaskInitHandle;
 
 /*
@@ -102,7 +103,11 @@ FUNCTION FOR SCI COMMUNICATION
 void sciSendText(sciBASE_t *sci, uint8 *text, uint32 length);
 void sciSendData(sciBASE_t *sci, uint8 *text, uint32 length);
 #define TSIZE_INTRO 9
+#define TSIZE_OK 4
+#define TSIZE_a 3
 uint8 TEXT1[TSIZE_INTRO] = {'C', 'O', 'N', 'E', 'C', 'T', 'A', 'D', 'O'};
+uint8 TEXTOK[TSIZE_OK] = {'O', 'K', '\n'};
+uint8 TEXTa[TSIZE_a] = {'a', '\n'};
 /* USER CODE END */
 
 int main(void)
@@ -132,18 +137,16 @@ FUNCTION FOR FREERTOS SYSTEM
 */
 static void TaskInit(void *pvParameters)
 {
-    portTickType xLastWakeTime;
-    xLastWakeTime = xTaskGetTickCount();
 
     uint32 datareceived;
 
     datareceived = sciReceiveByte(sciREG1);
-    while (datareceived != 1)
+    while (datareceived != 64)
     {
         datareceived = sciReceiveByte(sciREG1);
     }
 
-    sciSendText(sciREG1, &TEXT1[0], TSIZE_INTRO); /* send text 1 */
+    sciSendText(sciREG1, &TEXTOK[0], TSIZE_OK); /* send text 1 */
 
     //PWM0 init
     pwm0het0.period = 20000;
@@ -158,13 +161,28 @@ static void TaskInit(void *pvParameters)
     {
         // TASK HAS NOT CREATED
     }
+    if (xTaskCreate(TaskDataAcquisition, "TaskDataAcquisition", configMINIMAL_STACK_SIZE, NULL, 2, NULL) != pdTRUE)
+    {
+        // TASK HAS NOT CREATED
+    }
     vTaskDelete(TaskInitHandle);
 }
-static void TaskControl(void *pvParameters)
+static void TaskDataAcquisition(void *pvParameters)
 {
     TickType_t xLastExecutionTime;
     xLastExecutionTime = xTaskGetTickCount();
+    uint32 datareceivedX;
+    uint32 datareceivedY;
 
+    for (;;)
+    {
+        sciSendText(sciREG1, &TEXTa[0], TSIZE_a); /* send text 1 */
+        datareceivedX = sciReceiveByte(sciREG1);
+        vTaskDelayUntil(&xLastExecutionTime, 50 * portTICK_PERIOD_MS);
+    }
+}
+static void TaskControl(void *pvParameters)
+{
     for (;;)
     {
 
@@ -172,8 +190,6 @@ static void TaskControl(void *pvParameters)
         setpwmsignal(hetRAM1, pwm0, pwm0het0);
         pwm1het1.duty = 590;
         setpwmsignal(hetRAM1, pwm1, pwm1het1);
-
-        vTaskDelayUntil(&xLastExecutionTime, 10 * portTICK_PERIOD_MS);
     }
 }
 void vApplicationIdleHook(void)

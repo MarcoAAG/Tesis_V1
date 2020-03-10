@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+tms570lc43/CMakeFiles/data_acquisitionMG996.dir/rule:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 tms570lc43/CMakeFiles/data_acquisitionMG996.dir/rule
+.PHONY : tms570lc43/CMakeFiles/data_acquisitionMG996.dir/rule
+
+# Convenience name for target.
+data_acquisitionMG996: tms570lc43/CMakeFiles/data_acquisitionMG996.dir/rule
+
+.PHONY : data_acquisitionMG996
+
+# fast build rule for target.
+data_acquisitionMG996/fast:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f tms570lc43/CMakeFiles/data_acquisitionMG996.dir/build.make tms570lc43/CMakeFiles/data_acquisitionMG996.dir/build
+.PHONY : data_acquisitionMG996/fast
+
+# Convenience name for target.
 tms570lc43/CMakeFiles/roscpp_generate_messages_py.dir/rule:
 	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 tms570lc43/CMakeFiles/roscpp_generate_messages_py.dir/rule
 .PHONY : tms570lc43/CMakeFiles/roscpp_generate_messages_py.dir/rule
@@ -434,6 +449,33 @@ src/data_acquisition.cpp.s:
 	cd /home/marco/Tesis/ROS/build && $(MAKE) -f tms570lc43/CMakeFiles/data_acquisition.dir/build.make tms570lc43/CMakeFiles/data_acquisition.dir/src/data_acquisition.cpp.s
 .PHONY : src/data_acquisition.cpp.s
 
+src/data_acquisitionMG996.o: src/data_acquisitionMG996.cpp.o
+
+.PHONY : src/data_acquisitionMG996.o
+
+# target to build an object file
+src/data_acquisitionMG996.cpp.o:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f tms570lc43/CMakeFiles/data_acquisitionMG996.dir/build.make tms570lc43/CMakeFiles/data_acquisitionMG996.dir/src/data_acquisitionMG996.cpp.o
+.PHONY : src/data_acquisitionMG996.cpp.o
+
+src/data_acquisitionMG996.i: src/data_acquisitionMG996.cpp.i
+
+.PHONY : src/data_acquisitionMG996.i
+
+# target to preprocess a source file
+src/data_acquisitionMG996.cpp.i:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f tms570lc43/CMakeFiles/data_acquisitionMG996.dir/build.make tms570lc43/CMakeFiles/data_acquisitionMG996.dir/src/data_acquisitionMG996.cpp.i
+.PHONY : src/data_acquisitionMG996.cpp.i
+
+src/data_acquisitionMG996.s: src/data_acquisitionMG996.cpp.s
+
+.PHONY : src/data_acquisitionMG996.s
+
+# target to generate assembly for a file
+src/data_acquisitionMG996.cpp.s:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f tms570lc43/CMakeFiles/data_acquisitionMG996.dir/build.make tms570lc43/CMakeFiles/data_acquisitionMG996.dir/src/data_acquisitionMG996.cpp.s
+.PHONY : src/data_acquisitionMG996.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -444,6 +486,7 @@ help:
 	@echo "... install/local"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... data_acquisitionMG996"
 	@echo "... list_install_components"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... roscpp_generate_messages_eus"
@@ -466,6 +509,9 @@ help:
 	@echo "... src/data_acquisition.o"
 	@echo "... src/data_acquisition.i"
 	@echo "... src/data_acquisition.s"
+	@echo "... src/data_acquisitionMG996.o"
+	@echo "... src/data_acquisitionMG996.i"
+	@echo "... src/data_acquisitionMG996.s"
 .PHONY : help
 
 

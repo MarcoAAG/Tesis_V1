@@ -135,6 +135,7 @@ include_directories(
 ## The recommended prefix ensures that target names across packages don't collide
 # add_executable(${PROJECT_NAME}_node src/tms570lc43_node.cpp)
 add_executable(data_acquisition src/data_acquisition.cpp)
+add_executable(data_acquisitionMG996 src/data_acquisitionMG996.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -146,12 +147,14 @@ add_executable(data_acquisition src/data_acquisition.cpp)
 ## same as for the library above
 # add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 add_dependencies(data_acquisition tms570lc43_generate_messages_cpp)
+add_dependencies(data_acquisitionMG996 tms570lc43_generate_messages_cpp)
 
 ## Specify libraries to link a library or executable target against
 # target_link_libraries(${PROJECT_NAME}_node
 #   ${catkin_LIBRARIES}
 # )
 target_link_libraries(data_acquisition ${catkin_LIBRARIES})
+target_link_libraries(data_acquisitionMG996 ${catkin_LIBRARIES})
 
 #############
 ## Install ##

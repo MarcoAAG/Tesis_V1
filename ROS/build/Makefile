@@ -610,6 +610,19 @@ run_tests_camera_calibration_nosetests_test.multiple_boards.py/fast:
 .PHONY : run_tests_camera_calibration_nosetests_test.multiple_boards.py/fast
 
 #=============================================================================
+# Target rules for targets named data_acquisitionMG996
+
+# Build rule for target.
+data_acquisitionMG996: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 data_acquisitionMG996
+.PHONY : data_acquisitionMG996
+
+# fast build rule for target.
+data_acquisitionMG996/fast:
+	$(MAKE) -f tms570lc43/CMakeFiles/data_acquisitionMG996.dir/build.make tms570lc43/CMakeFiles/data_acquisitionMG996.dir/build
+.PHONY : data_acquisitionMG996/fast
+
+#=============================================================================
 # Target rules for targets named roscpp_generate_messages_py
 
 # Build rule for target.
@@ -3022,6 +3035,7 @@ help:
 	@echo "... camera_calibration.tar.gz"
 	@echo "... _run_tests_camera_calibration_nosetests_test.multiple_boards.py"
 	@echo "... run_tests_camera_calibration_nosetests_test.multiple_boards.py"
+	@echo "... data_acquisitionMG996"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... roscpp_generate_messages_lisp"
