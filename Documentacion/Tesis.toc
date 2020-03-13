@@ -129,16 +129,20 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.8}Centroide}{54}{section*.57}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliograf\'{\i }a}{57}{chapter*.58}
+\contentsline {chapter}{\numberline {5}Sistema Embebido}{57}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\'{I}ndice de figuras}{61}{section*.61}
+\contentsline {section}{\numberline {5.1}Sistema fisico}{57}{section*.59}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\'{I}ndice de cuadros}{65}{section*.62}
+\contentsline {chapter}{\nonumberline Bibliograf\'{\i }a}{59}{chapter*.60}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Lista de c\IeC {\'o}digos}{67}{section*.64}
+\contentsline {chapter}{\'{I}ndice de figuras}{63}{section*.63}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Apendice A}{69}{appendix.Alph1}
+\contentsline {chapter}{\'{I}ndice de cuadros}{67}{section*.64}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}Apendice B}{73}{appendix.Alph2}
+\contentsline {chapter}{\nonumberline Lista de c\IeC {\'o}digos}{69}{section*.66}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.1}ODROID}{73}{section*.67}
+\contentsline {chapter}{\numberline {A}Apendice A}{71}{appendix.Alph1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {B}Apendice B}{75}{appendix.Alph2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.1}ODROID}{75}{section*.69}
