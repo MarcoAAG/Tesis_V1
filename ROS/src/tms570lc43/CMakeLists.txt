@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 2.8.3)
 project(tms570lc43)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
-# add_compile_options(-std=c++11)
+add_compile_options(-std=c++11)
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
@@ -136,6 +136,7 @@ include_directories(
 # add_executable(${PROJECT_NAME}_node src/tms570lc43_node.cpp)
 add_executable(data_acquisition src/data_acquisition.cpp)
 add_executable(data_acquisitionMG996 src/data_acquisitionMG996.cpp)
+add_executable(mg996 src/mg996.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -148,6 +149,9 @@ add_executable(data_acquisitionMG996 src/data_acquisitionMG996.cpp)
 # add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 add_dependencies(data_acquisition tms570lc43_generate_messages_cpp)
 add_dependencies(data_acquisitionMG996 tms570lc43_generate_messages_cpp)
+add_dependencies(mg996 tms570lc43_generate_messages_cpp)
+add_dependencies(mg996 mg966_EXPORTED_TARGETS ${catkin_EXPORTED_TARGETS} serial) 
+
 
 ## Specify libraries to link a library or executable target against
 # target_link_libraries(${PROJECT_NAME}_node
@@ -155,6 +159,9 @@ add_dependencies(data_acquisitionMG996 tms570lc43_generate_messages_cpp)
 # )
 target_link_libraries(data_acquisition ${catkin_LIBRARIES})
 target_link_libraries(data_acquisitionMG996 ${catkin_LIBRARIES})
+target_link_libraries(mg996 
+  serial
+  ${catkin_LIBRARIES})
 
 #############
 ## Install ##

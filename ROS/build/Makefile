@@ -610,6 +610,19 @@ run_tests_camera_calibration_nosetests_test.multiple_boards.py/fast:
 .PHONY : run_tests_camera_calibration_nosetests_test.multiple_boards.py/fast
 
 #=============================================================================
+# Target rules for targets named mg996
+
+# Build rule for target.
+mg996: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mg996
+.PHONY : mg996
+
+# fast build rule for target.
+mg996/fast:
+	$(MAKE) -f tms570lc43/CMakeFiles/mg996.dir/build.make tms570lc43/CMakeFiles/mg996.dir/build
+.PHONY : mg996/fast
+
+#=============================================================================
 # Target rules for targets named data_acquisitionMG996
 
 # Build rule for target.
@@ -3035,6 +3048,7 @@ help:
 	@echo "... camera_calibration.tar.gz"
 	@echo "... _run_tests_camera_calibration_nosetests_test.multiple_boards.py"
 	@echo "... run_tests_camera_calibration_nosetests_test.multiple_boards.py"
+	@echo "... mg996"
 	@echo "... data_acquisitionMG996"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... roscpp_generate_messages_eus"

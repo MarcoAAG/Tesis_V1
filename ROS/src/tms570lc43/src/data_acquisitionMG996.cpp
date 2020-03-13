@@ -21,16 +21,6 @@ int main(int argc, char **argv)
 {
     /**
      * ********************************************************************************
-     * ROS INIT AND SUBSCRIBER
-     * ********************************************************************************
-    **/
-    ros::init(argc, argv, "tms570lc43_serial");
-    ros::NodeHandle n;
-    sub = n.subscribe("coordinates", 100, arrayCallback);
-    ros::spin();
-
-    /**
-     * ********************************************************************************
      * SERIAL INIT
      * ********************************************************************************
     **/
@@ -49,6 +39,17 @@ int main(int argc, char **argv)
     serial::Serial *pMySerial = &my_serial;
     my_serial.close();
     my_serial.open();
+    main_serial(pMySerial);
+
+    /**
+     * ********************************************************************************
+     * ROS INIT AND SUBSCRIBER
+     * ********************************************************************************
+    **/
+    ros::init(argc, argv, "tms570lc43_serial");
+    ros::NodeHandle n;
+    sub = n.subscribe("coordinates", 100, arrayCallback);
+    ros::spin();
 
     return 0;
 }
@@ -66,8 +67,8 @@ void arrayCallback(const std_msgs::Int32MultiArray::ConstPtr &array)
         CENTROID[i] = *it;
         i++;
     }
-    std::cout << CENTROID << std::endl;
-    main_serial();
+    // std::cout << CENTROID << std::endl;
+    // main_serial();
 }
 void main_serial(serial::Serial *pSerial)
 {

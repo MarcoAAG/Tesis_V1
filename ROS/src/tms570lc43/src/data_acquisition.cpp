@@ -25,9 +25,10 @@ int main(int argc, char **argv)
         if (pMySerial->waitReadable())
         {
             received_line = pMySerial->readline();
-            data_received = std::stoul(received_line, nullptr, 16);
-            angle = (float)(data_received * 360.0 / 8192.0);
-            std::cout << angle << std::endl;
+            // data_received = std::stoul(received_line, nullptr, 16);
+            // angle = (float)(data_received * 360.0 / 8192.0);
+            // std::cout << angle << std::endl;
+            std::cout << received_line << std::endl;
 
         }
     }

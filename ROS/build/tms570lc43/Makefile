@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+tms570lc43/CMakeFiles/mg996.dir/rule:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 tms570lc43/CMakeFiles/mg996.dir/rule
+.PHONY : tms570lc43/CMakeFiles/mg996.dir/rule
+
+# Convenience name for target.
+mg996: tms570lc43/CMakeFiles/mg996.dir/rule
+
+.PHONY : mg996
+
+# fast build rule for target.
+mg996/fast:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f tms570lc43/CMakeFiles/mg996.dir/build.make tms570lc43/CMakeFiles/mg996.dir/build
+.PHONY : mg996/fast
+
+# Convenience name for target.
 tms570lc43/CMakeFiles/data_acquisitionMG996.dir/rule:
 	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 tms570lc43/CMakeFiles/data_acquisitionMG996.dir/rule
 .PHONY : tms570lc43/CMakeFiles/data_acquisitionMG996.dir/rule
@@ -476,6 +491,33 @@ src/data_acquisitionMG996.cpp.s:
 	cd /home/marco/Tesis/ROS/build && $(MAKE) -f tms570lc43/CMakeFiles/data_acquisitionMG996.dir/build.make tms570lc43/CMakeFiles/data_acquisitionMG996.dir/src/data_acquisitionMG996.cpp.s
 .PHONY : src/data_acquisitionMG996.cpp.s
 
+src/mg996.o: src/mg996.cpp.o
+
+.PHONY : src/mg996.o
+
+# target to build an object file
+src/mg996.cpp.o:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f tms570lc43/CMakeFiles/mg996.dir/build.make tms570lc43/CMakeFiles/mg996.dir/src/mg996.cpp.o
+.PHONY : src/mg996.cpp.o
+
+src/mg996.i: src/mg996.cpp.i
+
+.PHONY : src/mg996.i
+
+# target to preprocess a source file
+src/mg996.cpp.i:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f tms570lc43/CMakeFiles/mg996.dir/build.make tms570lc43/CMakeFiles/mg996.dir/src/mg996.cpp.i
+.PHONY : src/mg996.cpp.i
+
+src/mg996.s: src/mg996.cpp.s
+
+.PHONY : src/mg996.s
+
+# target to generate assembly for a file
+src/mg996.cpp.s:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f tms570lc43/CMakeFiles/mg996.dir/build.make tms570lc43/CMakeFiles/mg996.dir/src/mg996.cpp.s
+.PHONY : src/mg996.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -486,6 +528,7 @@ help:
 	@echo "... install/local"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... mg996"
 	@echo "... data_acquisitionMG996"
 	@echo "... list_install_components"
 	@echo "... roscpp_generate_messages_py"
@@ -512,6 +555,9 @@ help:
 	@echo "... src/data_acquisitionMG996.o"
 	@echo "... src/data_acquisitionMG996.i"
 	@echo "... src/data_acquisitionMG996.s"
+	@echo "... src/mg996.o"
+	@echo "... src/mg996.i"
+	@echo "... src/mg996.s"
 .PHONY : help
 
 

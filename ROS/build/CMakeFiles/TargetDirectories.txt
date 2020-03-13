@@ -99,6 +99,7 @@
 /home/marco/Tesis/ROS/build/tms570lc43/CMakeFiles/install/local.dir
 /home/marco/Tesis/ROS/build/tms570lc43/CMakeFiles/rebuild_cache.dir
 /home/marco/Tesis/ROS/build/tms570lc43/CMakeFiles/test.dir
+/home/marco/Tesis/ROS/build/tms570lc43/CMakeFiles/mg996.dir
 /home/marco/Tesis/ROS/build/tms570lc43/CMakeFiles/data_acquisitionMG996.dir
 /home/marco/Tesis/ROS/build/tms570lc43/CMakeFiles/list_install_components.dir
 /home/marco/Tesis/ROS/build/tms570lc43/CMakeFiles/roscpp_generate_messages_py.dir
