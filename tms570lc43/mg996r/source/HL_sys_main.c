@@ -41,6 +41,7 @@
 *
 */
 
+
 /* USER CODE BEGIN (0) */
 /* USER CODE END */
 
@@ -54,6 +55,7 @@
 #include "os_task.h"
 #include "HL_het.h"
 #include "HL_sci.h"
+#include "HL_gio.h"
 /* USER CODE END */
 
 /** @fn void main(void)
@@ -108,15 +110,21 @@ void sciSendData(sciBASE_t *sci, uint8 *text, uint32 length);
 uint8 TEXT1[TSIZE_INTRO] = {'C', 'O', 'N', 'E', 'C', 'T', 'A', 'D', 'O'};
 uint8 TEXTOK[TSIZE_OK] = {'O', 'K', '\n'};
 uint8 TEXTa[TSIZE_a] = {'a', '\n'};
+
+uint16 CoordinateX =0;
 /* USER CODE END */
 
 int main(void)
 {
-    /* USER CODE BEGIN (3) */
+/* USER CODE BEGIN (3) */
     hetInit();
     sciInit();
+    gioInit();
 
-    if (xTaskCreate(TaskInit, "TaskInit", configMINIMAL_STACK_SIZE, NULL, 2, &TaskInitHandle) != pdTRUE)
+    gioSetBit(gioPORTB,6,0);
+    gioSetBit(gioPORTB,7,0);
+
+    if (xTaskCreate(TaskInit, "TaskInit", configMINIMAL_STACK_SIZE, NULL, 3, &TaskInitHandle) != pdTRUE)
     {
         // TASK HAS NOT CREATED
         return 0;
@@ -128,6 +136,7 @@ int main(void)
 
     return 0;
 }
+
 
 /* USER CODE BEGIN (4) */
 /*
@@ -145,8 +154,11 @@ static void TaskInit(void *pvParameters)
     {
         datareceived = sciReceiveByte(sciREG1);
     }
-
     sciSendText(sciREG1, &TEXTOK[0], TSIZE_OK); /* send text 1 */
+
+
+    gioSetBit(gioPORTB,6,1);
+    gioSetBit(gioPORTB,7,0);
 
     //PWM0 init
     pwm0het0.period = 20000;
@@ -172,24 +184,41 @@ static void TaskDataAcquisition(void *pvParameters)
     TickType_t xLastExecutionTime;
     xLastExecutionTime = xTaskGetTickCount();
     uint32 datareceivedX;
+    uint32 datareceivedX_aux;
     uint32 datareceivedY;
+    uint32 Data;
 
     for (;;)
-    {
+    {   gioSetBit(gioPORTB,7,1);
+        CoordinateX=0;
         sciSendText(sciREG1, &TEXTa[0], TSIZE_a); /* send text 1 */
+        Data = sciReceiveByte(sciREG1);
+        while(Data != 48)
+        {
+            sciSendText(sciREG1, &TEXTa[0], TSIZE_a); /* send text 1 */
+            Data = sciReceiveByte(sciREG1);
+        }
         datareceivedX = sciReceiveByte(sciREG1);
-        vTaskDelayUntil(&xLastExecutionTime, 50 * portTICK_PERIOD_MS);
+        datareceivedX_aux = sciReceiveByte(sciREG1);
+        CoordinateX = (uint16)(datareceivedX) | (uint16)(datareceivedX_aux<<8);
+
+        CoordinateX = (CoordinateX > 640) ? 640 : CoordinateX;
+
+        //sciReceive(sciREG1, 1, (uint8 *)&datareceivedX);
+        //sciSendData(sciREG1, (uint8 *)&Data, 2);
+        //sciSend(sciREG1, 2, (unsigned char *)"\r\n");
+        vTaskDelayUntil(&xLastExecutionTime, 16.66 * portTICK_PERIOD_MS);
     }
 }
 static void TaskControl(void *pvParameters)
 {
     for (;;)
     {
-
-        pwm0het0.duty = 402;
+        gioSetBit(gioPORTB,7,0);
+        pwm0het0.duty = 402;        //For motor 1
         setpwmsignal(hetRAM1, pwm0, pwm0het0);
         pwm1het1.duty = 590;
-        setpwmsignal(hetRAM1, pwm1, pwm1het1);
+        setpwmsignal(hetRAM1, pwm1, pwm1het1);  //For motor 2
     }
 }
 void vApplicationIdleHook(void)
