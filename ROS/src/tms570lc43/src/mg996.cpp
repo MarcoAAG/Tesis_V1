@@ -10,7 +10,7 @@
 
 std::string data = "";
 
-serial::Serial my_serial("/dev/ttyACM0", 115200);
+serial::Serial my_serial("/dev/ttyACM3", 115200);
 
 class mg996
 {
@@ -27,7 +27,7 @@ public:
     void arrayCallback(const std_msgs::Int32MultiArray::ConstPtr &array);
     void serialInit(serial::Serial *pSerial);
     void check_for_string(serial::Serial *pSerial, std::string expected_string);
-    void sendData(serial::Serial *pSerial);
+    void sendData(serial::Serial *pSerial, uint16_t _x, uint16_t _y);
 };
 
 mg996::mg996(ros::NodeHandle *n)
@@ -55,7 +55,7 @@ void mg996::arrayCallback(const std_msgs::Int32MultiArray::ConstPtr &array)
             CENTROID[i] = *it;
             i++;
         }
-        sendData(&my_serial);
+        sendData(&my_serial,CENTROID[0],CENTROID[1]);
     }
     catch (const std::exception &e)
     {
@@ -92,13 +92,17 @@ void mg996::check_for_string(serial::Serial *pSerial, std::string expected_strin
     // std::cout << received_line << std::endl;
 }
 
-void mg996::sendData(serial::Serial *pSerial)
+void mg996::sendData(serial::Serial *pSerial, uint16_t _x, uint16_t _y)
 {
     uint16_t n = 640;
     uint8_t a;
     uint8_t b;
     std::string received_line = "";
 
+    if (pSerial->waitReadable())
+    {
+        received_line = pSerial->readline();
+    }
     while (received_line != "a\n")
     {
         pSerial->write("1");
@@ -111,22 +115,43 @@ void mg996::sendData(serial::Serial *pSerial)
     pSerial->write("0");
     ROS_INFO("%s \n", received_line.c_str());
 
-    a = (uint8_t)(n & 0x00FF);
-    b = (uint8_t)(n >> 8 & 0x00FF);
-
+    a = (uint8_t)(_x & 0x00FF);
+    b = (uint8_t)(_x >> 8 & 0x00FF);
     pSerial->write((uint8_t *)&a, 1);
+    pSerial->close();
+    pSerial->open();
+    pSerial->write((uint8_t *)&b, 1);
+    pSerial->close();
+    pSerial->open();
 
-    received_line = pSerial->readline();
-    while (received_line != "OK\n")
-    {
-        pSerial->write("1");
+    // while (received_line != "a\n")
+    // {
+    //     pSerial->write("1");
 
-        if (pSerial->waitReadable())
-        {
-            received_line = pSerial->readline();
-        }
-    }
-    pSerial->write("2");
+    //     if (pSerial->waitReadable())
+    //     {
+    //         received_line = pSerial->readline();
+    //     }
+    // }
+    // pSerial->write("0");
+    // ROS_INFO("%s \n", received_line.c_str());
+
+    // a = (uint8_t)(n & 0x00FF);
+    // b = (uint8_t)(n >> 8 & 0x00FF);
+
+    // pSerial->write((uint8_t *)&a, 1);
+
+    // received_line = pSerial->readline();
+    // while (received_line != "OK\n")
+    // {
+    //     pSerial->write("1");
+
+    //     if (pSerial->waitReadable())
+    //     {
+    //         received_line = pSerial->readline();
+    //     }
+    // }
+    // pSerial->write("2");
     // pSerial->write((uint8_t *)&b, 1);
 }
 int main(int argc, char **argv)
