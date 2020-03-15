@@ -41,6 +41,7 @@
 *
 */
 
+
 /* USER CODE BEGIN (0) */
 /* USER CODE END */
 
@@ -130,7 +131,7 @@ uint16_t ComandoSPI1[1] = {0};
 
 int main(void)
 {
-    /* USER CODE BEGIN (3) */
+/* USER CODE BEGIN (3) */
     hetInit();
     sciInit();
     spiInit();
@@ -155,6 +156,7 @@ int main(void)
 
     return 0;
 }
+
 
 /* USER CODE BEGIN (4) */
 /*
