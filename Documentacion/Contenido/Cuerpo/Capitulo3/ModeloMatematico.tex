@@ -50,7 +50,7 @@ y se asigna nombre a cada rotación de los ejes.
 	\captionof{figure}{Rotación en 3 ejes.}
 	\label{fig:ModeloMat:Fig1}
 \end{center}
-Vamos a llamar marco de referencia del cuerpo a las coordenadas del UAV, es necesario establecer el centro del plano en el 
+Vamos a llamar marco de referencia del cuerpo a las coordenadas del UAV, es necesario establecer el centro del plano en el
 centro de masas de la aeronave, como se ilustra en la siguiente figura.
 \begin{center}
 	\includegraphics[width=0.5\textwidth]{Contenido/Cuerpo/Capitulo3/Fig5.eps}
@@ -73,3 +73,65 @@ es decir hacia nosotros.
 
 
 \section{Modelo matematico gimbal}
+Poniendo en el mismo plano dos referencias, el de la gimbal y el del body, tal como se ilustra en la siguiente figura
+\begin{center}
+	\includegraphics[width=0.3\textwidth]{Contenido/Cuerpo/Capitulo3/Fig8.eps}
+	\captionof{figure}{Marco de referencia Body y gimbal}
+	\label{fig:ModeloMat:Fig1}
+\end{center}
+Cualquier punto en el plano puede ser expresado como:
+\begin{equation}
+	p_{i^B,j^B} = [p_i^B , p_j^B]^T = p_i i^B + p_j p^B
+\end{equation}
+\begin{equation}
+	p_{i^G,j^G} = [p_i^G , p_j^G]^T = p_i \cdot i^G + p_j\cdot  p^G
+\end{equation}
+\begin{equation}
+	\textbf{P}_{i,j}^B = \textbf{P}_{i,j}^G
+\end{equation}
+
+Si hacemos rotar el frame de la gimbal respecto al eje K obtenemos que:
+\begin{center}
+	\includegraphics[width=0.3\textwidth]{Contenido/Cuerpo/Capitulo3/Fig9.eps}
+	\captionof{figure}{Rotación del marco de referencia Gimbal respecto al del cuerpo}
+	\label{fig:ModeloMat:Fig1}
+\end{center}
+\begin{equation}
+	p_{i^B,j^B} = [p_i^B , p_j^B]^T = p_i i^B + p_j p^B
+\end{equation}
+\begin{equation}
+	p_{i^G,j^G} = [p_i^G , p_j^G]^T = p_i i^G + p_j p^G
+\end{equation}
+Como
+\begin{equation}
+	p_i = p_{i,j}^G \cdot i^B = p_i^G i^B \cdot i^G + p_j^G i^B \cdot j^G
+\end{equation}
+\begin{equation}
+	p_j = p_{i,j}^G \cdot j^B = p_i^G j^B \cdot i^G + p_j^G j^B \cdot j^G
+\end{equation}
+Entonces
+\begin{equation*}
+	\begin{bmatrix}
+		p_i^B \\
+		p_j^B
+	\end{bmatrix}
+	=
+	R
+	\begin{bmatrix}
+		p_i^G \\
+		p_j^G
+	\end{bmatrix}
+\end{equation*}
+Donde la matriz de rotación etsa dada por:
+\begin{equation*}
+	R=
+	\begin{bmatrix}
+		i^B\cdot i^G & i^B \cdot j^G\\
+		j^B\cdot i^G & j^B \cdot j^G
+	\end{bmatrix}
+	=
+	\begin{bmatrix}
+		cos(\psi) & -sin(\psi)\\
+		sin(\psi) & cos(\psi)
+	\end{bmatrix}
+\end{equation*}
