@@ -10,7 +10,7 @@
 
 std::string data = "";
 
-serial::Serial my_serial("/dev/ttyACM3", 115200);
+serial::Serial my_serial("/dev/ttyACM0", 115200);
 
 class mg996
 {
@@ -115,44 +115,16 @@ void mg996::sendData(serial::Serial *pSerial, uint16_t _x, uint16_t _y)
     pSerial->write("0");
     ROS_INFO("%s \n", received_line.c_str());
 
-    a = (uint8_t)(_x & 0x00FF);
-    b = (uint8_t)(_x >> 8 & 0x00FF);
+    a = (uint8_t)(_y & 0x00FF);
+    b = (uint8_t)(_y >> 8 & 0x00FF);
     pSerial->write((uint8_t *)&a, 1);
-    pSerial->close();
-    pSerial->open();
+    // pSerial->close();
+    // pSerial->open();
+    pSerial->flush();
     pSerial->write((uint8_t *)&b, 1);
-    pSerial->close();
-    pSerial->open();
-
-    // while (received_line != "a\n")
-    // {
-    //     pSerial->write("1");
-
-    //     if (pSerial->waitReadable())
-    //     {
-    //         received_line = pSerial->readline();
-    //     }
-    // }
-    // pSerial->write("0");
-    // ROS_INFO("%s \n", received_line.c_str());
-
-    // a = (uint8_t)(n & 0x00FF);
-    // b = (uint8_t)(n >> 8 & 0x00FF);
-
-    // pSerial->write((uint8_t *)&a, 1);
-
-    // received_line = pSerial->readline();
-    // while (received_line != "OK\n")
-    // {
-    //     pSerial->write("1");
-
-    //     if (pSerial->waitReadable())
-    //     {
-    //         received_line = pSerial->readline();
-    //     }
-    // }
-    // pSerial->write("2");
-    // pSerial->write((uint8_t *)&b, 1);
+    pSerial->flush();
+    // pSerial->close();
+    // pSerial->open();
 }
 int main(int argc, char **argv)
 {
