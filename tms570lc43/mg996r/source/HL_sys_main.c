@@ -197,7 +197,7 @@ static void TaskDataAcquisition(void *pvParameters)
 
     for (;;)
     {
-        gioSetBit(gioPORTB, 7, 1);
+        gioSetBit(gioPORTB, 6, gioGetBit(gioPORTB, 6) ^1);
         CoordinateX = 0;
         //CoordinateY = 0;
         sciSendText(sciREG1, &TEXTa[0], TSIZE_a); /* send text 1 */
@@ -248,7 +248,7 @@ static void TaskControl(void *pvParameters)
 
     for (;;)
     {
-        gioSetBit(gioPORTB, 7, 0);
+        gioSetBit(gioPORTB, 7, gioGetBit(gioPORTB, 7) ^1);
 
         //Save the last error
         lastError[0] = error[0];
@@ -264,10 +264,10 @@ static void TaskControl(void *pvParameters)
 
         //Setting gains for Proportional control
         Kp[0] = 0;
-        Kp[1] = 0.1; //0.55
-        //Setting gains for Diferential control
+        Kp[1] = 1; //0.55
+        //Setting gains for Diferencial control
         Kd[0] = 0;
-        Kd[1] = 0.00000001;
+        Kd[1] = 0;
         //Setting gains for Integral control
         Ki[0] = 0;
         Ki[1] = 0.0;
