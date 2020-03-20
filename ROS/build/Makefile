@@ -1273,6 +1273,19 @@ run_tests_camera_calibration_nosetests_test.multiple_boards.py/fast:
 .PHONY : run_tests_camera_calibration_nosetests_test.multiple_boards.py/fast
 
 #=============================================================================
+# Target rules for targets named sciROS
+
+# Build rule for target.
+sciROS: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sciROS
+.PHONY : sciROS
+
+# fast build rule for target.
+sciROS/fast:
+	$(MAKE) -f tms570lc43/CMakeFiles/sciROS.dir/build.make tms570lc43/CMakeFiles/sciROS.dir/build
+.PHONY : sciROS/fast
+
+#=============================================================================
 # Target rules for targets named mg996
 
 # Build rule for target.
@@ -4113,6 +4126,7 @@ help:
 	@echo "... camera_calibration.tar.gz"
 	@echo "... _run_tests_camera_calibration_nosetests_test.multiple_boards.py"
 	@echo "... run_tests_camera_calibration_nosetests_test.multiple_boards.py"
+	@echo "... sciROS"
 	@echo "... mg996"
 	@echo "... data_acquisitionMG996"
 	@echo "... roscpp_generate_messages_py"
