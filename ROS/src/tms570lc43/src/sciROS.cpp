@@ -75,8 +75,11 @@ void sciROS::sendData()
   ss_y << CENTROID[1];
   std::string Y_str = ss_y.str();
 
+  /* concatenate X and Y  */
+  std::string XY = X_str + Y_str;
+
   //Send "a" to indicate X
-  pMyserial->write(X_str.c_str());
+  pMyserial->write(XY.c_str());
   if (pMyserial->waitReadable())
   {
     received_line = pMyserial->readline();
@@ -86,8 +89,8 @@ void sciROS::sendData()
   // pMyserial->write(Y_str.c_str());
   // if (pMyserial->waitReadable())
   // {
-    // received_line = pMyserial->readline();
-    // ROS_INFO("%s\n", received_line.c_str());
+  // received_line = pMyserial->readline();
+  // ROS_INFO("%s\n", received_line.c_str());
   // }
 }
 

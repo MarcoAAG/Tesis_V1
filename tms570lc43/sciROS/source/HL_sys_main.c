@@ -113,16 +113,13 @@ hetSIGNAL_t pwm0het0; // pwm signal for motor input
 hetSIGNAL_t pwm1het1; // pwm signal for motor input
 void setpwmsignal(hetRAMBASE_t *hetRAM, uint32 pwm, hetSIGNAL_t signal);
 
-bool FLAG = 0;
-bool FLAG_COORDINATE = 0;
 uint16 X = 320;
 uint16 Y = 240;
-uint32 splitX_0 = 0;
-uint8 splitX_1 = 0;
-uint8 splitY_0 = 0;
-uint8 splitY_1 = 0;
-unsigned char command[3]; // A variable declared to store received character
+unsigned char command[6]; // A variable declared to store received character
 uint8 count = 0;
+unsigned char ReceivedX[3];
+unsigned char ReceivedY[3];
+
 /* USER CODE END */
 
 int main(void)
@@ -138,31 +135,22 @@ int main(void)
     gioSetBit(gioPORTB, 7, 0);
 
     sciSend(sciREG1, 21, (unsigned char *)"Please press a key!\r\n"); // Send user prompt
-    sciReceive(sciREG1, 1, (unsigned char *)&command);                // Await user character
+    sciReceive(sciREG1, 6, (unsigned char *)&command);                // Await user character
     while (1)                                                         // Infinite loop
     {
         if (count == 1)
         {
-            gioSetBit(gioPORTB, 6, 1);
-            // sciSend(sciREG1, 1, (unsigned char *)&command);    // Echo received character back to user
-            sciReceive(sciREG1, 1, (unsigned char *)&command); // Await furter character
+            gioSetBit(gioPORTB, 6, gioGetBit(gioPORTB, 6) ^ 1); //toogle a led
         }
         if (count == 2)
         {
-            gioSetBit(gioPORTB, 7, 1);
-            // sciSend(sciREG1, 1, (unsigned char *)&command);    // Echo received character back to user
-            sciReceive(sciREG1, 1, (unsigned char *)&command); // Await furter character
-
-            // Y = atoi(command);
-            // sciSendData(sciREG1, (uint8 *)&Y, 2);
-            // sciSend(sciREG1, 2, (unsigned char *)"\r\n");
+            //gioSetBit(gioPORTB, 7, 1);
+            gioSetBit(gioPORTB, 7, gioGetBit(gioPORTB, 7) ^ 1); //toogle a led
         }
         if (count == 3)
         {
-            gioSetBit(gioPORTB, 6, 0);
-            gioSetBit(gioPORTB, 7, 0);
-            sciSend(sciREG1, 1, (unsigned char *)&command);    // Echo received character back to user
-            sciReceive(sciREG1, 1, (unsigned char *)&command); // Await furter character
+            //gioSetBit(gioPORTB, 6, 0);
+            //gioSetBit(gioPORTB, 7, 0);
         }
     }
     /* USER CODE END */
@@ -183,13 +171,26 @@ FUNCTION FOR SCI COMMUNICATION
 /*  This function execute every single interruption  */
 void sciNotification(sciBASE_t *sci, unsigned flags)
 {
-    // sciSend(sci, 1, (unsigned char *)&command); // Echo received character back to user
-    // X = atoi((const char*)&command);
-    // sciSendData(sciREG1, (uint8 *)&X, 2);
+    int i = 0;
+    // sciSend(sci, 1, (unsigned char *)&command[0]); // Echo received character back to user
     // sciSend(sciREG1, 2, (unsigned char *)"\r\n");
+
+    for (i = 0; i < 3; i++)
+    {
+        ReceivedX[i] = command[i];
+        ReceivedY[i] = command[i+3];
+    }
+
+    X = atoi((const char *)&ReceivedX);
+
+    Y = atoi((const char *)&ReceivedY);
+
+    sciSendData(sciREG1, (uint8 *)&Y, 2);
+    sciSend(sciREG1, 2, (unsigned char *)"\r\n");
+
     count++;
     count = (count > 3) ? 1 : count;
-    // sciReceive(sci, 1, (unsigned char *)&command); // Await furter character
+    sciReceive(sci, 6, (unsigned char *)&command); // Await furter character
 }
 void sciSendData(sciBASE_t *sci, uint8 *text, uint32 length)
 {

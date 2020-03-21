@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.10.28)  17 MAR 2020 16:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.10.28)  20 MAR 2020 19:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2660,17 +2660,23 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 16.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 36.
+(babel)             in language  on input line 32.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 36.
+(babel)             in language  on input line 32.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 36.
+(babel)             in language  on input line 32.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 36.
+(babel)             in language  on input line 32.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 36.
+(babel)             in language  on input line 32.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 36.
+(babel)             in language  on input line 32.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 38.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 38.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 38.
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 39.
 Package babel Info: Redefining spanish shorthand >>
@@ -2683,6 +2689,36 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 39.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 39.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 39.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 39.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 39.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 39.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 39.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 39.
+ [1
+
+
+
+
+]
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 40.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 40.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 40.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 40.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 40.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 40.
 Package epstopdf Info: Source file: <Contenido/Cuerpo/Capitulo1/Fig0.eps>
 (epstopdf)                    date: 2020-03-05 20:50:45
 (epstopdf)                    size: 44619 bytes
@@ -2690,72 +2726,67 @@ Package epstopdf Info: Source file: <Contenido/Cuerpo/Capitulo1/Fig0.eps>
 (epstopdf)                    date: 2020-03-05 20:50:45
 (epstopdf)                    size: 15919 bytes
 (epstopdf)             Command: <repstopdf --outfile=Contenido/Cuerpo/Capitulo1/Fig0-eps-converted-to.pdf Contenido/Cuerpo/Capitulo1/Fig0.eps>
-(epstopdf)             \includegraphics on input line 47.
+(epstopdf)             \includegraphics on input line 48.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo1/Fig0-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo1/Fig0-eps-converted-to.pdf, id=379, 1417.295pt x 234.8775pt>
+<Contenido/Cuerpo/Capitulo1/Fig0-eps-converted-to.pdf, id=388, 1417.295pt x 234.8775pt>
 File: Contenido/Cuerpo/Capitulo1/Fig0-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo1/Fig0-eps-converted-to.pdf>
-Package pdftex.def Info: Contenido/Cuerpo/Capitulo1/Fig0-eps-converted-to.pdf  used on input line 47.
+Package pdftex.def Info: Contenido/Cuerpo/Capitulo1/Fig0-eps-converted-to.pdf  used on input line 48.
 (pdftex.def)             Requested size: 336.13644pt x 55.70514pt.
 LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <10.95> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 48.
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 49.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 52.
+(babel)             in language  on input line 53.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 52.
+(babel)             in language  on input line 53.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 52.
+(babel)             in language  on input line 53.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 52.
+(babel)             in language  on input line 53.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 52.
+(babel)             in language  on input line 53.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 52.
+(babel)             in language  on input line 53.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 52.
+(babel)             in language  on input line 64.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 52.
+(babel)             in language  on input line 64.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 52.
+(babel)             in language  on input line 64.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 52.
+(babel)             in language  on input line 64.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 52.
+(babel)             in language  on input line 64.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 52.
-[1
-
-
-
-
-]
+(babel)             in language  on input line 64.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 52.
+(babel)             in language  on input line 79.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 52.
+(babel)             in language  on input line 79.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 52.
+(babel)             in language  on input line 79.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 52.
+(babel)             in language  on input line 79.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 52.
+(babel)             in language  on input line 79.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 52.
+(babel)             in language  on input line 79.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 63.
+(babel)             in language  on input line 79.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 63.
+(babel)             in language  on input line 79.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 63.
+(babel)             in language  on input line 79.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 63.
+(babel)             in language  on input line 79.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 63.
+(babel)             in language  on input line 79.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 63.
+(babel)             in language  on input line 79.
+[2 </home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo1/Fig0-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Contenido/Cuerpo/Capitulo1/Fig1.eps>
 (epstopdf)                    date: 2020-03-05 20:50:45
 (epstopdf)                    size: 80281 bytes
@@ -2763,41 +2794,41 @@ Package epstopdf Info: Source file: <Contenido/Cuerpo/Capitulo1/Fig1.eps>
 (epstopdf)                    date: 2020-03-05 20:50:45
 (epstopdf)                    size: 50728 bytes
 (epstopdf)             Command: <repstopdf --outfile=Contenido/Cuerpo/Capitulo1/Fig1-eps-converted-to.pdf Contenido/Cuerpo/Capitulo1/Fig1.eps>
-(epstopdf)             \includegraphics on input line 85.
+(epstopdf)             \includegraphics on input line 86.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo1/Fig1-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo1/Fig1-eps-converted-to.pdf, id=391, 346.29375pt x 263.98625pt>
+<Contenido/Cuerpo/Capitulo1/Fig1-eps-converted-to.pdf, id=405, 346.29375pt x 263.98625pt>
 File: Contenido/Cuerpo/Capitulo1/Fig1-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo1/Fig1-eps-converted-to.pdf>
-Package pdftex.def Info: Contenido/Cuerpo/Capitulo1/Fig1-eps-converted-to.pdf  used on input line 85.
+Package pdftex.def Info: Contenido/Cuerpo/Capitulo1/Fig1-eps-converted-to.pdf  used on input line 86.
 (pdftex.def)             Requested size: 237.2735pt x 180.88185pt.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 95.
+(babel)             in language  on input line 107.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 95.
+(babel)             in language  on input line 107.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 95.
+(babel)             in language  on input line 107.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 95.
+(babel)             in language  on input line 107.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 95.
+(babel)             in language  on input line 107.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 95.
+(babel)             in language  on input line 107.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 95.
+(babel)             in language  on input line 107.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 95.
+(babel)             in language  on input line 107.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 95.
+(babel)             in language  on input line 107.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 95.
+(babel)             in language  on input line 107.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 95.
+(babel)             in language  on input line 107.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 95.
-[2 </home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo1/Fig0-eps-converted-to.pdf>]
+(babel)             in language  on input line 107.
+[3 </home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo1/Fig1-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Contenido/Cuerpo/Capitulo1/Fig2.eps>
 (epstopdf)                    date: 2020-03-05 20:50:45
 (epstopdf)                    size: 423184 bytes
@@ -2805,46 +2836,21 @@ Package epstopdf Info: Source file: <Contenido/Cuerpo/Capitulo1/Fig2.eps>
 (epstopdf)                    date: 2020-03-05 20:50:45
 (epstopdf)                    size: 71537 bytes
 (epstopdf)             Command: <repstopdf --outfile=Contenido/Cuerpo/Capitulo1/Fig2-eps-converted-to.pdf Contenido/Cuerpo/Capitulo1/Fig2.eps>
-(epstopdf)             \includegraphics on input line 107.
+(epstopdf)             \includegraphics on input line 108.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo1/Fig2-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo1/Fig2-eps-converted-to.pdf, id=407, 340.27126pt x 225.84375pt>
+<Contenido/Cuerpo/Capitulo1/Fig2-eps-converted-to.pdf, id=419, 340.27126pt x 225.84375pt>
 File: Contenido/Cuerpo/Capitulo1/Fig2-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo1/Fig2-eps-converted-to.pdf>
-Package pdftex.def Info: Contenido/Cuerpo/Capitulo1/Fig2-eps-converted-to.pdf  used on input line 107.
+Package pdftex.def Info: Contenido/Cuerpo/Capitulo1/Fig2-eps-converted-to.pdf  used on input line 108.
 (pdftex.def)             Requested size: 158.1783pt x 104.98523pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 108.
+(caption)                particular \caption on input line 109.
 See the caption package documentation for explanation.
 
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 122.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 122.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 122.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 122.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 122.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 122.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 122.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 122.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 122.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 122.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 122.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 122.
-[3 </home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo1/Fig1-eps-converted-to.pdf> </home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo1/Fig2-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Contenido/Cuerpo/Capitulo1/Fig3.eps>
 (epstopdf)                    date: 2020-03-05 20:50:45
 (epstopdf)                    size: 74551 bytes
@@ -2852,46 +2858,46 @@ Package epstopdf Info: Source file: <Contenido/Cuerpo/Capitulo1/Fig3.eps>
 (epstopdf)                    date: 2020-03-05 20:50:45
 (epstopdf)                    size: 23602 bytes
 (epstopdf)             Command: <repstopdf --outfile=Contenido/Cuerpo/Capitulo1/Fig3-eps-converted-to.pdf Contenido/Cuerpo/Capitulo1/Fig3.eps>
-(epstopdf)             \includegraphics on input line 123.
+(epstopdf)             \includegraphics on input line 124.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo1/Fig3-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo1/Fig3-eps-converted-to.pdf, id=426, 225.84375pt x 186.6975pt>
+<Contenido/Cuerpo/Capitulo1/Fig3-eps-converted-to.pdf, id=422, 225.84375pt x 186.6975pt>
 File: Contenido/Cuerpo/Capitulo1/Fig3-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo1/Fig3-eps-converted-to.pdf>
-Package pdftex.def Info: Contenido/Cuerpo/Capitulo1/Fig3-eps-converted-to.pdf  used on input line 123.
+Package pdftex.def Info: Contenido/Cuerpo/Capitulo1/Fig3-eps-converted-to.pdf  used on input line 124.
 (pdftex.def)             Requested size: 237.2735pt x 196.15779pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 125.
+(caption)                particular \caption on input line 126.
 See the caption package documentation for explanation.
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 143.
+(babel)             in language  on input line 144.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 143.
+(babel)             in language  on input line 144.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 143.
+(babel)             in language  on input line 144.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 143.
+(babel)             in language  on input line 144.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 143.
+(babel)             in language  on input line 144.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 143.
+(babel)             in language  on input line 144.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 143.
+(babel)             in language  on input line 144.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 143.
+(babel)             in language  on input line 144.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 143.
+(babel)             in language  on input line 144.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 143.
+(babel)             in language  on input line 144.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 143.
+(babel)             in language  on input line 144.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 143.
-[4 </home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo1/Fig3-eps-converted-to.pdf>]
+(babel)             in language  on input line 144.
+[4 </home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo1/Fig2-eps-converted-to.pdf> </home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo1/Fig3-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Contenido/Cuerpo/Capitulo1/Fig4.eps>
 (epstopdf)                    date: 2020-03-05 20:50:45
 (epstopdf)                    size: 1107533 bytes
@@ -2899,57 +2905,57 @@ Package epstopdf Info: Source file: <Contenido/Cuerpo/Capitulo1/Fig4.eps>
 (epstopdf)                    date: 2020-03-05 20:50:45
 (epstopdf)                    size: 244610 bytes
 (epstopdf)             Command: <repstopdf --outfile=Contenido/Cuerpo/Capitulo1/Fig4-eps-converted-to.pdf Contenido/Cuerpo/Capitulo1/Fig4.eps>
-(epstopdf)             \includegraphics on input line 144.
+(epstopdf)             \includegraphics on input line 145.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo1/Fig4-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo1/Fig4-eps-converted-to.pdf, id=436, 903.375pt x 676.5275pt>
+<Contenido/Cuerpo/Capitulo1/Fig4-eps-converted-to.pdf, id=438, 903.375pt x 676.5275pt>
 File: Contenido/Cuerpo/Capitulo1/Fig4-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo1/Fig4-eps-converted-to.pdf>
-Package pdftex.def Info: Contenido/Cuerpo/Capitulo1/Fig4-eps-converted-to.pdf  used on input line 144.
+Package pdftex.def Info: Contenido/Cuerpo/Capitulo1/Fig4-eps-converted-to.pdf  used on input line 145.
 (pdftex.def)             Requested size: 197.7259pt x 148.0726pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 145.
+(caption)                particular \caption on input line 146.
 See the caption package documentation for explanation.
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 156.
+(babel)             in language  on input line 157.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 156.
+(babel)             in language  on input line 157.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 156.
+(babel)             in language  on input line 157.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 156.
+(babel)             in language  on input line 157.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 156.
+(babel)             in language  on input line 157.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 156.
+(babel)             in language  on input line 157.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 161.
+(babel)             in language  on input line 162.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 161.
+(babel)             in language  on input line 162.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 161.
+(babel)             in language  on input line 162.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 161.
+(babel)             in language  on input line 162.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 161.
+(babel)             in language  on input line 162.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 161.
+(babel)             in language  on input line 162.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 167.
+(babel)             in language  on input line 168.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 167.
+(babel)             in language  on input line 168.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 167.
+(babel)             in language  on input line 168.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 167.
+(babel)             in language  on input line 168.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 167.
+(babel)             in language  on input line 168.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 167.
+(babel)             in language  on input line 168.
 ) (/home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/MarcoTeorico.tex
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 1.
@@ -3029,7 +3035,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig1-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo2/Fig1-eps-converted-to.pdf, id=452, 1295.84125pt x 819.06pt>
+<Contenido/Cuerpo/Capitulo2/Fig1-eps-converted-to.pdf, id=454, 1295.84125pt x 819.06pt>
 File: Contenido/Cuerpo/Capitulo2/Fig1-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo2/Fig1-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig1-eps-converted-to.pdf  used on input line 12.
@@ -3100,7 +3106,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig1_1-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo2/Fig1_1-eps-converted-to.pdf, id=464, 963.6pt x 721.69624pt>
+<Contenido/Cuerpo/Capitulo2/Fig1_1-eps-converted-to.pdf, id=466, 963.6pt x 721.69624pt>
 File: Contenido/Cuerpo/Capitulo2/Fig1_1-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo2/Fig1_1-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig1_1-eps-converted-to.pdf  used on input line 54.
@@ -3196,7 +3202,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig1_3-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo2/Fig1_3-eps-converted-to.pdf, id=487, 3679.7475pt x 3424.795pt>
+<Contenido/Cuerpo/Capitulo2/Fig1_3-eps-converted-to.pdf, id=489, 3679.7475pt x 3424.795pt>
 File: Contenido/Cuerpo/Capitulo2/Fig1_3-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo2/Fig1_3-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig1_3-eps-converted-to.pdf  used on input line 125.
@@ -3292,7 +3298,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig1_5-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo2/Fig1_5-eps-converted-to.pdf, id=513, 594.22pt x 432.61626pt>
+<Contenido/Cuerpo/Capitulo2/Fig1_5-eps-converted-to.pdf, id=515, 594.22pt x 432.61626pt>
 File: Contenido/Cuerpo/Capitulo2/Fig1_5-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo2/Fig1_5-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig1_5-eps-converted-to.pdf  used on input line 180.
@@ -3326,7 +3332,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig1_6-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo2/Fig1_6-eps-converted-to.pdf, id=514, 1388.18625pt x 313.17pt>
+<Contenido/Cuerpo/Capitulo2/Fig1_6-eps-converted-to.pdf, id=516, 1388.18625pt x 313.17pt>
 File: Contenido/Cuerpo/Capitulo2/Fig1_6-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo2/Fig1_6-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig1_6-eps-converted-to.pdf  used on input line 199.
@@ -3373,7 +3379,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig1_4-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo2/Fig1_4-eps-converted-to.pdf, id=534, 569.12625pt x 175.65625pt>
+<Contenido/Cuerpo/Capitulo2/Fig1_4-eps-converted-to.pdf, id=536, 569.12625pt x 175.65625pt>
 File: Contenido/Cuerpo/Capitulo2/Fig1_4-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo2/Fig1_4-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig1_4-eps-converted-to.pdf  used on input line 219.
@@ -3407,7 +3413,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig1_7-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo2/Fig1_7-eps-converted-to.pdf, id=535, 215.80624pt x 212.795pt>
+<Contenido/Cuerpo/Capitulo2/Fig1_7-eps-converted-to.pdf, id=537, 215.80624pt x 212.795pt>
 File: Contenido/Cuerpo/Capitulo2/Fig1_7-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo2/Fig1_7-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig1_7-eps-converted-to.pdf  used on input line 239.
@@ -3454,7 +3460,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig1_8-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo2/Fig1_8-eps-converted-to.pdf, id=549, 144.54pt x 181.67876pt>
+<Contenido/Cuerpo/Capitulo2/Fig1_8-eps-converted-to.pdf, id=551, 144.54pt x 181.67876pt>
 File: Contenido/Cuerpo/Capitulo2/Fig1_8-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo2/Fig1_8-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig1_8-eps-converted-to.pdf  used on input line 247.
@@ -3476,7 +3482,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig1_9-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo2/Fig1_9-eps-converted-to.pdf, id=550, 217.81375pt x 212.795pt>
+<Contenido/Cuerpo/Capitulo2/Fig1_9-eps-converted-to.pdf, id=552, 217.81375pt x 212.795pt>
 File: Contenido/Cuerpo/Capitulo2/Fig1_9-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo2/Fig1_9-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig1_9-eps-converted-to.pdf  used on input line 255.
@@ -3498,7 +3504,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig1_10-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo2/Fig1_10-eps-converted-to.pdf, id=551, 217.81375pt x 210.7875pt>
+<Contenido/Cuerpo/Capitulo2/Fig1_10-eps-converted-to.pdf, id=553, 217.81375pt x 210.7875pt>
 File: Contenido/Cuerpo/Capitulo2/Fig1_10-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo2/Fig1_10-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig1_10-eps-converted-to.pdf  used on input line 265.
@@ -3545,7 +3551,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig1_11-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo2/Fig1_11-eps-converted-to.pdf, id=573, 211.79124pt x 210.7875pt>
+<Contenido/Cuerpo/Capitulo2/Fig1_11-eps-converted-to.pdf, id=575, 211.79124pt x 210.7875pt>
 File: Contenido/Cuerpo/Capitulo2/Fig1_11-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo2/Fig1_11-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig1_11-eps-converted-to.pdf  used on input line 283.
@@ -3604,7 +3610,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig19-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo2/Fig19-eps-converted-to.pdf, id=589, 381.425pt x 254.9525pt>
+<Contenido/Cuerpo/Capitulo2/Fig19-eps-converted-to.pdf, id=591, 381.425pt x 254.9525pt>
 File: Contenido/Cuerpo/Capitulo2/Fig19-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo2/Fig19-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig19-eps-converted-to.pdf  used on input line 296.
@@ -3675,7 +3681,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig7-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo2/Fig7-eps-converted-to.pdf, id=610, 610.28pt x 697.60625pt>
+<Contenido/Cuerpo/Capitulo2/Fig7-eps-converted-to.pdf, id=612, 610.28pt x 697.60625pt>
 File: Contenido/Cuerpo/Capitulo2/Fig7-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo2/Fig7-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig7-eps-converted-to.pdf  used on input line 340.
@@ -3697,7 +3703,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig6-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo2/Fig6-eps-converted-to.pdf, id=613, 760.8425pt x 349.305pt>
+<Contenido/Cuerpo/Capitulo2/Fig6-eps-converted-to.pdf, id=615, 760.8425pt x 349.305pt>
 File: Contenido/Cuerpo/Capitulo2/Fig6-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo2/Fig6-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig6-eps-converted-to.pdf  used on input line 365.
@@ -3818,7 +3824,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig2-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo2/Fig2-eps-converted-to.pdf, id=652, 392.46625pt x 312.16624pt>
+<Contenido/Cuerpo/Capitulo2/Fig2-eps-converted-to.pdf, id=654, 392.46625pt x 312.16624pt>
 File: Contenido/Cuerpo/Capitulo2/Fig2-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo2/Fig2-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig2-eps-converted-to.pdf  used on input line 443.
@@ -3840,7 +3846,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig3-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo2/Fig3-eps-converted-to.pdf, id=653, 819.06pt x 324.21124pt>
+<Contenido/Cuerpo/Capitulo2/Fig3-eps-converted-to.pdf, id=655, 819.06pt x 324.21124pt>
 File: Contenido/Cuerpo/Capitulo2/Fig3-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo2/Fig3-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig3-eps-converted-to.pdf  used on input line 453.
@@ -3887,7 +3893,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig4-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo2/Fig4-eps-converted-to.pdf, id=667, 578.16pt x 245.91875pt>
+<Contenido/Cuerpo/Capitulo2/Fig4-eps-converted-to.pdf, id=669, 578.16pt x 245.91875pt>
 File: Contenido/Cuerpo/Capitulo2/Fig4-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo2/Fig4-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig4-eps-converted-to.pdf  used on input line 471.
@@ -3946,7 +3952,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig8-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo2/Fig8-eps-converted-to.pdf, id=683, 343.2825pt x 351.3125pt>
+<Contenido/Cuerpo/Capitulo2/Fig8-eps-converted-to.pdf, id=685, 343.2825pt x 351.3125pt>
 File: Contenido/Cuerpo/Capitulo2/Fig8-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo2/Fig8-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig8-eps-converted-to.pdf  used on input line 531.
@@ -4030,7 +4036,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig9-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo2/Fig9-eps-converted-to.pdf, id=716, 599.23875pt x 492.84125pt>
+<Contenido/Cuerpo/Capitulo2/Fig9-eps-converted-to.pdf, id=718, 599.23875pt x 492.84125pt>
 File: Contenido/Cuerpo/Capitulo2/Fig9-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo2/Fig9-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig9-eps-converted-to.pdf  used on input line 570.
@@ -4089,7 +4095,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig12-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo2/Fig12-eps-converted-to.pdf, id=728, 1204.5pt x 393.47pt>
+<Contenido/Cuerpo/Capitulo2/Fig12-eps-converted-to.pdf, id=730, 1204.5pt x 393.47pt>
 File: Contenido/Cuerpo/Capitulo2/Fig12-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo2/Fig12-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig12-eps-converted-to.pdf  used on input line 597.
@@ -4148,7 +4154,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig10-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo2/Fig10-eps-converted-to.pdf, id=743, 542.025pt x 542.025pt>
+<Contenido/Cuerpo/Capitulo2/Fig10-eps-converted-to.pdf, id=745, 542.025pt x 542.025pt>
 File: Contenido/Cuerpo/Capitulo2/Fig10-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo2/Fig10-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig10-eps-converted-to.pdf  used on input line 651.
@@ -4195,7 +4201,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig11-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo2/Fig11-eps-converted-to.pdf, id=756, 601.24625pt x 476.78125pt>
+<Contenido/Cuerpo/Capitulo2/Fig11-eps-converted-to.pdf, id=758, 601.24625pt x 476.78125pt>
 File: Contenido/Cuerpo/Capitulo2/Fig11-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo2/Fig11-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig11-eps-converted-to.pdf  used on input line 683.
@@ -4329,7 +4335,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig13-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo2/Fig13-eps-converted-to.pdf, id=804, 738.76pt x 203.76125pt>
+<Contenido/Cuerpo/Capitulo2/Fig13-eps-converted-to.pdf, id=806, 738.76pt x 203.76125pt>
 File: Contenido/Cuerpo/Capitulo2/Fig13-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo2/Fig13-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig13-eps-converted-to.pdf  used on input line 808.
@@ -4376,7 +4382,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig14-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo2/Fig14-eps-converted-to.pdf, id=817, 1202.4925pt x 305.14pt>
+<Contenido/Cuerpo/Capitulo2/Fig14-eps-converted-to.pdf, id=819, 1202.4925pt x 305.14pt>
 File: Contenido/Cuerpo/Capitulo2/Fig14-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo2/Fig14-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig14-eps-converted-to.pdf  used on input line 836.
@@ -4398,7 +4404,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig15-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo2/Fig15-eps-converted-to.pdf, id=819, 1202.4925pt x 305.14pt>
+<Contenido/Cuerpo/Capitulo2/Fig15-eps-converted-to.pdf, id=821, 1202.4925pt x 305.14pt>
 File: Contenido/Cuerpo/Capitulo2/Fig15-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo2/Fig15-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig15-eps-converted-to.pdf  used on input line 854.
@@ -4445,7 +4451,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig16-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo2/Fig16-eps-converted-to.pdf, id=833, 1180.41pt x 305.14pt>
+<Contenido/Cuerpo/Capitulo2/Fig16-eps-converted-to.pdf, id=835, 1180.41pt x 305.14pt>
 File: Contenido/Cuerpo/Capitulo2/Fig16-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo2/Fig16-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig16-eps-converted-to.pdf  used on input line 877.
@@ -4560,7 +4566,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo2/Fig18-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo2/Fig18-eps-converted-to.pdf, id=865, 364.36125pt x 368.37625pt>
+<Contenido/Cuerpo/Capitulo2/Fig18-eps-converted-to.pdf, id=867, 364.36125pt x 368.37625pt>
 File: Contenido/Cuerpo/Capitulo2/Fig18-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo2/Fig18-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo2/Fig18-eps-converted-to.pdf  used on input line 937.
@@ -4657,7 +4663,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo3/Fig1-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo3/Fig1-eps-converted-to.pdf, id=892, 499.8675pt x 390.45876pt>
+<Contenido/Cuerpo/Capitulo3/Fig1-eps-converted-to.pdf, id=895, 499.8675pt x 390.45876pt>
 File: Contenido/Cuerpo/Capitulo3/Fig1-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo3/Fig1-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo3/Fig1-eps-converted-to.pdf  used on input line 11.
@@ -4707,7 +4713,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo3/Fig2-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo3/Fig2-eps-converted-to.pdf, id=908, 742.775pt x 517.935pt>
+<Contenido/Cuerpo/Capitulo3/Fig2-eps-converted-to.pdf, id=910, 742.775pt x 517.935pt>
 File: Contenido/Cuerpo/Capitulo3/Fig2-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo3/Fig2-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo3/Fig2-eps-converted-to.pdf  used on input line 25.
@@ -4741,7 +4747,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo3/Fig4-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo3/Fig4-eps-converted-to.pdf, id=909, 161.60374pt x 206.7725pt>
+<Contenido/Cuerpo/Capitulo3/Fig4-eps-converted-to.pdf, id=911, 161.60374pt x 206.7725pt>
 File: Contenido/Cuerpo/Capitulo3/Fig4-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo3/Fig4-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo3/Fig4-eps-converted-to.pdf  used on input line 35.
@@ -4800,7 +4806,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo3/Fig6-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo3/Fig6-eps-converted-to.pdf, id=1153, 292.09125pt x 191.71625pt>
+<Contenido/Cuerpo/Capitulo3/Fig6-eps-converted-to.pdf, id=1155, 292.09125pt x 191.71625pt>
 File: Contenido/Cuerpo/Capitulo3/Fig6-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo3/Fig6-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo3/Fig6-eps-converted-to.pdf  used on input line 49.
@@ -4822,7 +4828,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo3/Fig5-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo3/Fig5-eps-converted-to.pdf, id=1154, 499.8675pt x 245.91875pt>
+<Contenido/Cuerpo/Capitulo3/Fig5-eps-converted-to.pdf, id=1156, 499.8675pt x 245.91875pt>
 File: Contenido/Cuerpo/Capitulo3/Fig5-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo3/Fig5-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo3/Fig5-eps-converted-to.pdf  used on input line 56.
@@ -4881,7 +4887,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo3/Fig7-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo3/Fig7-eps-converted-to.pdf, id=1350, 204.765pt x 253.94875pt>
+<Contenido/Cuerpo/Capitulo3/Fig7-eps-converted-to.pdf, id=1352, 204.765pt x 253.94875pt>
 File: Contenido/Cuerpo/Capitulo3/Fig7-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo3/Fig7-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo3/Fig7-eps-converted-to.pdf  used on input line 67.
@@ -4915,7 +4921,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo3/Fig8-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo3/Fig8-eps-converted-to.pdf, id=1351, 268.00125pt x 280.04625pt>
+<Contenido/Cuerpo/Capitulo3/Fig8-eps-converted-to.pdf, id=1353, 268.00125pt x 280.04625pt>
 File: Contenido/Cuerpo/Capitulo3/Fig8-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo3/Fig8-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo3/Fig8-eps-converted-to.pdf  used on input line 78.
@@ -4962,7 +4968,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo3/Fig9-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo3/Fig9-eps-converted-to.pdf, id=1374, 320.19624pt x 280.04625pt>
+<Contenido/Cuerpo/Capitulo3/Fig9-eps-converted-to.pdf, id=1376, 320.19624pt x 280.04625pt>
 File: Contenido/Cuerpo/Capitulo3/Fig9-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo3/Fig9-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo3/Fig9-eps-converted-to.pdf  used on input line 95.
@@ -5063,7 +5069,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo4/Fig0_1-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo4/Fig0_1-eps-converted-to.pdf, id=1400, 301.125pt x 341.275pt>
+<Contenido/Cuerpo/Capitulo4/Fig0_1-eps-converted-to.pdf, id=1402, 301.125pt x 341.275pt>
 File: Contenido/Cuerpo/Capitulo4/Fig0_1-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo4/Fig0_1-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo4/Fig0_1-eps-converted-to.pdf  used on input line 11.
@@ -5135,7 +5141,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo4/Fig0-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo4/Fig0-eps-converted-to.pdf, id=1411, 483.8075pt x 114.4275pt>
+<Contenido/Cuerpo/Capitulo4/Fig0-eps-converted-to.pdf, id=1413, 483.8075pt x 114.4275pt>
 File: Contenido/Cuerpo/Capitulo4/Fig0-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo4/Fig0-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo4/Fig0-eps-converted-to.pdf  used on input line 57.
@@ -5194,7 +5200,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo4/Fig1-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo4/Fig1-eps-converted-to.pdf, id=1424, 341.275pt x 298.11375pt>
+<Contenido/Cuerpo/Capitulo4/Fig1-eps-converted-to.pdf, id=1426, 341.275pt x 298.11375pt>
 File: Contenido/Cuerpo/Capitulo4/Fig1-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo4/Fig1-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo4/Fig1-eps-converted-to.pdf  used on input line 71.
@@ -5216,7 +5222,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo4/publisher-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo4/publisher-eps-converted-to.pdf, id=1425, 378.41376pt x 1115.16624pt>
+<Contenido/Cuerpo/Capitulo4/publisher-eps-converted-to.pdf, id=1427, 378.41376pt x 1115.16624pt>
 File: Contenido/Cuerpo/Capitulo4/publisher-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo4/publisher-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo4/publisher-eps-converted-to.pdf  used on input line 90.
@@ -5275,7 +5281,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo4/object_tracking-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo4/object_tracking-eps-converted-to.pdf, id=1435, 644.4075pt x 433.62pt>
+<Contenido/Cuerpo/Capitulo4/object_tracking-eps-converted-to.pdf, id=1437, 644.4075pt x 433.62pt>
 File: Contenido/Cuerpo/Capitulo4/object_tracking-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo4/object_tracking-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo4/object_tracking-eps-converted-to.pdf  used on input line 104.
@@ -5334,7 +5340,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo4/Fig11-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo4/Fig11-eps-converted-to.pdf, id=1444, 580.1675pt x 114.4275pt>
+<Contenido/Cuerpo/Capitulo4/Fig11-eps-converted-to.pdf, id=1446, 580.1675pt x 114.4275pt>
 File: Contenido/Cuerpo/Capitulo4/Fig11-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo4/Fig11-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo4/Fig11-eps-converted-to.pdf  used on input line 119.
@@ -5360,7 +5366,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo4/Fig12-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo4/Fig12-eps-converted-to.pdf, id=1445, 963.6pt x 722.7pt>
+<Contenido/Cuerpo/Capitulo4/Fig12-eps-converted-to.pdf, id=1447, 963.6pt x 722.7pt>
 File: Contenido/Cuerpo/Capitulo4/Fig12-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo4/Fig12-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo4/Fig12-eps-converted-to.pdf  used on input line 137.
@@ -5407,7 +5413,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo4/Fig10-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo4/Fig10-eps-converted-to.pdf, id=1458, 1114.1625pt x 461.725pt>
+<Contenido/Cuerpo/Capitulo4/Fig10-eps-converted-to.pdf, id=1461, 1114.1625pt x 461.725pt>
 File: Contenido/Cuerpo/Capitulo4/Fig10-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo4/Fig10-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo4/Fig10-eps-converted-to.pdf  used on input line 169.
@@ -5466,7 +5472,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo4/color-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo4/color-eps-converted-to.pdf, id=1480, 357.335pt x 346.29375pt>
+<Contenido/Cuerpo/Capitulo4/color-eps-converted-to.pdf, id=1482, 357.335pt x 346.29375pt>
 File: Contenido/Cuerpo/Capitulo4/color-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo4/color-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo4/color-eps-converted-to.pdf  used on input line 188.
@@ -5488,7 +5494,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo4/Fig2-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo4/Fig2-eps-converted-to.pdf, id=1481, 942.52126pt x 168.63pt>
+<Contenido/Cuerpo/Capitulo4/Fig2-eps-converted-to.pdf, id=1483, 942.52126pt x 168.63pt>
 File: Contenido/Cuerpo/Capitulo4/Fig2-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo4/Fig2-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo4/Fig2-eps-converted-to.pdf  used on input line 194.
@@ -5535,7 +5541,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo4/Fig3-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo4/Fig3-eps-converted-to.pdf, id=1493, 927.465pt x 170.6375pt>
+<Contenido/Cuerpo/Capitulo4/Fig3-eps-converted-to.pdf, id=1495, 927.465pt x 170.6375pt>
 File: Contenido/Cuerpo/Capitulo4/Fig3-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo4/Fig3-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo4/Fig3-eps-converted-to.pdf  used on input line 213.
@@ -5557,7 +5563,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo4/Fig4-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo4/Fig4-eps-converted-to.pdf, id=1494, 1028.84375pt x 476.78125pt>
+<Contenido/Cuerpo/Capitulo4/Fig4-eps-converted-to.pdf, id=1496, 1028.84375pt x 476.78125pt>
 File: Contenido/Cuerpo/Capitulo4/Fig4-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo4/Fig4-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo4/Fig4-eps-converted-to.pdf  used on input line 231.
@@ -5604,7 +5610,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo4/Fig5-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo4/Fig5-eps-converted-to.pdf, id=1503, 1028.84375pt x 532.99126pt>
+<Contenido/Cuerpo/Capitulo4/Fig5-eps-converted-to.pdf, id=1505, 1028.84375pt x 532.99126pt>
 File: Contenido/Cuerpo/Capitulo4/Fig5-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo4/Fig5-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo4/Fig5-eps-converted-to.pdf  used on input line 236.
@@ -5626,7 +5632,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo4/Fig6-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo4/Fig6-eps-converted-to.pdf, id=1504, 464.73625pt x 170.6375pt>
+<Contenido/Cuerpo/Capitulo4/Fig6-eps-converted-to.pdf, id=1506, 464.73625pt x 170.6375pt>
 File: Contenido/Cuerpo/Capitulo4/Fig6-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo4/Fig6-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo4/Fig6-eps-converted-to.pdf  used on input line 259.
@@ -5685,7 +5691,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo4/Fig7-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo4/Fig7-eps-converted-to.pdf, id=1523, 962.59625pt x 384.43625pt>
+<Contenido/Cuerpo/Capitulo4/Fig7-eps-converted-to.pdf, id=1525, 962.59625pt x 384.43625pt>
 File: Contenido/Cuerpo/Capitulo4/Fig7-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo4/Fig7-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo4/Fig7-eps-converted-to.pdf  used on input line 269.
@@ -5707,7 +5713,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo4/Fig9-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo4/Fig9-eps-converted-to.pdf, id=1524, 481.8pt x 389.455pt>
+<Contenido/Cuerpo/Capitulo4/Fig9-eps-converted-to.pdf, id=1526, 481.8pt x 389.455pt>
 File: Contenido/Cuerpo/Capitulo4/Fig9-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo4/Fig9-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo4/Fig9-eps-converted-to.pdf  used on input line 279.
@@ -5754,7 +5760,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo4/Fig8-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo4/Fig8-eps-converted-to.pdf, id=1539, 1445.4pt x 778.91pt>
+<Contenido/Cuerpo/Capitulo4/Fig8-eps-converted-to.pdf, id=1541, 1445.4pt x 778.91pt>
 File: Contenido/Cuerpo/Capitulo4/Fig8-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo4/Fig8-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo4/Fig8-eps-converted-to.pdf  used on input line 285.
@@ -5813,7 +5819,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo4/Fig14-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo4/Fig14-eps-converted-to.pdf, id=1553, 1040.88875pt x 192.72pt>
+<Contenido/Cuerpo/Capitulo4/Fig14-eps-converted-to.pdf, id=1555, 1040.88875pt x 192.72pt>
 File: Contenido/Cuerpo/Capitulo4/Fig14-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo4/Fig14-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo4/Fig14-eps-converted-to.pdf  used on input line 328.
@@ -5835,7 +5841,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo4/Fig13-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo4/Fig13-eps-converted-to.pdf, id=1554, 963.6pt x 424.58624pt>
+<Contenido/Cuerpo/Capitulo4/Fig13-eps-converted-to.pdf, id=1556, 963.6pt x 424.58624pt>
 File: Contenido/Cuerpo/Capitulo4/Fig13-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo4/Fig13-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo4/Fig13-eps-converted-to.pdf  used on input line 335.
@@ -5894,7 +5900,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo4/Fig16-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo4/Fig16-eps-converted-to.pdf, id=1567, 963.6pt x 437.635pt>
+<Contenido/Cuerpo/Capitulo4/Fig16-eps-converted-to.pdf, id=1569, 963.6pt x 437.635pt>
 File: Contenido/Cuerpo/Capitulo4/Fig16-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo4/Fig16-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo4/Fig16-eps-converted-to.pdf  used on input line 372.
@@ -5916,7 +5922,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo4/Fig17-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo4/Fig17-eps-converted-to.pdf, id=1568, 963.6pt x 437.635pt>
+<Contenido/Cuerpo/Capitulo4/Fig17-eps-converted-to.pdf, id=1570, 963.6pt x 437.635pt>
 File: Contenido/Cuerpo/Capitulo4/Fig17-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo4/Fig17-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo4/Fig17-eps-converted-to.pdf  used on input line 380.
@@ -5963,7 +5969,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo4/Fig15-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo4/Fig15-eps-converted-to.pdf, id=1583, 1445.4pt x 490.83376pt>
+<Contenido/Cuerpo/Capitulo4/Fig15-eps-converted-to.pdf, id=1585, 1445.4pt x 490.83376pt>
 File: Contenido/Cuerpo/Capitulo4/Fig15-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo4/Fig15-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo4/Fig15-eps-converted-to.pdf  used on input line 386.
@@ -5997,7 +6003,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo4/Fig18-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo4/Fig18-eps-converted-to.pdf, id=1584, 481.8pt x 389.455pt>
+<Contenido/Cuerpo/Capitulo4/Fig18-eps-converted-to.pdf, id=1586, 481.8pt x 389.455pt>
 File: Contenido/Cuerpo/Capitulo4/Fig18-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo4/Fig18-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo4/Fig18-eps-converted-to.pdf  used on input line 409.
@@ -6122,7 +6128,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Cuerpo/Capitulo5/Fig0-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Cuerpo/Capitulo5/Fig0-eps-converted-to.pdf, id=1624, 3329.43875pt x 2392.94pt>
+<Contenido/Cuerpo/Capitulo5/Fig0-eps-converted-to.pdf, id=1626, 3329.43875pt x 2392.94pt>
 File: Contenido/Cuerpo/Capitulo5/Fig0-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Cuerpo/Capitulo5/Fig0-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Cuerpo/Capitulo5/Fig0-eps-converted-to.pdf  used on input line 12.
@@ -6770,7 +6776,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/marco/Tesis/Documentacion/Contenido/Back/Apendices/ApendiceB/Fig0-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Contenido/Back/Apendices/ApendiceB/Fig0-eps-converted-to.pdf, id=1975, 963.6pt x 542.025pt>
+<Contenido/Back/Apendices/ApendiceB/Fig0-eps-converted-to.pdf, id=1977, 963.6pt x 542.025pt>
 File: Contenido/Back/Apendices/ApendiceB/Fig0-eps-converted-to.pdf Graphic file (type pdf)
 <use Contenido/Back/Apendices/ApendiceB/Fig0-eps-converted-to.pdf>
 Package pdftex.def Info: Contenido/Back/Apendices/ApendiceB/Fig0-eps-converted-to.pdf  used on input line 27.
@@ -6860,18 +6866,18 @@ Package logreq Info: Writing requests to 'Tesis.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 123.
  ) 
 Here is how much of TeX's memory you used:
- 44402 strings out of 492982
- 832468 string characters out of 6134895
+ 44457 strings out of 492982
+ 833304 string characters out of 6134895
  1507560 words of memory out of 5000000
- 46493 multiletter control sequences out of 15000+600000
- 668971 words of font info for 276 fonts, out of 8000000 for 9000
+ 46537 multiletter control sequences out of 15000+600000
+ 684319 words of font info for 296 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,14n,106p,10528b,3022s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,14n,106p,10528b,3023s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec-sc.enc}{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec.enc}</usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchri8a.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qhvb.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qhvr.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qhvri.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/bookman/ubkli8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on /home/marco/Tesis/Documentacion/Tesis.pdf (88 pages, 15237539 bytes).
+Output written on /home/marco/Tesis/Documentacion/Tesis.pdf (88 pages, 15238404 bytes).
 PDF statistics:
- 2161 PDF objects out of 2487 (max. 8388607)
- 1830 compressed objects within 19 object streams
- 463 named destinations out of 1000 (max. 500000)
- 48460 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 2163 PDF objects out of 2487 (max. 8388607)
+ 1832 compressed objects within 19 object streams
+ 464 named destinations out of 1000 (max. 500000)
+ 50508 words of extra memory for PDF output out of 51595 (max. 10000000)
 
