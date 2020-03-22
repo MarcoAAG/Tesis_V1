@@ -78,20 +78,13 @@ void sciROS::sendData()
   /* concatenate X and Y  */
   std::string XY = X_str + Y_str;
 
-  //Send "a" to indicate X
+  //Send X and Y ina single sring
   pMyserial->write(XY.c_str());
   if (pMyserial->waitReadable())
   {
     received_line = pMyserial->readline();
     ROS_INFO("%s\n", received_line.c_str());
   }
-
-  // pMyserial->write(Y_str.c_str());
-  // if (pMyserial->waitReadable())
-  // {
-  // received_line = pMyserial->readline();
-  // ROS_INFO("%s\n", received_line.c_str());
-  // }
 }
 
 void sciROS::arrayCallback(const std_msgs::Int32MultiArray::ConstPtr &array)

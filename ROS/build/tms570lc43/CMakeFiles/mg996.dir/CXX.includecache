@@ -37,19 +37,23 @@ ros/ros.h
 /home/marco/Tesis/ROS/src/tms570lc43/src/ros/ros.h
 serial/serial.h
 /home/marco/Tesis/ROS/src/tms570lc43/src/serial/serial.h
-sstream
--
-iostream
--
 std_msgs/MultiArrayLayout.h
 /home/marco/Tesis/ROS/src/tms570lc43/src/std_msgs/MultiArrayLayout.h
 std_msgs/MultiArrayDimension.h
 /home/marco/Tesis/ROS/src/tms570lc43/src/std_msgs/MultiArrayDimension.h
 std_msgs/Int32MultiArray.h
 /home/marco/Tesis/ROS/src/tms570lc43/src/std_msgs/Int32MultiArray.h
+sstream
+-
+iostream
+-
 vector
 -
 string
+-
+stdio.h
+-
+stdlib.h
 -
 
 /opt/ros/melodic/include/ros/advertise_options.h

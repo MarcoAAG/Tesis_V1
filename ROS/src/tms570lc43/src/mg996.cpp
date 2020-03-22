@@ -1,131 +1,115 @@
+/* ROS stuff  */
 #include "ros/ros.h"
 #include "serial/serial.h"
-#include <sstream>
-#include <iostream>
 #include "std_msgs/MultiArrayLayout.h"
 #include "std_msgs/MultiArrayDimension.h"
 #include "std_msgs/Int32MultiArray.h"
+
+/* C++ stuff  */
+#include <sstream>
+#include <iostream>
 #include <vector>
 #include <string>
 
-std::string data = "";
+#include <stdio.h>
+#include <stdlib.h>
 
 serial::Serial my_serial("/dev/ttyACM0", 115200);
 
-class mg996
+class sciROS
 {
 private:
-    /* data */
     ros::Subscriber sub;
     serial::Serial *pMyserial = &my_serial;
 
 public:
     uint16_t CENTROID[2];
 
-    mg996(ros::NodeHandle *n);
-    ~mg996();
+    sciROS(ros::NodeHandle *n); //Constructor
+    ~sciROS();                  //Destructor
     void arrayCallback(const std_msgs::Int32MultiArray::ConstPtr &array);
-    void serialInit(serial::Serial *pSerial);
-    void check_for_string(serial::Serial *pSerial, std::string expected_string);
-    void sendData(serial::Serial *pSerial, uint16_t _x, uint16_t _y);
+    void serialInit();
+    void sendData();
 };
 
-mg996::mg996(ros::NodeHandle *n)
+sciROS::sciROS(ros::NodeHandle *n)
 {
-    sub = n->subscribe("coordinates", 100, &mg996::arrayCallback, this);
-    serialInit(&my_serial);
+    sub = n->subscribe("coordinates", 100, &sciROS::arrayCallback, this);
+    serialInit();
 }
 
-mg996::~mg996()
+sciROS::~sciROS()
 {
-    my_serial.close();
+    pMyserial->close();
 }
-void mg996::arrayCallback(const std_msgs::Int32MultiArray::ConstPtr &array)
+
+void sciROS::serialInit()
+{
+    std::string received_line = "";
+
+    pMyserial->close();
+    pMyserial->open();
+    pMyserial->flushInput();
+    pMyserial->flushOutput();
+    ROS_INFO("Microcontrolador Conectado\n");
+    pMyserial->write("@");
+    if (pMyserial->waitReadable())
+    {
+        received_line = pMyserial->readline();
+        ROS_INFO("%s\n", received_line.c_str());
+    }
+}
+
+void sciROS::sendData()
+{
+    pMyserial->flush();
+
+    std::string received_line = "";
+
+    /*Transform int to string*/
+    std::stringstream ss_x;
+    ss_x << CENTROID[0];
+    std::string X_str = ss_x.str();
+
+    std::stringstream ss_y;
+    ss_y << CENTROID[1];
+    std::string Y_str = ss_y.str();
+
+    /* concatenate X and Y  */
+    std::string XY = X_str + Y_str;
+
+    //Send X and Y ina single sring
+    pMyserial->write(XY.c_str());
+    pMyserial->flush();
+    if (pMyserial->waitReadable())
+    {
+        received_line = pMyserial->readline();
+        ROS_INFO("%s\n", received_line.c_str());
+    }
+}
+
+void sciROS::arrayCallback(const std_msgs::Int32MultiArray::ConstPtr &array)
 {
     try
     {
-        /**
-     * ********************************************************************************
-     * COORDINATES RECEIVED
-     * ********************************************************************************
-    **/
         int i = 0;
+
+        //Receive coordinates
         for (std::vector<int>::const_iterator it = array->data.begin(); it != array->data.end(); ++it)
         {
             CENTROID[i] = *it;
             i++;
         }
-        sendData(&my_serial,CENTROID[0],CENTROID[1]);
+
+        sendData(); //send data from subscriber
     }
+
     catch (const std::exception &e)
     {
-        // ROS_ERROR("Could not convert from '%s' to 'bgr8'.", msg_->encoding.c_str());
         std::cerr << e.what() << '\n';
     }
 }
-void mg996::serialInit(serial::Serial *pSerial)
-{
-    pSerial->close();
-    pSerial->open();
-    ROS_INFO("Conectado\n");
-    pSerial->flushInput();
-    pSerial->flushOutput();
-    pSerial->write("@");
-    check_for_string(pSerial, "OK\n");
-}
 
-void mg996::check_for_string(serial::Serial *pSerial, std::string expected_string)
-{
-    std::string received_line = "";
-    received_line = pSerial->readline();
-
-    // std::cout << "esperando" << std::endl;
-    while (received_line != expected_string)
-    {
-        if (pSerial->waitReadable())
-        {
-            received_line = pSerial->readline();
-        }
-    }
-    ROS_INFO("%s \n", received_line.c_str());
-
-    // std::cout << received_line << std::endl;
-}
-
-void mg996::sendData(serial::Serial *pSerial, uint16_t _x, uint16_t _y)
-{
-    uint16_t n = 640;
-    uint8_t a;
-    uint8_t b;
-    std::string received_line = "";
-
-    if (pSerial->waitReadable())
-    {
-        received_line = pSerial->readline();
-    }
-    while (received_line != "a\n")
-    {
-        pSerial->write("1");
-
-        if (pSerial->waitReadable())
-        {
-            received_line = pSerial->readline();
-        }
-    }
-    pSerial->write("0");
-    ROS_INFO("%s \n", received_line.c_str());
-
-    a = (uint8_t)(_y & 0x00FF);
-    b = (uint8_t)(_y >> 8 & 0x00FF);
-    pSerial->write((uint8_t *)&a, 1);
-    // pSerial->close();
-    // pSerial->open();
-    pSerial->flush();
-    pSerial->write((uint8_t *)&b, 1);
-    pSerial->flush();
-    // pSerial->close();
-    // pSerial->open();
-}
 int main(int argc, char **argv)
 {
     /**
@@ -135,8 +119,7 @@ int main(int argc, char **argv)
     **/
     ros::init(argc, argv, "tms570lc43_serial");
     ros::NodeHandle n;
-    ros::Rate loop_rate(1);
-    mg996 mg = mg996(&n);
+    sciROS mysci = sciROS(&n);
     ros::spin();
 
     return 0;
