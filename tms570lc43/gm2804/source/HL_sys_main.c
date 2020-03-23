@@ -202,17 +202,18 @@ static void TaskControl(void *pvParameters)
     // read(AS5048A_ANGLE1, readData, spiREG1, &SPI1_data_configCh0);
     uint16 command[1] = {0b0100000000000000}; // PAR=0 R/W=R
     AS5048A_ANGLE1[0] = AS5048A_ANGLE1[0] | command[0];
+    spiSendAndGetData(spiREG1, &SPI1_data_configCh0, 1, AS5048A_ANGLE1, readData);
     xLastExecutionTime = xTaskGetTickCount();
 
     for (;;)
     {
 
-        pwm0het0.duty = 580;
+        pwm0het0.duty = 800;
         setpwmsignal(hetRAM1, pwm0, pwm0het0);
         pwm1het1.duty = 590;
         setpwmsignal(hetRAM1, pwm1, pwm1het1);
         spiSendAndGetData(spiREG1, &SPI1_data_configCh0, 1, AS5048A_ANGLE1, readData);
-        delaymio(3000);
+        delaymio(100);
         spiSendAndGetData(spiREG1, &SPI1_data_configCh0, 1, AS5048A_NOP, readData);
 
         Data = readData[0] & ~0xC000;

@@ -41,7 +41,6 @@
 *
 */
 
-
 /* USER CODE BEGIN (0) */
 /* USER CODE END */
 
@@ -80,7 +79,7 @@
 
 /*
 **************************************************************************************
-FUNCTION FOR SCI COMMUNICATION
+*FUNCTION FOR SCI COMMUNICATION
 **************************************************************************************
 */
 void sciSendText(sciBASE_t *sci, uint8 *text, uint32 length);
@@ -94,7 +93,7 @@ unsigned char ReceivedY[3];    //Memory to storage X coordinate
 
 /*
 **************************************************************************************
-FUNCTIONS FOR PWM CREATOR
+*FUNCTIONS FOR PWM CREATOR
 **************************************************************************************
 */
 static const uint32 s_het1pwmPolarity[8U] =
@@ -114,7 +113,7 @@ void setpwmsignal(hetRAMBASE_t *hetRAM, uint32 pwm, hetSIGNAL_t signal);
 
 /*
 **************************************************************************************
-FUNCTION FOR FREERTOS SYSTEM
+*FUNCTION FOR FREERTOS SYSTEM
 **************************************************************************************
 */
 static void TaskInit(void *pvParameters);
@@ -124,17 +123,21 @@ TaskHandle_t TaskInitHandle;
 
 /*
 **************************************************************************************
-FUNCTION FOR CONTROLLER
+*FUNCTION FOR CONTROLLER
 **************************************************************************************
 */
 uint16 X = 0;
 uint16 Y = 0;
+#define REFERENCEX 320
+#define REFERENCEY 240
+bool getSign(float32 PID);
+void sendPWM(bool dir, float32 PID, bool ID);
 
 /* USER CODE END */
 
 int main(void)
 {
-/* USER CODE BEGIN (3) */
+    /* USER CODE BEGIN (3) */
     _enable_IRQ(); // Enable the IRQ
 
     hetInit(); // Initialize the HET driver
@@ -155,12 +158,11 @@ int main(void)
     return 0;
 }
 
-
 /* USER CODE BEGIN (4) */
 
 /*
 **************************************************************************************
-FUNCTION FOR FREERTOS SYSTEM
+*FUNCTION FOR FREERTOS SYSTEM
 **************************************************************************************
 */
 static void TaskInit(void *pvParameters)
@@ -198,10 +200,74 @@ static void TaskInit(void *pvParameters)
 }
 static void TaskControl(void *pvParameters)
 {
+    /*
+    *MOTOR 1    <<<< Y >>>>
+    * R       CENTRO        L
+    * 343-670   671-723   723-1000
+    * LEFT -> DOWN
+    * RIGHT -> UP
+    */
+
+    /*
+    *MOTOR 2    <<<< X >>>>
+    * R         CENTRO        L
+    * 402-674   675-726     727-1000
+    */
+
+    // Create a variable to get tick
+    TickType_t xLastExecutionTime;
+    xLastExecutionTime = xTaskGetTickCount();
+
+    //local variable for coordinates
+    uint16 coordinateX;
+    uint16 coordinateY;
+
+    /* error vector */
+    float32 error[2] = {0.0, 0.0};     /* error X -> [0], error Y -> [1]*/
+    float32 lasterror[2] = {0.0, 0.0}; /* error X -> [0], error Y -> [1]*/
+    float32 sumerror[2] = {0.0, 0.0};  /* error X -> [0], error Y -> [1]*/
+    /* Gain variables*/
+    float32 Kp[2] = {0.0, 0.0}; /* X -> [0],  Y -> [1]*/
+    float32 Ki[2] = {0.0, 0.0}; /* X -> [0],  Y -> [1]*/
+    float32 Kd[2] = {0.0, 0.0}; /* X -> [0],  Y -> [1]*/
+
+    float32 PID[2] = {0.0, 0.0}; /* X -> [0],  Y -> [1]*/
+
     for (;;)
     {
 
         gioSetBit(gioPORTB, 7, gioGetBit(gioPORTB, 7) ^ 1); //toogle a led
+
+        /* data update*/
+        coordinateX = X;
+        coordinateY = Y;
+
+        /*save last error*/
+        lasterror[0] = error[0];
+        lasterror[1] = error[1];
+
+        /* get erro */
+        error[0] = coordinateX - REFERENCEX;
+        error[1] = coordinateY - REFERENCEY;
+
+        /* sum errors*/
+        sumerror[0] += error[0];
+        sumerror[1] += error[1];
+
+        /* setting gains */
+        Kp[0] = 1.0;
+        Kp[1] = 0.1;
+        Ki[0] = 0.0;
+        Ki[1] = 0.0;
+        Kd[0] = 0.0;
+        Kd[1] = 0.0;
+
+        PID[0] = Kp[0] * error[0] + Ki[0] * sumerror[0] + Kd[0] * ((error[0] - lasterror[0]) * 0.02);
+        PID[1] = Kp[1] * error[1] + Ki[1] * sumerror[1] + Kd[1] * ((error[1] - lasterror[1]) * 0.02);
+
+        sendPWM(getSign(PID[1]), PID[1], 0);
+
+        vTaskDelayUntil(&xLastExecutionTime, 20 * portTICK_PERIOD_MS); //sleep task for specific time
     }
 }
 void vApplicationIdleHook(void)
@@ -210,7 +276,48 @@ void vApplicationIdleHook(void)
 
 /*
 **************************************************************************************
-FUNCTIONS FOR PWM CREATOR
+*FUNCTION FOR CONTROLLER
+**************************************************************************************
+*/
+bool getSign(float32 PID)
+{
+    bool ret;
+    ret = (PID > 0) ? 1 : 0;
+    return ret;
+}
+void sendPWM(bool dir, float32 PID, bool ID)
+{
+    /*
+    *ID 0 -> MOTOR 1
+    *ID 1 -> MOTOR 2
+    *dir 0 -> TURN LEFT -> NEGATIVE ERROR
+    *dir 1 -> TURN  RIGHT -> POSITIVE ERROR
+    */
+
+    //SETTING BOUNDARIES
+    if (ID == 0)
+    {
+        if (dir == 1)
+        {
+            PID = 722 + PID;
+            PID = (PID > 1000) ? 1000 : PID;
+            PID = (PID < 727) ? 720 : PID;
+        }
+        else
+        {
+
+            PID = 671 + PID;
+            PID = (PID > 670) ? 672 : PID;
+            PID = (PID < 393) ? 393 : PID;
+        }
+        pwm0het0.duty = (uint32)PID; //For motor 1
+        setpwmsignal(hetRAM1, pwm0, pwm0het0);
+    }
+}
+
+/*
+**************************************************************************************
+*FUNCTIONS FOR PWM CREATOR
 **************************************************************************************
 */
 void setpwmsignal(hetRAMBASE_t *hetRAM, uint32 pwm, hetSIGNAL_t signal)
@@ -247,7 +354,7 @@ void setpwmsignal(hetRAMBASE_t *hetRAM, uint32 pwm, hetSIGNAL_t signal)
 
 /*
 **************************************************************************************
-FUNCTION FOR SCI COMMUNICATION
+*FUNCTION FOR SCI COMMUNICATION
 **************************************************************************************
 */
 /*  This function execute every single interruption  */
@@ -265,8 +372,8 @@ void sciNotification(sciBASE_t *sci, unsigned flags)
 
     Y = atoi((const char *)&ReceivedY);
 
-    sciSendData(sciREG1, (uint8 *)&Y, 2);
-    sciSend(sciREG1, 2, (unsigned char *)"\r\n");
+    // sciSendData(sciREG1, (uint8 *)&Y, 2);
+    // sciSend(sciREG1, 2, (unsigned char *)"\r\n");
 
     sciReceive(sci, 6, (unsigned char *)&DataReceived); // Await furter character
 }
