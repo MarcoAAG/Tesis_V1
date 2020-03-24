@@ -173,11 +173,11 @@ static void TaskInit(void *pvParameters)
 
     //PWM0 init
     pwm0het0.period = 20000;
-    pwm0het0.duty = 500;
+    pwm0het0.duty = 200;
     setpwmsignal(hetRAM1, pwm0, pwm0het0);
     //PWM1 init
     pwm1het1.period = 20000;
-    pwm1het1.duty = 500;
+    pwm1het1.duty = 0;
     setpwmsignal(hetRAM1, pwm1, pwm1het1);
 
     vTaskDelayUntil(&xLastWakeTime, (5000 * portTICK_RATE_MS)); //Sleep task for 2 seconds
@@ -208,9 +208,9 @@ static void TaskControl(void *pvParameters)
     for (;;)
     {
 
-        pwm0het0.duty = 800;
+        pwm0het0.duty = 400;
         setpwmsignal(hetRAM1, pwm0, pwm0het0);
-        pwm1het1.duty = 590;
+        pwm1het1.duty = 700;
         setpwmsignal(hetRAM1, pwm1, pwm1het1);
         spiSendAndGetData(spiREG1, &SPI1_data_configCh0, 1, AS5048A_ANGLE1, readData);
         delaymio(100);

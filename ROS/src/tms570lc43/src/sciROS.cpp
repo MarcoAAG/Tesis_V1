@@ -14,7 +14,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-serial::Serial my_serial("/dev/ttyACM0", 115200);
+// serial::Serial my_serial("/dev/ttyACM0", 115200);
+serial::Serial my_serial;
 
 class sciROS
 {
@@ -47,6 +48,12 @@ void sciROS::serialInit()
 {
   std::string received_line = "";
 
+  pMyserial->setPort("/dev/ttyACM0");
+  pMyserial->setBaudrate(115200);
+  // serial::Timeout to = serial::Timeout::simpleTimeout(1);
+  // pMyserial->setTimeout(to);
+  pMyserial->open();
+
   pMyserial->close();
   pMyserial->open();
   pMyserial->flushInput();
@@ -77,13 +84,12 @@ void sciROS::sendData()
 
   /* concatenate X and Y  */
   std::string XY = X_str + Y_str;
-
-  //Send X and Y ina single sring
-  pMyserial->write(XY.c_str());
+  // Send X and Y ina single sring
+  pMyserial->write(Y_str.c_str());
   if (pMyserial->waitReadable())
   {
-    received_line = pMyserial->readline();
-    ROS_INFO("%s\n", received_line.c_str());
+  received_line = pMyserial->readline();
+  ROS_INFO("%s\n", received_line.c_str());
   }
 }
 

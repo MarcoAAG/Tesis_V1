@@ -41,6 +41,7 @@
 *
 */
 
+
 /* USER CODE BEGIN (0) */
 
 #include "HL_sys_core.h"
@@ -115,7 +116,7 @@ void setpwmsignal(hetRAMBASE_t *hetRAM, uint32 pwm, hetSIGNAL_t signal);
 
 uint16 X = 320;
 uint16 Y = 240;
-unsigned char command[6]; // A variable declared to store received character
+unsigned char command[3]; // A variable declared to store received character
 uint8 count = 0;
 unsigned char ReceivedX[3];
 unsigned char ReceivedY[3];
@@ -124,7 +125,7 @@ unsigned char ReceivedY[3];
 
 int main(void)
 {
-    /* USER CODE BEGIN (3) */
+/* USER CODE BEGIN (3) */
     _enable_IRQ(); // Enable the IRQ
 
     hetInit(); // Initialize the HET driver
@@ -134,29 +135,17 @@ int main(void)
     gioSetBit(gioPORTB, 6, 0);
     gioSetBit(gioPORTB, 7, 0);
 
-    sciSend(sciREG1, 21, (unsigned char *)"Please press a key!\r\n"); // Send user prompt
-    sciReceive(sciREG1, 6, (unsigned char *)&command);                // Await user character
+    //sciSend(sciREG1, 21, (unsigned char *)"Please press a key!\r\n"); // Send user prompt
+    sciReceive(sciREG1, 3, (unsigned char *)&command);                // Await user character
     while (1)                                                         // Infinite loop
     {
-        if (count == 1)
-        {
-            gioSetBit(gioPORTB, 6, gioGetBit(gioPORTB, 6) ^ 1); //toogle a led
-        }
-        if (count == 2)
-        {
-            //gioSetBit(gioPORTB, 7, 1);
-            gioSetBit(gioPORTB, 7, gioGetBit(gioPORTB, 7) ^ 1); //toogle a led
-        }
-        if (count == 3)
-        {
-            //gioSetBit(gioPORTB, 6, 0);
-            //gioSetBit(gioPORTB, 7, 0);
-        }
+
     }
     /* USER CODE END */
 
     return 0;
 }
+
 
 /* USER CODE BEGIN (4) */
 void vApplicationIdleHook(void)
@@ -172,10 +161,10 @@ FUNCTION FOR SCI COMMUNICATION
 void sciNotification(sciBASE_t *sci, unsigned flags)
 {
     int i = 0;
-    // sciSend(sci, 1, (unsigned char *)&command[0]); // Echo received character back to user
-    // sciSend(sciREG1, 2, (unsigned char *)"\r\n");
+    sciSend(sci, 3, (unsigned char *)&command); // Echo received character back to user
+    sciSend(sciREG1, 2, (unsigned char *)"\r\n");
 
-    for (i = 0; i < 3; i++)
+    /*for (i = 0; i < 3; i++)
     {
         ReceivedX[i] = command[i];
         ReceivedY[i] = command[i+3];
@@ -186,11 +175,8 @@ void sciNotification(sciBASE_t *sci, unsigned flags)
     Y = atoi((const char *)&ReceivedY);
 
     sciSendData(sciREG1, (uint8 *)&Y, 2);
-    sciSend(sciREG1, 2, (unsigned char *)"\r\n");
-
-    count++;
-    count = (count > 3) ? 1 : count;
-    sciReceive(sci, 6, (unsigned char *)&command); // Await furter character
+    sciSend(sciREG1, 2, (unsigned char *)"\r\n");*/
+    sciReceive(sci, 3, (unsigned char *)&command); // Await furter character
 }
 void sciSendData(sciBASE_t *sci, uint8 *text, uint32 length)
 {

@@ -256,10 +256,10 @@ static void TaskControl(void *pvParameters)
 
         /* setting gains */
         Kp[0] = 1.0;
-        Kp[1] = 0.1;
+        Kp[1] = 1.0;
         Ki[0] = 0.0;
         Ki[1] = 0.0;
-        Kd[0] = 0.0;
+        Kd[0] = 10.0;
         Kd[1] = 0.0;
 
         PID[0] = Kp[0] * error[0] + Ki[0] * sumerror[0] + Kd[0] * ((error[0] - lasterror[0]) * 0.02);
@@ -267,7 +267,7 @@ static void TaskControl(void *pvParameters)
 
         sendPWM(getSign(PID[1]), PID[1], 0);
 
-        vTaskDelayUntil(&xLastExecutionTime, 20 * portTICK_PERIOD_MS); //sleep task for specific time
+        //vTaskDelayUntil(&xLastExecutionTime, 20 * portTICK_PERIOD_MS); //sleep task for specific time
     }
 }
 void vApplicationIdleHook(void)
@@ -299,14 +299,14 @@ void sendPWM(bool dir, float32 PID, bool ID)
     {
         if (dir == 1)
         {
-            PID = 722 + PID;
+            PID = 722 + (0.1) * PID;
             PID = (PID > 1000) ? 1000 : PID;
             PID = (PID < 727) ? 720 : PID;
         }
         else
         {
 
-            PID = 671 + PID;
+            PID = 671 + (0.1) * PID;
             PID = (PID > 670) ? 672 : PID;
             PID = (PID < 393) ? 393 : PID;
         }
@@ -372,8 +372,8 @@ void sciNotification(sciBASE_t *sci, unsigned flags)
 
     Y = atoi((const char *)&ReceivedY);
 
-    // sciSendData(sciREG1, (uint8 *)&Y, 2);
-    // sciSend(sciREG1, 2, (unsigned char *)"\r\n");
+    //sciSendData(sciREG1, (uint8 *)&X, 2);
+    //sciSend(sciREG1, 2, (unsigned char *)"\r\n");
 
     sciReceive(sci, 6, (unsigned char *)&DataReceived); // Await furter character
 }
