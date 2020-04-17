@@ -19,22 +19,23 @@ de estudio debido a su exponencial importancia para tareas criticas, se trata de
 vehículos aéreos no tripulados UAV (del inglés unmanned aerial vehicle), donde dichas
 tareas criticas han podido alcanzar sus objetivos en parte gracias a la implementación
 reciente de visión artificial.\\
-En la implementación de camaras para el sistema visual de los UAV's la estabilidad
+En la implementación de cámaras para el sistema visual de los UAV's la estabilidad
 juega un rol importante, debido a que el sistema se encuentra expuesto a diversos
-factores que hacen que la captura de imagenes sea deficiente. Es por ello que la
-impletanción de un sistema estabilizador de camaras en necesario.\\
-El tema principal de este trabajo se basa en la  un pbjetivo en tierra desde un
-sistema aereo, con base en la obtencion de imagenes y
-% que dicho sea de paso ha dado pie a múltiples investigaciones
-% para generar una buena comunicación de datos entre el UAV y un sistema receptor en
-% tierra, dado que aveces las tareas requieren un tiempo de respuesta menor del que un
-% protocolo de comunicación puede otorgar o en donde se necesita garantizar la seguridad
-% tanto de software y hardware ha surgido la necesidad de diseñar un sistema embebido
-% con la finalidad de evitar los problemas relacionados con los protocolos de comunicación
-% y a su vez tener como resultado un sistema enteramente autónomo.
+factores que hacen que la captura de imágenes sea deficiente. Es por ello que la
+implementación de un sistema estabilizador de cámaras en necesario.\\
+Tareas tales como la geo-localizacion requieren como entrada ángulos de azimuth
+y de elevación que son entregadas por el sistema gimbal embebido en el UAV.
+El algoritmo de geo-localización utiliza la salida del GPS, el vector de línea de
+visión normalizado del algoritmo de visión y la actitud para estimar la posición del
+objeto en el marco de inercia y la distancia al objeto.
 
 \section{Justificación}
-
+La presente investigación se enfocara en la implementación de una gimbal de dos grados
+de libertad utilizando un framework de código abierto y bajo la licencia de Open-Source
+siendo este el motivo principal de contribuir a la comunidad y el de la creación de
+un repositorio de libre acceso para futuras investigaciones y mejoramiento de la calidad.\\
+Para la universidad aeronáutica en Querétaro representara solo el inicio de una potencial
+investigación en MAV'S \footnote{Micro air vehicle}.
 
 \section{Objetivo}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

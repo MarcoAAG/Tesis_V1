@@ -97,7 +97,14 @@ Este nodo tiene dos funciones principales, Suscribirse al nodo publisher y publi
 un array de tamaño 2 tipo entero que guardara las coordenadas en X y Y del centroide
 del target.\\
 El proceso que se ejecuta se vera más a detalle en las siguientes secciones de este
-capitulo.
+capitulo.\\
+Dichos procesos están incluidos en una clase llamada objecttracking que se ilustra
+en el siguiente diagrama.
+\begin{center}
+	\includegraphics[width=0.45\textwidth]{Contenido/Cuerpo/Capitulo4/object_tracking.eps}
+	\captionof{figure}{Diagrama de clases del subscriber}\label{Fig5}
+\end{center}
+
 
 % ---------------------------------------------------------------------------------------------------------
 % *********************************************************************************************************
@@ -382,4 +389,30 @@ el parámetro \textbf{size}.
 Con un size de 5 para el kernel del filtro opening se obtuvo un resultado que considero aceptable porque
 limpió el ruido externo, es decir, desapareció los puntos que no están asociados con nuestro objeto deseado.
 
+% ---------------------------------------------------------------------------------------------------------
+% *********************************************************************************************************
+% *********************************************************************************************************
+% ---------------------------------------------------------------------------------------------------------
 
+\section{Centroide}
+Para obtener el centroide de un objeto en una imagen binaria tenemos que hacer uso del
+teorema de green, visto en el capítulo 1, y de las librerías opencv.\\
+Para obtener los momentos de la imagen la siguiente función es útil
+\begin{example}[label={ex:serie}]{Moments}
+	\textcolor{RoyalBlue}{moments(}\textcolor{Bittersweet}{\_Image}\textcolor{RoyalBlue}{)}
+\end{example}
+Dicha función nos arroja los momentos de la imagen, siendo el m00 el área. La primera
+prueba se hizo con cubo rubrik de 3x3, siendo el azul el color target y de dimensión
+1.6cm por cada cuadrito de color. Las pruebas se hicieron de noche ambientado con luz 
+emitida por una seria de leds blancos.
+\begin{center}
+	\includegraphics[width=0.6\textwidth]{Contenido/Cuerpo/Capitulo4/Fig18.eps}
+	\captionof{figure}{Obtención del centroide del color azul}\label{Fig9}
+\end{center}
+En la figura anterior podemos observar un punto rojo situado en el origen del sistema
+de coordenadas de la imagen, dado en el pixel [320,480]. Debido al ambiente se tuvo
+que ajustar gamma a un valor de 60, esto con el objetivo de aclarar los colores
+ya que el azul parecía más un negro.\\
+El punto verde es el centroide de la figura que está localizado en [366,284], que
+a simple vista parece estar en lo correcto, sin embargo hay que comprobarlo. Por lo
+que da pie a la siguiente prueba.

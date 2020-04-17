@@ -69,7 +69,12 @@
         "freertos.h": "c",
         "os_task.h": "c",
         "stdlib.h": "c",
-        "hl_spi.h": "c"
+        "hl_spi.h": "c",
+        "csignal": "cpp",
+        "slist": "cpp",
+        "future": "cpp",
+        "valarray": "cpp",
+        "codecvt": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }

@@ -56,18 +56,6 @@ CMAKE_BINARY_DIR = /home/marco/Tesis/ROS/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
-
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -101,6 +89,18 @@ test:
 test/fast: test
 
 .PHONY : test/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
 
 # Special rule for the target list_install_components
 list_install_components:
@@ -166,6 +166,51 @@ preinstall/fast:
 depend:
 	cd /home/marco/Tesis/ROS/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+# Convenience name for target.
+tms570lc43/CMakeFiles/sciROS.dir/rule:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 tms570lc43/CMakeFiles/sciROS.dir/rule
+.PHONY : tms570lc43/CMakeFiles/sciROS.dir/rule
+
+# Convenience name for target.
+sciROS: tms570lc43/CMakeFiles/sciROS.dir/rule
+
+.PHONY : sciROS
+
+# fast build rule for target.
+sciROS/fast:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f tms570lc43/CMakeFiles/sciROS.dir/build.make tms570lc43/CMakeFiles/sciROS.dir/build
+.PHONY : sciROS/fast
+
+# Convenience name for target.
+tms570lc43/CMakeFiles/mg996.dir/rule:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 tms570lc43/CMakeFiles/mg996.dir/rule
+.PHONY : tms570lc43/CMakeFiles/mg996.dir/rule
+
+# Convenience name for target.
+mg996: tms570lc43/CMakeFiles/mg996.dir/rule
+
+.PHONY : mg996
+
+# fast build rule for target.
+mg996/fast:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f tms570lc43/CMakeFiles/mg996.dir/build.make tms570lc43/CMakeFiles/mg996.dir/build
+.PHONY : mg996/fast
+
+# Convenience name for target.
+tms570lc43/CMakeFiles/data_acquisitionMG996.dir/rule:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 tms570lc43/CMakeFiles/data_acquisitionMG996.dir/rule
+.PHONY : tms570lc43/CMakeFiles/data_acquisitionMG996.dir/rule
+
+# Convenience name for target.
+data_acquisitionMG996: tms570lc43/CMakeFiles/data_acquisitionMG996.dir/rule
+
+.PHONY : data_acquisitionMG996
+
+# fast build rule for target.
+data_acquisitionMG996/fast:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f tms570lc43/CMakeFiles/data_acquisitionMG996.dir/build.make tms570lc43/CMakeFiles/data_acquisitionMG996.dir/build
+.PHONY : data_acquisitionMG996/fast
 
 # Convenience name for target.
 tms570lc43/CMakeFiles/roscpp_generate_messages_py.dir/rule:
@@ -434,16 +479,100 @@ src/data_acquisition.cpp.s:
 	cd /home/marco/Tesis/ROS/build && $(MAKE) -f tms570lc43/CMakeFiles/data_acquisition.dir/build.make tms570lc43/CMakeFiles/data_acquisition.dir/src/data_acquisition.cpp.s
 .PHONY : src/data_acquisition.cpp.s
 
+src/data_acquisitionMG996.o: src/data_acquisitionMG996.cpp.o
+
+.PHONY : src/data_acquisitionMG996.o
+
+# target to build an object file
+src/data_acquisitionMG996.cpp.o:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f tms570lc43/CMakeFiles/data_acquisitionMG996.dir/build.make tms570lc43/CMakeFiles/data_acquisitionMG996.dir/src/data_acquisitionMG996.cpp.o
+.PHONY : src/data_acquisitionMG996.cpp.o
+
+src/data_acquisitionMG996.i: src/data_acquisitionMG996.cpp.i
+
+.PHONY : src/data_acquisitionMG996.i
+
+# target to preprocess a source file
+src/data_acquisitionMG996.cpp.i:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f tms570lc43/CMakeFiles/data_acquisitionMG996.dir/build.make tms570lc43/CMakeFiles/data_acquisitionMG996.dir/src/data_acquisitionMG996.cpp.i
+.PHONY : src/data_acquisitionMG996.cpp.i
+
+src/data_acquisitionMG996.s: src/data_acquisitionMG996.cpp.s
+
+.PHONY : src/data_acquisitionMG996.s
+
+# target to generate assembly for a file
+src/data_acquisitionMG996.cpp.s:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f tms570lc43/CMakeFiles/data_acquisitionMG996.dir/build.make tms570lc43/CMakeFiles/data_acquisitionMG996.dir/src/data_acquisitionMG996.cpp.s
+.PHONY : src/data_acquisitionMG996.cpp.s
+
+src/mg996.o: src/mg996.cpp.o
+
+.PHONY : src/mg996.o
+
+# target to build an object file
+src/mg996.cpp.o:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f tms570lc43/CMakeFiles/mg996.dir/build.make tms570lc43/CMakeFiles/mg996.dir/src/mg996.cpp.o
+.PHONY : src/mg996.cpp.o
+
+src/mg996.i: src/mg996.cpp.i
+
+.PHONY : src/mg996.i
+
+# target to preprocess a source file
+src/mg996.cpp.i:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f tms570lc43/CMakeFiles/mg996.dir/build.make tms570lc43/CMakeFiles/mg996.dir/src/mg996.cpp.i
+.PHONY : src/mg996.cpp.i
+
+src/mg996.s: src/mg996.cpp.s
+
+.PHONY : src/mg996.s
+
+# target to generate assembly for a file
+src/mg996.cpp.s:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f tms570lc43/CMakeFiles/mg996.dir/build.make tms570lc43/CMakeFiles/mg996.dir/src/mg996.cpp.s
+.PHONY : src/mg996.cpp.s
+
+src/sciROS.o: src/sciROS.cpp.o
+
+.PHONY : src/sciROS.o
+
+# target to build an object file
+src/sciROS.cpp.o:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f tms570lc43/CMakeFiles/sciROS.dir/build.make tms570lc43/CMakeFiles/sciROS.dir/src/sciROS.cpp.o
+.PHONY : src/sciROS.cpp.o
+
+src/sciROS.i: src/sciROS.cpp.i
+
+.PHONY : src/sciROS.i
+
+# target to preprocess a source file
+src/sciROS.cpp.i:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f tms570lc43/CMakeFiles/sciROS.dir/build.make tms570lc43/CMakeFiles/sciROS.dir/src/sciROS.cpp.i
+.PHONY : src/sciROS.cpp.i
+
+src/sciROS.s: src/sciROS.cpp.s
+
+.PHONY : src/sciROS.s
+
+# target to generate assembly for a file
+src/sciROS.cpp.s:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f tms570lc43/CMakeFiles/sciROS.dir/build.make tms570lc43/CMakeFiles/sciROS.dir/src/sciROS.cpp.s
+.PHONY : src/sciROS.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... install/strip"
+	@echo "... sciROS"
+	@echo "... mg996"
+	@echo "... data_acquisitionMG996"
 	@echo "... list_install_components"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... roscpp_generate_messages_eus"
@@ -466,6 +595,15 @@ help:
 	@echo "... src/data_acquisition.o"
 	@echo "... src/data_acquisition.i"
 	@echo "... src/data_acquisition.s"
+	@echo "... src/data_acquisitionMG996.o"
+	@echo "... src/data_acquisitionMG996.i"
+	@echo "... src/data_acquisitionMG996.s"
+	@echo "... src/mg996.o"
+	@echo "... src/mg996.i"
+	@echo "... src/mg996.s"
+	@echo "... src/sciROS.o"
+	@echo "... src/sciROS.i"
+	@echo "... src/sciROS.s"
 .PHONY : help
 
 
